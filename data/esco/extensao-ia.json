@@ -1,0 +1,260 @@
+{
+  "_comentario": "Extensão IA (ADR 0001): competências de IA ausentes da ESCO v1.2.1. STATUS: PROPOSTA INICIAL gerada com apoio de IA (Claude Code). A curadoria final é da equipe: confirme, edite, funda ou remova cada item com base nas vagas coletadas, preencha 'evidenciasNasVagas' e mude 'status' para 'curada'.",
+  "status": "proposta",
+  "lacunaNaEsco": "Buscas na ESCO v1.2.1 (ver snapshot, campo buscasIa) retornam apenas competências genéricas: 'principles of artificial intelligence', 'utilise machine learning', 'natural language processing', 'emergent technologies', 'data mining'. Não há competências sobre IA generativa, prompting, ética de IA, mídia sintética ou produção criativa assistida por IA. Das 6 ocupações-alvo (298 competências essenciais e opcionais no total), só 'designer de interfaces do utilizador' inclui uma competência ligada à IA ('processamento das línguas naturais'); nenhuma inclui IA generativa.",
+  "competencias": [
+    {
+      "id": "ia-01",
+      "rotulo": "Criação de imagens e ilustrações com IA generativa",
+      "descricao": "Usar modelos de geração de imagem para conceito, ilustração e variação visual, integrando o resultado a um processo de design com edição e direção de arte humanas.",
+      "profissoes": [
+        "multimidia",
+        "ux-ui",
+        "animacao"
+      ],
+      "termosDeBusca": [
+        "IA generativa",
+        "Midjourney",
+        "Stable Diffusion",
+        "DALL-E",
+        "Firefly",
+        "text-to-image"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-02",
+      "rotulo": "Prototipação de interfaces assistida por IA",
+      "descricao": "Gerar e iterar wireframes, fluxos e protótipos com ferramentas de IA, avaliando criticamente usabilidade e acessibilidade do que é gerado.",
+      "profissoes": [
+        "ux-ui",
+        "web"
+      ],
+      "termosDeBusca": [
+        "Figma AI",
+        "protótipo com IA",
+        "AI prototyping",
+        "v0",
+        "UX com IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-03",
+      "rotulo": "Engenharia de prompts para produção de conteúdo",
+      "descricao": "Formular, testar e versionar instruções para modelos de linguagem e de imagem de modo a obter resultados consistentes e verificáveis.",
+      "profissoes": [
+        "ux-ui",
+        "web",
+        "jogos",
+        "animacao",
+        "multimidia",
+        "audiovisual"
+      ],
+      "termosDeBusca": [
+        "prompt",
+        "engenharia de prompt",
+        "prompt engineering",
+        "ChatGPT"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-04",
+      "rotulo": "Edição e pós-produção audiovisual assistidas por IA",
+      "descricao": "Usar recursos de IA para corte, rotoscopia, limpeza de áudio, legendagem, dublagem e correção de cor, mantendo controle editorial humano.",
+      "profissoes": [
+        "audiovisual",
+        "multimidia"
+      ],
+      "termosDeBusca": [
+        "Runway",
+        "Premiere IA",
+        "DaVinci Neural",
+        "legenda automática",
+        "dublagem com IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-05",
+      "rotulo": "Animação e captura de movimento assistidas por IA",
+      "descricao": "Aplicar ferramentas de IA para captura de movimento a partir de vídeo, interpolação, lip-sync e rigging, integrando-as ao pipeline de animação.",
+      "profissoes": [
+        "animacao",
+        "jogos"
+      ],
+      "termosDeBusca": [
+        "mocap com IA",
+        "Cascadeur",
+        "lip sync",
+        "animação com IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-06",
+      "rotulo": "Geração procedural de conteúdo de jogos com IA",
+      "descricao": "Gerar níveis, assets, texturas, diálogos ou variações de conteúdo com técnicas procedurais e modelos generativos, garantindo coerência de design.",
+      "profissoes": [
+        "jogos"
+      ],
+      "termosDeBusca": [
+        "procedural",
+        "PCG",
+        "geração procedural",
+        "assets com IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-07",
+      "rotulo": "Agentes inteligentes e NPCs com aprendizado de máquina ou LLMs",
+      "descricao": "Projetar comportamento de personagens e sistemas de jogo usando aprendizado de máquina ou modelos de linguagem, além das técnicas clássicas de IA para jogos.",
+      "profissoes": [
+        "jogos"
+      ],
+      "termosDeBusca": [
+        "ML-Agents",
+        "NPC com IA",
+        "LLM em jogos",
+        "reinforcement learning"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-08",
+      "rotulo": "Integração de modelos de linguagem em aplicações",
+      "descricao": "Integrar APIs de LLMs a aplicações web e móveis (chamadas, streaming, RAG, ferramentas), tratando custo, latência, privacidade e falhas.",
+      "profissoes": [
+        "web"
+      ],
+      "termosDeBusca": [
+        "OpenAI API",
+        "LLM",
+        "RAG",
+        "LangChain",
+        "integração com IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-09",
+      "rotulo": "Desenvolvimento de software assistido por IA",
+      "descricao": "Usar assistentes de código com senso crítico: revisar, testar e assumir responsabilidade pelo código gerado.",
+      "profissoes": [
+        "web",
+        "jogos"
+      ],
+      "termosDeBusca": [
+        "Copilot",
+        "assistente de código",
+        "Cursor",
+        "Claude Code"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-10",
+      "rotulo": "Design de experiências conversacionais e de interfaces com IA",
+      "descricao": "Projetar interações com chatbots e agentes, incluindo expectativas, transparência, tratamento de erros e confiança do usuário.",
+      "profissoes": [
+        "ux-ui",
+        "web"
+      ],
+      "termosDeBusca": [
+        "chatbot",
+        "UX conversacional",
+        "conversational design",
+        "agentes de IA"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-11",
+      "rotulo": "Avaliação ética e de vieses em sistemas e conteúdos de IA",
+      "descricao": "Identificar e mitigar vieses, riscos e impactos sociais de sistemas e conteúdos gerados por IA.",
+      "profissoes": [
+        "ux-ui",
+        "web",
+        "jogos",
+        "animacao",
+        "multimidia",
+        "audiovisual"
+      ],
+      "termosDeBusca": [
+        "ética em IA",
+        "IA responsável",
+        "viés",
+        "responsible AI"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-12",
+      "rotulo": "Direitos autorais e autoria em conteúdo gerado por IA",
+      "descricao": "Compreender licenciamento, direitos autorais, consentimento de uso de dados e atribuição em obras produzidas com IA.",
+      "profissoes": [
+        "multimidia",
+        "animacao",
+        "audiovisual",
+        "jogos"
+      ],
+      "termosDeBusca": [
+        "direito autoral IA",
+        "licenciamento",
+        "copyright AI"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-13",
+      "rotulo": "Transparência e identificação de mídia sintética",
+      "descricao": "Rotular, detectar e comunicar o uso de mídia sintética (imagens, vozes, vídeos), incluindo deepfakes e procedência de conteúdo.",
+      "profissoes": [
+        "audiovisual",
+        "multimidia"
+      ],
+      "termosDeBusca": [
+        "deepfake",
+        "mídia sintética",
+        "C2PA",
+        "content credentials"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-14",
+      "rotulo": "Acessibilidade apoiada por IA",
+      "descricao": "Usar IA para legendas, audiodescrição, texto alternativo e tradução, validando a qualidade com pessoas usuárias.",
+      "profissoes": [
+        "ux-ui",
+        "web",
+        "audiovisual"
+      ],
+      "termosDeBusca": [
+        "acessibilidade IA",
+        "audiodescrição",
+        "texto alternativo automático"
+      ],
+      "evidenciasNasVagas": []
+    },
+    {
+      "id": "ia-15",
+      "rotulo": "Letramento em dados e avaliação de modelos",
+      "descricao": "Entender dados de treino, métricas e limitações de modelos para escolher, avaliar e explicar ferramentas de IA.",
+      "profissoes": [
+        "web",
+        "jogos",
+        "ux-ui"
+      ],
+      "termosDeBusca": [
+        "dados",
+        "métricas",
+        "avaliação de modelos",
+        "machine learning"
+      ],
+      "evidenciasNasVagas": []
+    }
+  ]
+}
