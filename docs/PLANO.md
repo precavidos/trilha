@@ -8,7 +8,7 @@ Prêmio Inteligência Artificial e Formação Universitária — Edital nº 1/20
 | Eixo temático | IV — Currículos e Profissões do Futuro |
 | Área do conhecimento | 4 — Ciências Humanas e Educação (Ensino e Educação) |
 | Recorte | Sistemas e Mídias Digitais — Diurno, UFC (PPC 2024.2, matriz 2025.1) |
-| Equipe | 3 discentes do SMD (vínculo ativo) |
+| Equipe | 2 discentes do SMD (vínculo ativo) |
 
 ## O que pontua (item 8.3 do edital)
 
@@ -54,7 +54,9 @@ Autenticação/SSO, outros cursos, raspagem de vagas, deploy público.
 | Front A | Frontend (coordenação) | Coleta de vagas, revisão das profissões-alvo, contato com o tutor do GPT | Metodologia e validação |
 | Front B | Frontend (discente) | Auditoria de acessibilidade, teste SUS, vídeo | Interface, acessibilidade e ética |
 
-Introdução e conclusão: a seis mãos. Capacidade estimada: ~1h/dia/pessoa (~40h humanas até o code freeze). O código é majoritariamente gerado com apoio de IA (Claude Code); a contribuição humana concentra-se nas decisões, curadoria, validação e texto — ver "Autoria e uso de IA".
+> Planejamento original para 3 pessoas; a equipe final tem **2 integrantes**, e os papéis acima foram redistribuídos entre eles.
+
+Introdução e conclusão: escritas em conjunto. Capacidade estimada: ~1h/dia/pessoa (~40h humanas até o code freeze). O código é majoritariamente gerado com apoio de IA (Claude Code); a contribuição humana concentra-se nas decisões, curadoria, validação e texto — ver "Autoria e uso de IA".
 
 ## Cronograma
 
@@ -78,7 +80,7 @@ O projeto ficou parado entre 10 e 26/10 por pendências da universidade. Com o p
 - **Entregue no protótipo:** fluxo da coordenação (lacunas por profissão-alvo, lente de IA, idade da bibliografia, painel "Por que isto?" com justificativa por RAG, página "Sobre a IA").
 - **Projetado, não implementado:** módulo discente (ADRs 0003 e 0009). Aparece na interface como "em desenvolvimento".
 - **Demanda de mercado:** competências essenciais e opcionais da ESCO, sem as vagas coletadas (ficam como trabalho futuro).
-- **Validação:** os três integrantes rotulam a mesma amostra de mapeamentos; o memorial reporta precisão e concordância, declarando que os rótulos são da própria equipe.
+- **Validação:** os dois integrantes rotulam a mesma amostra de mapeamentos; o memorial reporta precisão e concordância (kappa de Cohen), declarando que os rótulos são da própria equipe.
 - **Arquitetura:** análise pré-calculada, sem banco (ADR 0010).
 
 | Data | Marco |
