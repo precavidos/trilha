@@ -11,6 +11,7 @@ import { CardProfissao } from "@/components/trilha/CardProfissao";
 import { LinhaCompetencia } from "@/components/trilha/LinhaCompetencia";
 import type { Contagem, IdadeBibliografia, Item, Resumo, Sobre, Status } from "@/lib/api";
 import { contarBibliografiasAntigas } from "@/lib/calculos";
+import { dataBR } from "@/lib/formato";
 import { useApi } from "@/lib/use-api";
 
 export const LENTE_IA = "lente-ia";
@@ -19,12 +20,6 @@ const TEXTO_LENTE =
   "Competências de IA curadas pela equipe (Extensão IA), transversais a todas as profissões-alvo.";
 
 type Filtro = Status | "TODAS";
-
-// A data vem como AAAA-MM-DD; não passa por Date para o fuso não deslocar o dia.
-const dataBR = (iso: string) => {
-  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
-  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
-};
 
 /** Coordenação: KPIs, escolha da profissão-alvo e lista de competências com "Por que isto?". */
 export function Lacunas() {
