@@ -1,6 +1,6 @@
 {
-  "_comentario": "Extensão IA (ADR 0001): competências de IA ausentes da ESCO v1.2.1. STATUS: PROPOSTA INICIAL gerada com apoio de IA (Claude Code). A curadoria final é da equipe: confirme, edite, funda ou remova cada item com base nas vagas coletadas, preencha 'evidenciasNasVagas' e mude 'status' para 'curada'.",
-  "status": "proposta",
+  "_comentario": "Extensão IA (ADR 0001): competências de IA ausentes da ESCO v1.2.1. Lista inicial de 15 itens gerada com apoio de IA (Claude Code); curada pela equipe em 27/10/2026 (fusão de ia-03 em ia-01, remoção de ia-15 e fundamentações a partir de relatos da equipe).",
+  "status": "curada",
   "lacunaNaEsco": "Buscas na ESCO v1.2.1 (ver snapshot, campo buscasIa) retornam apenas competências genéricas: 'principles of artificial intelligence', 'utilise machine learning', 'natural language processing', 'emergent technologies', 'data mining'. Não há competências sobre IA generativa, prompting, ética de IA, mídia sintética ou produção criativa assistida por IA. Das 6 ocupações-alvo (298 competências essenciais e opcionais no total), só 'designer de interfaces do utilizador' inclui uma competência ligada à IA ('processamento das línguas naturais'); nenhuma inclui IA generativa.",
   "competencias": [
     {
@@ -30,7 +30,13 @@
       "evidenciasNasVagas": [],
       "fundidaCom": [
         "ia-03"
-      ]
+      ],
+      "fundamentacao": {
+        "grupo": "criacao",
+        "relatoDaEquipe": "normalmente em projetos pessoais, página do instagram, material apresentativo de projetos, realizar projetos para disciplinas",
+        "texto": "Integrantes da equipe e colegas do SMD já usam IA generativa para produzir conteúdo em projetos pessoais, em páginas de redes sociais, em material de apresentação de projetos e em trabalhos de disciplinas.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-02",
@@ -47,7 +53,14 @@
         "v0",
         "UX com IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "desenvolvimento",
+        "relatoDaEquipe": "estágios com integração e construção de chatbot, rag, llms, orquestração de modelos e também o uso de IA para programar no fluxo de trabalho",
+        "texto": "Em estágios, integrantes da equipe já atuam na integração e construção de chatbots, RAG, LLMs e orquestração de modelos, e usam IA para programar no fluxo de trabalho.",
+        "aderencia": "geral",
+        "observacao": "O relato da equipe é geral para o grupo; não houve experiência específica relatada com prototipação de interfaces."
+      }
     },
     {
       "id": "ia-04",
@@ -64,7 +77,13 @@
         "legenda automática",
         "dublagem com IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "criacao",
+        "relatoDaEquipe": "normalmente em projetos pessoais, página do instagram, material apresentativo de projetos, realizar projetos para disciplinas",
+        "texto": "Integrantes da equipe e colegas do SMD já usam IA generativa para produzir conteúdo em projetos pessoais, em páginas de redes sociais, em material de apresentação de projetos e em trabalhos de disciplinas.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-05",
@@ -80,7 +99,14 @@
         "lip sync",
         "animação com IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "criacao",
+        "relatoDaEquipe": "normalmente em projetos pessoais, página do instagram, material apresentativo de projetos, realizar projetos para disciplinas",
+        "texto": "Integrantes da equipe e colegas do SMD já usam IA generativa para produzir conteúdo em projetos pessoais, em páginas de redes sociais, em material de apresentação de projetos e em trabalhos de disciplinas.",
+        "aderencia": "geral",
+        "observacao": "O relato da equipe é geral para o grupo; não houve experiência específica relatada com animação e captura de movimento."
+      }
     },
     {
       "id": "ia-06",
@@ -95,7 +121,14 @@
         "geração procedural",
         "assets com IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "criacao",
+        "relatoDaEquipe": "normalmente em projetos pessoais, página do instagram, material apresentativo de projetos, realizar projetos para disciplinas",
+        "texto": "Integrantes da equipe e colegas do SMD já usam IA generativa para produzir conteúdo em projetos pessoais, em páginas de redes sociais, em material de apresentação de projetos e em trabalhos de disciplinas.",
+        "aderencia": "geral",
+        "observacao": "O relato da equipe é geral para o grupo; não houve experiência específica relatada com conteúdo de jogos."
+      }
     },
     {
       "id": "ia-07",
@@ -110,7 +143,14 @@
         "LLM em jogos",
         "reinforcement learning"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "desenvolvimento",
+        "relatoDaEquipe": "estágios com integração e construção de chatbot, rag, llms, orquestração de modelos e também o uso de IA para programar no fluxo de trabalho",
+        "texto": "Em estágios, integrantes da equipe já atuam na integração e construção de chatbots, RAG, LLMs e orquestração de modelos, e usam IA para programar no fluxo de trabalho.",
+        "aderencia": "geral",
+        "observacao": "O relato da equipe é geral para o grupo; não houve experiência específica relatada com agentes e NPCs em jogos."
+      }
     },
     {
       "id": "ia-08",
@@ -126,7 +166,13 @@
         "LangChain",
         "integração com IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "desenvolvimento",
+        "relatoDaEquipe": "estágios com integração e construção de chatbot, rag, llms, orquestração de modelos e também o uso de IA para programar no fluxo de trabalho",
+        "texto": "Em estágios, integrantes da equipe já atuam na integração e construção de chatbots, RAG, LLMs e orquestração de modelos, e usam IA para programar no fluxo de trabalho.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-09",
@@ -142,7 +188,13 @@
         "Cursor",
         "Claude Code"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "desenvolvimento",
+        "relatoDaEquipe": "estágios com integração e construção de chatbot, rag, llms, orquestração de modelos e também o uso de IA para programar no fluxo de trabalho",
+        "texto": "Em estágios, integrantes da equipe já atuam na integração e construção de chatbots, RAG, LLMs e orquestração de modelos, e usam IA para programar no fluxo de trabalho.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-10",
@@ -158,7 +210,13 @@
         "conversational design",
         "agentes de IA"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "desenvolvimento",
+        "relatoDaEquipe": "estágios com integração e construção de chatbot, rag, llms, orquestração de modelos e também o uso de IA para programar no fluxo de trabalho",
+        "texto": "Em estágios, integrantes da equipe já atuam na integração e construção de chatbots, RAG, LLMs e orquestração de modelos, e usam IA para programar no fluxo de trabalho.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-11",
@@ -178,7 +236,13 @@
         "viés",
         "responsible AI"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "etica",
+        "relatoDaEquipe": "cadeiras de projeto de tcc já abordam o uso de ia para coletar refs, apêndice demonstrando os prompts utilizados, discussão sobre os direitos dos dados",
+        "texto": "As disciplinas de projeto de TCC do curso já discutem, na prática, o uso de IA para coletar referências, a apresentação em apêndice dos prompts utilizados e os direitos sobre os dados — temas que não aparecem nas ementas do PPC.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-12",
@@ -195,7 +259,13 @@
         "licenciamento",
         "copyright AI"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "etica",
+        "relatoDaEquipe": "cadeiras de projeto de tcc já abordam o uso de ia para coletar refs, apêndice demonstrando os prompts utilizados, discussão sobre os direitos dos dados",
+        "texto": "As disciplinas de projeto de TCC do curso já discutem, na prática, o uso de IA para coletar referências, a apresentação em apêndice dos prompts utilizados e os direitos sobre os dados — temas que não aparecem nas ementas do PPC.",
+        "aderencia": "direta"
+      }
     },
     {
       "id": "ia-13",
@@ -211,7 +281,14 @@
         "C2PA",
         "content credentials"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "etica",
+        "relatoDaEquipe": "cadeiras de projeto de tcc já abordam o uso de ia para coletar refs, apêndice demonstrando os prompts utilizados, discussão sobre os direitos dos dados",
+        "texto": "As disciplinas de projeto de TCC do curso já discutem, na prática, o uso de IA para coletar referências, a apresentação em apêndice dos prompts utilizados e os direitos sobre os dados — temas que não aparecem nas ementas do PPC.",
+        "aderencia": "geral",
+        "observacao": "O relato da equipe é geral para o grupo; não houve experiência específica relatada com mídia sintética."
+      }
     },
     {
       "id": "ia-14",
@@ -227,7 +304,13 @@
         "audiodescrição",
         "texto alternativo automático"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundamentacao": {
+        "grupo": "acessibilidade",
+        "relatoDaEquipe": "ela consegue trazer diretrizes padronizações internacionais e testes de acesibilidade para o desenvolvimento de soluções",
+        "texto": "A IA pode apoiar o desenvolvimento de soluções acessíveis trazendo diretrizes e padrões internacionais e auxiliando nos testes de acessibilidade.",
+        "aderencia": "direta"
+      }
     }
   ],
   "curadoria": {
@@ -243,6 +326,7 @@
         "data": "2026-10-27"
       }
     ],
-    "responsavel": "equipe Trilha"
+    "responsavel": "equipe Trilha",
+    "fundamentacoes": "Redigidas com apoio de IA (Claude Code) em 27/10/2026 a partir de relatos da equipe, agrupados em quatro temas; os relatos estão preservados literalmente em 'relatoDaEquipe'."
   }
 }
