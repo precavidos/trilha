@@ -18,6 +18,6 @@ São 42 julgamentos, sorteados de forma estratificada: 14 que o sistema classifi
 python -I data/scripts/validacao.py avaliar
 ```
 
-Gera [`resultado.md`](resultado.md), com a concordância entre avaliadores (kappa de Fleiss), o acerto do sistema e a precisão de "coberta" e de "lacuna". Esses números vão para a seção de validação do memorial.
+Gera [`resultado.md`](resultado.md), com a concordância entre avaliadores, o acerto do sistema e a precisão de "coberta" e de "lacuna". Funciona com **2 ou 3 avaliadores** (kappa de Cohen ou de Fleiss); conta só quem preencheu todas as linhas. A linha 10 (ia-15, removida na curadoria da Extensão IA) é excluída automaticamente. Esses números vão para a seção de validação do memorial.
 
 > A amostra é reprodutível (semente fixa no script). Não regere a amostra depois que alguém começar a rotular.

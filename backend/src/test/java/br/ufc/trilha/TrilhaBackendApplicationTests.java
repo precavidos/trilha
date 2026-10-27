@@ -35,7 +35,7 @@ class TrilhaBackendApplicationTests {
 	void lentesDeIaListaAExtensao() throws Exception {
 		mvc.perform(get("/api/lente-ia"))
 			.andExpect(status().isOk())
-			.andExpect(jsonPath("$.length()", is(15)))
+			.andExpect(jsonPath("$.length()", is(13)))
 			.andExpect(jsonPath("$[*].fonte", everyItem(is("Extensão IA"))));
 	}
 
