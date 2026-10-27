@@ -1,0 +1,53 @@
+{
+  "_comentario": "Decisão da equipe (docs/PLANO.md): uma ocupação ESCO por profissão-alvo. Edite e rode data/scripts/esco_snapshot.py para regerar o snapshot.",
+  "versaoEsco": "v1.2.1",
+  "profissoes": [
+    {
+      "id": "ux-ui",
+      "rotulo": "Designer de UX/UI",
+      "itinerarios": ["Design Digital Interativo"],
+      "esco": "http://data.europa.eu/esco/occupation/96e20037-0a25-4bf6-a25e-808d1605d890",
+      "alternativasConsideradas": ["user experience analyst (faed411a-f920-4100-86a8-b877928b429c)"]
+    },
+    {
+      "id": "jogos",
+      "rotulo": "Desenvolvedor(a) de jogos digitais",
+      "itinerarios": ["Jogos Digitais"],
+      "esco": "http://data.europa.eu/esco/occupation/9ebaf3f0-0be0-47b7-b2b1-b3b04130fa81",
+      "alternativasConsideradas": ["digital games designer (d68ff35f-e34d-4e32-88ab-d6c06a6c25b9)"]
+    },
+    {
+      "id": "web",
+      "rotulo": "Desenvolvedor(a) web/front-end",
+      "itinerarios": ["Sistemas Multimídia"],
+      "esco": "http://data.europa.eu/esco/occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+      "alternativasConsideradas": ["user interface developer (866c7813-2c03-47d7-9bdc-192cfbace57c)"]
+    },
+    {
+      "id": "animacao",
+      "rotulo": "Animador(a) 2D/3D",
+      "itinerarios": ["Animação e Audiovisual", "Jogos Digitais"],
+      "esco": "http://data.europa.eu/esco/occupation/48c8eccb-4bd0-487e-a187-4953cbbe956e",
+      "alternativasConsideradas": ["3D animator (52df9d56-efd4-48d0-ad93-59231943fc4c)"]
+    },
+    {
+      "id": "multimidia",
+      "rotulo": "Designer multimídia/motion",
+      "itinerarios": ["Design Digital Interativo", "Animação e Audiovisual"],
+      "esco": "http://data.europa.eu/esco/occupation/d5a43cd3-230e-46d0-ba05-d67d61e5cfbb",
+      "alternativasConsideradas": ["digital artist (d5c4ab26-c293-4f4d-ad89-fe776f49a67f)"]
+    },
+    {
+      "id": "audiovisual",
+      "rotulo": "Editor(a) de vídeo/audiovisual",
+      "itinerarios": ["Animação e Audiovisual"],
+      "esco": "http://data.europa.eu/esco/occupation/ac734172-ae9a-41ab-80a0-a7b33694e027",
+      "alternativasConsideradas": ["video and motion picture producer (3b6bea7d-36f4-44fb-ac73-d1cc8a198dcb)"]
+    }
+  ],
+  "buscaIa": [
+    "artificial intelligence", "machine learning", "generative", "prompt", "deep learning",
+    "computer vision", "natural language processing", "chatbot", "neural network", "AI ethics",
+    "algorithmic bias", "synthetic media", "large language model", "data mining", "emergent technologies"
+  ]
+}
