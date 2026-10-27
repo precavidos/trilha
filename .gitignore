@@ -31,3 +31,6 @@ Thumbs.db
 
 # Configuração local do Claude Code (caminhos da máquina)
 .claude/
+
+# Rascunho do memorial (marcações de trabalho; não publicar)
+docs/memorial/

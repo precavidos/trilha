@@ -8,6 +8,7 @@
 
 2) Cada integrante preenche a sua coluna em rotulos.csv (avaliador_1, avaliador_2, avaliador_3)
    com: sim | parcial | nao — "a ementa contempla esta competência?". Sem conversar entre si.
+   Funciona com 2 ou 3 avaliadores (kappa de Cohen ou de Fleiss).
 
 3) Calcular os resultados:
     python -I data/scripts/validacao.py avaliar
@@ -93,50 +94,72 @@ def fleiss_kappa(linhas: list[list[str]]) -> float:
     return (p_bar - p_e) / (1 - p_e) if p_e < 1 else 1.0
 
 
+def cohen_kappa(pares: list[tuple[str, str]]) -> float:
+    n = len(pares)
+    concordancia = sum(1 for a, b in pares if a == b) / n
+    ca, cb = Counter(a for a, _ in pares), Counter(b for _, b in pares)
+    acaso = sum((ca[c] / n) * (cb[c] / n) for c in CATEGORIAS)
+    return (concordancia - acaso) / (1 - acaso) if acaso < 1 else 1.0
+
+
 def avaliar() -> None:
-    with ROTULOS.open(encoding="utf-8-sig") as f:
-        rotulos = {int(r["n"]): [r[a].strip().lower() for a in AVALIADORES] for r in csv.DictReader(f)}
+    existentes = set(json.loads(ANALISE.read_text(encoding="utf-8"))["competencias"])
     with GABARITO.open(encoding="utf-8-sig") as f:
-        sistema = {int(r["n"]): r["situacao_sistema"] for r in csv.DictReader(f)}
+        gabarito = {int(r["n"]): r for r in csv.DictReader(f)}
+    # Itens removidos na curadoria da Extensão IA saem do cálculo (ex.: ia-15).
+    removidos = sorted(n for n, r in gabarito.items() if r["id_competencia"] not in existentes)
+    sistema = {n: r["situacao_sistema"] for n, r in gabarito.items() if n not in removidos}
 
-    completos = {n: r for n, r in rotulos.items() if all(x in CATEGORIAS for x in r)}
-    faltando = len(rotulos) - len(completos)
-    if not completos:
-        sys.exit("Nenhuma linha com os três rótulos preenchidos (sim | parcial | nao).")
+    with ROTULOS.open(encoding="utf-8-sig") as f:
+        linhas = [r for r in csv.DictReader(f) if int(r["n"]) in sistema]
+    # Um avaliador conta quando preencheu todas as linhas válidas.
+    ativos = [a for a in AVALIADORES if all(r[a].strip().lower() in CATEGORIAS for r in linhas)]
+    if len(ativos) < 2:
+        sys.exit(f"São necessários pelo menos 2 avaliadores com todas as linhas preenchidas; completos: {ativos or 'nenhum'}.")
+    rotulos = {int(r["n"]): [r[a].strip().lower() for a in ativos] for r in linhas}
 
-    kappa = fleiss_kappa(list(completos.values()))
-    maioria = {}
-    for n, r in completos.items():
+    if len(ativos) == 2:
+        kappa_nome = "kappa de Cohen, 2 avaliadores"
+        kappa = cohen_kappa([(a, b) for a, b in rotulos.values()])
+    else:
+        kappa_nome = f"kappa de Fleiss, {len(ativos)} avaliadores"
+        kappa = fleiss_kappa(list(rotulos.values()))
+
+    # Referência: rótulo com maioria; sem maioria (divergência) conta como parcial.
+    referencia = {}
+    for n, r in rotulos.items():
         rotulo, votos = Counter(r).most_common(1)[0]
-        maioria[n] = rotulo if votos >= 2 else "parcial"  # empate 1-1-1 conta como parcial
+        referencia[n] = rotulo if votos > len(r) / 2 else "parcial"
 
     equivalente = {"COBERTA": "sim", "PARCIAL": "parcial", "LACUNA": "nao"}
-    acertos = sum(1 for n in maioria if equivalente[sistema[n]] == maioria[n])
-    linhas = []
+    acertos = sum(1 for n in referencia if equivalente[sistema[n]] == referencia[n])
+    tabela = []
     for s in ("COBERTA", "PARCIAL", "LACUNA"):
-        ns = [n for n in maioria if sistema[n] == s]
-        dist = Counter(maioria[n] for n in ns)
-        linhas.append(f"| {s} | {len(ns)} | {dist['sim']} | {dist['parcial']} | {dist['nao']} |")
-    cobertas = [n for n in maioria if sistema[n] == "COBERTA"]
-    lacunas = [n for n in maioria if sistema[n] == "LACUNA"]
-    prec_cob = sum(1 for n in cobertas if maioria[n] in ("sim", "parcial")) / len(cobertas) if cobertas else 0
-    prec_lac = sum(1 for n in lacunas if maioria[n] == "nao") / len(lacunas) if lacunas else 0
+        ns = [n for n in referencia if sistema[n] == s]
+        dist = Counter(referencia[n] for n in ns)
+        tabela.append(f"| {s} | {len(ns)} | {dist['sim']} | {dist['parcial']} | {dist['nao']} |")
+    cobertas = [n for n in referencia if sistema[n] == "COBERTA"]
+    lacunas = [n for n in referencia if sistema[n] == "LACUNA"]
+    prec_cob = sum(1 for n in cobertas if referencia[n] in ("sim", "parcial")) / len(cobertas) if cobertas else 0
+    prec_lac = sum(1 for n in lacunas if referencia[n] == "nao") / len(lacunas) if lacunas else 0
 
-    RESULTADO.write_text("\n".join([
+    RESULTADO.write_text(chr(10).join([
         "# Resultado da validação",
         "",
-        f"- Julgamentos com os três rótulos: **{len(completos)}**" + (f" ({faltando} incompletos ignorados)" if faltando else ""),
-        f"- Concordância entre avaliadores (kappa de Fleiss, 3 categorias): **{kappa:.2f}**",
-        f"- Acerto exato do sistema contra a maioria (3 categorias): **{acertos / len(maioria):.0%}**",
-        f"- Precisão de COBERTA (humanos dizem sim ou parcial): **{prec_cob:.0%}**",
-        f"- Precisão de LACUNA (humanos dizem não): **{prec_lac:.0%}**",
+        f"- Julgamentos avaliados: **{len(referencia)}**"
+        + (f" (excluídos por curadoria da Extensão IA: linha(s) {', '.join(map(str, removidos))})" if removidos else ""),
+        f"- Avaliadores: **{len(ativos)}** ({', '.join(ativos)})",
+        f"- Concordância entre avaliadores ({kappa_nome}, 3 categorias): **{kappa:.2f}**",
+        f"- Acerto exato do sistema contra a referência (3 categorias): **{acertos / len(referencia):.0%}**",
+        f"- Precisão de COBERTA (referência diz sim ou parcial): **{prec_cob:.0%}**",
+        f"- Precisão de LACUNA (referência diz não): **{prec_lac:.0%}**",
         "",
-        "| Situação do sistema | n | Maioria: sim | parcial | não |",
+        "| Situação do sistema | n | Referência: sim | parcial | não |",
         "|---|---|---|---|---|",
-        *linhas,
+        *tabela,
         "",
-        "Os rótulos são dos próprios integrantes da equipe, sem conhecer a situação calculada; "
-        "a maioria de votos é a referência (empate 1-1-1 conta como parcial).",
+        "Os rótulos são dos próprios integrantes da equipe, atribuídos sem conhecer a situação calculada. "
+        "A referência é o rótulo da maioria dos avaliadores; quando não há maioria, conta como parcial.",
         "",
     ]), encoding="utf-8")
     print(RESULTADO.read_text(encoding="utf-8"))

@@ -5,22 +5,32 @@
   "competencias": [
     {
       "id": "ia-01",
-      "rotulo": "Criação de imagens e ilustrações com IA generativa",
-      "descricao": "Usar modelos de geração de imagem para conceito, ilustração e variação visual, integrando o resultado a um processo de design com edição e direção de arte humanas.",
+      "rotulo": "Produção de conteúdo com IA generativa e engenharia de prompts",
+      "descricao": "Formular, testar e refinar instruções (prompts) para modelos generativos de imagem e de texto, usando os resultados em conceito, ilustração e variação visual dentro de um processo de design com edição e direção de arte humanas.",
       "profissoes": [
         "multimidia",
         "ux-ui",
-        "animacao"
+        "animacao",
+        "web",
+        "jogos",
+        "audiovisual"
       ],
       "termosDeBusca": [
+        "ChatGPT",
+        "DALL-E",
+        "engenharia de prompt",
+        "Firefly",
         "IA generativa",
         "Midjourney",
+        "prompt",
+        "prompt engineering",
         "Stable Diffusion",
-        "DALL-E",
-        "Firefly",
         "text-to-image"
       ],
-      "evidenciasNasVagas": []
+      "evidenciasNasVagas": [],
+      "fundidaCom": [
+        "ia-03"
+      ]
     },
     {
       "id": "ia-02",
@@ -36,26 +46,6 @@
         "AI prototyping",
         "v0",
         "UX com IA"
-      ],
-      "evidenciasNasVagas": []
-    },
-    {
-      "id": "ia-03",
-      "rotulo": "Engenharia de prompts para produção de conteúdo",
-      "descricao": "Formular, testar e versionar instruções para modelos de linguagem e de imagem de modo a obter resultados consistentes e verificáveis.",
-      "profissoes": [
-        "ux-ui",
-        "web",
-        "jogos",
-        "animacao",
-        "multimidia",
-        "audiovisual"
-      ],
-      "termosDeBusca": [
-        "prompt",
-        "engenharia de prompt",
-        "prompt engineering",
-        "ChatGPT"
       ],
       "evidenciasNasVagas": []
     },
@@ -238,23 +228,21 @@
         "texto alternativo automático"
       ],
       "evidenciasNasVagas": []
-    },
-    {
-      "id": "ia-15",
-      "rotulo": "Letramento em dados e avaliação de modelos",
-      "descricao": "Entender dados de treino, métricas e limitações de modelos para escolher, avaliar e explicar ferramentas de IA.",
-      "profissoes": [
-        "web",
-        "jogos",
-        "ux-ui"
-      ],
-      "termosDeBusca": [
-        "dados",
-        "métricas",
-        "avaliação de modelos",
-        "machine learning"
-      ],
-      "evidenciasNasVagas": []
     }
-  ]
+  ],
+  "curadoria": {
+    "decisoes": [
+      {
+        "id": "ia-03",
+        "decisao": "fundida em ia-01",
+        "data": "2026-10-27"
+      },
+      {
+        "id": "ia-15",
+        "decisao": "removida",
+        "data": "2026-10-27"
+      }
+    ],
+    "responsavel": "equipe Trilha"
+  }
 }

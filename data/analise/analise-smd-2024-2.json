@@ -705,9 +705,6 @@
       "competencia" : "ia-02",
       "relacao" : "transversal-ia"
     }, {
-      "competencia" : "ia-03",
-      "relacao" : "transversal-ia"
-    }, {
       "competencia" : "ia-10",
       "relacao" : "transversal-ia"
     }, {
@@ -715,9 +712,6 @@
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-14",
-      "relacao" : "transversal-ia"
-    }, {
-      "competencia" : "ia-15",
       "relacao" : "transversal-ia"
     } ]
   }, {
@@ -973,7 +967,7 @@
       "competencia" : "http://data.europa.eu/esco/skill/300d432b-f457-4cd3-9cb1-1858c7d14954",
       "relacao" : "opcional"
     }, {
-      "competencia" : "ia-03",
+      "competencia" : "ia-01",
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-05",
@@ -992,9 +986,6 @@
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-12",
-      "relacao" : "transversal-ia"
-    }, {
-      "competencia" : "ia-15",
       "relacao" : "transversal-ia"
     } ]
   }, {
@@ -1313,10 +1304,10 @@
       "competencia" : "http://data.europa.eu/esco/skill/e5d1f825-60ed-4bdd-872a-e748c387f777",
       "relacao" : "opcional"
     }, {
-      "competencia" : "ia-02",
+      "competencia" : "ia-01",
       "relacao" : "transversal-ia"
     }, {
-      "competencia" : "ia-03",
+      "competencia" : "ia-02",
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-08",
@@ -1332,9 +1323,6 @@
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-14",
-      "relacao" : "transversal-ia"
-    }, {
-      "competencia" : "ia-15",
       "relacao" : "transversal-ia"
     } ]
   }, {
@@ -1489,9 +1477,6 @@
       "relacao" : "opcional"
     }, {
       "competencia" : "ia-01",
-      "relacao" : "transversal-ia"
-    }, {
-      "competencia" : "ia-03",
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-05",
@@ -1822,9 +1807,6 @@
       "competencia" : "ia-01",
       "relacao" : "transversal-ia"
     }, {
-      "competencia" : "ia-03",
-      "relacao" : "transversal-ia"
-    }, {
       "competencia" : "ia-04",
       "relacao" : "transversal-ia"
     }, {
@@ -2009,7 +1991,7 @@
       "competencia" : "http://data.europa.eu/esco/skill/6451e645-67b5-4cc7-aafd-fab19629fa82",
       "relacao" : "opcional"
     }, {
-      "competencia" : "ia-03",
+      "competencia" : "ia-01",
       "relacao" : "transversal-ia"
     }, {
       "competencia" : "ia-04",
@@ -9481,28 +9463,28 @@
     },
     "ia-01" : {
       "id" : "ia-01",
-      "rotulo" : "Criação de imagens e ilustrações com IA generativa",
+      "rotulo" : "Produção de conteúdo com IA generativa e engenharia de prompts",
       "tipo" : "habilidade",
-      "descricao" : "Usar modelos de geração de imagem para conceito, ilustração e variação visual, integrando o resultado a um processo de design com edição e direção de arte humanas.",
+      "descricao" : "Formular, testar e refinar instruções (prompts) para modelos generativos de imagem e de texto, usando os resultados em conceito, ilustração e variação visual dentro de um processo de design com edição e direção de arte humanas.",
       "fonte" : "Extensão IA",
       "proximos" : [ {
         "codigo" : "SMD0089",
-        "similaridade" : 0.868
+        "similaridade" : 0.8681
       }, {
-        "codigo" : "SMD0015",
-        "similaridade" : 0.8655
+        "codigo" : "SMD0098",
+        "similaridade" : 0.8654
       }, {
-        "codigo" : "SMD0052",
-        "similaridade" : 0.8618
-      }, {
-        "codigo" : "SMD0034",
-        "similaridade" : 0.8616
+        "codigo" : "SMD0053",
+        "similaridade" : 0.8643
       }, {
         "codigo" : "SMD0117",
-        "similaridade" : 0.8615
+        "similaridade" : 0.8641
+      }, {
+        "codigo" : "SMD0052",
+        "similaridade" : 0.8633
       } ],
-      "media" : 0.8429,
-      "desvio" : 0.0133
+      "media" : 0.8449,
+      "desvio" : 0.0127
     },
     "ia-02" : {
       "id" : "ia-02",
@@ -9528,31 +9510,6 @@
       } ],
       "media" : 0.8384,
       "desvio" : 0.0144
-    },
-    "ia-03" : {
-      "id" : "ia-03",
-      "rotulo" : "Engenharia de prompts para produção de conteúdo",
-      "tipo" : "habilidade",
-      "descricao" : "Formular, testar e versionar instruções para modelos de linguagem e de imagem de modo a obter resultados consistentes e verificáveis.",
-      "fonte" : "Extensão IA",
-      "proximos" : [ {
-        "codigo" : "SMD0089",
-        "similaridade" : 0.8669
-      }, {
-        "codigo" : "SMD0143",
-        "similaridade" : 0.8654
-      }, {
-        "codigo" : "SMD0110",
-        "similaridade" : 0.8634
-      }, {
-        "codigo" : "SMD0052",
-        "similaridade" : 0.8624
-      }, {
-        "codigo" : "SMD0136",
-        "similaridade" : 0.8605
-      } ],
-      "media" : 0.8423,
-      "desvio" : 0.0133
     },
     "ia-04" : {
       "id" : "ia-04",
@@ -9828,34 +9785,9 @@
       } ],
       "media" : 0.8239,
       "desvio" : 0.0135
-    },
-    "ia-15" : {
-      "id" : "ia-15",
-      "rotulo" : "Letramento em dados e avaliação de modelos",
-      "tipo" : "habilidade",
-      "descricao" : "Entender dados de treino, métricas e limitações de modelos para escolher, avaliar e explicar ferramentas de IA.",
-      "fonte" : "Extensão IA",
-      "proximos" : [ {
-        "codigo" : "SMD0099",
-        "similaridade" : 0.8815
-      }, {
-        "codigo" : "SMD0089",
-        "similaridade" : 0.879
-      }, {
-        "codigo" : "SMD0034",
-        "similaridade" : 0.8762
-      }, {
-        "codigo" : "SMD0117",
-        "similaridade" : 0.8654
-      }, {
-        "codigo" : "SMD0015",
-        "similaridade" : 0.8637
-      } ],
-      "media" : 0.844,
-      "desvio" : 0.0152
     }
   },
-  "lenteIa" : [ "ia-01", "ia-02", "ia-03", "ia-04", "ia-05", "ia-06", "ia-07", "ia-08", "ia-09", "ia-10", "ia-11", "ia-12", "ia-13", "ia-14", "ia-15" ],
+  "lenteIa" : [ "ia-01", "ia-02", "ia-04", "ia-05", "ia-06", "ia-07", "ia-08", "ia-09", "ia-10", "ia-11", "ia-12", "ia-13", "ia-14" ],
   "bibliografia" : [ {
     "codigo" : "SMD0094",
     "nome" : "Introdução a Sistemas e Mídias Digitais",
