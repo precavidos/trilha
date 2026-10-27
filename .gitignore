@@ -34,3 +34,7 @@ Thumbs.db
 
 # Rascunho do memorial (marcações de trabalho; não publicar)
 docs/memorial/
+
+# Python
+__pycache__/
+*.pyc
