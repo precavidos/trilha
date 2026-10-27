@@ -71,6 +71,23 @@ Introdução e conclusão: a seis mãos. Capacidade estimada: ~1h/dia/pessoa (~4
 | 29/10 | Assinaturas digitais (gov.br) dos Anexos II, III, IV; montagem do PDF único (≤ 40 MB) |
 | **30/10 (sex)** | **Submissão** (o edital recomenda evitar as últimas 24 h; prazo final 31/10 23h59) |
 
+## Replanejamento de 27/10
+
+O projeto ficou parado entre 10 e 26/10 por pendências da universidade. Com o prazo final em 31/10, o escopo foi cortado:
+
+- **Entregue no protótipo:** fluxo da coordenação (lacunas por profissão-alvo, lente de IA, idade da bibliografia, painel "Por que isto?" com justificativa por RAG, página "Sobre a IA").
+- **Projetado, não implementado:** módulo discente (ADRs 0003 e 0009). Aparece na interface como "em desenvolvimento".
+- **Demanda de mercado:** competências essenciais e opcionais da ESCO, sem as vagas coletadas (ficam como trabalho futuro).
+- **Validação:** os três integrantes rotulam a mesma amostra de mapeamentos; o memorial reporta precisão e concordância, declarando que os rótulos são da própria equipe.
+- **Arquitetura:** análise pré-calculada, sem banco (ADR 0010).
+
+| Data | Marco |
+|---|---|
+| 27/10 | Backend, análise, dashboard |
+| 28/10 | Planilha de validação rotulada; rascunho do memorial |
+| 29/10 | Memorial revisado pela equipe; vídeo; assinaturas gov.br |
+| 30/10 | Repositório público; PDF único; envio |
+
 ## Validação
 
 - **Mapeamentos:** um tutor do GPT rotula ~50 mapeamentos (correto/incorreto). Reportar precisão; usar os rótulos para calibrar limiares de cobertura.

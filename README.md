@@ -5,7 +5,7 @@
 O Trilha confronta o Projeto Pedagógico de Curso (PPC) com as competências exigidas pelas profissões contemporâneas:
 
 - **Coordenação e NDE** veem as lacunas de competências do PPC por profissão-alvo (com uma lente transversal de IA) e a atualidade das bibliografias.
-- **Discentes** enviam o histórico do SIGAA e recebem uma recomendação de optativas e eletivas que respeita pré-requisitos, grupos de componentes e itinerários formativos.
+- **Discentes** *(em desenvolvimento)* enviarão o histórico do SIGAA e receberão uma recomendação de optativas e eletivas que respeita pré-requisitos, grupos de componentes e itinerários formativos.
 
 Toda conclusão vem com as evidências que a sustentam. O LLM nunca escolhe componentes, apenas redige justificativas a partir dessas evidências, e nenhum dado pessoal é enviado a ele.
 
@@ -22,19 +22,29 @@ Recorte atual: Sistemas e Mídias Digitais (Diurno), UFC. Projeto submetido ao P
 ```
 backend/    Spring Boot 4 · Java 21 · LangChain4j · PDFBox
 frontend/   Next.js 16 · TypeScript · Tailwind CSS
-data/       seed do PPC, vocabulário de competências, corpus de mercado (dados públicos)
+data/       seed do PPC, vocabulário de competências (ESCO + Extensão IA), análise pré-calculada
 docs/       plano, ADRs, edital
 ```
 
 ## Como rodar
 
-Pré-requisitos: Docker, Java 21, Node 22.
+Pré-requisitos: Java 21, Node 22. Uma chave gratuita do Google AI Studio é opcional: sem ela tudo funciona, e só as justificativas em linguagem natural ficam reduzidas à lista de evidências.
 
 ```bash
-cp .env.example .env          # preencha GEMINI_API_KEY
-docker compose up -d db       # PostgreSQL + pgvector
-cd backend && ./mvnw spring-boot:run
-cd frontend && npm install && npm run dev   # http://localhost:3000
+cp .env.example .env                          # preencha GEMINI_API_KEY
+cd backend && ./mvnw spring-boot:run          # API em http://localhost:8080
+cd frontend && npm install && npm run dev     # interface em http://localhost:3000
+```
+
+### Regerar a análise
+
+A análise fica pré-calculada em `data/analise/` (ADR 0010). Para regerá-la depois de mudar o PPC, a ESCO ou a Extensão IA:
+
+```bash
+mkdir -p models/multilingual-e5-small && cd models/multilingual-e5-small
+curl -LO https://huggingface.co/Xenova/multilingual-e5-small/resolve/main/onnx/model_quantized.onnx
+curl -LO https://huggingface.co/Xenova/multilingual-e5-small/resolve/main/tokenizer.json
+cd ../../backend && ./mvnw -q compile exec:java -Dexec.mainClass=br.ufc.trilha.analise.GerarAnalise
 ```
 
 ## Uso de IA generativa no desenvolvimento

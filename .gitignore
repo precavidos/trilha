@@ -28,3 +28,6 @@ models/
 *.iml
 .DS_Store
 Thumbs.db
+
+# Configuração local do Claude Code (caminhos da máquina)
+.claude/
