@@ -1,7 +1,7 @@
 {
   "metadados" : {
     "documento" : "PPC Sistemas e Mídias Digitais Diurno 2024.2 (mod. PROGRAD)",
-    "vocabulario" : "ESCO v1.2.1 + Extensão IA (proposta)",
+    "vocabulario" : "ESCO v1.2.1 + Extensão IA (curada)",
     "modeloDeEmbeddings" : "intfloat/multilingual-e5-small (ONNX quantizado, Xenova)",
     "geradoEm" : "2026-10-27",
     "anoDeReferencia" : 2026
