@@ -54,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </nav>
           </div>
         </header>
-        <main id="conteudo" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
+        <main id="conteudo" className="mx-auto w-full min-w-0 max-w-5xl flex-1 px-4 py-8">
           {children}
         </main>
         <footer className="border-t border-border">

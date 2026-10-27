@@ -1,18 +1,9 @@
 spring:
   application:
     name: trilha-backend
-  datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/trilha}
-    username: ${DB_USER:trilha}
-    password: ${DB_PASSWORD:trilha}
-  jpa:
-    open-in-view: false
-    hibernate:
-      ddl-auto: validate
-  servlet:
-    multipart:
-      max-file-size: 20MB
-      max-request-size: 20MB
+  # Lê GEMINI_API_KEY etc. do .env na raiz do repositório, se existir.
+  config:
+    import: optional:file:../.env[.properties]
 
 management:
   endpoints:
@@ -20,13 +11,22 @@ management:
       exposure:
         include: health,info
 
-# Provedor de LLM trocado por configuração (ADR 0005).
 trilha:
+  dados:
+    analise: ${TRILHA_ANALISE:../data/analise/analise-smd-2024-2.json}
+  # Classificação de cobertura (ADR 0010). "escore" = (similaridade − média) / desvio da competência.
+  # Calibrados por inspeção da distribuição; a validação com rótulos humanos mede a precisão.
+  limiares:
+    coberta-similaridade: 0.89
+    coberta-escore: 2.8
+    parcial-similaridade: 0.88
+    parcial-escore: 2.4
+  # Provedor de LLM trocado por configuração (ADR 0005).
   llm:
     provider: ${LLM_PROVIDER:gemini}        # gemini | ollama
     gemini:
       api-key: ${GEMINI_API_KEY:}
-      model: ${GEMINI_MODEL:gemini-2.5-flash}
+      model: ${GEMINI_MODEL:gemini-3.5-flash}
     ollama:
       base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
       model: ${OLLAMA_MODEL:qwen2.5:3b}
