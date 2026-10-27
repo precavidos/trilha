@@ -22,5 +22,7 @@ SOFTWARE.
 
 ---
 
-Dados derivados em `data/` (seed do PPC, mapeamentos, Extensão IA) são
-licenciados sob CC BY 4.0. A taxonomia ESCO é © União Europeia, CC BY 4.0.
+Dados derivados em `data/` (estrutura do seed, mapeamentos, Extensão IA) são
+licenciados sob CC BY 4.0. O texto de ementas e bibliografias reproduzido no
+seed vem do PPC, documento institucional público da UFC. A taxonomia ESCO é
+© União Europeia, CC BY 4.0.

@@ -1,0 +1,2259 @@
+{
+  "documento" : "PPC Sistemas e Mídias Digitais Diurno 2024.2 (mod. PROGRAD)",
+  "componentes" : [ {
+    "codigo" : "SMD0094",
+    "nome" : "Introdução a Sistemas e Mídias Digitais",
+    "ementa" : "Introdução à mídia digital. Fundamentos da comunicação e mídias digitais. Convergência de mídias. Entretenimento digital e jogos eletrônicos. Cadeia produtiva de mídia digital interativa: etapas, processos, técnicas, profissionais, equipes e produtos. Aspectos psicológicos e comportamento do usuário em produtos multimídia.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "LI, Ze-Nian; DREW, Mark S. 2nd ed. (língua inglesa). New York: Springer International, [2014]. xxiv, 727 p. (Texts in computer science). ISBN 9783319052892 (broch.)",
+      "ano" : 2014
+    }, {
+      "texto" : "CHEOK, Adrian David; SPRINGERLINK (ONLINE SERVICE). Art and Technology of Entertainment Computing and Communication : Advances in Interactive New Media for Entertainment Computing . Springer eBooks XVIII, 303p. 133 illus., 109 illus. in color ISBN 9781849961370.",
+      "ano" : null
+    }, {
+      "texto" : "SCHELL, Jesse. A arte de game design: o livro original . Rio de Janeiro: Elsevier, 2011. xxvii, 489 p. (Série Media technology). ISBN 9788535241983.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "PIZZOTTI, Ricardo. Enciclopédia Básica da Mídia Eletrônica‎. Editora SENAC. 1ª Edição. 2003. ISBN: 8573593229.",
+      "ano" : 2003
+    }, {
+      "texto" : "BERTOMEU, João Vicente Cegato. Criação Visual e Multimídia. Editora Cengage Learning. 1ª Edição. 2009. ISBN: 852210638X.",
+      "ano" : 2009
+    }, {
+      "texto" : "LEÃO, Lúcia. O Chip e o Caleidoscópio: Reflexões sobre as Novas Mídias‎. Editora SENAC São Paulo. 1ª Edição. 2005. ISBN: 8573594209.",
+      "ano" : 2005
+    }, {
+      "texto" : "SAVAGE, T. M; VOGEL, K. E. An introduction to digital multimedia. Massachusetts: Jones and Bartlett, c2009. viii 335 p., [16] p. de lâms. ISBN 9780763750527 (broch.). Multimedia Interaction and Intelligent User Interfaces [electronic resource] : Principles, Methods and Applications / 2010 - ( Livros )",
+      "ano" : 2010
+    } ]
+  }, {
+    "codigo" : "SMD0091",
+    "nome" : "História do Design",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0088",
+    "nome" : "Autoração Multimídia I",
+    "ementa" : "Imagem estática bitmap: seleção, recorte, tratamento, colorização e filtragem. Imagem estática vetorial: primitivas gráficas e suas propriedades, introdução à ilustração digital e técnica de vetorização. Imagem animada: animação quadro a quadro, animação por interpolação de posição, rotação, escala e forma. Imagem interativa: componentes interativos e programação de resposta a eventos.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "CATES, Stacy; ABRAMS, Simon; MOUGHAMIAN, Dan. Photoshop CS4 Bible. Editora Wiley. 2009. ISBN: 0470345179.",
+      "ano" : 2009
+    }, {
+      "texto" : "GROVER, Chris; VEER, E. A. Vander. Flash CS4: O Manual que Faltava. 1ª edição. 2009. Universo dos Livros / Digerati Books. 2009. ISBN: 8578730534.",
+      "ano" : 2009
+    }, {
+      "texto" : "ADOBE CREATIVE TEAM. Adobe Photoshop CS4. Editora Bookman. 1ª edição. 2009. ISBN: 8577805468",
+      "ano" : 2009
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "CAPLIN, Steve. Como Enganar com Photoshop - Crie Fotomontagens com o Photoshop. Editora Campus. 1ª Edição. 2006. ISBN: 8535221875.",
+      "ano" : 2006
+    }, {
+      "texto" : "GEORGENES, Chris. How to Cheat in Adobe Flash CS4: The Art of Design and Animation. Focal Press. 2009. ISBN: 0240521315.",
+      "ano" : 2009
+    }, {
+      "texto" : "REINHARDT, Robert; DOWD, Snow. Flash CS4 Professional Bible. Wiley. 1ª Edição. 2009. ISBN: 0470379189.",
+      "ano" : 2009
+    }, {
+      "texto" : "WILLIAMS, Richard. The animator’s survival kit. Expanded ed. London: Faber and Faber, 2009. x, 382 p. + 1 videodisc (DVD : sd., col. ; 4 3/4 in.) ISBN 0571238343 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "SAMMON, Rick. Rick Sammon's Complete Guide to Digital Photography 2.0. W.W. NORTON & CO. 2ª Edição. 2007. ISBN: 0393329143.",
+      "ano" : 2007
+    } ]
+  }, {
+    "codigo" : "SMD0095",
+    "nome" : "Programação I",
+    "ementa" : "Conceitos de linguagens de programação. Apresentação das ferramentas de programação voltadas para a área de Mídias Digitais. Conceitos e estruturas básicas de Algoritmos. Introdução aos paradigmas de programação: linguagens estruturadas e orientadas a objetos. Orientação a Objetos: Classe, Objeto, Atributos, Eventos/Métodos e encapsulamento. Programação de algoritmos utilizando de uma linguagem em pseudocódigo ou visual (Visual Programming Language - VPL). Problemas formais e resolução de problemas. Estruturas condicionais e de repetições. Variáveis compostas homogêneas unidimensionais (Vetores ou Listas). Prática direcionada à área de Mídias Digitais através da construção de aplicações multimídia.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "MANZANO, José Augusto N. G.; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 29. ed. São Paulo: Érica, 2019. 368 p. ISBN 978-85-365-3145-8.",
+      "ano" : 2019
+    }, {
+      "texto" : "SEBESTA, Robert W. Conceitos de linguagens de programação. 9. ed. Porto Alegre: Bookman, 2011. ix, 792 p. ISBN 9788577807918 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "ASCENCIO, Ana Fernanda Gomes; CAMPOS, Edilene Aparecida Veneruchi de. Fundamentos da programação de computadores: algoritmos, Pascal, C/C++ (padrão ANSI) e Java. 3. ed. São Paulo: Pearson Education do Brasil, c2012. x, 569 p. ISBN 978-85-64574-16-8.",
+      "ano" : 2012
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ZIVIANI, Nivio. Projetos de Algoritmos – Com Implementações em Pascal e C. 2ª Edição. Pioneira Informática, São Paulo, 2004. ISBN: 8522103909.",
+      "ano" : 2004
+    }, {
+      "texto" : "FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados com aplicações em Python. 4. ed. Porto Alegre: Pearson: Bookman, 2022. xxiv, 305 p. ISBN 978-85-8260-572-1.",
+      "ano" : 2022
+    }, {
+      "texto" : "FORBELLONE, A. L. V.; EBERSPRACHER, H. F. Lógica de Programação: a Construção de Algoritmos e Estrutura de dados. 3. ed. São Paulo: Makron Books, 2005. ISBN: 8576050242.",
+      "ano" : 2005
+    }, {
+      "texto" : "SANTOS, Rafael. Introdução à programação orientada a objetos usando Java. 2. ed. Rio de Janeiro Elsevier: Campus, c2013. xxii, 313 p. ISBN 9788535274332.",
+      "ano" : 2013
+    }, {
+      "texto" : "SCHILDT, Herbert; SKRIEN, Dale. Programação com Java: uma introdução abrangente. Porto Alegre: AMGH, 2013. xxiv, 1128 p. ISBN 9788580552676.",
+      "ano" : 2013
+    } ]
+  }, {
+    "codigo" : "SMD0089",
+    "nome" : "Desenho I",
+    "ementa" : "Introdução ao desenho. Desenho linear. Desenho tonal. Exercícios práticos.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "HALLAWELL, Philip. À mão livre: a linguagem do desenho. São Paulo: Melhoramentos, 1994.",
+      "ano" : 1994
+    }, {
+      "texto" : "MARTÍN, Gabriel. Fundamentos do desenho artístico: aula de desenho . São Paulo, SP: Martins Fontes, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "MATERIAIS e técnicas: guia completo . São Paulo, SP: Martins Fontes, 2008.",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ARHEIM, Rudolf. Arte e percepção visual: uma psicologia criadora: nova versão. São Paulo: Cengage Learning, 2015.",
+      "ano" : 2015
+    }, {
+      "texto" : "SAUSMAREZ, Maurice de. Basic design: the dynamics of visual form. Nova York: Reinhold Book, c1964.",
+      "ano" : 1964
+    }, {
+      "texto" : "WONG, Wucius. Princípios de Forma e Desenho. São Paulo: Martins Fontes, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "MENEGOTTO, José Luis; ARAUJO, Tereza Cristina Malveira de. O desenho digital: técnica & arte. Rio de Janeiro: Interciência, 2000. 136 p. ISBN 8571930392 (broch.).",
+      "ano" : 2000
+    }, {
+      "texto" : "PIPES, Alan. Desenho para designers: habilidades de desenho, esboços de conceitos, design auxiliado por computador, ilustração, ferramentas e materiais, apresentações, técnicas de produção . [São Paulo]: Blucher, 2010. 223 p. ISBN 9788521205081.",
+      "ano" : 2010
+    } ]
+  }, {
+    "codigo" : "SMD0132",
+    "nome" : "Cognição e Tecnologias Digitais",
+    "ementa" : "Conceito de Cognição. Processos cognitivos. Relação entre cognição e tecnologias digitais ao longo da história humana. Principais teorias do desenvolvimento cognitivo: Behaviorismo, Gestalt e Teoria Sociocultural. Produção de mídias digitais com base nas teorias da cognição.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "BOCK, A M. B., FURTADO, O. TEIXEIRA, M. L. Psicologias: Uma Introdução ao Estudo de Psicologia. São Paulo: Saraiva, 16ª edição, 2023.",
+      "ano" : 2023
+    }, {
+      "texto" : "GOMES FILHO, J. Gestalt do Objeto. Editora Escrituras, 9ª edição 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "OLIVEIRA, Marta Kohl de. Vigotsky: aprendizado e desenvolvimento: um processo sócio-histórico . ed. São Paulo, SP: Scipione, 1997.",
+      "ano" : 1997
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "REGIS, Fátima; ORTIZ, Anderson; AFFONSO, Luiz Carlos e TIMPONI, Raquel. Tecnologias de Comunicação e Cognição. Porto Alegre: Sulina, 2013.",
+      "ano" : 2013
+    }, {
+      "texto" : "DAVIDOFF, L.L. Introdução à Psicologia. São Paulo: Makron Books, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "GARDENFORS, P.; JOHANSSON, P. Cognition, Education and Communication Technology. New Jersey: Lawrence Erlbaum Associates, Inc, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "KERBAURY, R.R.; WIELENSKA, R. C. Sobre comportamento e cognição: psicologia comportamental e cognitiva da reflexão teórica à diversidade na aplicação. Santo André, SP: ESETec, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "PRIMO, A. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre, RS: Sulina, 2011.",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0150",
+    "nome" : "Gestão de Projetos Multimídia",
+    "ementa" : "Introdução a Gestão de Projetos. Características dos Projetos Multimídia. Modelos de Projetos Multimídia. Os Profissionais envolvidos em Projetos Multimídia. Ciclo de Vida de Projetos Multimídia. Gerenciamento da Equipe. Gerenciamento do Cronograma. Gerenciamento dos Riscos. Gerenciamento da Qualidade. Plano de Comunicação. Implantação e Pesquisa de Opinião com o Cliente. Ferramentas de Acompanhamento. Economia Criativa. Elaboração de Plano de Negócio.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "ROZENFELD, Henrique. Gestão de desenvolvimento de produtos: uma referência para a melhoria do processo . São Paulo: Saraiva, 2006. xxvii, 542 p. ISBN 978-02-05446-2 (broch.).",
+      "ano" : 2006
+    }, {
+      "texto" : "LEITE, Heymann A.R. Gestão de projeto do produto: a excelência da indústria automotiva. São Paulo, SP: Atlas, 2007. 311 p. ISBN 9788522448869 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "BAXTER, Mike. Projeto de produto: guia prático para o design de novos produtos. 3. ed. São Paulo, SP: Blucher, 2011. 342 p.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "MAXIMIANO, Antonio Cesar Amaru. Administração de projetos: como transformar idéias em resultados. 4. ed. São Paulo: Atlas, 2010. xxiii, 396 p. ISBN 9788522450046 (broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "LI, Ze-Nian; DREW, Mark S. Fundamentals of multimedia. Upper Saddle River: Pearson Prentice Hall, c2004. xvi, 560 p. ISBN 0-13-061872-1 (enc.).",
+      "ano" : 2004
+    }, {
+      "texto" : "SAVAGE, T. M; VOGEL, K. E. An introduction to digital multimedia. Massachusetts: Jones and Bartlett, c2009. viii 335 p., [16] p. de lâms. ISBN 9780763750527 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "MARTINS, José Carlos Cordeiro. Técnicas para gerenciamento de projetos de software. Rio de Janeiro: Brasport, c2007. xviii, 432p. ISBN 9788574523088 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "DORNELAS, Jose Carlos Assis. Empreendedorismo: transformando ideias em negócios . 4. ed. rev. atual. Rio de Janeiro: Elsevier, 2012. xviii, 260 p. ISBN 9788535247589 (broch.).",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0136",
+    "nome" : "Comunicação Visual I",
+    "ementa" : "Conceitos e elementos da Comunicação Visual: elementos e propriedades gráficas e níveis da linguagem visual. Teoria da Gestalt aplicada à comunicação visual. Técnicas básicas de composição visual e layout. Princípios de design gráfico. Tipografia e harmonias cromáticas. Estudos de caso, criação e exposição de peças.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "DONDIS, D. A. Sintaxe da Linguagem Visual. Martis Editora, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "WILLIAMS, R. Design para Quem não é Designer. 2ª Edição. Callis, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole,. Novos fundamentos do design. São Paulo, SP: Cosac Naify.",
+      "ano" : null
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "GOMES FILHO, João. Gestalt do objeto: sistema de leitura visual da forma. 8. ed. São Paulo: Escrituras, 2008.",
+      "ano" : 2008
+    }, {
+      "texto" : "SANTAELLA, Lúcia. Leitura de imagens. São Paulo, SP: Melhoramentos, 2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "ROJO, J. Design Digital. Edições Rosari, 2008.",
+      "ano" : 2008
+    }, {
+      "texto" : "SAMARA, T. Making and Breaking the Grid. Rockport Publishers, 2005. GRIDS: soluções criativas para designers gráficos. Porto Alegre: Bookman, 2009.",
+      "ano" : 2009
+    } ]
+  }, {
+    "codigo" : "SMD0137",
+    "nome" : "Programação II",
+    "ementa" : "Funções: declaração, hoisting, atribuição, adição a objetos, parâmetros e retorno. Arrays: unidimensionais, multidimensionais, de objetos. Manipulação de strings. Introdução à Programação Orientada a Objetos: encapsulamento, abstração, herança e polimorfismo. Pensamento computacional: recursão, algoritmos de ordenação e busca. Introdução a estruturas de dados: conceitualização de pilhas, filas, listas, etc (não inclui a própria implementação dessas estruturas).",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "FORBELLONE, André L. V.; EBERSPACHER, Henri F. Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados. 3 a. Edição. ISBN: 8576050242. São Paulo: Makron Books, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "DEITEL et al. C# Como Programar. 1a Edição, ISBN: 9788534614597, Editora Pearson, 2003.",
+      "ano" : 2003
+    }, {
+      "texto" : "SILVA, Flávio S. C. da; FINGER, Marcelo; MELO, Ana C. V. Lógica para Computação. ISBN: 85-221-0517-0. São Paulo: Thomson Learning, 2006.",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "MANZANO, J. A. e OLIVEIRA, J. F.; Estudo Dirigido de Algoritmos. 4ª Edição. Érica, 2001. ISBN: 857194413X.",
+      "ano" : 2001
+    }, {
+      "texto" : "ASCENCIO, Ana Fernanda Gomes; CAMPOS, Edilene Aparecida Veneruchi de. Fundamentos da Programação de Computadores. Editora Prentice Hall - BR. 2012. ISBN 9788564574168.",
+      "ano" : 2012
+    }, {
+      "texto" : "ZIVIANI, Nivio. Projetos de Algoritmos – Com Implementações em Pascal e C. 2ª Edição. Pioneira Informática, São Paulo, 2004. ISBN: 8522103909.",
+      "ano" : 2004
+    }, {
+      "texto" : "DASGUPTA, Sanjoy; PAPADIMITRIOU, Christos H.; VAZIRANI, Umesh. Algoritmos. São Paulo: McGraw-Hill, c2009. xiv, 320 p. ISBN 978-85-7726-032-4.",
+      "ano" : 2009
+    }, {
+      "texto" : "FEOFILOFF, Paulo. Algoritmos em linguagem C. Rio de Janeiro: Elsevier, c2009.",
+      "ano" : 2009
+    } ]
+  }, {
+    "codigo" : "SMD0138",
+    "nome" : "Narrativas Multimídia",
+    "ementa" : "O que é narrativa. Elementos da narrativa: tema, premissa, fio da história, personagem entre outros. Estruturas de narrativas: jornada do herói e outras estruturas. Roteiro e suas características a partir da mídia destino. Storyboard e storyreel. Gêneros. Narrativas não-lineares. Desenvolver um recurso multimídia.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "COMPARATO, Doc. Da Criação ao Roteiro: Teoria e Prática. 2.ed. rev., atual. e ampl. São Paulo, SP: Summus, 2009. 494 p. (Biblioteca fundamental de cinema; 4). ISBN 9788532305404 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "FIELD, Syd. Roteiro: os Fundamentos do Roteirismo. Curitiba, PR: Arte &amp; Letra, 2009. 332p. ISBN 9788560499175 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "MCKEE, Robert. Story: Substância, Estrutura, Estilo e os Princípios da Escrita de Roteiros. Curitiba, PR: Arte &amp; Letra, 2006. 430 p. ISBN 9788560499007 (broch.).",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "CAMPBELL, Joseph. O Herói de Mil Faces. São Paulo, SP: Pensamento, 1989. 414 p. ISBN 9788531502941 (broch.)",
+      "ano" : 1989
+    }, {
+      "texto" : "MURRAY, Janet Horowitz. Hamlet no Holodeck: o futuro da narrativa no ciberespaço. São Paulo: Ed. UNESP: Itaú Cultural, 2003. 282 p. ISBN 8571394962 (broch.).",
+      "ano" : 2003
+    }, {
+      "texto" : "PROPP, V. Ia.; MELETÍNSKII, E. M.; LEVI-STRAUSS, Claude. Morfologia do Conto Maravilhoso. 2. ed. Rio de Janeiro, RJ: Forense-Universitária, 2010. 257 p. ISBN 9788521803546 (broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "PERRONI, Maria Cecilia. Desenvolvimento do Discurso Narrativo. Sao Paulo: M. Fontes, 1992. 247p. (Texto e linguagem). ISBN 8533600488.",
+      "ano" : 1992
+    }, {
+      "texto" : "TODOROV, Tzvetan; PERRONE-MOISÉS, Leyla. As Estruturas Narrativas. São Paulo, SP: Perspectiva, 2006.",
+      "ano" : 2006
+    } ]
+  }, {
+    "codigo" : "SMD0108",
+    "nome" : "Interação Humano Computador I",
+    "ementa" : "Introdução a Interação Humano-Computador.. Fatores Humanos em Interação Humano-Computador. Análise e reflexão sobre Design. Design de Interação. Métodos e Técnicas de Coleta, Análise e Avaliação de IHC. Projeto Final.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "BARBOSA, S. D. J.; SILVA B. S. DA; Interação Humano-Computador. Elsevier Editora Ltda, 2010. ISBN: 978-85-352-3418-3.",
+      "ano" : 2010
+    }, {
+      "texto" : "NIELSEN, Jakob, |. Usabilidade na web. Rio de Janeiro, RJ: Elsevier, 2007. xxiv, 406 p. ISBN 9788535221909",
+      "ano" : 2007
+    }, {
+      "texto" : "ROGERS, Yvonne; SHARP, Helen; PREECE, Jennifer. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.",
+      "ano" : 2013
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "DIAS, Claudia. Usabilidade na Web. Editora Alta Books, ISBN:8576081407, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "KRUG, Steve. Não me faça pensar: uma abordagem de bom senso a usabilidade na web. Rio de Janeiro: Alta Books, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "KALBACH, James. Design de navegação web: otimizando experiência do usuário. Porto Alegre: Bookman, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "OLIVEIRA NETTO, Alvim. IHC: modelagem e gerência de interfaces com o usuário. Florianópolis: Visual Books, 2004.",
+      "ano" : 2004
+    }, {
+      "texto" : "PRIMO, Alex. Interação Mediada por Computador. Editora Sulina, ISBN: 8520504655, 2007.",
+      "ano" : 2007
+    } ]
+  }, {
+    "codigo" : "SMD0109",
+    "nome" : "Introdução a Cibercultura",
+    "ementa" : "A Sociedade da Informação. As tecnologias da informação e da comunicação e a sociedade: aspectos econômicos, políticos, educacionais e sociais. Ciberespaço e interatividade - a cultura do compartilhamento: as redes sociais virtuais. Internet: informação, diversão e interação: a indústria do entretenimento. Liberdade e Privacidade na Internet. Novas tecnologias, novas mídias.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "LÉVY, Pierre. Cibercultura. 3. ed. São Paulo, SP: Editora 34, 2010. 271 p. (Coleção Trans).",
+      "ano" : 2010
+    }, {
+      "texto" : "SANTAELLA, Lúcia; FEITOZA, Mirna (Org). Mapa do jogo: a diversidade cultural dos games. São Paulo: Cengage Learning, c2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "LEMOS, André. Cibercultura: tecnologia e vida social na cultura contemporânea. 5. ed. Porto Alegre: Sulina, 2010.",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "FERNANDES, Adriana Hoffmann; DINIZ, Lucy Anna. Cibercultura e redes sociais: o acesso e a conexão definem as práticas das juventudes? Revista Passagens : Revista do Programa de Pós-Graduação em Comunicação da Universidade Federal do Ceará, Fortaleza, v. 7, n. 1, p. 82-98, jan./abr. 2016. Disponível em: http://www.repositoriobib.ufc.br/000055/00005585.pdf CASTELLS, Manuel. A sociedade em rede. Rio de Janeiro: Paz e Terra, 1999. xxx, 698 p. (Era da informação: economia, sociedade e cutura ; v. 1).",
+      "ano" : 1999
+    }, {
+      "texto" : "RECUERO, Raquel. Redes sociais na internet. 2. ed., rev.amp. Porto Alegre: Sulina, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "SILVEIRA, Sérgio Amadeu da (org.). Cidadania e redes digitais = citizenship and digital networks . 1. ed. São Paulo: CGI.br, 2010. 247 p.",
+      "ano" : 2010
+    }, {
+      "texto" : "PRIMO, Alex. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre, RS: Sulina, 2011. 239 p.",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0097",
+    "nome" : "Autoração Multimídia II",
+    "ementa" : "Técnicas de animação digital: princípios e técnicas básicos, geração de clips de filme e sonorização. Técnicas de interatividade digital: geração e programação de elementos interativos. Publicação/disponibilização de aplicação final. Integração de mídia externa, geração de bibliotecas e uso de componentes. Desenvolvimento de projeto final.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "WILLIAMS, Robin. Design para quem nao é designer: noções básicas de planejamento visual. 3. ed. São Paulo: Callis, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "KRUG, Steve. Não me faça pensar! uma abordagem de bom senso à usabilidade na WEB. 2. ed. Rio de Janeiro: Alta Books, 2008. xv, 201 p.",
+      "ano" : 2008
+    }, {
+      "texto" : "FREEMAN, Elisabeth & FREEMAN, Eric. Use a cabeça! HTML com CSS e XHTML. 2ª Ed. Rio de Janeiro: Alta Books, 2008.",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "DIAS, Cláudia. Usabilidade na web: criando portais mais acessíveis. 2. ed. Rio de Janeiro: Alta Books, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "KALBACH, James. Design de navegação web: otimizando experiência do usuário. Porto Alegre : Bookman, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "SILVA, Maurício Samy. CSS3: desenvolva aplicações web profissionais com uso dos poderosos recursos de estilização das CSS3. São Paulo: Novatec, 2011. 494 p.",
+      "ano" : 2011
+    }, {
+      "texto" : "MEYER, Jeannie. The Essential Guide to HTML5 [electronic resource] : Using Games to Learn HTML5 and JavaScript. XIV, 361 p. online resource.",
+      "ano" : null
+    }, {
+      "texto" : "SILVA, Maurício Samy. HTML 5: a linguagem de marcação que revolucionou a web. São Paulo: Novatec, 2011. 320 p.",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0015",
+    "nome" : "Design de Interfaces Gráficas",
+    "ementa" : "Introdução às Interfaces Gráficas. Design Gráfico Aplicado às GUI. Tecnologias de Interfaces Gráficas. Interfaces Gráficas em Sistemas Multimídia. Interfaces Gráficas em Sistemas Embarcados. Avaliação e Testes. Estudo de Caso.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "GALITZ, W. O. The Essential Guide to User Interface Design: An Introduction to GUI Design Principles and Techniques. 3ª. Edição, John Wiley & Sons, ISBN-10: 0470053423, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "ROGERS, Yvonne; SHARP, Helen; PREECE, Jennifer. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.",
+      "ano" : 2013
+    }, {
+      "texto" : "PRIMO, Alex. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre, RS: Sulina, 2011. 239 p.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole. Novos fundamentos do design. São Paulo: Cosac Naify, 2008.",
+      "ano" : 2008
+    }, {
+      "texto" : "SCOTT, Bill; NEIL, Theresa. Designing web interfaces: Bill Scott and Theresa Neil. Pequim: O´Reilly, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "KALBACH, James. Design de navegação web: otimizando experiência do usuário. Porto Alegre: Bookman, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "NIELSEN, Jakob. Usabilidade na web. Rio de Janeiro, RJ: Elsevier, 2007. xxiv, 406 p. ISBN 9788535221909",
+      "ano" : 2007
+    }, {
+      "texto" : "KRUG, Steve. Não me faça pensar: uma abordagem de bom senso a usabilidade na web. Rio de Janeiro: Alta Books, 2006.",
+      "ano" : 2006
+    } ]
+  }, {
+    "codigo" : "SMD0139",
+    "nome" : "Matemática Aplicada a Multimídia I",
+    "ementa" : "Matemática aplicada a multimídia: particularidades e aplicações. O paralelo entre funções matemáticas e computacionais e seus usos em sistemas interativos. Considerações sobre geometria e o estabelecimento de elementos gráficos (simples e compostos) estáticos e animados em telas. A teoria os conjuntos como base para os sistemas de cores digitais e operações de filtragem de imagens digitais e de geração de efeitos visuais. Geração, análise estatística básica e representação de dados seriados diversos, incluindo imagens. Acompanhamento/orientação para o trabalho de extensão, envolvendo o desenvolvimento de conteúdos para publicação em plataformas de acesso livre.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "IEZZI, Gelson; MURAKAMI, Carlos. Fundamentos de matemática elementar: 1 : conjuntos, funções. 9. ed. São Paulo: Atual, 2013. 410 p. ISBN 9788535716801 (broch.).",
+      "ano" : 2013
+    }, {
+      "texto" : "SANTOS, Fabiano J.; FERREIRA, Silvimar F. Geometria analítica. Grupo A, 2009. E-book. ISBN 9788577805037. Disponível em: https://app.minhabiblioteca.com.br/#/books/9788577805037/. Acesso em: 16 jun. 2023.",
+      "ano" : 2009
+    }, {
+      "texto" : "SAMARA, Timothy. Elementos do design: guia de estilo gráfico. Porto Alegre: Bookman, 2010. 272p. ISBN 9788577805846 (Broch.).",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "GONZALEZ, Rafael C.; WOODS, Richard E. Digital Image Processing. 3rd ed. Upper Saddle River, New Jersey: Pearson Prentice Hall, 2008. 954 p. ISBN 013168728X (enc.)",
+      "ano" : 2008
+    }, {
+      "texto" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole. Novos fundamentos do design. São Paulo: Cosac Naify, 2008. 245,[2]p. ISBN 9788575032398 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "MATTOS, Viviane Leite Dias de; AZAMBUJA, Ana Maria Volkmer de; KONRATH, Andréa C. Introdução à Estatística - Aplicações em Ciências Exatas. Grupo GEN, 2017. E-book. ISBN 9788521633556. Disponível em: https://app.minhabiblioteca.com.br/#/books/9788521633556/. Acesso em: 16 jun. 2023.",
+      "ano" : 2017
+    }, {
+      "texto" : "PEDROSA, Israel. Da cor à cor inexistente. 10. ed. Rio de Janeiro: SENAC, Departamento Nacional, 2009. 254 p. ISBN 9788574582672 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "FILHO, Dirceu Z. Matemática e Arte. Grupo Autêntica, 2013. E-book. ISBN 9788582172032. Disponível em: https://app.minhabiblioteca.com.br/#/books/9788582172032/. Acesso em: 16 jun. 2023.",
+      "ano" : 2013
+    } ]
+  }, {
+    "codigo" : "SMD0140",
+    "nome" : "Projeto Integrado I",
+    "ementa" : "Definição de características iniciais do produto multimídia de complexidade baixa. Estabelecimento de metodologia de desenvolvimento. Geração de produto, de acordo com a metodologia previamente adotada. Apresentação e discussão de resultados intermediários e finais.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "CATES, Stacy; ABRAMS, Simon; MOUGHAMIAN, Dan. Photoshop CS4 Bible. Editora Wiley. 2009. ISBN: 0470345179.",
+      "ano" : 2009
+    }, {
+      "texto" : "GROVER, Chris; VEER, E. A. Vander. Flash CS4: O Manual que Faltava. 1ª edição. 2009. Universo dos Livros/Digerati Books. 2009. ISBN: 8578730534.",
+      "ano" : 2009
+    }, {
+      "texto" : "PRIMO, Alex. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre: Sulina, 2011. 239 p. (Cibercultura). ISBN 9788520504659 (broch.).",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ALAVA, S. Ciberespaço e formações abertas. Rumo a novas práticas educacionais. Porto Alegre: Artmed, 2002.",
+      "ano" : 2002
+    }, {
+      "texto" : "DROTNER, Kirsten; SCHRODER, Kim Christian. Digital content creation: perceptions, practices, and perspectives. New York: Peter Lang, 2010. 323 p. (New literacies and digital epistemologies; 46). ISBN 9781433106965.",
+      "ano" : 2010
+    }, {
+      "texto" : "AMBROSE, Gavin; HARRIS, Paul. Design thinking. Porto Alegre: Bookman, 2011. 199 p. (Design básico, 7). ISBN 9788577807543 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "FILATRO, A. Design instrucional na prática. São Paulo: Pearson, 2008.",
+      "ano" : 2008
+    }, {
+      "texto" : "MANOVICH, L. The language of new media. Cambridge, MIT Press, 2001.",
+      "ano" : 2001
+    } ]
+  }, {
+    "codigo" : "SMD0102",
+    "nome" : "Metodologia da Pesquisa Científica",
+    "ementa" : "Processo de elaboração de projetos. Roteiro: título, caracterização do problema e justificativa,objetivos, metas, metodologia, cronograma e referências bibliográficas. Formulação, apresentação e defesa de projeto.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "Fundamentos de metodologia científica : teoria da ciência e iniciação à pesquisa - 28. ed. - KOCHE, José Carlos. 28. ed. Petrópolis, RJ: Vozes, 2009. 182p. ISBN 9788532618047",
+      "ano" : 2009
+    }, {
+      "texto" : "MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Fundamentos de metodologia científica. 8. ed. São Paulo: Atlas, 2017. Metodologia de pesquisa para ciência da computação - WAZLAWICK, Raul Sidnei. Rio de Janeiro, RJ: Elsevier, 2008. 159 p. ISBN 978853523522-7",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "Dialogando sobre metodologia científica - POLAK, Ymiracy Nascimento de Souza; DINIZ, José Alves; SANTANA, José Rogério. Fortaleza, CE: Edições UFC, 2011. 177 p. ISBN 9788572824637 Estudo de Caso - Planejamento e Métodos - 4ª Ed. 2010 - Yin, Robert K - Editora: Bookman - I.S.B.N.: 9788577806553",
+      "ano" : 2010
+    }, {
+      "texto" : "NASCIMENTO, Francisco Paulo do; SOUSA, Flávio Luís Leite. Metodologia da pesquisa científica: teoria e prática. 2. ed. Fortaleza: INESP, 2017.",
+      "ano" : 2017
+    }, {
+      "texto" : "SAKAMOTO, Cleusa Kazue; SILVEIRA, Isabel Orestes. Como fazer projetos de iniciação científica. São Paulo: Paulus, 2014.",
+      "ano" : 2014
+    }, {
+      "texto" : "PEREIRA, José Matias. Manual de metodologia da pesquisa científica. 3. ed. rev. e atual. São Paulo: Atlas, 2012.",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0025",
+    "nome" : "Ética e Política Autoral",
+    "ementa" : "Definição, história e filosofia de ética e moral. Aplicação destes conceitos no âmbito social, profissional e individual. Questões de ética na mídia e educação. Mídia, direitos humanos e cidadania. Mídia, mercado e direitos. Espaço público e Novas Tecnologias da Informação e da Comunicação. Ética profissional na área da Ciência e Tecnologia. Ética em computação. Aspectos jurídicos da internet. Direito Autoral. Responsabilidade civil e penal sobre a tutela da informação.",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "ANAMNESE: ética e tecnologia. Teresina: EdUFPI, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "BAUMAN, Zygmunt. A ética é possível num mundo de consumidores? Rio de Janeiro: Zahar, c2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "VALLS, A. L. M. O que é Ética. São Paulo: Brasiliense, 1994.",
+      "ano" : 1994
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "OLIVEIRA, Manfredo Araújo de; CREMASCHI, Sergio (org.). Correntes fundamentais da ética contemporânea. 4. ed. Petrópolis, RJ: Vozes, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "BRASIL. Lei N. 9.610 de 19 de fevereiro de 1998 (Lei dos Direitos Autorais) - disponível em http://www.planalto.gov.br/ccivil_03/leis/l9610.htm PASCAL, Georges. O pensamento de Kant. 8. ed. Petrópolis: Vozes, 8 ed., 2003.",
+      "ano" : 2003
+    }, {
+      "texto" : "TORRES, João Carlos Brum (org.). Manual de ética: questões de ética teórica e aplicada. Petrópolis: Vozes; c2014.",
+      "ano" : 2014
+    }, {
+      "texto" : "SROUR, Robert Henry. Poder, cultura e ética nas organizações: o desafio das formas de gestão . 3. ed., rev. Rio de Janeiro: Elsevier: c2012.",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0111",
+    "nome" : "Projeto de Trabalho Final",
+    "ementa" : "Processo de elaboração de projetos. Roteiro: título, caracterização do problema e justificativa, objetivos, metas, metodologia, cronograma e referências bibliográficas. Formulação, apresentação e defesa de projeto.",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "COSTA, Marco Antonio F. da; COSTA, Maria de Fátima Barrozo da. Metodologia da pesquisa: conceitos e técnicas. 2. ed. Rio de Janeiro, RJ: Interciência, 2009. 203 p. : ISBN 9788571932098(broch.)",
+      "ano" : 2009
+    }, {
+      "texto" : "GONÇALVES, Hortência de Abreu. Manual de metodologia da pesquisa científica. São Paulo: Avercamp, 2005. 142 p. : ISBN 9788589311281 (broch.)",
+      "ano" : 2005
+    }, {
+      "texto" : "HERNÁNDEZ SAMPIERI, Roberto; FERNÁNDEZ COLLADO, Carlos; BAPTISTA LUCIO, Pilar. Metodologia de pesquisa. 3. ed. São Paulo, SP: McGraw-Hill, 2006. 583 p. + CD-ROM ISBN 8586804932 (broch.).",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "KOCHE, José Carlos. Fundamentos de metodologia científica : teoria da ciência e iniciação à pesquisa - 28. ed. Petrópolis, RJ: Vozes, 2009. 182p. ISBN MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Técnicas de pesquisa: planejamento e execução de pesquisas, amostragens e técnicas de pesquisa, elaboração, análise e interpretação de dados. 5.ed. rev. e amp. São Paulo: Atlas, c2002. 282 p. ISBN 8522432635 (broch.).",
+      "ano" : 2002
+    }, {
+      "texto" : "WAZLAWICK, Raul Sidnei. Metodologia de pesquisa para ciência da computação - Rio de Janeiro, RJ: Elsevier, 2008. 159 p. ISBN 978853523522-7",
+      "ano" : 2008
+    }, {
+      "texto" : "MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Fundamentos de metodologia científica - 7. ed. - São Paulo: Atlas, 2010. xvi, 297 p. ISBN POLAK, Ymiracy Nascimento de Souza; DINIZ, José Alves; SANTANA, José Rogério. Dialogando sobre metodologia científica. Fortaleza: Edições Universidade Federal do Ceará, 2011. 177 p. ISBN 978-85-7282-463-7.",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0141",
+    "nome" : "Projeto Integrado II",
+    "ementa" : "Definição de características iniciais de conteúdo multimídia específico. Estabelecimento de metodologia de desenvolvimento. Geração de conteúdo multimídia específico, de acordo com a metodologia previamente adotada. Apresentação e discussão de resultados intermediários e finais.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "WAZLAWICK, Raul Sidnei. Metodologia de pesquisa para ciência da computação - Rio de Janeiro, RJ: Elsevier, 2008. 159 p. ISBN 978853523522-7",
+      "ano" : 2008
+    }, {
+      "texto" : "COHN, Mike; SILVA, Aldir José Coelho da. Desenvolvimento de software com scrum: aplicando métodos ágeis com sucesso . Porto Alegre: Bookman, 2011. xii, 496 p. ISBN 9788577808076 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "SCHWABER, Ken. Agile project management with Scrum. Redmond, Wash.: Microsoft Press, 2004. xix, 163 p. ISBN 9780735619937.",
+      "ano" : 2004
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "AMBROSE, Gavin; HARRIS, Paul. Design thinking. Porto Alegre: Bookman, 2011. 199 p. (Design básico, 7). ISBN 9788577807543 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "JACKSON, C. Flash Cinematic Techniques: Enhancing Animated Shorts and Interactive Storytelling. Focal Press. 1ª Edição. ISBN: 0240812611.",
+      "ano" : null
+    }, {
+      "texto" : "MANOVICH, L. The language of new media. Cambridge, MIT Press, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "DROTNER, Kirsten; SCHRODER, Kim Christian. Digital content creation: perceptions, practices, and perspectives. New York: Peter Lang, 2010. 323 p. (New literacies and digital epistemologies ; 46). ISBN 9781433106965.",
+      "ano" : 2010
+    }, {
+      "texto" : "PRIMO, Alex. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre: Sulina, 2011. 239 p. (Cibercultura). ISBN 9788520504659 (broch.).",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0077",
+    "nome" : "Trabalho de Conclusão de Curso",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0142",
+    "nome" : "Seminários em Multimídia",
+    "ementa" : "Eventos com convidados apresentando tendências nas áreas relacionadas a Sistemas e Mídias Digitais. Leitura e análise de artigos de congressos e publicações relacionadas com Sistemas e Mídias Digitais. Discussões dos assuntos abordados.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "KOCHE, José Carlos. Fundamentos de metodologia científica : teoria da ciência e iniciação à pesquisa - 28. ed. Petrópolis, RJ: Vozes, 2009. 182p. ISBN MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Fundamentos de metodologia científica - 7. ed. São Paulo: Atlas, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "WAZLAWICK, Raul Sidnei. Metodologia de pesquisa para ciência da computação - Rio de Janeiro, RJ: Elsevier, 2008. 159 p. ISBN 978853523522-7",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "POLAK, Ymiracy Nascimento de Souza; DINIZ, José Alves; SANTANA, José Rogério. Dialogando sobre metodologia científica. Fortaleza, CE: Edições UFC, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "YIN, Robert K. Estudo de caso: planejamento e métodos . 5. ed. Porto Alegre, RS: Bookman, 2015.",
+      "ano" : 2015
+    }, {
+      "texto" : "CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da. Metodologia científica. 6. ed. São Paulo, SP: Prentice Hall, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "BAPTISTA, Makilim Nunes. Metodologias de pesquisa em ciências: análises quantitativa e qualitativa. Rio de Janeiro, RJ: LTC, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "LEÃO, Lúcia. O Chip e o Caleidoscópio: Reflexões Sobre as Novas Mídias. Editora Senac. 2005.",
+      "ano" : 2005
+    } ]
+  }, {
+    "codigo" : "SMDG0002",
+    "nome" : "Horas Complementares",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "EXT0076",
+    "nome" : "Horas da Unidade Curricular Especial de Extensão",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0030",
+    "nome" : "Análise e Projeto de Sistemas",
+    "ementa" : "Introdução à análise de sistemas. Ciclo de vida e os paradigmas de desenvolvimento de software. Abordagens de desenvolvimento em geral (Estruturada, Orientada a Objetos, etc.). Análise Orientada a Objetos: técnica de modelagem: UML - Unified Modeling Language. Especificação e documentação em UML com Ferramentas",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "BEZERRA, Eduardo. Princípios de análise e projeto de sistemas com UML. 2. ed. rev. e atual. Rio de Janeiro: Elsevier: Campus, c2007. 369 p. ISBN 9788535216967 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "WAZLAWICK, Raul Sidnei. Análise e projeto de sistemas de informação orientados a objetos. 2. ed. Rio de Janeiro: Elsevier, 2011. 330 p. ISBN 9788535239164.",
+      "ano" : 2011
+    }, {
+      "texto" : "LARMAN, Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. 3. ed. Porto Alegre: Bookman, 2007. 695 p. ISBN 9788560031528 (broch.).",
+      "ano" : 2007
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "SOMMERVILLE, Ian. Engenharia de software. 9. ed. São Paulo: Pearson Prentice Hall, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "PRESSMAN, Roger S. Engenharia de software: uma abordagem profissional. 7. ed. Porto Alegre: AMGH, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "BOOCH, Grady; RUMBAUGH, James; JACOBSON, Ivar. UML: guia do usuário. 2. ed. rev. e atual. Rio de Janeiro: Elsevier, c2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "FOWLER, Martin. UML essencial: um breve guia para a linguagem-padrão de modelagem de objetos . 3. ed. Porto Alegre: Bookman, 2005. 160p. ISBN 8536304545 (broch.).",
+      "ano" : 2005
+    }, {
+      "texto" : "LIMA, Adilson da Silva. UML 2.0: do requisito à solução. 3. ed. São Paulo: Érica, 2008. 326 p. ISBN 8536500706 (broch.)",
+      "ano" : 2008
+    } ]
+  }, {
+    "codigo" : "SMD0099",
+    "nome" : "Banco de Dados I",
+    "ementa" : "Sistemas de Banco de Dados. Modelo Relacional. Restrições de Integridade. Modelo Entidade-Relacionamento. Projeto de Banco de Dados Relacional. Linguagem SQL. Aplicações com Banco de Dados Relacional.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "DATE, C. J. Introdução a sistemas de bancos de dados. Rio de Janeiro, RJ: Elsevier, c2004. 865 p. ISBN 8535212736 (broch.).",
+      "ano" : 2004
+    }, {
+      "texto" : "ELMASRI, Ramez; NAVATHE, Shamkant B. Fundamentals of database systems. 6th ed. Harlow, England: Pearson, c2014. iv, 1081 p. ISBN 9781292025605 (broch.).",
+      "ano" : 2014
+    }, {
+      "texto" : "SILBERSCHATZ, Abraham; KORTH, Henry F.; SUDARSHAN, S. Sistema de banco de dados. Rio de Janeiro: Elsevier: Campus, c2012. xl, 861 p. ISBN 9788535245356.",
+      "ano" : 2012
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "BEAULIEU, Alan. Aprendendo SQL. São Paulo, SP: Novatec, c2010. 365 p. ISBN 9788575222102.",
+      "ano" : 2010
+    }, {
+      "texto" : "DEITEL, Paul J.; DEITEL, Harvey M. Java: como programar. 8. ed. São Paulo: Pearson Prentice Hall, c2010. xxix, 1144 p. + 1 CD-ROM ISBN 9788576055631 (broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "GUIMARÃES, Célio Cardoso. Fundamentos de bancos de dados: modelagem, projeto e linguagem SQL . Campinas, SP: Ed. da UNICAMP, c2003. 270 p. (Títulos em engenharia de software. 4). ISBN 85-268-0633-5.",
+      "ano" : 2003
+    }, {
+      "texto" : "HEUSER, Carlos Alberto. Projeto de banco de dados. 6. ed. Porto Alegre, RS: Bookman, 2009. xii, 282 p. ISBN 9788577803828 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "RAMAKRISHNAN, Raghu; GEHRKE, Johannes. Sistemas de gerenciamento de banco de dados. São Paulo, SP: McGraw-Hill, 2008. xxvii, 884 p. ISBN 9788577260270 (broch.).",
+      "ano" : 2008
+    } ]
+  }, {
+    "codigo" : "SMD0143",
+    "nome" : "Engenharia de Software",
+    "ementa" : "Evolução da Engenharia de Software. Processo de Software. Engenharia de Requisitos. Projeto de Software. Teste de Software. Gestão de Projetos de Software. Qualidade de Software. Trabalho de extensão.",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "PRESSMAN, Roger S. Engenharia de software: uma abordagem profissional. 7. ed. Porto Alegre: AMGH, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "SOMMERVILLE, Ian. Engenharia de software. 9. ed. São Paulo: Pearson Prentice Hall, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "FLYNT, John P.; SALEM, Omar. Software engineering for game developers. Boston, MA: Course Technology PTR, 2005. xxxviii, 862 p. Disponível em: <http://site.ebrary.com/lib/ebraryanddbd/Doc?id=10073600>. Acesso em: 07 out. 2011.",
+      "ano" : 2005
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "PFLEEGER, Shari Lawrence. Engenharia de software: teoria e prática. 2. ed. São Paulo: Pearson Prentice Hall, 2007 Teles, V. M. Extreme Programming: Aprenda como encantar seus usuários desenvolvendo software com agilidade e alta qualidade. Novatec Editora, 2004.",
+      "ano" : 2004
+    }, {
+      "texto" : "LARMAN, Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. 3. ed. Porto Alegre: Bookman, 2007. 695 p. ISBN 9788560031528 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "COHN, Mike; SILVA, Aldir José Coelho da. Desenvolvimento de software com scrum: aplicando métodos ágeis com sucesso . Porto Alegre: Bookman, 2011. xii, 496 p. ISBN 9788577808076 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "SCHWABER, Ken. Agile project management with Scrum. Redmond, Wash.: Microsoft Press, 2004. xix, 163 p. ISBN 9780735619937.",
+      "ano" : 2004
+    } ]
+  }, {
+    "codigo" : "SMD0033",
+    "nome" : "Estruturas de Dados",
+    "ementa" : "Complexidade. Recursão. Listas: estática, dinâmica, simplesmente encadeada, duplamente encadeada, circular. Fila em Estrutura Dinâmica e estática. Pilha em estrutura dinâmica e estática. Árvores binárias e balanceada, Estruturas auto-ajustáveis. Tabelas de dispersão. Algoritmos de ordenação e de busca. Estruturas específicas de sistemas multimídia e de jogos digitais",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "LAFORE, Robert. Estruturas de Dados & Algoritmos em Java. 1ª Edição. Ciência Moderna, 729 pg. 2005. ISBN: 8573933755",
+      "ano" : 2005
+    }, {
+      "texto" : "GOODRICH, Michael T.; TAMASSIA, Roberto. Estruturas de dados e algoritmos em java. 5. ed. Porto Alegre: Bookman, 2013.",
+      "ano" : 2013
+    }, {
+      "texto" : "CELES, Waldemar; CERQUEIRA, Renato; RANGEL, José Lucas. Introdução a Estruturas de Dados: com técnicas de programação em C. Editora Elsevier Campus. 2004.ISBN 853521228.",
+      "ano" : 2004
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "SZWARCFITER, Jayme Luiz; MARKENZON, Lilian. Estruturas de dados e seus algoritmos. 3. ed. Rio de Janeiro: Livros Técnicos e Científicos, c2010. xvi, 302 p. ISBN 9788521617501 (broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "TENENBAUM, Aaron M; LANGSAM, Yedidyah; AUGENSTEIN, Moshe. Estrutura de dados usando C. São Paulo: Makron Books, 1995.",
+      "ano" : 1995
+    }, {
+      "texto" : "FEOFILOFF, Paulo. Algoritmos em linguagem C. Editora Campus/Elsevier. 2009. ISBN 9788535232493.",
+      "ano" : 2009
+    }, {
+      "texto" : "CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Rio de Janeiro: Campus: Elsevier, 2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "ASCENCIO, Ana Fernanda Gomes; ARAÚJO, Graziela Santos de. Estrutura de dados: algoritmos, análise da complexidade e implementações em Java e C/C+",
+      "ano" : null
+    } ]
+  }, {
+    "codigo" : "SMD0037",
+    "nome" : "Redes de Computadores",
+    "ementa" : "Introdução às Redes de Computadores; Conceitos Básicos de Redes de Computadores; Topologias de Redes; Camada de Aplicação: Transmissão de Arquivos, DNS, SMTP e a Web; Programação em Rede; Componentes lógicos e físicos em Redes; Ligações inter-redes; Conceitos Básicos em Transmissão de Dados; Introdução às Redes sem fio; Redes de Computadores e os Jogos Digitais.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "KUROSE, James F.; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top-down. 6. ed. São Paulo: Pearson, c2014",
+      "ano" : 2014
+    }, {
+      "texto" : "TANENBAUM, Andrew S.; WETHERALL, D. Redes de computadores. São Paulo: Pearson Prentice Hall, c2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "STALLINGS, William. Data and computer communications. 5.ed. Upper Saddle River, New Jersey: Prentice Hall, 1997. 798p. ISBN 0024154253",
+      "ano" : 1997
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "STALLINGS, William. Data and computer communications. 5.ed. Upper Saddle River, New Jersey: Prentice Hall, 1997. 798p. ISBN 0024154253",
+      "ano" : 1997
+    }, {
+      "texto" : "COMER, Douglas, $d 1949. Hands-on networking with internet technologies. 2nd ed. Upper Saddle River, NJ.: Pearson/ Prentice Hall, c2005. xxi, 224 p. : ISBN 0131486969 (broch.)",
+      "ano" : 2005
+    }, {
+      "texto" : "PETERSON, Larry L.; DAVIE, Bruce S. Computer networks: a systems approach. 5th ed. Ames: Elsevier, c2012",
+      "ano" : 2012
+    }, {
+      "texto" : "HWANG, Jenq-Neng. Multimedia networking: from theory to practice. Cambridge, England: Cambridge University Press, 2009. 548 p. ISBN 9780521882040 (enc.).",
+      "ano" : 2009
+    }, {
+      "texto" : "DEITEL, Paul J.; DEITEL, Harvey M. Java: comoprogramar. 8. ed. São Paulo: Pearson Prentice Hall, 2010. xxix, 1144 p. + 1 CD-ROM ISBN 9788576055631 (broch.).",
+      "ano" : 2010
+    } ]
+  }, {
+    "codigo" : "SMD0110",
+    "nome" : "Comunicação Visual II",
+    "ementa" : "Linguagem Visual: Analise da linguagem visual em seus aspectos semânticos, sintáticos e estéticos. Imagens fotográficas e digitais: Utilização da fotografia e das imagens digitais na criação de peças gráficas. Identidade Visual e Projeto de Sinalização: Elaboração de projeto de comunicação visual aplicado a desenvolvimentos de produtos midiáticos digitais.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "DONDIS, Donis A. Sintaxe da linguagem visual. 3. ed. São Paulo: Martins Fontes, 2007. 236 p. (Coleção A). ISBN 978-85-3362-382-8 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole. Novos fundamentos do design. São Paulo: Cosac Naify, 2008. 245,[2]p. ISBN 9788575032398 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "SAMARA, Timothy. Elementos do design: guia de estilo gráfico. Porto Alegre: Bookman, 2010. 272p. ISBN 9788577805846 (Broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "BERGSTRÖM, Bo; BETTONI, Rogério. Fundamentos da comunicação visual. São Paulo: Rosari, 2009. 240 p. ISBN 9788588343856 (broch.).",
+      "ano" : 2009
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "SAMARA, Timothy. Grid: construção e desconstrução. São Paulo: Cosac Naify, 2007. 207 p. ISBN 9788575036297 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "WILLIAMS, Robin. Design para quem nao é designer: noções básicas de planejamento visual. 3. ed. São Paulo: Callis, 2009. 191 p. ISBN 9788574163871 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "LUPTON, Ellen. Pensar com tipos: guia para designers, escritores, editores e estudantes. São Paulo: Cosac Naify, 2008. 181p. ISBN 9788575035535 (Broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "FARINA, Modesto; PEREZ, Clotilde; DORINHO (Ilustrador). Psicodinâmica das cores em comunicação. 5. ed. rev. ampl. . São Paulo: Blucher, 2006. xiv, 173 p. ISBN 9788521203995 (broch.).",
+      "ano" : 2006
+    }, {
+      "texto" : "MUNARI, Bruno. Design e comunicação visual: contribuição para uma metodologia didática. São Paulo: Martins Fontes, 1997. 350 p. ISBN 8533606354 (broch.).",
+      "ano" : 1997
+    }, {
+      "texto" : "WHEELER, Alina. Design de identidade da marca: guia essencial para toda a equipe de gestão de marcas. 3. ed. Porto Alegre: Bookman, 2012. 320 p. ISBN 9788577808120 (enc.).",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0098",
+    "nome" : "Desenho II",
+    "ementa" : "Técnicas de representação e expressão gráfica. Noções de perspectiva, desenho volumétrico e construção espacial. Técnicas de desenho e pintura tradicional. Fundamentos de desenho e pintura auxiliados por computador. Forma, proporção, volume, luz e sombra e textura. Desenho de observação. Desenho criativo. Exercícios práticos.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "HOGARTH, Burne. O desenho anatómico sem dificuldade. Köln: Evergreen, c1998.",
+      "ano" : 1998
+    }, {
+      "texto" : "ZEEGEN, Lawrence; CRUSH (Firma). Fundamentos de ilustração: como gerar ideias, interpretar briefings e se promover : uma exploração dos aspectos práticos, filosóficos e profissionais do mundo da ilustração digital e analógica. Porto Alegre: Bookman, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "MENEGOTTO, José Luis; ARAUJO, Tereza Cristina Malveira de. O desenho digital: técnica & arte. Rio de Janeiro: Interciência, 2000. 136 p. ISBN 8571930392 (broch.).",
+      "ano" : 2000
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "HOGARTH, Burne. Dynamic wrinkles and drapery: solutions for drawing the clothed figure. New York, NY: Watson-Guptill, c2002.",
+      "ano" : 2002
+    }, {
+      "texto" : "PIPES, Alan. Desenho para designers: habilidades de desenho, esboços de conceitos, design auxiliado por computador, ilustração, ferramentas e materiais, apresentações, técnicas de produção . [São Paulo]: Blucher, 2010. 223 p. ISBN 9788521205081.",
+      "ano" : 2010
+    }, {
+      "texto" : "WILLIAMS, Richard. The animator’s survival kit. London: Faber and Faber, 2009",
+      "ano" : 2009
+    }, {
+      "texto" : "BARROS, Lilian Ried Miller. A cor no processo criativo: um estudo sobre a Bauhaus e a teoria de Goethe. 3.ed. rev. São Paulo: Ed. SENAC São Paulo, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "SANTAELLA, Lúcia; NÖTH, Winfried. Imagem: cognição, semiótica, mídia. São Paulo: Iluminuras, c1997.",
+      "ano" : 1997
+    } ]
+  }, {
+    "codigo" : "SMD0032",
+    "nome" : "Design de Som",
+    "ementa" : "O universo sonoro. Conceitos musicais introdutórios. Som como dado: criação e organização de músicas e efeitos sonoros para mídias digitais; técnicas de captura, tratamento e edição de som. Som como processo: som e programação; síntese sonora.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "FARNELL, Andy. Designing sound. Cambridge: The MIT Press, 2010",
+      "ano" : 2010
+    }, {
+      "texto" : "SONNENSCHEIN, David. Sound design: the expressive power of music, voice and sound effects in cinema. Michael Wise Productions, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "WISNIK, José Miguel. O som e o sentido: uma outra história das músicas. 2. ed. São Paulo: Companhia das Letras, 2011.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "CHION, Michel. L'audio-vision: son et image au cinéma. 3. ed. Paris, France: Armand Colin, 2014.",
+      "ano" : 2014
+    }, {
+      "texto" : "MENEZES FILHO, Florivaldo; Fundação de Amparo à Pesquisa do Estado de São Paulo. A acústica musical em palavras e sons. Cotia: Ateliê; São Paulo: FAPESP, 2004.",
+      "ano" : 2004
+    }, {
+      "texto" : "WILLIAMS, David Brian; WEBSTER, Peter Richard. Experiencing music technology. Updated 3rd ed. Belmont, CA: Cengage Learning, c2008.",
+      "ano" : 2008
+    }, {
+      "texto" : "OPPENHEIM, Alan V.; SCHAFER, Ronald W. Discrete-time signal processing. 3rd. ed. Upper Saddle River, New Jersey: Pearson Prentice Hall, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "BERCHMANS, Tony – A música do filme: tudo o que você gostaria de saber sobre a música de cinema, 2. ed. – São Paulo: Escrituras Editora, 2006.",
+      "ano" : 2006
+    } ]
+  }, {
+    "codigo" : "SMD0144",
+    "nome" : "Fotografia Digital",
+    "ementa" : "A física da luz e a percepção visual. O conceito de imagem. A evolução das formas de registo fotográfico: processos analógico e digital. Tecnologias de captação, registro e exibição digitais da luminosidade e da cor. Elementos da expressão fotográfica: abertura e velocidade de exposição, distância focal, profundidade de campo, movimento de câmera, iluminação e composição. Particularidades da fotografia no audiovisual. Fotografia por computação gráfica: render 3d. Fundamentos de manipulação, retoque e edição da imagem com ferramentas digitais.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "TOM, Ang. Fotografia Digital: Uma Introdução. São Paulo: Ed. Senac, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "KELBY, Scott. The digital photography book: the step-by-step secrets for how to make your photos look like the pros'! Berkeley: Peachpit Press, c2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "AMBROSE, Gavin e Harris, Paul. Imagem. Coleção Fotografia Básica. São Paulo: Artmed, 2011",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "AMBROSE, Gavin; HARRIS, Paul. Cor: s. a sensação produzida por raios de luz de diferentes comprimentos de onda, uma variedade particular desta / Gavin Ambrose, Paul Harris ; tradução: Francisco Araújo da Costa. Porto Alegre, RS: Bookman, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "DUBOIS, Philippe. O Ato fotográfico e outros ensaios. Traduzido por Marina Appenzeller. 9. ed. Campinas: Papirus, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "FURTADO, Beatriz (org.). Imagem contemporânea: cinema, tv, documentário, fotografia, videoarte, games. São Paulo: Hedra, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "MORAZ, Eduardo. Fotografia digital (para quem não sabe nada de fotografia). São Paulo: Digerati Books, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "KELBY, Scott. Adobe photoshop CS5 para fotógrafos digitais. São Paulo, SP: Pearson Prentice Hall, 2012.",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0114",
+    "nome" : "Computação Física",
+    "ementa" : "1.Introdução ao Design de Interação Física. 2. Introdução à Eletrônica e à Computação Embarcada. 3. Introdução às Linguagens de Programação de Sistemas Embarcados. 4. Ambientes de modelagem e simulação de Dispositivos Eletrônicos. 5. Plataformas, Ferramentas, Componentes e Materiais para Prototipagem. 6. Projeto Prático.",
+    "paginaEmenta" : 55,
+    "bibliografiaBasica" : [ {
+      "texto" : "HUMMEL, GUNTER; HUANYE, SHENG. Embedded Systems - Modeling, Technology, and Applications [recurso eletrônico] : Proceedings of the 7th International Workshop held at Technische Universität Berlin, June 26/27, 2006. Livro eletrônico disponível para acesso no ambiente da UFC MCROBERTS, Michael; SPRINGERLINK (ONLINE SERVICE). Beginning Arduino. Springer eBooks XXI, 472 p ISBN 9781430232414.",
+      "ano" : 2006
+    }, {
+      "texto" : "MARWEDEL, P.; Embedded System Design. Editora Springer, 2006. ISBN-13: 978-0-387-29237-3, ISBN-10: 0-387-29237-3",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "NORMAN, Donald A. Design emocional: por que adoramos (ou detestamos) os objetos do dia-a-dia. Rio de Janeiro: Rocco, 2008. 278 p.",
+      "ano" : 2008
+    }, {
+      "texto" : "DIAS, Claudia. Usabilidade na Web. Editora Alta Books, ISBN:8576081407, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "KRUG, Steve. Não me faça pensar: uma abordagem de bom senso a usabilidade na web. Rio de Janeiro: Alta Books, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "NIELSEN, Jakob; LORANGER, Hoa. Usabilidade na Web: projetando websites com qualidade. Rio de Janeiro: Campus, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "OXER, Jonathan; SPRINGERLINK (ONLINE SERVICE). Practical Arduino : Cool Projects for Open Source Hardware . Springer eBooks",
+      "ano" : null
+    } ]
+  }, {
+    "codigo" : "SMD0080",
+    "nome" : "Computação Gráfica",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0054",
+    "nome" : "Inteligência Computacional Aplicada a Jogos I",
+    "ementa" : "Introdução. O que é Inteligência Computacional. Interação e comportamento. IC e os jogos. Agentes Inteligentes. Técnicas de movimentação. Predição de movimento. Mecanismos de percepção. Mecanismos de tomada de decisão. Aprendizado. Introdução às redes neurais. Sistemas de Script.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "BOURG, David M. & SEEMAN, Glenn. AI for Game Developers. 400 pg. O'Reilly. 2004. ISBN: 0596005555.",
+      "ano" : 2004
+    }, {
+      "texto" : "MILLINGTON, Ian & FUNGE, John. Artificial Intelligence for Games. 2ª Edição. 928 pg. Editora Morgan Kaufmann. 2009. ISBN: 0123747317.",
+      "ano" : 2009
+    }, {
+      "texto" : "BUCKLAND, Mat. Programming Game AI by Example. Wordware Publishing. 495 pg. 2005. ISBN: 1556220782.",
+      "ano" : 2005
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "RUSSELL, Stuart J. |q (Stuart Jonathan), |d 1962-; NORVIG, Peter, |d 1956-. Artificial intelligence: a modern approach . 3rd ed. Upper Saddle River, NJ: Prentice Hall, c2010. xviii, 1132 p. (Prentice Hall Series in Artificial Intelligence) ISBN 9780136042594 (enc.)",
+      "ano" : 2010
+    }, {
+      "texto" : "COPPIN, Ben. Inteligência artificial. Rio de Janeiro: LTC, c2010. xxv, 636 p MARQUES, Jorge Salvador. Reconhecimento de padrões: métodos estatísticos e neuronais . 2. ed. Lisboa: IST PRESS, 2005. 284 p. (Colecção Ensino da Ciência e da Tecnologia) ISBN 972846908X.",
+      "ano" : 2005
+    }, {
+      "texto" : "SIMÕES, Marcelo Godoy; SHAW, Ian S. Controle e modelagem Fuzzy. 2. ed. rev. ampl. São Paulo, SP: Blucher, FAPESP, 2007. 186 p. ISBN 9788521204169 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "BITTENCOURT, Guilherme. Inteligência artificial: ferramentas e teorias. 3. ed. rev. Florianópolis: Editora da UFSC, 2006. 371 p. ISBN 8532801382 (broch.).",
+      "ano" : 2006
+    } ]
+  }, {
+    "codigo" : "SMD0045",
+    "nome" : "Linguagem de Programação Script",
+    "ementa" : "Introdução a linguagem script. Linguagem compilada X interpretada. Prototipagem. Programação Web. Scripts para configuração e extensão de softwares. Programação em uma linguagem de programação script.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "ROBBINS, Arnold; BEEBE, Nelson H. F. Classic shell scripting: automatize suas tarefas com Unix . Porto Alegre: Bookman, 2008. xvii, 511p. ISBN 9788577801473 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "THOMAS, Dave; FOWLER, Chad eHUNT, Andy. Programming Ruby: The Pragmatic Programmers' Guide, Second Edition [Paperback]. Publisher: Pragmatic Bookshelf; 2nd edition (October 8, 2004)",
+      "ano" : 2004
+    }, {
+      "texto" : "RUBY S., Thomas D., HEINEMEIER Hansson D. Agile Web Development with Rails, 4th Edition, Rails 3.2 (The Pragmatic Programmers) - 2011",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "JOHNSON, Chris F. A; SPRINGERLINK (ONLINE SERVICE). Pro Bash Programming : Scripting the GNU/Linux Shell . Springer eBooks JUNEAU, Josh; SPRINGERLINK (ONLINE SERVICE). The Definitive Guide To Jython : Python For The Java Platform . Springer eBooks KEITH, Jeremy; SPRINGERLINK (ONLINE SERVICE). DOM Scripting : Web Design with JavaScript and the Document Object Model . Springer eBooks Second Edition. XVI MCNAVAGE, Terry; SPRINGERLINK (ONLINE SERVICE). JavaScript for Absolute Beginners. Springer eBooks DEITEL et al. C# Como Programar. 1a Edição, ISBN: 9788534614597, Editora Pearson, 2003",
+      "ano" : 2003
+    } ]
+  }, {
+    "codigo" : "SMD0035",
+    "nome" : "Matemática e Física para Jogos",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0017",
+    "nome" : "Programação Orientada a Objetos",
+    "ementa" : "Conceitos Básicos de Orientação a Objetos – Classes, Atributos, Métodos, Controle de acesso a Métodos (serviços) e Atributos, Assinatura, Construtores, Destrutores, Gerência de Memória, Referência de Objetos já existentes, Passagem de Parâmetros, Sobrecarga, Herança, Composição, Classes Abstratas, Polimorfismo, Interface, Packages.",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "SANTOS, Rafael. Livro Introdução à Programação Orientada a Objetos Usando Java. 1ª Edição. Editora Campus / Elsevier, 352 pg. 2003. ISBN: 853521206X FILHO, Antônio Mendes da Silva. Introdução à Programação Orientada a Objetos com C++. 1ª Edição. Editora Campus / Elsevier, 283 pg. 2010. ISBN: 978-85-352-3702-3",
+      "ano" : 2010
+    }, {
+      "texto" : "DEITEL, Harvey M. & DEITEL, Paul J. Java: Como Programar. 6ª Edição. Editora Prentice Hall. 1152pg. 2005. ISBN: 8576050196",
+      "ano" : 2005
+    }, {
+      "texto" : "DEITEL, Harvey M.; DEITEL, Paul J. C++: como programar. 5. ed. São Paulo, SP: Prentice Hall, 2006. 1163 p. + cd-rom ISBN 8576050560 (broch.).",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "FEIJÓ, Bruno; CLUA, Esteban; SILVA, Flávio. Introdução a Ciência da Computação com Jogos - Aprendendo a Programar com Entretenimento. 1ª Edição. Editora Campus / Elsevier, 263 pg. 2010. ISBN: 978-85-352-3419-0",
+      "ano" : 2010
+    }, {
+      "texto" : "KOFFMAN, Elliot B.; WOLFGANG, Paul A. T. Objetos, abstração, estruturas de dados e projeto usando Java versão 5.0. Rio de Janeiro, RJ: Livros Técnicos e Científicos, 2008. 695 p. ISBN 9788521616030 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "SIERRA, Kathy; BATES, Bert. Use a cabeça! Java. Rio de Janeiro: Alta Books, 2009. xvii, 484 p. ISBN 9788576081739 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "OLIVEIRA, Ulysses de. Programando em C. Rio de Janeiro, RJ: Ciência Moderna, 2008. v. ISBN 9788573936599 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "SAVITCH, Walter J. C++ absoluto. São Paulo, SP: Addison-Wesley, c2004. 612 p. ISBN 8588639092 (Broch.).",
+      "ano" : 2004
+    } ]
+  }, {
+    "codigo" : "SMD0122",
+    "nome" : "Programação para Dispositivos Móveis",
+    "ementa" : "Panorama do desenvolvimento de software para plataformas móveis (sistemas operacionais, linguagens de programação, segmento de mercado e ecossistemas). Modelos de programação para plataformas móveis (ex., programação baseada em eventos, programação reativa e programação sensível ao contexto, abordagens multiplataforma e cross-platform). Ferramentas de suporte ao desenvolvimento, empacotamento, implantação, emulação, depuração e teste de software. Estudo de uma plataforma móvel em particular. Desenvolvimento de software para a plataforma estudada.",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "ECK, David J. Introduction to programming using Java: version 8.1.3, august 2021. Geneva: [s. n.], 2021. 751 p. Disponível em: http://www.repositoriobib.ufc.br/00008f/00008f82.pdf. Acesso em: 3 mar. 2022.",
+      "ano" : 2021
+    }, {
+      "texto" : "LECHETA, Ricardo R. Google Android: Aprenda a Criar Aplicações para Dispositivos Móveis com o Android SDK. 4. ed. São Paulo, SP: Novatec, 2015.ISBN: 978-85-7522-440-3.",
+      "ano" : 2015
+    }, {
+      "texto" : "BURNETTE, Ed. Hello, android: introducing google's mobile development platform. 3rd ed. Raleigh, North Carolina: Pragmatic Bookshelf, c2010.",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "MURPHY, Mark L; SPRINGERLINK (ONLINE SERVICE). Beginning Android 2. Springer eBooks XVI COULOURIS, George F. Distributed Systems: Concepts and Design. 5th ed. Harlow, England: Pearson/Addison Wesley, 2012. 1063 p. ISBN FISHER, Paul Tepper; SPRINGERLINK (ONLINE SERVICE). Spring Persistence with Hibernate. Springer eBooks HASHIMI, Sayed Y; SPRINGERLINK (ONLINE SERVICE). Pro Android 2. Springer eBooks XVI ALLEN, Sarah; SPRINGERLINK (ONLINE SERVICE). Pro Smartphone Cross-Platform Development : iPhone, BlackBerry, Windows Mobile, and Android Development and Distribution . Springer eBooks XVI, 288 p ISBN 9781430228691.",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0053",
+    "nome" : "Programação para Jogos I",
+    "ementa" : "Estrutura Geral. Representação de personagens, cenários e objetos. Animação. Inclusão de som e música. Técnicas de Scrolling. Detecção de colisão. Motores gráficos: estrutura e conceitos. Carga de mundos, personagens, objetos e animações em 3D. Efeitos especiais. Sistemas de Partículas. Técnicas de otimização para visualização de imagens. Desenvolvimento de protótipos.",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "Perucia, A.; Berthêm, Antônio; Bertschinger, Guilherme; Castro, Roberto. Desenvolvimento de Jogos Eletrônicos. Novatec, 2007, ISBN 978-85-7522-122-8.",
+      "ano" : 2007
+    }, {
+      "texto" : "HARBOUR, Jonathan S. Beginning game programming. 4th ed. Boston: Cengage Learning, c2015.",
+      "ano" : 2015
+    }, {
+      "texto" : "RABIN, Steve (ed.). Introdução ao desenvolvimento de games. São Paulo: Cengage Learning, 2012.",
+      "ano" : 2012
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "NOVAK, Jeannie. Desenvolvimento de games. São Paulo: Cengage Learning, c2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "BOURG, David M. & SEEMAN, Glenn. AI for Game Developers. 400 pg. O'Reilly. 2004. ISBN: 0596005555.",
+      "ano" : 2004
+    }, {
+      "texto" : "MILLINGTON, Ian & FUNGE, John. Artificial Intelligence for Games. 2ª Edição. 928 pg. Editora Morgan Kaufmann. 2009. ISBN: 0123747317.",
+      "ano" : 2009
+    }, {
+      "texto" : "BUCKLAND, Mat. Programming Game AI by Example. Wordware Publishing. 495 pg. 2005. ISBN: 1556220782.",
+      "ano" : 2005
+    }, {
+      "texto" : "FLYNT, John P.; SALEM, Omar. Software engineering for game developers. Boston, MA: Course Technology PTR, 2005. xxxviii, 862 p. Disponível em: http://site.ebrary.com/lib/ebraryanddbd/Doc?id=10073600. Acesso em: 7 out. 2011.",
+      "ano" : 2005
+    } ]
+  }, {
+    "codigo" : "SMD0052",
+    "nome" : "Programação para Web I",
+    "ementa" : "Estrutura do Funcionamento da Web. Arquitetura Cliente-Servidor. Organização ou Modularização em Projeto de Aplicações Web. Linguagem ou Tecnologia para o Desenvolvimento de Aplicações Web com Geração de Conteúdo Dinâmico. Persistência de Dados em Aplicações Web: Sessão e Cookies. Comunicação entre Aplicação Web e Banco de Dados.",
+    "paginaEmenta" : 61,
+    "bibliografiaBasica" : [ {
+      "texto" : "BASHAM, Bryan; SIERRA, Kathy; BATES, Bert. Use a cabeça! Servlets & JSP. 2. ed. Rio de Janeiro, RJ: Alta Books, 2008. xxxii, 879 p. ISBN 9788576082941 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "GONÇALVES, Edson. Desenvolvendo aplicações web com JSP, Servlets, JavaServer Faces, Hibernate, EJB 3 Persistence e AJAX. Rio de Janeiro: Ciência Moderna, 2007. xxxvi, 736 p. ISBN 9788573935721 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "LUCKOW, Décio Heinzelmann; MELO, Alexandre Altair de. Programação Java para a Web. São Paulo, SP: Novatec, 2010. 638 p. ISBN 9788575222386 (broch.).",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "GAMMA, Erich et al. Padrões de projeto: soluções reutilizáveis de software orientado a objetos. Porto Alegre: Bookman, 2000. 364 p. ISBN 8573076100 (broch.).",
+      "ano" : 2000
+    }, {
+      "texto" : "KUROSE, James F.; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top-down. 6. ed. São Paulo: Pearson, c2014. xxii, 634 p. ISBN 9788581436777 (broch.).",
+      "ano" : 2014
+    }, {
+      "texto" : "SEBESTA, Robert W. Programming the World Wide Web. 6th ed. Boston: Addison-Wesley, c2011. xx, 771 p. ISBN 9780132130813(broch).",
+      "ano" : 2011
+    }, {
+      "texto" : "TANENBAUM, Andrew S.; STEEN, Van Maarten. Sistemas distribuídos: princípios e paradigmas. 2. ed. São Paulo, SP: Pearson Education, 2007. viii, 402 p. ISBN 9788576051428 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "TANENBAUM, Andrew S.; WETHERALL, D. Redes de computadores. São Paulo: Pearson Prentice Hall, c2011. xvi, 582 p. ISBN 9788576059240 (broch.).",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0050",
+    "nome" : "Sistemas Distribuídos",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0070",
+    "nome" : "Sistemas Embarcados",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0048",
+    "nome" : "Teste de Software Aplicado",
+    "ementa" : "Introdução a Testes de Software. Conceitos e Tipos de Testes de Software. Processos de Testes de Software. Testes Unitários. TDD.",
+    "paginaEmenta" : 63,
+    "bibliografiaBasica" : [ {
+      "texto" : "PRESSMAN, ROGER S. Engenharia de software: uma abordagem profissional. 7. ed. Porto Alegre: AMGH, 2011. xxviii, 780 p. ISBN 9788563308337.",
+      "ano" : 2011
+    }, {
+      "texto" : "SOMMERVILLE, IAN. Engenharia de software. 9. ed. São Paulo: Pearson Prentice Hall, 2011. xiii, 529 p. ISBN 9788579361081.",
+      "ano" : 2011
+    }, {
+      "texto" : "DELAMARO. MÁRCIO EDUARDO; MALDONADO, JOSÉ CARLOS.; JINO, MÁRIO. Introdução ao Teste de Software. CAMPUS, 2007; ISBN: 9788535226348.",
+      "ano" : 2007
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "TELES, VINÍCIUS MANHÃES. Extreme Programming: Aprenda como encantar seus usuários desenvolvendo software com agilidade e alta qualidade. Novatec Editora, 2004; ISBN: 85-7522-047-0.",
+      "ano" : 2004
+    }, {
+      "texto" : "BASTOS, ADERSON et al. Base de conhecimento em teste de software. 2. ed. rev. São Paulo: Martins Fontes, 2007. 263 p. ISBN 9788599102893.",
+      "ano" : 2007
+    }, {
+      "texto" : "BECK, KENT. TDD desenvolvimento guiado por testes. Porto Alegre: Bookman, 2010. xiii, 240 p. ISBN 9788577807246.",
+      "ano" : 2010
+    }, {
+      "texto" : "PEZZÈ, MAURO; YOUNG, Michal. Teste e análise de software: processo, princípios e técnicas. Porto Alegre: Bookman, 2008. x, 512 p. ISBN 978857780262-3",
+      "ano" : 2008
+    }, {
+      "texto" : "KOSCIANSKI, ANDRÉ; SOARES, MICHEL DOS SANTOS. Qualidade de software: aprenda as metodologias e técnicas mais modernas para o desenvolvimento de software. 2. ed. São Paulo: Novatec, 2007. 395 p. ISBN 8575221129",
+      "ano" : 2007
+    } ]
+  }, {
+    "codigo" : "SMD0057",
+    "nome" : "Concepção de Cenários e Personagens",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0039",
+    "nome" : "Cultura de Jogos",
+    "ementa" : "Definição e conceituação de jogos eletrônicos. Narratologia e Ludologia. História dos Jogos eletrônicos. Plataformas e dispositivos. Influências dos jogos na cultura contemporânea. Tipologia dos jogos eletrônicos. Avaliação e Crítica de Games.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "MURRAY, Janet Horowitz. Hamlet no Holodeck: o futuro da narrativa no ciberespaço. São Paulo: Ed. UNESP: Instituto Itaú Cultural, 2003. 282 p. ISBN 8571394962 (broch.).",
+      "ano" : 2003
+    }, {
+      "texto" : "SANTAELLA, Lúcia; FEITOZA, Mirna (org). Mapa do jogo: a diversidade cultural dos games. São Paulo: Cengage Learning, c2009. xv. 254 p. ISBN 9788522106790 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "SCHELL, Jesse. A arte de game design: o livro original. Rio de Janeiro: Elsevier, 2011. xxvii, 489 p. (Série Media technology). ISBN 9788535241983.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "BOBANY, Arthur. Video game arte. Teresópolis, RJ: Novas Idéias, 2008. 191 p. ISBN 9788560284078.",
+      "ano" : 2008
+    }, {
+      "texto" : "JUUL, Jesper. A casual revolution: reinventing video games and their players. Cambridge: The Mit Press, c 2010. 252 p. ISBN 9780262013376.",
+      "ano" : 2010
+    }, {
+      "texto" : "KENT, Steve L. The ultimate history of video games: from Pong to Pokémon and beyond : the story behind the craze that touched our lives and changed the world. New York: Three Rivers, 2001. xvi, 608 p. ISBN 0-7615-3643-4.",
+      "ano" : 2001
+    }, {
+      "texto" : "TAVARES, Manuel; FERRO, Mário. Análise da obra Fundamentação da metafísica dos costumes de Kant. 3. ed. Lisboa: Presença, 2000. 157, [2] p. (Textos de Apoio, 65). ISBN 972-23-1965-5 (broch.).",
+      "ano" : 2000
+    }, {
+      "texto" : "HUIZINGA, Johan. Homo Ludens: o jogo como elemento da cultura. 5. ed. São Paulo: Perspectiva, c2004. 243 p. (Estudos , 4). ISBN 8527300753 (broch.).",
+      "ano" : 2004
+    } ]
+  }, {
+    "codigo" : "SMD0023",
+    "nome" : "Design de Jogos Digitais",
+    "ementa" : "O que é design de jogos. Gêneros. A experiência do jogo. Estrutura de um jogo. Elementos de um jogo. Interação. Análise do Jogador. Mecânicas de um jogo. Interfaces de jogos. Temas. O mundo de um jogo. Tecnologias. Jogos multiusuários. Equipe de trabalho. Testes. Responsabilidades do designer de jogos. Documentos. Indústria dos jogos. Estudos de caso.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "SCHELL, Jesse. A arte de game design: o livro original. Rio de Janeiro: Elsevier, 2011. xxvii, 489 p. (Série Media technology). ISBN 9788535241983.",
+      "ano" : 2011
+    }, {
+      "texto" : "NOVAK, Jeannie. Desenvolvimento de games. São Paulo: Cengage Learning, c2011. 443 p. ISBN 9788522106325 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "DILLE, Flint; PLATTEN, John Zuur. The ultimate guide to video game writing and design. New York: Watson-Guptill Publications, 2007. 260 p. ISBN 9781580650663 (broch.).",
+      "ano" : 2007
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ARRUDA, Eucidio Pimenta. Fundamentos para o desenvolvimento de jogos digitais. Porto Alegre: Bookman, 2014. x, 102 p. (Tekne). ISBN 9788582601433 (broch.).",
+      "ano" : 2014
+    }, {
+      "texto" : "FLAVELL, Lance; SPRINGERLINK (ONLINE SERVICE). Beginning Blender : Open Source 3D Modeling, Animation, and Game Design. Springer eBooks XVIII, 448 p ISBN 9781430231271.",
+      "ano" : null
+    }, {
+      "texto" : "MARCELO, Antonio; PESCUITE, Julio. Design de jogos: fundamentos. Rio de Janeiro: Brasport, 2009. 164 p. ISBN 9788574523965 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "SPUY, Rex; SPRINGERLINK (ONLINE SERVICE). Advanced Game Design with Flash. Springer eBooks 808 p ISBN 9781430227403.",
+      "ano" : null
+    }, {
+      "texto" : "TEKINBAS, Katie Salen; ZIMMERMAN, Eric. Regras do jogo: fundamentos do design de jogos. São Paulo: Blucher, 2012. 4 v. ISBN 9788521206262 (broch.).",
+      "ano" : 2012
+    } ]
+  }, {
+    "codigo" : "SMD0130",
+    "nome" : "Design Emocional",
+    "ementa" : "Design Emocional: conceitos e aplicações. Níveis de processamento cognitivo: visceral, comportamental e reflexivo. Foco e criatividade. Psicologia dos objetos atraentes. Avaliação emocional. Design de objetos para diversão e prazer. Interações sedutoras. Interação divertida: estímulo e mistério. Desenvolvimento e avaliação de soluções de design utilizando os conceitos estudados.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "NORMAN, Donald A. Design emocional: por que adoramos (ou detestamos) os objetos do dia-a-dia . Rio de Janeiro, RJ: Rocco, 2008. 278 p. ISBN 9788532523327 (Broch.)",
+      "ano" : 2008
+    }, {
+      "texto" : "NORMAN, Donald A. O design do futuro. [Rio de Janeiro, RJ]: Rocco, [2010]. 191p. ISBN 9788532525482 (Broch.)",
+      "ano" : 2010
+    }, {
+      "texto" : "AFFECT and emotion in human-computer interaction: from theory to applications. Berlim: Springer-Verlag, 2008. ISBN 9783540850991. Disponível em: <https://link.springer.com/content/pdf/10.1007%2F978-3-540-85099-1.pdf>",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "FRANKLIN, Stan. Artificial minds. Cambridge, Massachusetts: MIT Press, c1995. xi, 449 p. ISBN 0262561093 (broch.).",
+      "ano" : 1995
+    }, {
+      "texto" : "ILVA, Germannya D' Garcia Araújo Silva; COSTA, Lourival Lopes Filho (org.). Ergonomia e tecnologia (em foco). São Paulo: Blucher, 2020. 145 p. (Fronteiras do design). ISBN 978-65-5550-045-5. Disponível em: http://www.repositoriobib.ufc.br/000073/000073d7.pdf.",
+      "ano" : 2020
+    }, {
+      "texto" : "BÜRDEK, Bernhard E. Design: história, teoria e prática do design de produtos. 2.ed. São Paulo, SP: Blucher, 2010. 496 p. ISBN 9788521205234",
+      "ano" : 2010
+    }, {
+      "texto" : "KELEMAN, Stanley. Anatomia emocional. 4. ed. São Paulo: Summus Editorial, 1992. 174 p. ISBN 853230379X (broch.).",
+      "ano" : 1992
+    }, {
+      "texto" : "EYSENCK, Michael W.; KEANE, Mark T. Psicologia cognitiva: um manual introdutório. Porto Alegre: Artes Médicas, 1994. 490 p. ISBN 85-7307-022-6.",
+      "ano" : 1994
+    } ]
+  }, {
+    "codigo" : "SMD0145",
+    "nome" : "Direção de Arte para Multimídia",
+    "ementa" : "As origens da direção de arte, incluindo influências de movimentos artísticos e de escolas do Design. Diferenciais da direção de arte para Multimídia, destacando questões conceituais, narrativas, visuais, sonoras, interativas e as perspectivas particulares das necessidades de uso. Ações do diretor de arte para Multimídia e suas funções junto ao cliente, à equipe de desenvolvimento e ao usuário. Métodos de avaliação, análise e apreciação de peças multimídia, considerando aspectos objetivos e subjetivos de conteúdo, forma, função e experiências. Metodologias, tecnologias, técnicas e ferramentas voltadas ao desenvolvimento de produtos multimídia, considerando aspectos de comunicação, de usabilidade e de disponibilização/distribuição. Geração de soluções interativas multissensoriais, exercitando possibilidades projetuais teóricas e práticas.",
+    "paginaEmenta" : 56,
+    "bibliografiaBasica" : [ {
+      "texto" : "AMBROSE, Gavin; HARRIS, Paul. Design thinking. Porto Alegre: Bookman, 2011. 199 p. (Design básico, 7). ISBN 9788577807543 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "CLAZIE, Ian. Portfólio digital de design: um guia prático para apresentar seus trabalhos online. São Paulo: Blucher, 2011. 192 p. ISBN 9788521206002.",
+      "ano" : 2011
+    }, {
+      "texto" : "NORMAN, Donald A. Design emocional: por que adoramos (ou detestamos) os objetos do dia-a-dia. Rio de Janeiro: Rocco, 2008. 278 p. ISBN 9788532523327 (Broch.).",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "CESAR, Newton. Direção de arte em propaganda. 10.ed. Brasília, DF: Ed. SENAC Distrito Federal, 2013. 253p. ISBN 8598694207 (Broch.).",
+      "ano" : 2013
+    }, {
+      "texto" : "COLLARO, Antonio Celso. Produção gráfica: arte e técnica na direção de arte. 2. ed. São Paulo: Pearson, c2012. 200 p. ISBN 9788564574236 (broch.).",
+      "ano" : 2012
+    }, {
+      "texto" : "DONDIS, Donis A. Sintaxe da linguagem visual. 3. ed. São Paulo: Martins Fontes, 2007. 236 p. (Coleção A). ISBN 978-85-3362-382-8 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "LAL, Rajesh. Digital design essentials: 100 ways to design better desktop, web, and mobile interfaces. Beverly: Rockport Publishers, 2013 208 p. ISBN 9781592538034.",
+      "ano" : 2013
+    }, {
+      "texto" : "VON OECH, Roger. Um 'Toc' na cuca. São Paulo: Cultura, c1995. 153 p. ISBN 8585153024 (broch.).",
+      "ano" : 1995
+    } ]
+  }, {
+    "codigo" : "SMD0027",
+    "nome" : "Edição Audiovisual",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0084",
+    "nome" : "Experimentos em Tipografia Digital",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0034",
+    "nome" : "Ferramentas de Modelagem Tridimensional I",
+    "ementa" : "Primitivas gráficas tridimensionais. Modelagem por sobreposição de elementos. Técnicas específicas de modelagem. Modelagem por aplicação de modificadores. Aplicação e mapeamento de materiais simples e compostos. Técnicas básicas de iluminação. Classificação e posicionamento de câmeras. Processo de renderização.",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "BRITO, Allan. Blender 3D: guia do usuário. 4. ed. São Paulo: Novatec, c2010. 487 p. ISBN 9788575222584",
+      "ano" : 2010
+    }, {
+      "texto" : "REINICKE, José Fernando. Modelando personagens com o Blender 3D. São Paulo, SP: Novatec, 2008. 266 p. ISBN 9788575221440",
+      "ano" : 2008
+    }, {
+      "texto" : "FLAVELL, Lance - “Beginning Blender: Open Source 3D Modeling, Animation, and Game Design”. Apress; 1 edition (December 30, 2010); BRITO, Allan. Blender 3D: jogos e animações interativas. São Paulo: Novatec, 2011. 365 p. ISBN 9788575222805.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "MULLEN, Tony. Introducing character animation with Blender. Indianapolis, Ind.: Wiley, c2007 . xviii, 478 p., [16] p. de lâms. + 1 DVD ISBN 9780470102602 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "JAMES, Daniel; SPRINGERLINK (ONLINE SERVICE). Crafting Digital Media: Audacity, Blender, Drupal, GIMP, Scribus, and Other Open Source Tools. Springer eBooks 450 p ISBN 9781430218883.",
+      "ano" : null
+    }, {
+      "texto" : "KERLOW, Isaac Victor. The art of 3D: computer animation and effects. 4th ed. Hoboken, NJ: John Wiley & Sons, 2009. xii, 499 p. ISBN 9780470084908.",
+      "ano" : 2009
+    }, {
+      "texto" : "COHN, David S. AutoCad 12- guia completo. Rio de Janeiro: Berkeley, 1993. 2v. ISBN 8572510796",
+      "ano" : 1993
+    }, {
+      "texto" : "HOOD, John D. AutoCAD: guia do usuário. Sao Paulo: McGraw-Hill, 1989. 320p. ISBN 0074502123.",
+      "ano" : 1989
+    }, {
+      "texto" : "OMURA, George. Mastering AutoCAD 14. Premium ed. San Francisco [California, Estados Unidos]: SYBEX, 1996. xli, 1400 p. : ISBN 0782123384 (enc.)",
+      "ano" : 1996
+    } ]
+  }, {
+    "codigo" : "SMD0120",
+    "nome" : "Identidade Sonora de Marcas",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0146",
+    "nome" : "Instalações Multimídia",
+    "ementa" : "Apresentação, análise e discussão do conceito de instalação multimídia. Avaliação de soluções técnicas e tecnológicas que viabilizem a construção de instalações multimídia interativas de diversos gêneros. Construção de protótipos, realização de testes, avaliação de resultados, desenvolvimento de modelos finais e exposição/aplicação junto à comunidade.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "FERRARI, Pollyana. (org.). Hipertexto hipermídia: as novas ferramentas da comunicação digital. 2. ed. São Paulo: Contexto, 2012. 191 p. ISBN 9788572443623 (broch.).",
+      "ano" : 2012
+    }, {
+      "texto" : "GOSCIOLA, Vicente. Roteiro para as novas mídias: do cinema às mídias interativas. 2. ed., rev. amp. São Paulo: Ed. SENAC São Paulo, 2008. 277 p. ISBN 9788573597110 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "NORMAN, Donald A. Design emocional: por que adoramos (ou detestamos) os objetos do dia-a-dia. Rio de Janeiro: Rocco, 2008. 278 p. ISBN 9788532523327 (Broch.).",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "BERTOMEU, João Vicente Cegato (org.). Criação visual e multimídia. São Paulo: Cengage Learning, 2010. xi, 149 p. ISBN 978-85-221-0638-7.",
+      "ano" : 2010
+    }, {
+      "texto" : "CARRERA, Philip. Adobe Flash animation: creative storytelling for the Web and TV. Sudbury, Massachusetts: Jones and Bartlett, 2011. xii, 270 p. + 1 CD-ROM (4 3/4 in. ISBN 9780763784157 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "HART, Daniel W. Eletrônica de potência: análise e projetos de circuitos. Porto Alegre: AMGH, 2012. xvi, 478 p. ISBN 978-85-8055-045-0.",
+      "ano" : 2012
+    }, {
+      "texto" : "IDOETA, Ivan V.(Ivan Valeye); CAPUANO, Francisco G. Elementos de eletrônica digital. 40.ed. São Paulo: Érica, 2007 524p. ISBN 9788571940192 (broch.).",
+      "ano" : 2007
+    }, {
+      "texto" : "LI, Ze-Nian; DREW, Mark S. Fundamentals of multimedia. 2nd ed. (língua inglesa). New York: Springer International, [2014]. xxiv, 727 p. (Texts in computer science). ISBN 9783319052892 (broch.).",
+      "ano" : 2014
+    } ]
+  }, {
+    "codigo" : "SMD0117",
+    "nome" : "Interação Humano Computador II",
+    "ementa" : "Tópicos Especiais sobre comportamento do usuário. Abordagens de Design Participativo. Experiência do Usuário e seus métodos. Técnicas de Pesquisa com Usuário. Análise de Dados.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "HEVNER, Alan; SPRINGERLINK (ONLINE SERVICE). Design Research in Information Systems : Theory and Practice . Springer eBooks XXVIII, 320p (Integrated Series in Information Systems, 22). ISBN 9781441956538.",
+      "ano" : null
+    }, {
+      "texto" : "FILIPPI, Stefano; SPRINGERLINK (ONLINE SERVICE). The Design Guidelines Collaborative Framework : A Design for Multi-X Method for Product Development . Springer eBooks XIV, 186 p. 52 illus ISBN 9781848827721.",
+      "ano" : null
+    }, {
+      "texto" : "MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Técnicas de pesquisa: planejamento e execução de pesquisa; amostragens e técnicas de pesquisa; elaboração, análise e interpretação de dados. 9. ed. São Paulo: Atlas, c2021. xiv, 318 p. ISBN 978-85-97-02659-7.",
+      "ano" : 2021
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "SARIS, Willem E.; GALLHOFER, Irmtraud N. Design, evaluation, and analysis of questionnaires for survey research. 2nd ed. Barcelona: Wiley, 2014. 355 p. (Wiley Series in Survey Methodology). ISBN 9781118634615 (broch).",
+      "ano" : 2014
+    }, {
+      "texto" : "YIN, Robert K. Case study research: design and methods. 5th ed. Estados Unidos da America: Sage Publications, 2014. 282 p. ISBN 9781452242569 (broch.).",
+      "ano" : 2014
+    }, {
+      "texto" : "ROGERS, Yvonne; SHARP, Helen; PREECE, Jennifer. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013. xiv, 585 p. ISBN 978-85-8260-006-1.",
+      "ano" : 2013
+    }, {
+      "texto" : "LANKOSKI, Petri ; HOLOPAINEN, Jussi (ed.). Game design research: an introduction to theory & practice. Pittsburgh, PA: ETC Press, 2017. 222, [1] p. ISBN 978-1-387-40837-5. Disponível em: http://www.repositoriobib.ufc.br/000070/000070b6.pdf.",
+      "ano" : 2017
+    }, {
+      "texto" : "SEIVEWRIGHT, Simon. Pesquisa e design. 2. ed. Porto Alegre: Bookman, 2015. 191 p. (Fundamentos de design de moda ; v. 1). ISBN 9788582603024 (broch.)",
+      "ano" : 2015
+    } ]
+  }, {
+    "codigo" : "SMD0113",
+    "nome" : "Laboratório de Criatividade",
+    "ementa" : "Definições de criação, inovação e criatividade. Os processos criativos e seu uso no Design. Desenvolvimento e a aplicação prática de técnicas criativas. Bloqueios e Desbloqueadores. Técnicas de geração de ideias.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "PICHON-RIVIERE, Enrique. O Processo de criação. São Paulo: Martins Fontes, c1999. 112p. (Psicologia e pedagogia). ISBN 8533611609 (broch.).",
+      "ano" : 1999
+    }, {
+      "texto" : "OSTROWER, Fayga. Criatividade e processos de criação. 13. ed. Petrópolis: Vozes, 1999. 187 p. ISBN 8532605532 (broch.).",
+      "ano" : 1999
+    }, {
+      "texto" : "VON OECH, Roger. Um 'Toc' na cuca. São Paulo: Cultura, c1995. 153 p. ISBN 8585153024 (broch.).",
+      "ano" : 1995
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ALENCAR, Eunice M. L. Soriano de. Criatividade. 2. ed. Brasília, DF: UnB, 1995. 149 p. ISBN 8523003401 (broch.).",
+      "ano" : 1995
+    }, {
+      "texto" : "BARROS, Lilian Ried Miller. A cor no processo criativo: um estudo sobre a Bauhaus e a teoria de Goethe. 3.ed. rev. São Paulo: Ed. SENAC São Paulo, 2009. 336 p. ISBN 9788573598773 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "KELLEY, Tom; LITTMAN, Jonathan. A arte da inovação: lições de criatividade da IDEO, a maior empresa norte-americana de design. São Paulo: Futura, 2001. 341 p. ISBN 8574130532 (broch.).",
+      "ano" : 2001
+    }, {
+      "texto" : "VON OECH, Roger. Um chute na rotina. São Paulo: Cultura, c1994. 157 p. ISBN 852930022X (broch.).",
+      "ano" : 1994
+    }, {
+      "texto" : "WAGNER, Christiane. In art-invenção e artifício. São Paulo: Blucher, 2009. 131 p. ISBN 9788561209766.",
+      "ano" : 2009
+    } ]
+  }, {
+    "codigo" : "SMD0016",
+    "nome" : "Linguagem Audiovisual",
+    "ementa" : "O cinema como matriz do Audiovisual. A imagem em movimento do filme ao Sensor. Desenvolvimento histórico do conceito de Linguagem Audiovisual. A Gramática do Audiovisual. Recursos de linguagem. Técnicas de produção de áudio e vídeo. Etapas de produção. Equipe técnica. Captação e edição de imagens: movimentos de câmera, enquadramento, planificação. Produção e captação de áudio. Criação de Roteiros, da ideia ao tratamento final.",
+    "paginaEmenta" : 59,
+    "bibliografiaBasica" : [ {
+      "texto" : "MARTIN, Marcel. A linguagem cinematográfica. São Paulo: Brasiliense, 1990. 279 p. ISBN 8511220275 (broch.).",
+      "ano" : 1990
+    }, {
+      "texto" : "MONCLAR, Jorge. Linguagem cinematográfica: narrando com imagens. 1. ed. Rio de Janeiro: Jorge Monclar, 2009. 124 p. ISBN 978-85-909570-0-3.",
+      "ano" : 2009
+    }, {
+      "texto" : "RODRÍGUEZ, Ángel. A dimensão sonora da linguagem audiovisual. São Paulo: Ed. SENAC São Paulo, 2006. 344 p. ISBN 85-7359-500-0.",
+      "ano" : 2006
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "NICHOLS, Bill. Introdução ao documentário. 2. ed. Campinas, SP: Papirus, 2007. 270 p. (Campo imagético). ISBN 85-308-0785-5.",
+      "ano" : 2007
+    }, {
+      "texto" : "MACHADO, Arlindo. Pré-cinemas & pós-cinemas. 5. ed. Campinas: Papirus, 2008. 303 p. (Campo Imagético). ISBN 85-308-0463-5.",
+      "ano" : 2008
+    }, {
+      "texto" : "STAM, Robert. Introdução à teoria do cinema. 5. ed. Campinas, SP: Papirus, 2013. 398 p. (Campo imagético). ISBN 8530807324 (broch.).",
+      "ano" : 2013
+    }, {
+      "texto" : "WATTS, Harris; LONGHI, Jairo Tadeu. On camera: o curso de produção de filme e vídeo da BBC. São Paulo: Summus Editorial, 1990. 276p. (Novas buscas em comunicação. v.36). ISBN 8532303145 (broch.).",
+      "ano" : 1990
+    }, {
+      "texto" : "VAN SIJLL, Jennifer. Cinematic storytelling: the 100 most powerfull film conventions every filmmaker must know. Studio City, California: Michael Wiese Productions, c2005. 257 p. ISBN 1-932907-05-X (broch.).",
+      "ano" : 2005
+    } ]
+  }, {
+    "codigo" : "SMD0135",
+    "nome" : "Oficina de Podcast",
+    "ementa" : "Conceito de podcast. Características das mídias sonoras. Linguagem sonora. Gêneros e formatos de podcast. Processo de criação: roteiro, locução, sonoplastia e edição de podcasts. Produção e publicação de podcasts.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "FERRARETTO, Luiz Artur. Rádio: o veículo, a história e a técnica. 2. ed. Porto Alegre, RS: Sagra Luzzato, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "HAUSMAN, Carl. Rádio: produção, programação e performance. São Paulo, SP: Cengace Learning, 2010",
+      "ano" : 2010
+    }, {
+      "texto" : "LÓPEZ VIGIL, José Ignacio. Manual urgente para radialistas apaixonados. 2. ed. São Paulo, SP: Paulinas, 2004.",
+      "ano" : 2004
+    }, {
+      "texto" : "MAGNONI, Antônio Francisco; CARVALHO, Juliano Maurício (Org.). O novo rádio: cenários da radiodifusão na era digital. São Paulo, SP: Ed. SENAC São Paulo, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "MCLEISH, Robert. Produção de rádio: um guia abrangente de produção radiofônica. 3. ed. São Paulo, SP: Summus, 2001.",
+      "ano" : 2001
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "COMASSETTO, Leandro Ramires. A voz da aldeia: o rádio local e o comportamento da informação na nova ordem global. Florianópolis, SC: Insular, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "CONSANI, Marciel. Como usar o rádio na sala de aula. São Paulo, SP: Contexto, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "GUERRINI JUNIOR, Irineu. Túlio de Lemos e seus admiráveis roteiros: rádio, arte e política. São Paulo, SP: Terceira Margem, 2013",
+      "ano" : 2013
+    }, {
+      "texto" : "MEDITSCH, Eduardo; ZUCULOTO, Valci. Teorias do rádio: textos e contextos. Florianópolis: Insular, 2008",
+      "ano" : 2008
+    }, {
+      "texto" : "MEDITSCH, Eduardo. Teorias do rádio: textos e contextos. Florianópolis, SC: Insular, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "PRADO, Magaly. Produção de rádio: um manual prático. Rio de Janeiro: Elsevier, 2006",
+      "ano" : 2006
+    }, {
+      "texto" : "PERDIGÃO, Paulo. No ar: PRK-30! : o mais famoso programa de humor da era do rádio. Rio de Janeiro, RJ: Casa da Palavra, 2003",
+      "ano" : 2003
+    }, {
+      "texto" : "SALIBA, Elias Thomé. Raízes do riso: a representação humorística na história brasileira: da Belle époque aos primeiros tempos do rádio. 2ª reimpressão. São Paulo, SP: Companhia das Letras, 2008",
+      "ano" : 2008
+    }, {
+      "texto" : "SILVA, Júlia Lúcia de Oliveira Albano da. Rádio: oralidade mediatizada, o spot e os elementos da linguagem radiofônica. São Paulo: Annablume, 2007.",
+      "ano" : 2007
+    } ]
+  }, {
+    "codigo" : "SMD0036",
+    "nome" : "Produção Audiovisual",
+    "ementa" : "Planejamento de Produção Audiovisual: pré-produção, produção e pós-produção. Desenvolvimento de Projeto Final: realização de vídeos em estúdio e em locações específicas, sob orientação de um professor.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "RODRIGUES, Chris. O CINEMA E A PRODUÇÃO. Editora DP&A, FAPERJ. 3ª edição, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "EISENSTEIN, Sergei . A FORMA DO FILME. Editora: Jorge Zahar. 6ª edição, Addison Wesley, 2004.",
+      "ano" : 2004
+    }, {
+      "texto" : "BLOCK, Bruce A. A narrativa visual: criando estrutura visual para cinema, TV e mídias digitais. Rio de Janeiro: Elsevier, 2010. xiv, 311 p. ISBN 9788535237603 (broch.).",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "CARRIÈRE, Jean-Claude; BONITZER, Pascal. Prática do roteiro cinematográfico. São Paulo: JSN, 1996. 144 p. ISBN 8585983011 (broch.).",
+      "ano" : 1996
+    }, {
+      "texto" : "CARRIERE, Jean-Claude. A Linguagem Secreta do Cinema. Rio de Janeiro: Nova Fronteira, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "COMPARATO, Doc. Da criação ao roteiro: teoria e prática. 2.ed. rev., atual. e ampl. São Paulo: Summus Editorial, 2009. 494 p. (Biblioteca fundamental de cinema, 4). ISBN 9788532305404 (broch.).",
+      "ano" : 2009
+    }, {
+      "texto" : "GOSCIOLA, Vicente. Roteiro para as novas mídias: do cinema às mídias interativas. 3. ed., rev. amp. São Paulo: Ed. SENAC São Paulo, 2010. 277 p. ISBN 9788573597110 (broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "NESTERIUK, Sérgio. Dramaturgia de série de animação. São Paulo: [s. n.], 2011. 281 p. ISBN 9788591196401 (broch.).",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0147",
+    "nome" : "Produção Audiovisual para Crianças e Adolescentes",
+    "ementa" : "Infância e adolescência como construção social. A relação das crianças e adolescentes com os conteúdos midiáticos sob a ótica dos direitos. Critérios de qualidade para a produção audiovisual destinada às crianças. Regulação de conteúdo para crianças e adolescentes. Boas práticas na produção audiovisual para crianças e adolescentes. Roteiro e storyboard de narrativa audiovisual. Realização de produção audiovisual (animação ou live action) para crianças e adolescentes.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "FIELD, S. Manual do roteiro: os fundamentos do texto cinematográfico. Rio de Janeiro: Objetiva, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "FREITAS, Marcos Cezar de. História social da infância no Brasil. 8. ed. São Paulo: Cortez, 2011.",
+      "ano" : 2011
+    }, {
+      "texto" : "LUCENA JÚNIOR, Alberto. Arte da animação: técnica e estética através da história . São Paulo, SP: SENAC, 2005.",
+      "ano" : 2005
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "BARBALHO, Alexandre; MARÔPO, Lidia (org.). Infância, juventude e mídia: olhares luso-brasileiros. Fortaleza: EdUECE, 2015. 284 p. ISBN 9788578261368 (broch.).",
+      "ano" : 2015
+    }, {
+      "texto" : "CARRIÈRE, J. Prática do roteiro cinematográfico. 3. ed. São Paulo: JSN, 1996.",
+      "ano" : 1996
+    }, {
+      "texto" : "COMPARATO, D. Da criação ao roteiro: teoria e prática. São Paulo: Summus, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "GOSCIOLA, Vicente. Roteiro para as novas mídias: do cinema às mídias interativas. 3. ed., rev. amp. São Paulo, SP: Editora Senac São Paulo, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "NESTERIUK, Sérgio. Dramaturgia de série de animação. São Paulo: [s. n.], 2011. 281 p. ISBN 9788591196401 (broch.).",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0148",
+    "nome" : "Redação para Mídias Digitais",
+    "ementa" : "Multiletramentos e midiatização. O texto informativo multimídia. Conceituação de público-alvo e de “audiência” para as mídias digitais. Atividades práticas de redação e edição para as mídias digitais.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "CHARAUDEAU, Patrick. Discurso das mídias. São Paulo, SP: Contexto, 2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "JENKINS, Henry; GREEN, Joshua; FORD, Sam. Cultura da conexão: criando valor e significado por meio da mídia propagável. São Paulo: Aleph, 2014.",
+      "ano" : 2014
+    }, {
+      "texto" : "SQUARISI, Dad; SALVADOR, Arlete. A arte de escrever bem. [7. ed. 2. reimpr]. São Paulo: Contexto, 2012.",
+      "ano" : 2012
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "ARAÚJO, Júlio César; BIASI-RODRIGUES, Bernardete. Interação na Internet: novas formas de usar a linguagem. Rio de Janeiro: Lucerna, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "FERRARI, Pollyana (Org.). Hipertexto hipermídia: as novas ferramentas da comunicação digital. 2. ed. São Paulo: Contexto, 2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "GOSCIOLA, Vicente. Roteiro para as novas mídias: do cinema às mídias interativas. 3. ed., rev. amp. São Paulo, SP: Editora Senac São Paulo, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "JENKINS, Henry. Cultura da convergência. 2. ed. São Paulo, SP: Aleph, 2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "LEÃO, Lúcia. O labirinto da hipermídia: arquitetura e navegação no ciberespaço /. 2.ed. São Paulo: FAPESP: Iluminuras, 2001.",
+      "ano" : 2001
+    } ]
+  }, {
+    "codigo" : "SMD0129",
+    "nome" : "Técnicas de Animação 2D",
+    "ementa" : "História da animação. Introdução ao universo da animação. Estudo específico das técnicas, procedimentos e ferramentas. Princípios e técnicas da animação clássica: teoria e prática. Exercícios. Projeto Final.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "PONCET, Marie-Thérése; GRANJA, Vasco. O desenho animado. Lisboa: Editorial Estúdios Cor, s.d.",
+      "ano" : null
+    }, {
+      "texto" : "WILLIAMS, R. The animator’s survival kit. New York: Faber and Faber Limited, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "STANCHFIELD, W. Dando vida a desenhos: os anos de ouro das aulas de animação na Disney. Rio de Janeiro : Elsevier, Campus, 2011.",
+      "ano" : 2011
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "BARBOSA Júnior, A. L. Arte da animação. Técnica e estética através da história. São Paulo: Editora SENAC, 2002.",
+      "ano" : 2002
+    }, {
+      "texto" : "NESTERIUK, Sérgio. Dramaturgia de série de animação. São Paulo: [s. n.], 2011. 281 p. ISBN 9788591196401 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "WELLS, P.; QUINN, J.; MILLS, L. Desenho para animação. Porto Alegre: Bookman, 2012.",
+      "ano" : 2012
+    }, {
+      "texto" : "MIRANDA, Carlos Alberto. Cinema de animação: arte nova, arte livre. Petropolis: Vozes, 1971. 149 p. (Coleção Vozes do mundo moderno ;3) ISBN (broch.)",
+      "ano" : 1971
+    }, {
+      "texto" : "BERGSTRÖM, Bo; BETTONI, Rogério. Fundamentos da comunicação visual. São Paulo, SP: Rosari, 2009. 240 p. ISBN 9788588343856",
+      "ano" : 2009
+    } ]
+  }, {
+    "codigo" : "SMD0128",
+    "nome" : "Técnicas de Animação 3D I",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0126",
+    "nome" : "Técnicas de Animação 3D II",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0118",
+    "nome" : "Teoria e Crítica do Design",
+    "ementa" : "Aspectos teóricos fundamentais. Teoria e crítica do design em diferentes esferas: objetos, comunicações e sistemas. Análise de estilo e obras de designers famosos. Projeto final.",
+    "paginaEmenta" : 62,
+    "bibliografiaBasica" : [ {
+      "texto" : "GOMES FILHO, João. Design do objeto: bases conceituais : design do produto, design gráfico, design de moda, design de ambientes, design conceitual. São Paulo: Escrituras, 2006. 255 p. ISBN 85-7531-221-9 (broch.).",
+      "ano" : 2006
+    }, {
+      "texto" : "SAMARA, Timothy. Evolução do design: da teoria à prática: [guia de princípios básicos do design aplicados a projetos contemporâneos]. [Porto Alegre, RS]: [Bookman], [2010]. 272p. ISBN 9788577805839 (Broch.).",
+      "ano" : 2010
+    }, {
+      "texto" : "LUPTON, E., MILLER, J.A. ABC da Bauhaus: a Bauhaus e a teoria do design. São Paulo, SP: Cosac Naify, 2008. ISBN 9788575037355",
+      "ano" : 2008
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole,. Novos fundamentos do design. São Paulo, SP: Cosac Naify, 2008. 245,[2]p. ISBN 9788575032398",
+      "ano" : 2008
+    }, {
+      "texto" : "ARGAN, Giulio Carlo. Arte e crítica de arte. 2. ed. Lisboa, Portugual: Editorial Estampa, 1995. 167 p. (Teoria da Arte). ISBN 9723308991.",
+      "ano" : 1995
+    }, {
+      "texto" : "LUPTON, Ellen. Pensar com tipos: guia para designers, escritores, editores e estudantes. 2. ed. São Paulo, SP: Cosac Naify, 2013. 222p BÜRDEK, Bernhard E. Design: história, teoria e prática do design de produtos. 2.ed. São Paulo, SP: Blucher, 2010. 496 p. ISBN 9788521205234 (enc.).",
+      "ano" : 2010
+    }, {
+      "texto" : "CARA, Milene. Do desenho industrial ao design no Brasil: uma bibliografia crítica para a disciplina. São Paulo: Blucher, 2010. 97 p. (Pensando o design). ISBN 9788521205609 (broch.).",
+      "ano" : 2010
+    } ]
+  }, {
+    "codigo" : "SMD0119",
+    "nome" : "Tópicos Avançados em Design de Interfaces Gráficas",
+    "ementa" : "Introdução a projeto e padrões de interface para dispositivos móveis. UI/UX para dispositivos móveis. Guidelines para desenvolvimento de interfaces interativas para dispositivos móveis. Conceitos básicos sobre UI/UX para jogos digitais. Projeto gráfico e usabilidade aplicada a interfaces de jogos. Projeto Final.",
+    "paginaEmenta" : 63,
+    "bibliografiaBasica" : [ {
+      "texto" : "GALITZ, W. O. The Essential Guide to User Interface Design: An Introduction to GUI Design Principles and Techniques. 3ª. Edição, John Wiley & Sons, ISBN-10: 0470053423, 2007.",
+      "ano" : 2007
+    }, {
+      "texto" : "LAL, Rajesh. Digital design essentials: 100 ways to design better desktop, web, and mobile interfaces . Beverly: Rockport Publishers, 2013 208 p. ISBN 9781592538034.",
+      "ano" : 2013
+    }, {
+      "texto" : "LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. Princípios universais do design: 125 maneiras de aprimorar a usabilidade, influenciar a percepção, aumentar o apelo e ensinar por meio do design. Porto Alegre: Bookman, 2010. 272 p. ISBN 9788577807383.",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "Design de interação : além da interação humano-computador - 3. ed. / 2013 - ( Livros )",
+      "ano" : 2013
+    }, {
+      "texto" : "JOHNSON, Steven. Cultura da interface: como o computador transforma nossa maneira de criar e comunicar. Rio de Janeiro: Zahar, 2001. 189 p. (Interface). ISBN 8571105898 (broch.).",
+      "ano" : 2001
+    }, {
+      "texto" : "CAMARGO, Liriane Soares de Araújo de; VIDOTTI, Silvana Aparecida Borsetti Gregório. Arquitetura da informação: uma abordagem prática para o tratamento de conteúdo e interface em ambientes informacionais digitais. Rio de Janeiro: LTC, 2011. 231 p. ISBN 9788521608714 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "BUTOW, Eric. User interface design for mere mortals: a hands-on guide to user interface design software-independent approach. Boston: Addison-Wesley, 2007. xxii, 286 p. ISBN 9780321447739.",
+      "ano" : 2007
+    }, {
+      "texto" : "NIELSEN, Jakob. Usabilidade na web. Rio de Janeiro, RJ: Elsevier, 2007. xxiv, 406 p. ISBN 9788535221909",
+      "ano" : 2007
+    } ]
+  }, {
+    "codigo" : "SMD0071",
+    "nome" : "Videografismo",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "SMD0021",
+    "nome" : "Gestão de Negócios em Multimídia",
+    "ementa" : "Introdução à Administração e Empreendedorismo. Entendendo o Significado da Administração. Definindo o Negócio de Sua Empresa. Articulando Recursos e Competências. Gestão de pessoas. Gestão Operacional. Gestão de Marketing. Gestão Financeira. Estratégia Competitiva. Empreendedorismo. Plano de Negócio.",
+    "paginaEmenta" : 58,
+    "bibliografiaBasica" : [ {
+      "texto" : "CHIAVENATO, Idalberto. Administração para administradores e não-administradores: a gestão de negócios ao alcance de todos. São Paulo, SP: Saraiva, 2008. 272 p. ISBN 9788502067820.",
+      "ano" : 2008
+    }, {
+      "texto" : "MAXIMIANO, Antonio Cesar Amaru. Administração para empreendedores: fundamentos da criação e da gestão de novos negócios. 2. ed. São Paulo: Pearson, c2011. 240 p. ISBN 9788576058762 (broch.).",
+      "ano" : 2011
+    }, {
+      "texto" : "SALIM, César Simões. Introdução ao empreendedorismo: despertando a atitude empreendedora. Rio de Janeiro: Elsevier, 2010. 245 p. (Empreendedorismo) ISBN 9788532534664. (https://app.minhabiblioteca.com.br/books/9788595154414)",
+      "ano" : 2010
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "DORNELAS, Jose Carlos Assis. Empreendedorismo: transformando ideias em negócios . 4. ed. rev. atual. Rio de Janeiro: Elsevier, 2012. xviii, 260 p. ISBN 9788535247589 (broch.).",
+      "ano" : 2012
+    }, {
+      "texto" : "DEGEN, Ronald Jean. O empreendedor: empreender como opção de carreira . São Paulo: Prentice-Hall, 2009. xviii, 440 p. ISBN 9788576052050.",
+      "ano" : 2009
+    }, {
+      "texto" : "KOTLER, Philip; ARMSTRONG, Gary. Princípios de marketing. 15. ed. São Paulo, SP: Pearson Education do Brasil, 2015. 780 p. ISBN 9788543004471 (broch.).",
+      "ano" : 2015
+    }, {
+      "texto" : "COZZI, Afonso (org.). Empreendedorismo de base tecnológica: Spin-Off: criação de novos negócios a partir de empresas constituídas, universidades e centros de pesquisa. Rio de Janeiro: Elsevier, Campus, 2008. 138 p. ISBN 9788535226683 (broch.).",
+      "ano" : 2008
+    }, {
+      "texto" : "FERRARI, Roberto. Empreendedorismo para computação: criando negócios em tecnologia. Rio de Janeiro: Elsevier, 2010. 164 p. ISBN 9788535234176 (broch.).",
+      "ano" : 2010
+    } ]
+  }, {
+    "codigo" : "SMD0087",
+    "nome" : "Filosofia da Tecnologia",
+    "ementa" : "Filosofia da ciência e da tecnologia, o que é tecnologia? Racionalidade tecnológica, determinismo tecnológico, mulheres feminismo e tecnologia e antitecnologia.",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "DUSEK, Val. Filosofia da Tecnologia. Editora Loyola, 2006",
+      "ano" : 2006
+    }, {
+      "texto" : "LEVY, Pierre. Cibercultura Tradução de Carlos Irineu da Costa - São Paulo: Editora 34, 1999.",
+      "ano" : 1999
+    }, {
+      "texto" : "LEVY, Pierre. O que é o Virtual? Tradução de Paulo Neves - São Paulo: Editora 34, 1996.",
+      "ano" : 1996
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "RUDIGER, Francisco. Introdução as Teorias da Cibercultura- Rio Grande do Sul: Editora Sulina, 2003",
+      "ano" : 2003
+    }, {
+      "texto" : "BERARDI, Franco. A Fábrica da Infelicidade. Rio de Janeiro: Editora DP&A, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "SANTAELLA, Lúcia; FEITOZA, Mirna (Org). Mapa do jogo: a diversidade cultural dos games . São Paulo: Cengage Learning, c2009.",
+      "ano" : 2009
+    }, {
+      "texto" : "LEMOS, André. Cibercultura: tecnologia e vida social na cultura contemporânea . 5. ed. Porto Alegre: Sulina, 2010.",
+      "ano" : 2010
+    }, {
+      "texto" : "PRIMO, Alex. Interação mediada por computador: comunicação, cibercultura, cognição. 3. ed. Porto Alegre, RS: Sulina, 2011. 239 p.",
+      "ano" : 2011
+    } ]
+  }, {
+    "codigo" : "SMD0083",
+    "nome" : "Educomunicação",
+    "ementa" : "Fundamentos epistemológicos da inter-relação entre comunicação e educação a partir dos pressupostos de Paulo Freire, Mário Kaplun e Jesus Martín-Barbero. Panorama histórico da educomunicação na América Latina. Leitura crítica e competências midiáticas para o combate à desinformação e às fake news. Projetos de educomunicação nos movimentos sociais e nas instituições educativas e corporativas.",
+    "paginaEmenta" : 57,
+    "bibliografiaBasica" : [ {
+      "texto" : "BARBOSA, Bia; BARRETO, Helena Martins do Rêgo; VALENTE, Jonas Chagas Lucio. Fake news: como as plataformas enfrentam a desinformação. Rio de Janeiro: Multifoco: Intervozes, 2021.",
+      "ano" : 2021
+    }, {
+      "texto" : "FREIRE, Paulo. Pedagogia do oprimido. 43.ed. Rio de Janeiro: Paz e Terra, 2006.",
+      "ano" : 2006
+    }, {
+      "texto" : "KAPLÚN, Mario. Comunicación entre grupos: el método del cassette-foro . Bogotá: Centro Internacional de Investigaciones para el Desarrollo, 1984.",
+      "ano" : 1984
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "APARICI, Roberto. Comunicación educativa en la sociedad de la información. Madrid [Espanha]: Universidad Nacional de Educación a Distancia, 2003.",
+      "ano" : 2003
+    }, {
+      "texto" : "BRAGA, José Luiz e CALAZANS, Regina, Comunicação & Educação, Questões delicadas na interface. São Paulo, Hacker editores, 2001.",
+      "ano" : 2001
+    }, {
+      "texto" : "BELLONI, Maria Luiza. O que é mídia-educação. 2. ed. Campinas, SP: Autores Associados, 2005.",
+      "ano" : 2005
+    }, {
+      "texto" : "GARCÍA CANCLINI, Néstor. Ciudadanos reemplazados por algoritmos. Bielefeld: Transcript, 2020. 177 p. (Colección CALAS, 9). ISBN 978-3-8394-4891-5. Disponível em: http://www.repositoriobib.ufc.br/000072/000072c0.pdf FANTIN, Mônica. Mídia-educacação: conceitos, experiências, diálogos Brasil-Itália . Florianópolis: Cidade Futura, 2006.",
+      "ano" : 2006
+    } ]
+  }, {
+    "codigo" : "SMD0149",
+    "nome" : "Mitologias Universais",
+    "ementa" : "Introdução ao conceito e formação da cultura de um povo. Estudo de povos e suas culturas, e suas diversas características. Análise simbólica de seus mitos, heróis e sagas. Apresentação de universos fictícios diversos. Criação de material para universo fictício, analógico e digital, aproveitando os conhecimentos prévios dos alunos. Divulgação e disponibilização do material para a comunidade.",
+    "paginaEmenta" : 60,
+    "bibliografiaBasica" : [ {
+      "texto" : "CAMPBELL, Joseph; FLOWERS, Betty Sue; MOISES , Carlos Felipe; MOYERS, Bill. O poder do mito. Sao Paulo: Associacao Palas Athena, 2008. XII, 242p. : ISBN 9788572420082 (broch.)",
+      "ano" : 2008
+    }, {
+      "texto" : "BRANDÃO, Junito de Souza,. Mitologia grega. 5. ed. Petropolis, RJ: Vozes, 1992. 64 p. de estampas ISBN 8532600727",
+      "ano" : 1992
+    }, {
+      "texto" : "HUNTINGTON, Samuel P. O choque de civilizações: e a recomposição da ordem mundial. Rio de Janeiro: Objetiva, 1997. 455 p. ISBN 8573021306.",
+      "ano" : 1997
+    } ],
+    "bibliografiaComplementar" : [ {
+      "texto" : "VEYNE, Paul. Acreditaram os gregos nos seus mitos?. Lisboa: Edições 70, 1987. 155p (Lugar da historia;v.31)",
+      "ano" : 1987
+    }, {
+      "texto" : "DAVIDSON, H. R. Ellis. Escandinávia. Lisboa, Portugal: Verbo, 1987. 144 p. (Biblioteca dos Grandes Mitos e Lendas Universais) ISBN (broch.).",
+      "ano" : 1987
+    }, {
+      "texto" : "PARRINDER, Geoffrey. Africa. Sao Paulo: Verbo, 1987. 144p (Biblioteca dos grandes mitos e lendas universais)",
+      "ano" : 1987
+    }, {
+      "texto" : "CLARK, R.T. Rundle. Mitos e simbolos do antigo Egito. Sao Paulo: Hemus, [1986?]. 272p.",
+      "ano" : 1986
+    }, {
+      "texto" : "MAGASICH-AIROLA, Jorge; BEER, Jean-Marc de. América mágica: quando a Europa da Renascença pensou estar conquistando o paraíso. São Paulo: Paz e Terra, 2000. 296p. ISBN 852190360X (broch.).",
+      "ano" : 2000
+    } ]
+  }, {
+    "codigo" : "HLL0077",
+    "nome" : "Língua Brasileira de Sinais",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "PC0353",
+    "nome" : "Educação em Direitos Humanos",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "AI0193",
+    "nome" : "Estado e Direitos Humanos no Brasil",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "AI0215",
+    "nome" : "Políticas de Educação e Direitos Humanos",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "PD0074",
+    "nome" : "História dos Afrodescendentes no Brasil",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "ICA2573",
+    "nome" : "Raça, Etnia e Sociedade",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "CJ0101",
+    "nome" : "Educação Ambiental",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  }, {
+    "codigo" : "LAB0026",
+    "nome" : "Educação Ambiental",
+    "ementa" : null,
+    "paginaEmenta" : null,
+    "bibliografiaBasica" : [ ],
+    "bibliografiaComplementar" : [ ]
+  } ],
+  "pendencias" : [ {
+    "tipo" : "CODIGO_DUPLICADO",
+    "nome" : "Semiótica Aplicada",
+    "codigo" : "SMD0144",
+    "detalhe" : "o PPC atribui a SMD0144 também a \"Fotografia Digital\""
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Análise de Desempenho",
+    "codigo" : null,
+    "detalhe" : "nome da ementa não encontrado no catálogo"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Análise e Projetos de Sistemas",
+    "codigo" : "SMD0030",
+    "detalhe" : "ementa"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Estrutura de Dados",
+    "codigo" : "SMD0033",
+    "detalhe" : "ementa"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Matemática e Física em Jogos",
+    "codigo" : null,
+    "detalhe" : "nome da ementa não encontrado no catálogo"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Metodologia de Pesquisa Científica",
+    "codigo" : "SMD0102",
+    "detalhe" : "ementa"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Prototipação de Jogos Tridimensionaiss",
+    "codigo" : null,
+    "detalhe" : "nome da ementa não encontrado no catálogo"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Semiótica Aplicada",
+    "codigo" : null,
+    "detalhe" : "nome da ementa não encontrado no catálogo"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Análise e Projetos de Sistemas",
+    "codigo" : "SMD0030",
+    "detalhe" : "bibliografia"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Estrutura de Dados",
+    "codigo" : "SMD0033",
+    "detalhe" : "bibliografia"
+  }, {
+    "tipo" : "CASAMENTO_APROXIMADO",
+    "nome" : "Metodologia de Pesquisa Científica",
+    "codigo" : "SMD0102",
+    "detalhe" : "bibliografia"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Semiótica Aplicada",
+    "codigo" : null,
+    "detalhe" : "nome da bibliografia não encontrado no catálogo"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Análise de Desempenho",
+    "codigo" : null,
+    "detalhe" : "nome da bibliografia não encontrado no catálogo"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Matemática e Física em Jogos",
+    "codigo" : null,
+    "detalhe" : "nome da bibliografia não encontrado no catálogo"
+  }, {
+    "tipo" : "SEM_CASAMENTO",
+    "nome" : "Prototipação de Jogos Tridimensionais",
+    "codigo" : null,
+    "detalhe" : "nome da bibliografia não encontrado no catálogo"
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Introdução a Sistemas e Mídias Digitais",
+    "codigo" : "SMD0094",
+    "detalhe" : "CHEOK, Adrian David; SPRINGERLINK (ONLINE SERVICE). Art and Technology of Entertainment Computing and Communication : Advances in Interactive New Media for Entertainment Computing . Springer eBooks XVIII, 303p. 133 illus., 109 illus. in color ISBN 9781849961370."
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "História do Design",
+    "codigo" : "SMD0091",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "História do Design",
+    "codigo" : "SMD0091",
+    "detalhe" : null
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Comunicação Visual I",
+    "codigo" : "SMD0136",
+    "detalhe" : "LUPTON, Ellen; PHILLIPS, Jennifer Cole,. Novos fundamentos do design. São Paulo, SP: Cosac Naify."
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Autoração Multimídia II",
+    "codigo" : "SMD0097",
+    "detalhe" : "MEYER, Jeannie. The Essential Guide to HTML5 [electronic resource] : Using Games to Learn HTML5 and JavaScript. XIV, 361 p. online resource."
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Projeto Integrado II",
+    "codigo" : "SMD0141",
+    "detalhe" : "JACKSON, C. Flash Cinematic Techniques: Enhancing Animated Shorts and Interactive Storytelling. Focal Press. 1ª Edição. ISBN: 0240812611."
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Trabalho de Conclusão de Curso",
+    "codigo" : "SMD0077",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Trabalho de Conclusão de Curso",
+    "codigo" : "SMD0077",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Horas Complementares",
+    "codigo" : "SMDG0002",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Horas Complementares",
+    "codigo" : "SMDG0002",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Horas da Unidade Curricular Especial de Extensão",
+    "codigo" : "EXT0076",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Horas da Unidade Curricular Especial de Extensão",
+    "codigo" : "EXT0076",
+    "detalhe" : null
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Estruturas de Dados",
+    "codigo" : "SMD0033",
+    "detalhe" : "ASCENCIO, Ana Fernanda Gomes; ARAÚJO, Graziela Santos de. Estrutura de dados: algoritmos, análise da complexidade e implementações em Java e C/C+"
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Computação Física",
+    "codigo" : "SMD0114",
+    "detalhe" : "OXER, Jonathan; SPRINGERLINK (ONLINE SERVICE). Practical Arduino : Cool Projects for Open Source Hardware . Springer eBooks"
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Computação Gráfica",
+    "codigo" : "SMD0080",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Computação Gráfica",
+    "codigo" : "SMD0080",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Matemática e Física para Jogos",
+    "codigo" : "SMD0035",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Matemática e Física para Jogos",
+    "codigo" : "SMD0035",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Sistemas Distribuídos",
+    "codigo" : "SMD0050",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Sistemas Distribuídos",
+    "codigo" : "SMD0050",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Sistemas Embarcados",
+    "codigo" : "SMD0070",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Sistemas Embarcados",
+    "codigo" : "SMD0070",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Concepção de Cenários e Personagens",
+    "codigo" : "SMD0057",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Concepção de Cenários e Personagens",
+    "codigo" : "SMD0057",
+    "detalhe" : null
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Design de Jogos Digitais",
+    "codigo" : "SMD0023",
+    "detalhe" : "FLAVELL, Lance; SPRINGERLINK (ONLINE SERVICE). Beginning Blender : Open Source 3D Modeling, Animation, and Game Design. Springer eBooks XVIII, 448 p ISBN 9781430231271."
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Design de Jogos Digitais",
+    "codigo" : "SMD0023",
+    "detalhe" : "SPUY, Rex; SPRINGERLINK (ONLINE SERVICE). Advanced Game Design with Flash. Springer eBooks 808 p ISBN 9781430227403."
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Edição Audiovisual",
+    "codigo" : "SMD0027",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Edição Audiovisual",
+    "codigo" : "SMD0027",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Experimentos em Tipografia Digital",
+    "codigo" : "SMD0084",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Experimentos em Tipografia Digital",
+    "codigo" : "SMD0084",
+    "detalhe" : null
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Ferramentas de Modelagem Tridimensional I",
+    "codigo" : "SMD0034",
+    "detalhe" : "JAMES, Daniel; SPRINGERLINK (ONLINE SERVICE). Crafting Digital Media: Audacity, Blender, Drupal, GIMP, Scribus, and Other Open Source Tools. Springer eBooks 450 p ISBN 9781430218883."
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Identidade Sonora de Marcas",
+    "codigo" : "SMD0120",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Identidade Sonora de Marcas",
+    "codigo" : "SMD0120",
+    "detalhe" : null
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Interação Humano Computador II",
+    "codigo" : "SMD0117",
+    "detalhe" : "HEVNER, Alan; SPRINGERLINK (ONLINE SERVICE). Design Research in Information Systems : Theory and Practice . Springer eBooks XXVIII, 320p (Integrated Series in Information Systems, 22). ISBN 9781441956538."
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Interação Humano Computador II",
+    "codigo" : "SMD0117",
+    "detalhe" : "FILIPPI, Stefano; SPRINGERLINK (ONLINE SERVICE). The Design Guidelines Collaborative Framework : A Design for Multi-X Method for Product Development . Springer eBooks XIV, 186 p. 52 illus ISBN 9781848827721."
+  }, {
+    "tipo" : "REFERENCIA_SEM_ANO",
+    "nome" : "Técnicas de Animação 2D",
+    "codigo" : "SMD0129",
+    "detalhe" : "PONCET, Marie-Thérése; GRANJA, Vasco. O desenho animado. Lisboa: Editorial Estúdios Cor, s.d."
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Técnicas de Animação 3D I",
+    "codigo" : "SMD0128",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Técnicas de Animação 3D I",
+    "codigo" : "SMD0128",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Técnicas de Animação 3D II",
+    "codigo" : "SMD0126",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Técnicas de Animação 3D II",
+    "codigo" : "SMD0126",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Videografismo",
+    "codigo" : "SMD0071",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Videografismo",
+    "codigo" : "SMD0071",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Língua Brasileira de Sinais",
+    "codigo" : "HLL0077",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Língua Brasileira de Sinais",
+    "codigo" : "HLL0077",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Educação em Direitos Humanos",
+    "codigo" : "PC0353",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Educação em Direitos Humanos",
+    "codigo" : "PC0353",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Estado e Direitos Humanos no Brasil",
+    "codigo" : "AI0193",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Estado e Direitos Humanos no Brasil",
+    "codigo" : "AI0193",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Políticas de Educação e Direitos Humanos",
+    "codigo" : "AI0215",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Políticas de Educação e Direitos Humanos",
+    "codigo" : "AI0215",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "História dos Afrodescendentes no Brasil",
+    "codigo" : "PD0074",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "História dos Afrodescendentes no Brasil",
+    "codigo" : "PD0074",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Raça, Etnia e Sociedade",
+    "codigo" : "ICA2573",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Raça, Etnia e Sociedade",
+    "codigo" : "ICA2573",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Educação Ambiental",
+    "codigo" : "CJ0101",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Educação Ambiental",
+    "codigo" : "CJ0101",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_EMENTA",
+    "nome" : "Educação Ambiental",
+    "codigo" : "LAB0026",
+    "detalhe" : null
+  }, {
+    "tipo" : "SEM_BIBLIOGRAFIA",
+    "nome" : "Educação Ambiental",
+    "codigo" : "LAB0026",
+    "detalhe" : null
+  } ]
+}
