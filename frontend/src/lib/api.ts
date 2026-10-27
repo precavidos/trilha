@@ -27,10 +27,25 @@ export type Resumo = {
   componentes: number;
   componentesComEmenta: number;
   componentesComBibliografia: number;
+  competencias: number;
   medianaGeralDaBibliografia: number | null;
   fracaoReferenciasComMaisDe10Anos: number;
   lenteIa: Contagem;
   profissoes: ProfissaoResumo[];
+};
+
+export type Limiares = {
+  cobertaSimilaridade: number;
+  cobertaEscore: number;
+  parcialSimilaridade: number;
+  parcialEscore: number;
+};
+
+/** Configuração em uso no backend (GET /api/sobre). */
+export type Sobre = {
+  metadados: Metadados;
+  modeloDeLinguagem: string;
+  limiares: Limiares;
 };
 
 export type Evidencia = {

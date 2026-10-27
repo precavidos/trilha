@@ -1,18 +1,7 @@
 "use client";
 
-import type { Metadados } from "@/lib/api";
+import type { Sobre } from "@/lib/api";
 import { useApi } from "@/lib/use-api";
-
-type Sobre = {
-  metadados: Metadados;
-  modeloDeLinguagem: string;
-  limiares: {
-    cobertaSimilaridade: number;
-    cobertaEscore: number;
-    parcialSimilaridade: number;
-    parcialEscore: number;
-  };
-};
 
 /** Configuração em uso, lida do backend para não divergir do que de fato produziu os resultados. */
 export function Configuracao() {
