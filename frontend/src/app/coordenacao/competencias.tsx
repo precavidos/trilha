@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { justificar, type Item, type Justificativa, type Status } from "@/lib/api";
-import { formatarDecimal, RELACOES, SITUACOES } from "./formato";
+import { formatarDecimal, RELACOES, SITUACOES } from "@/lib/formato";
 import { Situacao } from "./situacao";
 
 const PAGINA = 25;

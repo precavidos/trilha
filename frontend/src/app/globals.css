@@ -1,69 +1,121 @@
 @import "tailwindcss";
 
-/* Paleta de alto contraste (WCAG 2.2 AA: texto ≥ 4.5:1, componentes ≥ 3:1) */
+/* Tokens do design system (protótipo do Claude Design). Contraste WCAG 2.2 AA. */
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
-  --muted: #4a4a4a;
-  --surface: #f3f4f6;
-  --border: #6b6b6b;
-  --accent: #0b4f9c;
-  --accent-foreground: #ffffff;
-  --focus: #c2410c;
+  --canvas: #eef3ee;
+  --surface: #ffffff;
+  --surface-sunken: #e3ece4;
+  --ink: #10291f;
+  --ink-muted: #4a5f55;
+  --line: #d3ddd6;
+  --line-strong: #6c8278;
+  --panel: #0f3d2e;
+  --panel-raised: #17523e;
+  --on-panel: #ffffff;
+  --on-panel-muted: #b7d2c3;
+  --lime: #c3ec7d;
+  --on-lime: #10291f;
+  --lime-soft: #e5f6c8;
+  --green: #2bb673;
+  --sky: #c9eef0;
+  --cream: #f4f0e1;
   /* Situação de cobertura: sempre acompanhada de texto e ícone, nunca só cor */
-  --coberta: #146c2e;
-  --coberta-bg: #dcfae6;
-  --parcial: #7a4a00;
-  --parcial-bg: #fef0c7;
-  --lacuna: #b42318;
-  --lacuna-bg: #fee4e2;
+  --coberta: #17604a;
+  --coberta-bg: #d9efe1;
+  --parcial: #5f4a00;
+  --parcial-bg: #f3ecc0;
+  --parcial-mark: #c9a227;
+  --lacuna: #b03a12;
+  --lacuna-bg: #fde4d8;
+  --focus: #c2410c;
+  --focus-on-panel: #c3ec7d;
+  --sombra-card: 0 1px 2px rgba(16,41,31,0.06), 0 8px 24px rgba(16,41,31,0.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0d0d0d;
-    --foreground: #f5f5f5;
-    --muted: #c4c4c4;
-    --surface: #1c1c1c;
-    --border: #9a9a9a;
-    --accent: #7cb7ff;
-    --accent-foreground: #0d0d0d;
+    --canvas: #0a1c15;
+    --surface: #11281f;
+    --surface-sunken: #0d221a;
+    --ink: #ecf5ee;
+    --ink-muted: #a8bdb2;
+    --line: #24392f;
+    --line-strong: #7f968b;
+    --panel: #17402f;
+    --panel-raised: #1f5039;
+    --on-panel: #ecf5ee;
+    --on-panel-muted: #b7d2c3;
+    --lime-soft: #24402f;
+    --green: #3cc985;
+    --sky: #1d3d40;
+    --coberta: #8fdcb3;
+    --coberta-bg: #163a2c;
+    --parcial: #f1d36b;
+    --parcial-bg: #3a3110;
+    --lacuna: #ff9c78;
+    --lacuna-bg: #3d1d12;
     --focus: #fdba74;
-    --coberta: #75e0a0;
-    --coberta-bg: #0f2e1c;
-    --parcial: #fbc85a;
-    --parcial-bg: #362705;
-    --lacuna: #ff9b90;
-    --lacuna-bg: #3b1512;
+    --sombra-card: none;
   }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
+  --color-canvas: var(--canvas);
   --color-surface: var(--surface);
-  --color-border: var(--border);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-panel: var(--panel);
+  --color-panel-raised: var(--panel-raised);
+  --color-on-panel: var(--on-panel);
+  --color-on-panel-muted: var(--on-panel-muted);
+  --color-lime: var(--lime);
+  --color-on-lime: var(--on-lime);
+  --color-lime-soft: var(--lime-soft);
+  --color-green: var(--green);
+  --color-sky: var(--sky);
+  --color-cream: var(--cream);
   --color-coberta: var(--coberta);
   --color-coberta-bg: var(--coberta-bg);
   --color-parcial: var(--parcial);
   --color-parcial-bg: var(--parcial-bg);
+  --color-parcial-mark: var(--parcial-mark);
   --color-lacuna: var(--lacuna);
   --color-lacuna-bg: var(--lacuna-bg);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --shadow-card: var(--sombra-card);
+  --font-display: var(--font-figtree);
   --font-sans: var(--font-atkinson);
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+
+@utility bg-topo-painel {
+  background-image: url("/topo-painel.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--canvas);
+  color: var(--ink);
 }
 
 /* Foco sempre visível para navegação por teclado */
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
+}
+
+.on-panel :focus-visible {
+  outline-color: var(--focus-on-panel);
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,5 +1,5 @@
 import type { Contagem, Status } from "@/lib/api";
-import { SITUACOES } from "./formato";
+import { SITUACOES } from "@/lib/formato";
 
 export function Situacao({ status }: { status: Status }) {
   const s = SITUACOES[status];

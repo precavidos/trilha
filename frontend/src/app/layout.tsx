@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Atkinson_Hyperlegible } from "next/font/google";
+import { Atkinson_Hyperlegible, Figtree } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
@@ -8,6 +8,13 @@ const atkinson = Atkinson_Hyperlegible({
   variable: "--font-atkinson",
   subsets: ["latin"],
   weight: ["400", "700"],
+});
+
+// Fonte dos títulos e números de destaque.
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  weight: ["600", "800"],
 });
 
 export const metadata: Metadata = {
@@ -24,8 +31,8 @@ const perfis = [
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${atkinson.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
+    <html lang="pt-BR" className={`${atkinson.variable} ${figtree.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-canvas text-ink font-sans">
         <a
           href="#conteudo"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-accent text-accent-foreground px-4 py-2 rounded"

@@ -5,7 +5,7 @@ import type { Contagem, Item, Resumo } from "@/lib/api";
 import { useApi } from "@/lib/use-api";
 import { TabelaBibliografia } from "./bibliografia";
 import { TabelaCompetencias } from "./competencias";
-import { formatarPorcento } from "./formato";
+import { formatarPorcento } from "@/lib/formato";
 import { BarraCobertura, TextoContagem } from "./situacao";
 
 const LENTE_IA = "lente-ia";

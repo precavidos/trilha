@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Trilha · Sobre a IA</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/trilha/tokens.css">
+<link rel="stylesheet" href="ds/trilha/components/bundle.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Figtree:wght@600;800&amp;display=swap">
+<style>
+:root{--topo-panel:url("/_blob/ad613f555d09fcc6949a37be4972fa83");--topo-canvas:url("/_blob/bb9b6180ed72c6e8b45ac80638658c91")}
+body{margin:0;background:var(--canvas)}
+a{color:var(--ink)}a:hover{color:var(--coberta)}
+.step{display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:28px;background:var(--surface);box-shadow:var(--shadow-card)}
+.step h3{margin:0;font-size:18px;line-height:24px}
+.step p{margin:0;font-size:14px;line-height:20px;color:var(--ink-muted)}
+.step.gen{background:var(--panel);color:var(--on-panel)}
+.step.gen p{color:var(--on-panel-muted)}
+.num{width:36px;height:36px;border-radius:999px;display:grid;place-items:center;font-weight:700;background:var(--surface-sunken)}
+.gen .num{background:var(--lime);color:var(--on-lime)}
+.badge{align-self:flex-start;font-size:12px;line-height:20px;font-weight:700;padding:0 10px;border-radius:999px;background:var(--coberta-bg);color:var(--coberta)}
+.gen .badge{background:var(--lime);color:var(--on-lime)}
+@media (max-width:760px){.wrap{padding:12px 16px 32px !important}.tr-topbar{flex-wrap:wrap;border-radius:28px !important}.tr-switch{overflow-x:auto;margin:0 !important;width:100%}.h1{font-size:32px !important;line-height:36px !important}}
+</style>
+</helmet>
+<div class="tr" style="min-height: 100vh; background: var(--canvas);">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 48px; display: flex; flex-direction: column; gap: 32px;">
+
+<header class="tr-topbar">
+<a class="tr-brand" href="Inicio.dc.html"><img class="tr-brand-mark" src="/_blob/0239ad7f22009800903032cd61380faf" alt="">Trilha</a>
+<nav aria-label="Perfil" style="margin-left: auto;">
+<ul class="tr-switch">
+<li><a href="Main.dc.html">Coordenação</a></li>
+<li><a href="Discente.dc.html">Discente <span class="tr-tag">em breve</span></a></li>
+<li><a href="SobreIa.dc.html" aria-current="page">Sobre a IA</a></li>
+</ul>
+</nav>
+</header>
+
+<main style="display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 760px;">
+<h1 class="h1 tr-display" style="margin: 0; font-size: 40px; line-height: 44px; letter-spacing: -0.01em;">Sobre a IA neste sistema</h1>
+<p class="tr-muted" style="margin: 0; font-size: 18px; line-height: 28px;">O que o Trilha faz com inteligência artificial, com quais dados, e onde ele pode errar.</p>
+</div>
+
+<section aria-labelledby="t-como" style="display: flex; flex-direction: column; gap: 16px;">
+<h2 id="t-como" style="margin: 0; font-size: 24px; line-height: 30px;">Como as conclusões são produzidas</h2>
+<div class="tr-trail-wrap" style="padding-top: 8px;">
+<svg class="tr-trail-line" viewBox="0 0 100 72" preserveAspectRatio="none" aria-hidden="true"><path d="M2.0 22 C 12.0 22, 12.0 50, 22.0 50 C 32.0 50, 32.0 22, 42.0 22 C 52.0 22, 52.0 50, 62.0 50 C 72.0 50, 72.0 22, 82.0 22 C 92.0 22, 96 30, 100 30" vector-effect="non-scaling-stroke"></path></svg>
+<ol class="tr-trail" style="--steps: 5;">
+<li class="tr-step tr-step--here"><span class="tr-pin"><span>01</span></span><h3>Extração do PPC</h3><p>Um programa lê o PDF e separa ementas e bibliografias. A equipe revisa o resultado.</p><span class="tr-step-tag">sem IA</span></li>
+<li class="tr-step"><span class="tr-pin"><span>02</span></span><h3>Vocabulário de competências</h3><p>Exigências de cada profissão-alvo vêm da ESCO; as de IA, da Extensão IA da equipe.</p><span class="tr-step-tag">curadoria humana</span></li>
+<li class="tr-step"><span class="tr-pin"><span>03</span></span><h3>Similaridade semântica</h3><p>Um modelo de embeddings, executado localmente, compara cada competência com todas as ementas.</p><span class="tr-step-tag">IA local, não generativa</span></li>
+<li class="tr-step"><span class="tr-pin"><span>04</span></span><h3>Situação por limiares</h3><p>Coberta, parcial ou lacuna por limiares fixos: o mesmo PPC sempre dá o mesmo resultado.</p><span class="tr-step-tag">sem IA</span></li>
+<li class="tr-step tr-step--goal"><span class="tr-pin"><span>05</span></span><h3>Justificativa, sob demanda</h3><p>No “Por que isto?”, um modelo de linguagem recebe só as evidências e redige o texto. Não altera a situação.</p><span class="tr-step-tag tr-step-tag--gen">IA generativa</span></li>
+</ol>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px;">
+<section class="tr-card" aria-labelledby="t-cfg" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+<h2 id="t-cfg" style="margin: 0; font-size: 24px; line-height: 30px;">Configuração em uso</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 10px 20px;">
+<dt style="font-weight: 700;">Documento</dt><dd style="margin: 0;">PPC Sistemas e Mídias Digitais Diurno 2024.2</dd>
+<dt style="font-weight: 700;">Vocabulário</dt><dd style="margin: 0;">ESCO v1.2.1 + Extensão IA (curada)</dd>
+<dt style="font-weight: 700;">Embeddings</dt><dd style="margin: 0;">multilingual-e5-small, executado localmente</dd>
+<dt style="font-weight: 700;">Linguagem</dt><dd style="margin: 0;">gemini-3.5-flash, só nas justificativas</dd>
+<dt style="font-weight: 700;">Análise gerada</dt><dd style="margin: 0;">27/10/2026</dd>
+</dl>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px;">
+<div style="padding: 14px; border-radius: 16px; background: var(--coberta-bg); color: var(--coberta);"><b style="display: flex; align-items: center; gap: 6px;"><span class="tr-dot tr-dot--c" aria-hidden="true"></span>Coberta</b><span style="font-size: 14px;">sim. ≥ 0,89 ou escore ≥ 2,8</span></div>
+<div style="padding: 14px; border-radius: 16px; background: var(--parcial-bg); color: var(--parcial);"><b style="display: flex; align-items: center; gap: 6px;"><span class="tr-dot tr-dot--p" aria-hidden="true"></span>Parcial</b><span style="font-size: 14px;">sim. ≥ 0,88 ou escore ≥ 2,4</span></div>
+<div style="padding: 14px; border-radius: 16px; background: var(--lacuna-bg); color: var(--lacuna);"><b style="display: flex; align-items: center; gap: 6px;"><span class="tr-dot tr-dot--l" aria-hidden="true"></span>Lacuna</b><span style="font-size: 14px;">abaixo disso</span></div>
+</div>
+</section>
+
+<section class="tr-panel" aria-labelledby="t-dados" style="display: flex; flex-direction: column; gap: 16px;">
+<h2 id="t-dados" style="margin: 0; font-size: 24px; line-height: 30px;">Dados tratados e privacidade</h2>
+<ul style="margin: 0; padding-left: 20px; display: grid; gap: 10px;">
+<li>Só documentos públicos vão ao modelo de linguagem: ementas do PPC e descrições de competências.</li>
+<li>O módulo discente lerá o histórico do SIGAA localmente e descartará nome, matrícula e notas antes de qualquer processamento.</li>
+<li>Sem login, e nada de quem usa o sistema é guardado.</li>
+</ul>
+</section>
+</div>
+
+<section class="tr-card" aria-labelledby="t-lim" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+<h2 id="t-lim" style="margin: 0; font-size: 24px; line-height: 30px;">Limitações conhecidas</h2>
+<ul style="margin: 0; padding-left: 20px; display: grid; gap: 10px;">
+<li>A similaridade pode aproximar uma competência de uma ementa por vocabulário, não por conteúdo. Por isso toda situação mostra as evidências, e a precisão foi medida com rótulos humanos.</li>
+<li>23 dos 80 componentes não têm ementa no PPC e não podem cobrir nenhuma competência.</li>
+<li>Os rótulos da ESCO em português seguem o padrão europeu (“utilizador”, “conceção”) e foram mantidos como na fonte.</li>
+<li>A demanda de mercado vem da ESCO; a coleta de vagas brasileiras fica como trabalho futuro.</li>
+</ul>
+</section>
+<p class="tr-muted" style="margin: 0; font-size: 14px;">O código foi escrito com apoio de IA generativa (Claude Code). Decisões de projeto, revisão dos dados e validação são da equipe.</p>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

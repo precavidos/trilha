@@ -2,7 +2,7 @@
 
 import type { IdadeBibliografia } from "@/lib/api";
 import { useApi } from "@/lib/use-api";
-import { formatarPorcento } from "./formato";
+import { formatarPorcento } from "@/lib/formato";
 
 /** Idade da bibliografia por componente, mais antigas primeiro (ordem do backend). */
 export function TabelaBibliografia() {

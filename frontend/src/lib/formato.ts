@@ -4,12 +4,17 @@ const decimal = new Intl.NumberFormat("pt-BR", {
   minimumFractionDigits: 2,
   maximumFractionDigits: 2,
 });
+const similaridade = new Intl.NumberFormat("pt-BR", {
+  minimumFractionDigits: 3,
+  maximumFractionDigits: 3,
+});
 const porcento = new Intl.NumberFormat("pt-BR", {
   style: "percent",
   maximumFractionDigits: 0,
 });
 
 export const formatarDecimal = (n: number) => decimal.format(n);
+export const formatarSimilaridade = (n: number) => similaridade.format(n);
 export const formatarPorcento = (n: number) => porcento.format(n);
 
 export const SITUACOES: Record<

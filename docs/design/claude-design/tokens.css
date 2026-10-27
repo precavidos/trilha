@@ -1,0 +1,77 @@
+/* Trilha — generated from tokens.json */
+:root, [data-theme="light"] {
+  --canvas: #eef3ee;
+  --surface: #ffffff;
+  --surface-sunken: #e3ece4;
+  --ink: #10291f;
+  --ink-muted: #4a5f55;
+  --line: #d3ddd6;
+  --line-strong: #6c8278;
+  --panel: #0f3d2e;
+  --panel-raised: #17523e;
+  --on-panel: #ffffff;
+  --on-panel-muted: #b7d2c3;
+  --lime: #c3ec7d;
+  --on-lime: #10291f;
+  --lime-soft: #e5f6c8;
+  --green: #2bb673;
+  --sky: #c9eef0;
+  --cream: #f4f0e1;
+  --coberta: #17604a;
+  --coberta-bg: #d9efe1;
+  --parcial: #5f4a00;
+  --parcial-bg: #f3ecc0;
+  --parcial-mark: #c9a227;
+  --lacuna: #b03a12;
+  --lacuna-bg: #fde4d8;
+  --focus: #c2410c;
+  --focus-on-panel: #c3ec7d;
+  --topo-ink: #0f3d2e21;
+  --shadow-card: 0 1px 2px rgba(16,41,31,0.06), 0 8px 24px rgba(16,41,31,0.06);
+}
+[data-theme="dark"] {
+  --canvas: #0a1c15;
+  --surface: #11281f;
+  --surface-sunken: #0d221a;
+  --ink: #ecf5ee;
+  --ink-muted: #a8bdb2;
+  --line: #24392f;
+  --line-strong: #7f968b;
+  --panel: #17402f;
+  --panel-raised: #1f5039;
+  --on-panel: #ecf5ee;
+  --on-panel-muted: #b7d2c3;
+  --lime: #c3ec7d;
+  --on-lime: #10291f;
+  --lime-soft: #24402f;
+  --green: #3cc985;
+  --sky: #1d3d40;
+  --cream: #f4f0e1;
+  --coberta: #8fdcb3;
+  --coberta-bg: #163a2c;
+  --parcial: #f1d36b;
+  --parcial-bg: #3a3110;
+  --parcial-mark: #c9a227;
+  --lacuna: #ff9c78;
+  --lacuna-bg: #3d1d12;
+  --focus: #fdba74;
+  --focus-on-panel: #c3ec7d;
+  --topo-ink: #c3ec7d1f;
+  --shadow-card: none;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 48px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --font-display: "Figtree", "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}

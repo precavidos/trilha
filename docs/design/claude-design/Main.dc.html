@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Trilha · Coordenação</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/trilha/tokens.css">
+<link rel="stylesheet" href="ds/trilha/components/bundle.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Figtree:wght@600;800&amp;display=swap">
+<style>
+:root{--topo-panel:url("/_blob/ad613f555d09fcc6949a37be4972fa83");--topo-canvas:url("/_blob/bb9b6180ed72c6e8b45ac80638658c91")}
+body{margin:0;background:var(--canvas)}
+a{color:var(--ink)}a:hover{color:var(--coberta)}
+.tr-panel a{color:var(--on-panel)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:9;background:var(--lime);color:var(--on-lime);padding:8px 16px;border-radius:999px}
+@media (max-width:760px){.wrap{padding:12px 16px 32px !important}.tr-topbar{flex-wrap:wrap;border-radius:28px !important}.tr-switch{overflow-x:auto;margin:0 !important;width:100%}.h1{font-size:32px !important;line-height:36px !important}}
+</style>
+</helmet>
+<div class="tr" style="min-height: 100vh; background: var(--canvas);">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 48px; display: flex; flex-direction: column; gap: 32px;">
+
+<header class="tr-topbar">
+<a class="tr-brand" href="Inicio.dc.html"><img class="tr-brand-mark" src="/_blob/0239ad7f22009800903032cd61380faf" alt="">Trilha</a>
+<nav aria-label="Perfil" style="margin-left: auto;">
+<ul class="tr-switch">
+<li><a href="Main.dc.html" aria-current="page">Coordenação</a></li>
+<li><a href="Discente.dc.html">Discente <span class="tr-tag">em breve</span></a></li>
+<li><a href="SobreIa.dc.html">Sobre a IA</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="conteudo" style="display: flex; flex-direction: column; gap: 48px;">
+
+<section aria-labelledby="t-pagina" style="display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 720px;">
+<p class="tr-muted" style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;">Coordenação e NDE · SMD Diurno</p>
+<h1 id="t-pagina" class="h1 tr-display" style="margin: 0; font-size: 40px; line-height: 44px; letter-spacing: -0.01em;">Onde o PPC não acompanha as profissões-alvo</h1>
+<p class="tr-muted" style="margin: 0;">PPC Sistemas e Mídias Digitais Diurno 2024.2 comparado com ESCO v1.2.1 + Extensão IA. Análise gerada em 27/10/2026, sem IA generativa no cálculo.</p>
+</div>
+<a class="tr-btn tr-btn--ghost" href="SobreIa.dc.html">Como isto é calculado</a>
+</div>
+
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
+<li class="tr-kpi tr-kpi--panel tr-topo"><span class="tr-kpi-value">57<small>/80</small></span><span class="tr-kpi-label">componentes curriculares com ementa no PPC — só eles podem cobrir competências</span></li>
+<li class="tr-kpi"><span class="tr-kpi-value">313</span><span class="tr-kpi-label">competências comparadas com cada ementa (ESCO + 13 da Extensão IA)</span></li>
+<li class="tr-kpi"><span class="tr-kpi-value" style="color: var(--lacuna);">10<small style="color: var(--ink);">/13</small></span><span class="tr-kpi-label">competências de IA sem cobertura clara no PPC (lente transversal)</span></li>
+<li><a class="tr-kpi tr-kpi--lime" href="Bibliografia.dc.html" style="text-decoration: none; height: 100%;"><span class="tr-kpi-value">57<small>/57</small></span><span class="tr-kpi-label">bibliografias com metade ou mais das referências acima de 10 anos →</span></a></li>
+</ul>
+</section>
+
+<section aria-labelledby="t-prof" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<h2 id="t-prof" style="margin: 0; font-size: 24px; line-height: 30px;">Escolha a profissão-alvo</h2>
+<p class="tr-muted" style="margin: 0;">Uma lacuna é uma competência exigida pela profissão que nenhuma ementa do PPC contempla de forma clara.</p>
+</div>
+<sc-if value="{{loading}}" hint-placeholder-val="{{false}}"><p aria-busy="true">Carregando a análise do PPC…</p></sc-if>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 16px;">
+<sc-for list="{{profs}}" as="p" hint-placeholder-count="7">
+<li>
+<button type="button" class="{{p.cls}}" aria-pressed="{{p.pressed}}" onClick="{{p.pick}}">
+<span class="tr-prof-head">
+<span><span class="tr-prof-title">{{p.rotulo}}</span><span class="tr-prof-meta" style="display: block;">{{p.meta}}</span></span>
+<span class="tr-prof-icon">
+<sc-if value="{{p.iUx}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"></rect><path d="M3 9h18M9 9v11"></path></svg></sc-if>
+<sc-if value="{{p.iJogos}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5"></rect><path d="M7 11v3M5.5 12.5h3M15 12h.01M18 13h.01"></path></svg></sc-if>
+<sc-if value="{{p.iWeb}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"></path></svg></sc-if>
+<sc-if value="{{p.iAnim}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="7.5" r="1.5"></circle><circle cx="12" cy="16.5" r="1.5"></circle><circle cx="7.5" cy="12" r="1.5"></circle><circle cx="16.5" cy="12" r="1.5"></circle></svg></sc-if>
+<sc-if value="{{p.iMulti}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 13 9 5 9-5"></path></svg></sc-if>
+<sc-if value="{{p.iAv}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="3"></rect><path d="m16 10 6-3v10l-6-3"></path></svg></sc-if>
+<sc-if value="{{p.iIa}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"></path></svg></sc-if>
+</span>
+</span>
+<span class="tr-prof-num"><strong>{{p.lac}}</strong><span>lacunas de {{p.n}} competências</span></span>
+<span class="tr-bar tr-bar--thin" aria-hidden="true" style="display: flex;"><sc-for list="{{p.segs}}" as="s" hint-placeholder-count="20"><i class="{{s.k}}"></i></sc-for></span>
+<span class="tr-prof-meta">{{p.par}} parciais · {{p.cob}} cobertas</span>
+</button>
+</li>
+</sc-for>
+</ul>
+</section>
+
+<sc-if value="{{hasSel}}" hint-placeholder-val="{{true}}">
+<section aria-labelledby="t-sel" class="tr-card" style="display: flex; flex-direction: column; gap: 24px; padding: 32px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: flex-start;">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1 1 360px;">
+<h2 id="t-sel" style="margin: 0; font-size: 24px; line-height: 30px;">{{sel.rotulo}}</h2>
+<p class="tr-muted" style="margin: 0; font-size: 14px;">{{sel.sub}}</p>
+</div>
+<div style="flex: 1 1 320px; max-width: 460px;">
+<div class="tr-bar" aria-hidden="true"><sc-for list="{{sel.segs}}" as="s" hint-placeholder-count="24"><i class="{{s.k}}"></i></sc-for></div>
+<ul class="tr-legend"><li class="l"><b>{{sel.lac}}</b>&nbsp;lacunas</li><li class="p"><b>{{sel.par}}</b>&nbsp;parciais</li><li class="c"><b>{{sel.cob}}</b>&nbsp;cobertas</li></ul>
+</div>
+</div>
+
+<fieldset class="tr-pills">
+<legend class="tr-sr">Mostrar competências</legend>
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+<label class="tr-pill"><input type="radio" name="filtro" checked="{{f.on}}" onChange="{{f.pick}}"><sc-if value="{{f.dot}}"><span class="{{f.dotCls}}" aria-hidden="true"></span></sc-if>{{f.label}} <span class="tr-count">{{f.count}}</span></label>
+</sc-for>
+</fieldset>
+
+<ul class="tr-rows">
+<sc-for list="{{rows}}" as="it" hint-placeholder-count="8">
+<li style="{{it.liStyle}}">
+<div class="{{it.rowCls}}" style="border-top: 0;">
+<span><span class="tr-row-name">{{it.r}}</span><sc-if value="{{it.isIa}}"><span class="tr-tag-ia">IA</span></sc-if><span class="tr-row-sub">{{it.t}} · {{it.f}} · {{it.rel}}</span></span>
+<span class="{{it.chipCls}}"><span class="{{it.dotCls}}" aria-hidden="true"></span>{{it.sLabel}}</span>
+<span class="tr-row-near"><span class="tr-code">{{it.c0}}</span>{{it.n0}}<span class="tr-row-sub">mais próxima · similaridade {{it.s0}}</span></span>
+<button type="button" class="{{it.btnCls}}" aria-expanded="{{it.open}}" onClick="{{it.toggle}}">Por que isto?<span class="tr-sr"> — {{it.r}}</span></button>
+</div>
+<sc-if value="{{it.open}}" hint-placeholder-val="{{false}}">
+<section class="tr-panel tr-why" aria-label="Por que isto?" style="margin: 8px 0 16px;">
+<div>
+<h3 style="font-size: 22px; line-height: 28px;">Por que “{{it.r}}” é {{it.sWord}}?</h3>
+<p style="margin: 8px 0 0; color: var(--on-panel-muted);">{{it.desc}}</p>
+</div>
+<div>
+<h4>Como a situação foi calculada · sem IA generativa</h4>
+<ol class="tr-why-steps" style="margin-top: 12px;">
+<li class="tr-why-step"><b>{{it.sim}}</b><span>maior similaridade com uma ementa (Coberta ≥ 0,890 · Parcial ≥ 0,880)</span></li>
+<li class="tr-why-step"><b>{{it.e}}</b><span>escore: quanto essa ementa se destaca das demais (Coberta ≥ 2,8 · Parcial ≥ 2,4)</span></li>
+<li class="tr-why-step"><b><span class="{{it.dotClsBig}}" aria-hidden="true" style="width: 18px; height: 18px; border-width: 3px; color: var(--lime);"></span> {{it.sLabel}}</b><span>{{it.rule}}</span></li>
+</ol>
+</div>
+<div>
+<h4>Evidências · ementas mais próximas</h4>
+<ol class="tr-ev" style="margin-top: 12px;">
+<sc-for list="{{it.evs}}" as="ev" hint-placeholder-count="3">
+<li><details open="{{ev.first}}"><summary><span class="tr-code">{{ev.c}}</span><span>{{ev.n}}</span><span class="tr-sim">{{ev.s}}</span><span class="tr-simbar" aria-hidden="true"><i style="{{ev.w}}"></i></span></summary><blockquote>{{ev.e}}</blockquote></details></li>
+</sc-for>
+</ol>
+</div>
+<div class="tr-ai">
+<h4>Justificativa em linguagem natural</h4>
+<p class="tr-note">Um modelo de linguagem redige o texto a partir apenas das evidências acima. Ele não muda a situação calculada.</p>
+<sc-if value="{{it.aiOff}}" hint-placeholder-val="{{true}}">
+<div><button type="button" class="tr-btn tr-btn--lime" onClick="{{it.gen}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"></path></svg>Gerar justificativa com IA</button></div>
+</sc-if>
+<sc-if value="{{it.aiOn}}" hint-placeholder-val="{{false}}">
+<div aria-live="polite" style="display: grid; gap: 8px;">
+<p style="margin: 0;">{{it.aiText}}</p>
+<p class="tr-note">Texto de exemplo do protótipo, montado só com as evidências. No sistema, gerado por gemini-3.5-flash; ementas citadas: {{it.cited}}.</p>
+</div>
+</sc-if>
+</div>
+</section>
+</sc-if>
+</li>
+</sc-for>
+</ul>
+<p class="tr-muted" aria-live="polite" style="margin: 0; font-size: 14px;">Protótipo: mostrando {{shown}} de {{total}} competências deste filtro, lacunas primeiro.</p>
+</section>
+</sc-if>
+
+<p class="tr-notice tr-notice--info" style="margin: 0; font-weight: 400;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v5h1"></path></svg>Ferramenta de apoio à decisão. Não substitui o NDE, o GPT nem a coordenação do curso.</p>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { data: null, sel: 'ux-ui', filtro: 'TODAS', aberta: 0, ia: {} };
+  }
+  componentDidMount() {
+    fetch('./main-data.json').then((r) => r.json()).then((data) => this.setState({ data: data })).catch(() => {});
+  }
+  renderVals() {
+    var self = this, st = this.state, d = st.data;
+    var LBL = { LACUNA: 'Lacuna', PARCIAL: 'Parcial', COBERTA: 'Coberta' };
+    var K = { LACUNA: 'l', PARCIAL: 'p', COBERTA: 'c' };
+    var CK = { LACUNA: 'lacuna', PARCIAL: 'parcial', COBERTA: 'coberta' };
+    var segs = function (c, n) {
+      var t = c.LACUNA + c.PARCIAL + c.COBERTA || 1, l = Math.round(c.LACUNA / t * n), p = Math.round(c.PARCIAL / t * n), out = [], i;
+      for (i = 0; i < n; i++) out.push({ k: i < l ? 'l' : i < l + p ? 'p' : 'c' });
+      return out;
+    };
+    if (!d) return { loading: true, profs: [], hasSel: false, sel: {}, filters: [], rows: [], shown: 0, total: 0 };
+    var profs = d.prof.map(function (p) {
+      var on = p.id === st.sel;
+      return {
+        rotulo: p.rotulo, n: p.n, lac: p.c.LACUNA, par: p.c.PARCIAL, cob: p.c.COBERTA,
+        meta: p.id === 'lente-ia' ? 'Extensão IA · todas as profissões' : p.itin,
+        cls: 'tr-prof' + (p.id === 'lente-ia' ? ' tr-prof--ia' : ''), pressed: on ? 'true' : 'false',
+        segs: segs(p.c, 20),
+        iUx: p.id === 'ux-ui', iJogos: p.id === 'jogos', iWeb: p.id === 'web', iAnim: p.id === 'animacao', iMulti: p.id === 'multimidia', iAv: p.id === 'audiovisual', iIa: p.id === 'lente-ia',
+        pick: function () { self.setState({ sel: p.id, filtro: 'TODAS', aberta: 0 }); }
+      };
+    });
+    var p = d.prof.filter(function (x) { return x.id === st.sel; })[0];
+    var sub = p.id === 'lente-ia'
+      ? 'Competências de IA curadas pela equipe (Extensão IA), transversais a todas as profissões-alvo.'
+      : 'Ocupação ESCO: ' + p.esco + ' · Itinerário formativo relacionado: ' + p.itin;
+    var all = { TODAS: p.c.LACUNA + p.c.PARCIAL + p.c.COBERTA, LACUNA: p.c.LACUNA, PARCIAL: p.c.PARCIAL, COBERTA: p.c.COBERTA };
+    var filters = ['TODAS', 'LACUNA', 'PARCIAL', 'COBERTA'].map(function (f) {
+      return {
+        label: f === 'TODAS' ? 'Todas' : f === 'LACUNA' ? 'Lacunas' : f === 'PARCIAL' ? 'Parciais' : 'Cobertas',
+        count: all[f], on: st.filtro === f, dot: f !== 'TODAS', dotCls: 'tr-dot tr-dot--' + (K[f] || 'l'),
+        pick: function () { self.setState({ filtro: f, aberta: -1 }); }
+      };
+    });
+    var itens = p.itens.filter(function (i) { return st.filtro === 'TODAS' || i.s === st.filtro; });
+    var rows = itens.map(function (i, idx) {
+      var open = st.aberta === idx, key = p.id + '|' + i.r, ai = !!st.ia[key];
+      var ev = i.ev.map(function (e, j) {
+        var c = d.comp[e[0]] || { n: '', e: '' };
+        var pct = Math.max(0, Math.min(100, (parseFloat(e[1].replace(',', '.')) - 0.8) / 0.12 * 100));
+        return { c: e[0], n: c.n, s: e[1], e: c.e ? c.e + (c.e.length >= 420 ? '…' : '') : 'Componente sem ementa no PPC.', first: j === 0, w: 'width:' + pct.toFixed(0) + '%' };
+      });
+      var rule = i.s === 'LACUNA' ? 'abaixo dos dois limiares de Parcial' : i.s === 'PARCIAL' ? 'atinge um limiar de Parcial, não o de Coberta' : 'atinge um limiar de Coberta';
+      var aiText = i.s === 'LACUNA'
+        ? 'Nenhuma ementa do PPC alcança o limiar para “' + i.r + '”. As mais próximas são ' + ev[0].c + ' (' + ev[0].n + ', ' + ev[0].s + ') e ' + ev[1].c + ' (' + ev[1].n + ', ' + ev[1].s + '); confira nos trechos acima se tratam do tema.'
+        : 'A ementa de ' + ev[0].c + ' (' + ev[0].n + ') é a mais próxima de “' + i.r + '”, com similaridade ' + ev[0].s + ', o que a classifica como ' + LBL[i.s].toLowerCase() + '.';
+      return {
+        r: i.r, t: i.t, f: i.f === 'ESCO' ? 'ESCO' : 'Extensão IA', rel: i.rel, isIa: i.f !== 'ESCO',
+        sLabel: LBL[i.s], sWord: i.s === 'LACUNA' ? 'uma lacuna' : i.s === 'PARCIAL' ? 'parcial' : 'coberta',
+        chipCls: 'tr-status tr-status--' + CK[i.s], dotCls: 'tr-dot tr-dot--' + K[i.s], dotClsBig: 'tr-dot tr-dot--' + K[i.s],
+        c0: ev[0].c, n0: ev[0].n, s0: ev[0].s, sim: i.sim, e: i.e, rule: rule, evs: ev,
+        desc: i.t + ' · ' + (i.f === 'ESCO' ? 'ESCO' : 'Extensão IA') + ' · exigência ' + i.rel + ' para ' + p.rotulo,
+        open: open, rowCls: 'tr-row' + (open ? ' is-open' : ''), btnCls: open ? 'tr-btn tr-btn--panel' : 'tr-btn tr-btn--ghost',
+        liStyle: idx === 0 ? '' : 'border-top: 1px solid var(--line)',
+        toggle: function () { self.setState({ aberta: open ? -1 : idx }); },
+        aiOff: !ai, aiOn: ai, aiText: aiText, cited: ev[0].c + ', ' + ev[1].c,
+        gen: function () { var m = Object.assign({}, st.ia); m[key] = true; self.setState({ ia: m }); }
+      };
+    });
+    return {
+      loading: false, profs: profs, hasSel: true, filters: filters, rows: rows, shown: rows.length, total: all[st.filtro],
+      sel: { rotulo: p.rotulo, sub: sub, lac: p.c.LACUNA, par: p.c.PARCIAL, cob: p.c.COBERTA, segs: segs(p.c, 24) }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Trilha · Idade da bibliografia</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/trilha/tokens.css">
+<link rel="stylesheet" href="ds/trilha/components/bundle.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Figtree:wght@600;800&amp;display=swap">
+<style>
+:root{--topo-panel:url("/_blob/ad613f555d09fcc6949a37be4972fa83");--topo-canvas:url("/_blob/bb9b6180ed72c6e8b45ac80638658c91")}
+body{margin:0;background:var(--canvas)}
+a{color:var(--ink)}a:hover{color:var(--coberta)}
+@media (max-width:760px){.wrap{padding:12px 16px 32px !important}.tr-topbar{flex-wrap:wrap;border-radius:28px !important}.tr-switch{overflow-x:auto;margin:0 !important;width:100%}.h1{font-size:32px !important;line-height:36px !important}.axisrow{display:none !important}}
+</style>
+</helmet>
+<div class="tr" style="min-height: 100vh; background: var(--canvas);">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 48px; display: flex; flex-direction: column; gap: 32px;">
+
+<header class="tr-topbar">
+<a class="tr-brand" href="Inicio.dc.html"><img class="tr-brand-mark" src="/_blob/0239ad7f22009800903032cd61380faf" alt="">Trilha</a>
+<nav aria-label="Perfil" style="margin-left: auto;">
+<ul class="tr-switch">
+<li><a href="Main.dc.html" aria-current="page">Coordenação</a></li>
+<li><a href="Discente.dc.html">Discente <span class="tr-tag">em breve</span></a></li>
+<li><a href="SobreIa.dc.html">Sobre a IA</a></li>
+</ul>
+</nav>
+</header>
+
+<main style="display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<a href="Main.dc.html" style="font-size: 14px; font-weight: 700;">← Lacunas por profissão-alvo</a>
+<h1 class="h1 tr-display" style="margin: 0; font-size: 40px; line-height: 44px; letter-spacing: -0.01em;">Idade da bibliografia</h1>
+<p class="tr-muted" style="margin: 0; max-width: 760px;">Anos de publicação das referências básicas e complementares de cada componente curricular, segundo o PPC. Cálculo simples, sem nenhum modelo de IA. Ano de referência: 2026.</p>
+</div>
+
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
+<li class="tr-kpi tr-kpi--panel"><span class="tr-kpi-value">57<small>/57</small></span><span class="tr-kpi-label">componentes com metade ou mais das referências acima de 10 anos</span></li>
+<li class="tr-kpi"><span class="tr-kpi-value">2008</span><span class="tr-kpi-label">mediana dos anos medianos por componente</span></li>
+<li class="tr-kpi"><span class="tr-kpi-value">1964</span><span class="tr-kpi-label">referência datada mais antiga</span></li>
+<li class="tr-kpi tr-kpi--lime"><span class="tr-kpi-value">2023</span><span class="tr-kpi-label">referência datada mais recente</span></li>
+</ul>
+
+<section class="tr-card" aria-labelledby="t-lista" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: flex-end;">
+<h2 id="t-lista" style="margin: 0; font-size: 24px; line-height: 30px;">Por componente, mais antigas primeiro</h2>
+<ul class="tr-legend" style="margin: 0;">
+<li style="gap: 8px;"><span aria-hidden="true" style="width: 28px; height: 10px; border-radius: 5px; background: var(--green);"></span>intervalo dos anos</li>
+<li style="gap: 8px;"><span aria-hidden="true" style="width: 4px; height: 18px; border-radius: 2px; background: var(--ink);"></span>ano mediano</li>
+<li style="gap: 8px;"><span aria-hidden="true" style="width: 0; height: 18px; border-left: 2px dashed var(--lacuna);"></span>corte de 10 anos (2016)</li>
+</ul>
+</div>
+<div class="tr-bib axisrow" style="border: 0; padding-bottom: 0;"><span></span><div class="tr-axis"><span>1960</span><span>1982</span><span>2004</span><span>2026</span></div><span></span></div>
+<sc-if value="{{loading}}" hint-placeholder-val="{{false}}"><p aria-busy="true">Carregando bibliografias…</p></sc-if>
+<ol style="list-style: none; margin: 0; padding: 0;">
+<sc-for list="{{rows}}" as="b" hint-placeholder-count="12">
+<li class="tr-bib">
+<span><span class="tr-code">{{b.c}}</span> {{b.n}}<span class="tr-row-sub">{{b.sub}}</span></span>
+<div class="tr-tl" role="img" aria-label="{{b.aria}}"><span class="rng" style="{{b.rng}}"></span><span class="med" style="{{b.med}}"></span><span class="cut" style="left: 84.8%;"></span></div>
+<span class="{{b.cls}}">{{b.pct}}% &gt; 10 anos</span>
+</li>
+</sc-for>
+</ol>
+</section>
+<p class="tr-muted" style="margin: 0; font-size: 14px;">Ferramenta de apoio à decisão. Não substitui o NDE, o GPT nem a coordenação do curso.</p>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2200}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { rows: null }; }
+  componentDidMount() {
+    fetch('./bib-data.json').then((r) => r.json()).then((rows) => this.setState({ rows: rows })).catch(() => {});
+  }
+  renderVals() {
+    var x = function (y) { return ((y - 1960) / 66 * 100).toFixed(1) + '%'; };
+    var rows = (this.state.rows || []).map(function (r) {
+      return {
+        c: r[0], n: r[1],
+        sub: r[3] + ' de ' + r[2] + ' referências com ano · mediana ' + r[4],
+        aria: 'De ' + r[5] + ' a ' + r[6] + ', mediana ' + r[4],
+        rng: 'left:' + x(r[5]) + ';right:' + (100 - (r[6] - 1960) / 66 * 100).toFixed(1) + '%',
+        med: 'left:' + x(r[4]),
+        pct: r[7], cls: 'tr-bib-old' + (r[7] >= 50 ? ' is-bad' : '')
+      };
+    });
+    return { loading: !this.state.rows, rows: rows };
+  }
+}
+</script>
+</body>
+</html>
