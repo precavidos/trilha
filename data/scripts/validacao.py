@@ -14,6 +14,12 @@
     python -I data/scripts/validacao.py avaliar
 
    Escreve docs/validacao/resultado.md com concordância (kappa de Fleiss) e acerto do sistema.
+
+Revalidação (ADR 0011: programas de disciplina e tecnologias nomeadas). Os rótulos da primeira rodada
+continuam valendo para os pares (competência, componente) que não mudaram; só os pares novos vão aos
+avaliadores, em docs/validacao/revalidacao/:
+    python -I data/scripts/validacao.py revalidacao          # gera a planilha dos pares novos (uma vez)
+    python -I data/scripts/validacao.py avaliar-revalidacao  # junta as duas rodadas e escreve o resultado
 """
 
 import csv
@@ -39,6 +45,9 @@ COBERTA_SIM, COBERTA_ESC, PARCIAL_SIM, PARCIAL_ESC = 0.89, 2.8, 0.88, 2.4
 
 
 def situacao(c: dict) -> str:
+    # Tecnologias nomeadas: a situação vem da citação do nome (ADR 0011).
+    if c.get("citacao"):
+        return {"forte": "COBERTA", "fraca": "PARCIAL"}.get(c["citacao"]["nivel"], "NAO_DOCUMENTADA")
     sim = c["proximos"][0]["similaridade"]
     escore = (sim - c["media"]) / c["desvio"] if c["desvio"] else 0
     if sim >= COBERTA_SIM or escore >= COBERTA_ESC:
@@ -165,5 +174,120 @@ def avaliar() -> None:
     print(RESULTADO.read_text(encoding="utf-8"))
 
 
+REVALIDACAO = PASTA / "revalidacao"
+ROTULOS_REV = REVALIDACAO / "rotulos.csv"
+GABARITO_REV = REVALIDACAO / "gabarito-sistema.csv"
+RESULTADO_REV = REVALIDACAO / "resultado.md"
+
+
+def par_avaliado(c: dict) -> tuple[str, str | None]:
+    """O componente que sustenta a situação e, para tecnologias citadas, onde o nome aparece."""
+    ci = c.get("citacao")
+    if ci and ci["componentes"]:
+        x = ci["componentes"][0]
+        return x["codigo"], f'{x["onde"]}: "{x["termo"]}"'
+    return c["proximos"][0]["codigo"], None
+
+
+def revalidacao() -> None:
+    """Pares que a primeira rodada não julgou: tecnologias citadas e competências cuja ementa mais
+    próxima passou a ser uma das vindas dos programas de disciplina."""
+    analise = json.loads(ANALISE.read_text(encoding="utf-8"))
+    componentes = {c["codigo"]: c for c in analise["componentes"]}
+    exigidas = {e["competencia"] for p in analise["profissoes"] for e in p["competencias"]}
+    with ROTULOS.open(encoding="utf-8-sig") as f:
+        rotulados = {(r["competencia"], r["componente"].split()[0]) for r in csv.DictReader(f)}
+    novos = []
+    for cid in sorted(exigidas):
+        c = analise["competencias"][cid]
+        s = situacao(c)
+        codigo, onde = par_avaliado(c)
+        if s == "NAO_DOCUMENTADA" or (c["rotulo"], codigo) in rotulados:
+            continue  # não documentada não afirma cobertura; par já rotulado vale da primeira rodada
+        ementa_nova = componentes[codigo].get("fonteEmenta") == "programa"
+        if onde is not None or (ementa_nova and s != "LACUNA"):
+            novos.append((cid, c, s, codigo, onde))
+    random.Random(SEMENTE).shuffle(novos)
+    REVALIDACAO.mkdir(parents=True, exist_ok=True)
+    with ROTULOS_REV.open("w", newline="", encoding="utf-8-sig") as f, \
+            GABARITO_REV.open("w", newline="", encoding="utf-8-sig") as g:
+        w = csv.writer(f)
+        w.writerow(["n", "competencia", "descricao_da_competencia", "componente", "ementa", "onde_o_nome_aparece",
+                    *AVALIADORES[:2]])
+        wg = csv.writer(g)
+        wg.writerow(["n", "id_competencia", "situacao_sistema", "componente"])
+        for n, (cid, c, s, codigo, onde) in enumerate(novos, 1):
+            comp = componentes[codigo]
+            w.writerow([n, c["rotulo"], c["descricao"], f'{codigo} {comp["nome"]}', comp["ementa"], onde or "", "", ""])
+            wg.writerow([n, cid, s, codigo])
+    print(f"{len(novos)} pares novos → {ROTULOS_REV.relative_to(RAIZ)}", file=sys.stderr)
+
+
+def avaliar_revalidacao() -> None:
+    comps = json.loads(ANALISE.read_text(encoding="utf-8"))["competencias"]
+    julgamentos = []  # (situação atual do sistema, [rótulo do avaliador 1, do avaliador 2], rodada)
+    with GABARITO.open(encoding="utf-8-sig") as f:
+        gab1 = {r["n"]: r for r in csv.DictReader(f)}
+    with ROTULOS.open(encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            cid = gab1[r["n"]]["id_competencia"]
+            if cid not in comps:
+                continue  # removida na curadoria da Extensão IA
+            c = comps[cid]
+            if situacao(c) != "NAO_DOCUMENTADA" and par_avaliado(c)[0] != r["componente"].split()[0]:
+                continue  # o par mudou: o rótulo antigo não julga a situação atual
+            julgamentos.append((situacao(c), [r[a].strip().lower() for a in AVALIADORES[:2]], 1))
+    with GABARITO_REV.open(encoding="utf-8-sig") as f:
+        gab2 = {r["n"]: r for r in csv.DictReader(f)}
+    with ROTULOS_REV.open(encoding="utf-8-sig") as f:
+        linhas2 = list(csv.DictReader(f))
+    if not all(r[a].strip().lower() in CATEGORIAS for r in linhas2 for a in AVALIADORES[:2]):
+        sys.exit("Os dois avaliadores precisam preencher todas as linhas de revalidacao/rotulos.csv.")
+    for r in linhas2:
+        julgamentos.append((gab2[r["n"]]["situacao_sistema"], [r[a].strip().lower() for a in AVALIADORES[:2]], 2))
+
+    def referencia(r: list[str]) -> str:
+        return r[0] if r[0] == r[1] else "parcial"
+
+    kappa_novos = cohen_kappa([(r[0], r[1]) for _, r, rodada in julgamentos if rodada == 2])
+    afirmam = [(s, referencia(r)) for s, r, _ in julgamentos if s != "NAO_DOCUMENTADA"]
+    nao_doc = Counter(referencia(r) for s, r, _ in julgamentos if s == "NAO_DOCUMENTADA")
+    equivalente = {"COBERTA": "sim", "PARCIAL": "parcial", "LACUNA": "nao"}
+
+    def precisao(sit: str, ok: tuple[str, ...]) -> tuple[float, int]:
+        xs = [ref for s, ref in afirmam if s == sit]
+        return (sum(1 for x in xs if x in ok) / len(xs) if xs else 0), len(xs)
+
+    pc, nc = precisao("COBERTA", ("sim", "parcial"))
+    pl, nl = precisao("LACUNA", ("nao",))
+    acerto = sum(1 for s, ref in afirmam if equivalente[s] == ref) / len(afirmam)
+    tabela = []
+    for s in ("COBERTA", "PARCIAL", "LACUNA"):
+        dist = Counter(ref for x, ref in afirmam if x == s)
+        tabela.append(f"| {s} | {sum(dist.values())} | {dist['sim']} | {dist['parcial']} | {dist['nao']} |")
+    rodada1 = sum(1 for *_, r in julgamentos if r == 1)
+    RESULTADO_REV.write_text(chr(10).join([
+        "# Resultado da revalidação (ADR 0011)",
+        "",
+        f"- Julgamentos: **{len(julgamentos)}** ({rodada1} da primeira rodada, cujo par não mudou, e {len(linhas2)} pares novos)",
+        f"- Concordância entre os 2 avaliadores nos pares novos (kappa de Cohen): **{kappa_novos:.2f}**",
+        f"- Acerto exato do sistema (3 categorias, sem as não documentadas): **{acerto:.0%}**",
+        f"- Precisão de COBERTA (referência diz sim ou parcial): **{pc:.0%}** (n = {nc})",
+        f"- Precisão de LACUNA (referência diz não): **{pl:.0%}** (n = {nl})",
+        f"- Não documentadas: {sum(nao_doc.values())}; referência diz não em {nao_doc['nao']}, "
+        f"parcial em {nao_doc['parcial']}, sim em {nao_doc['sim']}",
+        "",
+        "| Situação do sistema | n | Referência: sim | parcial | não |",
+        "|---|---|---|---|---|",
+        *tabela,
+        "",
+        "Referência: o rótulo em que os dois avaliadores concordam; quando divergem, conta como parcial. "
+        "\"Não documentada\" não afirma cobertura nem ausência e fica fora das precisões.",
+        "",
+    ]), encoding="utf-8")
+    print(RESULTADO_REV.read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
-    {"amostra": amostra, "avaliar": avaliar}[sys.argv[1] if len(sys.argv) > 1 else "amostra"]()
+    {"amostra": amostra, "avaliar": avaliar, "revalidacao": revalidacao,
+     "avaliar-revalidacao": avaliar_revalidacao}[sys.argv[1] if len(sys.argv) > 1 else "amostra"]()
