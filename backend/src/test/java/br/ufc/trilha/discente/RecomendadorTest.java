@@ -98,4 +98,20 @@ class RecomendadorTest {
 				new Recomendador.CompetenciaFora("Docker", "Web"), new Recomendador.CompetenciaFora("Figma", "UX/UI"));
 	}
 
+	@Test
+	void foraOrdenaAlfabeticamenteSemOrdemDeBytes() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("Web", List.of(item("t1", "ASP.NET", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t2", "Adobe", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t3", "Ágil", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("l1", "Ética", "essencial", Cobertura.Status.LACUNA),
+				item("l2", "Zoom", "essencial", Cobertura.Status.LACUNA),
+				item("l3", "Acessibilidade", "essencial", Cobertura.Status.LACUNA)));
+		var fora = Recomendador.fora(mapa, Set.of());
+		assertThat(fora.naoDocumentadas()).extracting(Recomendador.CompetenciaFora::rotulo)
+			.containsExactly("Adobe", "Ágil", "ASP.NET");
+		assertThat(fora.lacunasEssenciais()).extracting(Recomendador.CompetenciaFora::rotulo)
+			.containsExactly("Acessibilidade", "Ética", "Zoom");
+	}
+
 }

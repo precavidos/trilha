@@ -3,11 +3,13 @@ package br.ufc.trilha.discente;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
@@ -263,10 +265,11 @@ public class Recomendador {
 	 */
 	static ForaDasSugestoes fora(Map<String, List<AnaliseService.Item>> competenciasPorProfissao,
 			Set<String> idsNasSugestoes) {
+		Comparator<String> alfabetica = Collator.getInstance(Locale.forLanguageTag("pt-BR"))::compare;
 		Map<String, CompetenciaFora> lacunas = new LinkedHashMap<>();
 		Map<String, CompetenciaFora> tecnologias = new LinkedHashMap<>();
 		competenciasPorProfissao.forEach((profissao, lista) -> {
-			lista.stream().sorted(Comparator.comparing(AnaliseService.Item::rotulo)).forEach(i -> {
+			lista.stream().sorted(Comparator.comparing(AnaliseService.Item::rotulo, alfabetica)).forEach(i -> {
 				if (i.status() == Cobertura.Status.LACUNA && "essencial".equals(i.relacao())
 						&& !idsNasSugestoes.contains(i.id())) {
 					lacunas.putIfAbsent(i.id(), new CompetenciaFora(i.rotulo(), profissao));
@@ -277,7 +280,7 @@ public class Recomendador {
 			});
 		});
 		return new ForaDasSugestoes(List.copyOf(lacunas.values()),
-				tecnologias.values().stream().sorted(Comparator.comparing(CompetenciaFora::rotulo)).toList());
+				tecnologias.values().stream().sorted(Comparator.comparing(CompetenciaFora::rotulo, alfabetica)).toList());
 	}
 
 	/** Conta as evidências por profissão (na ordem da escolha, com zeros) e as que o PPC não cobre por inteiro. */
