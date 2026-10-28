@@ -18,7 +18,14 @@ function caminho(n: number) {
 }
 
 /** Passos como marcos de uma trilha: o primeiro em lima, o último como destino. */
-export function TrilhaDePassos({ passos }: { passos: Passo[] }) {
+export function TrilhaDePassos({
+  passos,
+  nivelDoTitulo: Titulo = "h3",
+}: {
+  passos: Passo[];
+  /** Nível dos títulos dos passos: h2 quando não há um h2 antes da trilha. */
+  nivelDoTitulo?: "h2" | "h3";
+}) {
   const n = passos.length;
   return (
     <div className="relative pt-2">
@@ -64,7 +71,7 @@ export function TrilhaDePassos({ passos }: { passos: Passo[] }) {
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </span>
-              <h3 className="m-0 text-lg leading-6 font-bold">{p.titulo}</h3>
+              <Titulo className="m-0 text-lg leading-6 font-bold">{p.titulo}</Titulo>
               <p className="m-0 text-sm leading-5 text-ink-muted">{p.texto}</p>
               {p.tag && (
                 <span

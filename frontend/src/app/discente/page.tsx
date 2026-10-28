@@ -44,7 +44,7 @@ export default function Discente() {
         </Aviso>
       </div>
 
-      <TrilhaDePassos passos={PASSOS} />
+      <TrilhaDePassos passos={PASSOS} nivelDoTitulo="h2" />
 
       <Painel as="section" relevo aria-labelledby="previa" className="flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3">

@@ -100,7 +100,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
             </p>
             <h1
               id="t-pagina"
-              className="font-display m-0 text-[32px] leading-9 tracking-[-0.01em] md:text-[40px] md:leading-11"
+              className="font-display m-0 text-[32px] leading-9 font-extrabold tracking-[-0.01em] md:text-[40px] md:leading-11"
             >
               Onde o PPC não acompanha as profissões-alvo
             </h1>

@@ -14,7 +14,7 @@ export function LinhaBibliografia({ linha: l, anoDeReferencia }: Props) {
   const ruim = l.fracaoComMaisDe10Anos >= 0.5;
 
   return (
-    <li className="border-line grid grid-cols-[1fr_auto] items-center gap-4 border-t px-2 py-3 first:border-t-0 md:grid-cols-[minmax(0,1.4fr)_minmax(0,2fr)_auto]">
+    <li className="border-line grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-t px-2 py-3 first:border-t-0 md:grid-cols-[minmax(0,1.4fr)_minmax(0,2fr)_auto]">
       <span>
         <span className="font-mono">{l.codigo}</span> {l.nome}
         <span className="text-ink-muted block text-sm">
@@ -56,7 +56,7 @@ export function LinhaBibliografia({ linha: l, anoDeReferencia }: Props) {
           ruim && "text-lacuna",
         )}
       >
-        {formatarPorcento(l.fracaoComMaisDe10Anos)} &gt; 10 anos
+        {datada ? `${formatarPorcento(l.fracaoComMaisDe10Anos)} > 10 anos` : "—"}
       </span>
     </li>
   );

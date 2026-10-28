@@ -22,7 +22,7 @@ export function LinhaCompetencia({ item, aberta, aoAlternar, profissao, limiares
     <li className="border-line border-t first:border-t-0">
       <div
         className={cx(
-          "grid grid-cols-[1fr_auto] items-center gap-4 px-2 py-4 md:grid-cols-[minmax(0,2.2fr)_auto_minmax(0,1.6fr)_auto]",
+          "grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-2 py-4 md:grid-cols-[minmax(0,2.2fr)_auto_minmax(0,1.6fr)_auto]",
           aberta && "bg-surface-sunken rounded-md",
         )}
       >

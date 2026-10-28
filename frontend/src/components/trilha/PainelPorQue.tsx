@@ -38,7 +38,7 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
 
   return (
     <section aria-label="Por que isto?" className="mt-2 mb-4">
-      <Painel className="grid gap-6">
+      <Painel className="grid grid-cols-[minmax(0,1fr)] gap-6">
         <div>
           <h3 className="m-0 text-[22px] leading-7 font-bold">
             Por que “{item.rotulo}” é {PALAVRA[item.status]}?
@@ -78,13 +78,13 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
 
         <div>
           <h4 className={TITULO_SECAO}>Evidências · ementas mais próximas</h4>
-          <ol className="m-0 mt-3 grid list-none gap-2 p-0">
+          <ol className="m-0 mt-3 grid list-none grid-cols-[minmax(0,1fr)] gap-2 p-0">
             {item.evidencias.map((ev, i) => (
               <li key={ev.codigo}>
                 <details open={i === 0} className="bg-panel-raised rounded-md px-4 py-3">
                   <summary className="flex cursor-pointer list-none items-center gap-3">
                     <span className="bg-lime text-on-lime rounded-[6px] px-1.5">{ev.codigo}</span>
-                    <span>{ev.nome}</span>
+                    <span className="min-w-0">{ev.nome}</span>
                     <span className="text-on-panel-muted ml-auto text-sm whitespace-nowrap">
                       {formatarSimilaridade(ev.similaridade)}
                     </span>

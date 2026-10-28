@@ -45,7 +45,7 @@ export function Conteudo() {
         <Link href="/coordenacao" className="text-sm font-bold">
           ← Lacunas por profissão-alvo
         </Link>
-        <h1 className="font-display m-0 text-[32px] leading-9 tracking-[-0.01em] md:text-[40px] md:leading-11">
+        <h1 className="font-display m-0 text-[32px] leading-9 font-extrabold tracking-[-0.01em] md:text-[40px] md:leading-11">
           Idade da bibliografia
         </h1>
         <p className="text-ink-muted m-0">
