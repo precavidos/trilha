@@ -2,7 +2,10 @@ package br.ufc.trilha.analise;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/** Classifica a cobertura de uma competência pelo PPC a partir da similaridade e do escore relativo. */
+/**
+ * Classifica a cobertura de uma competência pelo PPC a partir da similaridade e do escore relativo. Tecnologias
+ * nomeadas são a exceção: a situação vem de o nome aparecer ou não no PPC e nos programas de disciplina.
+ */
 @ConfigurationProperties("trilha.limiares")
 public record Cobertura(double cobertaSimilaridade, double cobertaEscore, double parcialSimilaridade,
 		double parcialEscore) {
@@ -12,6 +15,13 @@ public record Cobertura(double cobertaSimilaridade, double cobertaEscore, double
 	}
 
 	public Status classificar(Analise.Competencia c) {
+		if (c.citacao() != null) {
+			return switch (c.citacao().nivel()) {
+				case "forte" -> Status.COBERTA;
+				case "fraca" -> Status.PARCIAL;
+				default -> Status.LACUNA;
+			};
+		}
 		if (c.proximos().isEmpty()) {
 			return Status.LACUNA;
 		}

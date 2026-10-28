@@ -56,6 +56,10 @@ export type Evidencia = {
   nome: string;
   similaridade: number;
   ementa: string;
+  /** PPC | programa (o PPC não traz a ementa; veio do formulário da disciplina). */
+  fonteEmenta: "PPC" | "programa" | null;
+  /** Tecnologias nomeadas: onde o nome aparece ("objetivos do programa: Python"); null na similaridade. */
+  citadaEm: string | null;
 };
 
 /** Uma competência exigida, já classificada pelo backend (ADR 0002: sem LLM na classificação). */
@@ -70,6 +74,8 @@ export type Item = {
   status: Status;
   similaridade: number;
   escore: number;
+  /** similaridade | citacao (tecnologias nomeadas: a situação vem de o nome aparecer no PPC). */
+  criterio: "similaridade" | "citacao";
   evidencias: Evidencia[];
 };
 

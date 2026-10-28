@@ -1,0 +1,561 @@
+{
+  "_comentario": "Competências do vocabulário que nomeiam uma tecnologia específica (linguagem, framework, programa). Para elas, a situação não vem da similaridade: as descrições da ESCO repetem um texto-padrão ('técnicas e princípios de desenvolvimento de software… em X') que se parece com qualquer disciplina de programação. Conta como coberta se um termo aparece na ementa, nos objetivos, nas competências ou no conteúdo de um componente; como parcial se aparece só na bibliografia básica; e como lacuna se não aparece. 'termos' casam sem distinção de maiúsculas; 'termosExatos' exigem a grafia exata (siglas e nomes ambíguos: 'Java' não casa com 'JavaScript', 'Ruby' não casa com o autor 'RUBY'). Termos ambíguos demais ficam de fora de propósito (ex.: 'R', 'Puppet', 'Pascal' sozinhos).",
+  "tecnologias": [
+    {
+      "competencia": "http://data.europa.eu/esco/skill/eb0e5615-1575-4a86-a1a2-7d39595033c5",
+      "rotulo": "ABAP",
+      "termos": [],
+      "termosExatos": [
+        "ABAP"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/719d8699-a221-4b5a-8fc3-68a8645cbe03",
+      "rotulo": "Adobe Creative Suite",
+      "termos": [
+        "Creative Suite",
+        "Creative Cloud"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/27b913f0-3c52-448b-ad27-fc6ef08fb326",
+      "rotulo": "Adobe Illustrator",
+      "termos": [],
+      "termosExatos": [
+        "Illustrator"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0",
+      "rotulo": "Adobe Photoshop",
+      "termos": [
+        "Photoshop"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/b4dc6e4f-dc7d-445f-8ce2-d7b9d225e282",
+      "rotulo": "AJAX",
+      "termos": [],
+      "termosExatos": [
+        "AJAX",
+        "Ajax"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/6f8a40d6-f9ce-43ec-a72f-d4213a53f3ed",
+      "rotulo": "Ansible",
+      "termos": [
+        "Ansible"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/0d168770-4d9c-4096-b048-a6577818d306",
+      "rotulo": "Apache Maven",
+      "termos": [],
+      "termosExatos": [
+        "Maven"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/58d7a289-dafd-4363-833f-d1dc4140885e",
+      "rotulo": "APL",
+      "termos": [],
+      "termosExatos": [
+        "APL"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/56a7f561-1d55-43c9-9cd7-36a0a9bc6c50",
+      "rotulo": "ASP.NET",
+      "termos": [
+        "ASP.NET"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3",
+      "rotulo": "Assembly (programação informática)",
+      "termos": [
+        "linguagem de montagem"
+      ],
+      "termosExatos": [
+        "Assembly",
+        "Assembler"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+      "rotulo": "C#",
+      "termos": [
+        "C#"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+      "rotulo": "C++",
+      "termos": [
+        "C++"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/ffc1e455-ced2-4e67-bdb3-1c50f9683859",
+      "rotulo": "Capture One",
+      "termos": [
+        "Capture One"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/def007fa-5fed-4a5f-91a2-b0d7e3db1be1",
+      "rotulo": "COBOL",
+      "termos": [],
+      "termosExatos": [
+        "COBOL"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/993b1e23-f2de-4bd8-b33f-f86dde1c8e9d",
+      "rotulo": "CoffeeScript",
+      "termos": [
+        "CoffeeScript"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/0cd6dcf1-5778-42a5-b685-4d01ae4a4871",
+      "rotulo": "Common Lisp",
+      "termos": [
+        "Common Lisp"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/e5d1f825-60ed-4bdd-872a-e748c387f777",
+      "rotulo": "CSS",
+      "termos": [
+        "folhas de estilo",
+        "folha de estilo"
+      ],
+      "termosExatos": [
+        "CSS",
+        "CSS3"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/6b6a9252-2ed7-4862-a02f-1578f4a532ea",
+      "rotulo": "Eclipse (software de ambiente de desenvolvimento integrado)",
+      "termos": [],
+      "termosExatos": [
+        "Eclipse"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/034c29fa-c3ba-45ea-b8f3-bf8e3705e386",
+      "rotulo": "Erlang",
+      "termos": [
+        "Erlang"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/4a466c62-db7d-4905-9a41-f23214810acb",
+      "rotulo": "GIMP (software de edição gráfica)",
+      "termos": [],
+      "termosExatos": [
+        "GIMP"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/52cf3037-ab53-4806-85ed-7fd21ea7f6a1",
+      "rotulo": "Groovy",
+      "termos": [],
+      "termosExatos": [
+        "Groovy"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/000f1d3d-220f-4789-9c0a-cc742521fb02",
+      "rotulo": "Haskell",
+      "termos": [],
+      "termosExatos": [
+        "Haskell"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/a4e31589-3632-4926-91d0-15b889c90b9b",
+      "rotulo": "IBM WebSphere",
+      "termos": [
+        "WebSphere"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+      "rotulo": "Java (programação informática)",
+      "termos": [],
+      "termosExatos": [
+        "Java"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+      "rotulo": "JavaScript",
+      "termos": [
+        "JavaScript",
+        "ECMAScript"
+      ],
+      "termosExatos": [
+        "JS"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+      "rotulo": "JavaScript Framework",
+      "termos": [
+        "Vue.js",
+        "framework JavaScript",
+        "frameworks JavaScript"
+      ],
+      "termosExatos": [
+        "React",
+        "Angular",
+        "jQuery"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/f47a1998-0beb-43be-9f46-380aa4d183da",
+      "rotulo": "Jenkins (ferramentas de gestão de configuração de software)",
+      "termos": [],
+      "termosExatos": [
+        "Jenkins"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/d2adb565-a865-424d-aeb5-9fbcbf2afe2a",
+      "rotulo": "Joomla",
+      "termos": [
+        "Joomla"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/8785ccda-6f9f-4cf3-9033-fda10653d0be",
+      "rotulo": "JSSS",
+      "termos": [],
+      "termosExatos": [
+        "JSSS"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/013441c1-1f13-47e9-80c4-9a53e8e1bc05",
+      "rotulo": "KDevelop",
+      "termos": [
+        "KDevelop"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/26fa7a33-a426-4cd5-9792-33bf668612e1",
+      "rotulo": "LESS",
+      "termos": [],
+      "termosExatos": [
+        "LESS"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/0de61385-de6d-4146-ba32-1cc1bc102220",
+      "rotulo": "Lisp",
+      "termos": [],
+      "termosExatos": [
+        "Lisp",
+        "LISP"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/c3a03c5a-c260-4c26-9b9a-873abb396f4d",
+      "rotulo": "MATLAB",
+      "termos": [
+        "MATLAB"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/86f7126d-97fd-4da5-be96-d1cf6ecd54e6",
+      "rotulo": "Microsoft Visio",
+      "termos": [
+        "Visio"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/8369ede5-4200-4a44-be2e-bc60ef959259",
+      "rotulo": "Microsoft Visual C++",
+      "termos": [
+        "Visual C++"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+      "rotulo": "ML (programação informática)",
+      "termos": [
+        "Standard ML",
+        "linguagem ML"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/9973a5a2-7822-4161-99e9-95c781eb63f8",
+      "rotulo": "Objective-C",
+      "termos": [
+        "Objective-C"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/300d432b-f457-4cd3-9cb1-1858c7d14954",
+      "rotulo": "OpenEdge Advanced Business Language",
+      "termos": [
+        "OpenEdge",
+        "Progress 4GL"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/e8b89eb6-51e8-4c3a-babb-88b2e110376b",
+      "rotulo": "Pascal (programação informática)",
+      "termos": [
+        "linguagem Pascal",
+        "Object Pascal",
+        "Free Pascal",
+        "Turbo Pascal"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/401eb8d8-6daa-4f8b-90ad-60afc71eb4f8",
+      "rotulo": "Perl",
+      "termos": [],
+      "termosExatos": [
+        "Perl"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/4350c38d-0fe9-4ca7-bab9-40ed7f72b04f",
+      "rotulo": "PHP",
+      "termos": [],
+      "termosExatos": [
+        "PHP"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/2bde42ae-e776-41c1-9ded-b07b30bfe985",
+      "rotulo": "Prolog (programação informática)",
+      "termos": [
+        "Prolog"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/6417a4cc-6f61-4459-a114-761a7fa0279d",
+      "rotulo": "Puppet (ferramentas de gestão de configuração de software)",
+      "termos": [
+        "Puppet Enterprise"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+      "rotulo": "Python (programação informática)",
+      "termos": [
+        "Python"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/51586df8-1c46-4b47-8583-773cb63bf00b",
+      "rotulo": "R",
+      "termos": [
+        "linguagem R"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3",
+      "rotulo": "Ruby (programação informática)",
+      "termos": [
+        "Ruby on Rails"
+      ],
+      "termosExatos": [
+        "Ruby"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/c7451027-8249-405a-bb1b-342ff0f3fb3b",
+      "rotulo": "Salt (ferramentas de gestão de configuração de software)",
+      "termos": [
+        "SaltStack"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/bb99af26-71ff-4dca-bde7-1eb1f6194426",
+      "rotulo": "SAP R3",
+      "termos": [
+        "SAP R/3",
+        "SAP R3"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/04f1b938-d4d4-4cb1-a863-982af76b9d93",
+      "rotulo": "SAS language",
+      "termos": [
+        "linguagem SAS"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/1110c92f-3059-445a-9436-0f4200d365f5",
+      "rotulo": "Sass",
+      "termos": [],
+      "termosExatos": [
+        "Sass",
+        "SASS",
+        "SCSS"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/ffddfc7c-a9dd-449f-9e96-882dc447c8b6",
+      "rotulo": "Scala",
+      "termos": [],
+      "termosExatos": [
+        "Scala"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18",
+      "rotulo": "Scratch (programação informática)",
+      "termos": [],
+      "termosExatos": [
+        "Scratch"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/85038d57-1fdd-40de-b908-2c005545a8c3",
+      "rotulo": "SketchBook Pro",
+      "termos": [
+        "SketchBook"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/42ed3bfb-1a01-4c8b-9758-fc6438865734",
+      "rotulo": "Smalltalk (programação informática)",
+      "termos": [
+        "Smalltalk"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/af7ae54f-4649-4c16-87c7-59ba41d4d57f",
+      "rotulo": "SPARK",
+      "termos": [
+        "Spark Java",
+        "Spark Framework"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/69f0167e-75d9-46cf-847f-72a592880ebb",
+      "rotulo": "STAF",
+      "termos": [],
+      "termosExatos": [
+        "STAF"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/be80acfc-b6f2-4411-9b8d-b19d9cd2556a",
+      "rotulo": "Swift (programação informática)",
+      "termos": [],
+      "termosExatos": [
+        "Swift"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/b0ac313d-de44-4344-ada6-76d2177b6d92",
+      "rotulo": "Synfig",
+      "termos": [
+        "Synfig"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68",
+      "rotulo": "TypeScript",
+      "termos": [
+        "TypeScript"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88",
+      "rotulo": "VBScript",
+      "termos": [
+        "VBScript"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413",
+      "rotulo": "Visual Basic",
+      "termos": [
+        "Visual Basic",
+        "VB.NET"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/5c66ce3a-658d-43b1-9d8d-0f39be6c0f2e",
+      "rotulo": "WebCMS",
+      "termos": [
+        "WebCMS",
+        "sistema de gestão de conteúdo",
+        "sistemas de gestão de conteúdo"
+      ],
+      "termosExatos": [
+        "CMS"
+      ]
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/b16bcbcb-1d3f-42b3-a6a5-b91348a72b70",
+      "rotulo": "WildFly",
+      "termos": [
+        "WildFly",
+        "JBoss"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/6d289e8b-2cc1-4eda-ab1f-ad1090ef98f0",
+      "rotulo": "WordPress",
+      "termos": [
+        "WordPress"
+      ],
+      "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/449d119b-2d66-43a9-9230-7d27f16afbb6",
+      "rotulo": "Xcode",
+      "termos": [
+        "Xcode"
+      ],
+      "termosExatos": []
+    }
+  ]
+}

@@ -121,7 +121,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
               relevo
               valor={r.componentesComEmenta}
               denominador={r.componentes}
-              rotulo="componentes curriculares com ementa no PPC — só eles podem cobrir competências"
+              rotulo="componentes curriculares com ementa (no PPC ou no programa da disciplina): só eles podem cobrir competências"
             />
           </li>
           <li className="*:h-full">

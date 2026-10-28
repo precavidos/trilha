@@ -93,10 +93,19 @@ public class JustificativaService {
 		sb.append("Competência: ").append(item.rotulo()).append(" (fonte: ").append(item.fonte()).append(")\n");
 		sb.append("Descrição: ").append(item.descricao()).append('\n');
 		sb.append("Classificação calculada: ").append(item.status()).append('\n');
-		sb.append("Ementas mais próximas no PPC:\n");
+		if ("citacao".equals(item.criterio())) {
+			sb.append("Critério: tecnologia nomeada. A classificação vem de o nome aparecer na ementa, nos objetivos ou "
+					+ "no conteúdo (coberta), só na bibliografia básica (parcial) ou em nenhum lugar (lacuna) do PPC e "
+					+ "dos programas de disciplina; a similaridade não conta.\n");
+		}
+		sb.append(item.evidencias().stream().anyMatch(ev -> ev.citadaEm() != null) ? "Onde o nome aparece:\n"
+				: "Ementas mais próximas no PPC:\n");
 		for (var ev : item.evidencias()) {
-			sb.append("[").append(ev.codigo()).append("] ").append(ev.nome()).append(" (similaridade ")
-				.append(ev.similaridade()).append("): ").append(ev.ementa()).append('\n');
+			sb.append("[").append(ev.codigo()).append("] ").append(ev.nome());
+			if (ev.citadaEm() != null) {
+				sb.append(" (").append(ev.citadaEm()).append(')');
+			}
+			sb.append(" (similaridade ").append(ev.similaridade()).append("): ").append(ev.ementa()).append('\n');
 		}
 		return sb.toString();
 	}

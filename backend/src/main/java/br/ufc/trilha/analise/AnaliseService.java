@@ -32,11 +32,17 @@ public class AnaliseService {
 			.collect(Collectors.toMap(Analise.Componente::codigo, Function.identity()));
 	}
 
-	public record Evidencia(String codigo, String nome, double similaridade, String ementa) {
+	/**
+	 * {@code citadaEm}: para tecnologias nomeadas, onde o nome aparece ("objetivos do programa: Python");
+	 * {@code null} quando a evidência é a similaridade. {@code fonteEmenta}: PPC | programa.
+	 */
+	public record Evidencia(String codigo, String nome, double similaridade, String ementa, String fonteEmenta,
+			String citadaEm) {
 	}
 
+	/** {@code criterio}: similaridade | citacao (tecnologias nomeadas: a situação vem de o nome aparecer). */
 	public record Item(String id, String rotulo, String tipo, String descricao, String fonte, String relacao,
-			Cobertura.Status status, double similaridade, double escore, List<Evidencia> evidencias) {
+			Cobertura.Status status, double similaridade, double escore, String criterio, List<Evidencia> evidencias) {
 	}
 
 	public record Contagem(int coberta, int parcial, int lacuna) {
@@ -68,8 +74,11 @@ public class AnaliseService {
 			Map<String, List<CompetenciaProxima>> indice = new java.util.HashMap<>();
 			for (var c : analise.competencias().values()) {
 				var status = cobertura.classificar(c);
-				for (int i = 0; i < Math.min(EVIDENCIAS, c.proximos().size()); i++) {
-					var px = c.proximos().get(i);
+				// Tecnologia nomeada: só os componentes que citam o nome, não os vizinhos por similaridade.
+				List<Analise.Proximo> evidencias = c.citacao() == null ? c.proximos()
+						: c.citacao().componentes().stream().map(x -> new Analise.Proximo(x.codigo(), x.similaridade())).toList();
+				for (int i = 0; i < Math.min(EVIDENCIAS, evidencias.size()); i++) {
+					var px = evidencias.get(i);
 					indice.computeIfAbsent(px.codigo(), k -> new java.util.ArrayList<>())
 						.add(new CompetenciaProxima(c.id(), paraExibicao(c.rotulo()), c.fonte(), i, px.similaridade(), status));
 				}
@@ -136,13 +145,24 @@ public class AnaliseService {
 
 	private Item item(String id, String relacao) {
 		var c = analise.competencias().get(id);
-		List<Evidencia> evidencias = c.proximos().stream().limit(EVIDENCIAS).map(px -> {
-			var comp = componentePorCodigo.get(px.codigo());
-			return new Evidencia(px.codigo(), comp.nome(), px.similaridade(), comp.ementa());
-		}).toList();
+		List<Evidencia> evidencias;
+		if (c.citacao() != null && !c.citacao().componentes().isEmpty()) {
+			evidencias = c.citacao().componentes().stream().limit(EVIDENCIAS).map(x -> {
+				var comp = componentePorCodigo.get(x.codigo());
+				return new Evidencia(x.codigo(), comp.nome(), x.similaridade(), comp.ementa(), comp.fonteEmenta(),
+						x.onde() + ": " + x.termo());
+			}).toList();
+		}
+		else {
+			evidencias = c.proximos().stream().limit(EVIDENCIAS).map(px -> {
+				var comp = componentePorCodigo.get(px.codigo());
+				return new Evidencia(px.codigo(), comp.nome(), px.similaridade(), comp.ementa(), comp.fonteEmenta(), null);
+			}).toList();
+		}
 		double sim = c.proximos().isEmpty() ? 0 : c.proximos().getFirst().similaridade();
 		return new Item(c.id(), paraExibicao(c.rotulo()), c.tipo(), c.descricao(), c.fonte(), relacao,
-				cobertura.classificar(c), sim, Math.round(Cobertura.escore(c) * 100) / 100.0, evidencias);
+				cobertura.classificar(c), sim, Math.round(Cobertura.escore(c) * 100) / 100.0,
+				c.citacao() == null ? "similaridade" : "citacao", evidencias);
 	}
 
 	/**
