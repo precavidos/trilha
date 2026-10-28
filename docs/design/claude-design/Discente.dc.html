@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Trilha · Discente</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/trilha/tokens.css">
+<link rel="stylesheet" href="ds/trilha/components/bundle.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Figtree:wght@600;800&amp;display=swap">
+<style>
+:root{--topo-panel:url("/_blob/ad613f555d09fcc6949a37be4972fa83");--topo-canvas:url("/_blob/bb9b6180ed72c6e8b45ac80638658c91")}
+body{margin:0;background:var(--canvas)}
+a{color:var(--ink)}a:hover{color:var(--coberta)}
+.st{display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:28px;background:var(--surface);box-shadow:var(--shadow-card)}
+.st h3{margin:0 0 4px;font-size:18px;line-height:24px}
+.st p{margin:0;color:var(--ink-muted)}
+.n{flex:none;width:44px;height:44px;border-radius:999px;display:grid;place-items:center;font-weight:700;font-size:18px;background:var(--panel);color:var(--lime)}
+@media (max-width:760px){.wrap{padding:12px 16px 32px !important}.tr-topbar{flex-wrap:wrap;border-radius:28px !important}.tr-switch{overflow-x:auto;margin:0 !important;width:100%}.h1{font-size:32px !important;line-height:36px !important}}
+</style>
+</helmet>
+<div class="tr" style="min-height: 100vh; background: var(--canvas);">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 48px; display: flex; flex-direction: column; gap: 32px;">
+
+<header class="tr-topbar">
+<a class="tr-brand" href="Inicio.dc.html"><img class="tr-brand-mark" src="/_blob/0239ad7f22009800903032cd61380faf" alt="">Trilha</a>
+<nav aria-label="Perfil" style="margin-left: auto;">
+<ul class="tr-switch">
+<li><a href="Main.dc.html">Coordenação</a></li>
+<li><a href="Discente.dc.html" aria-current="page">Discente <span class="tr-tag">em breve</span></a></li>
+<li><a href="SobreIa.dc.html">Sobre a IA</a></li>
+</ul>
+</nav>
+</header>
+
+<main style="display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px;">
+<h1 class="h1 tr-display" style="margin: 0; font-size: 40px; line-height: 44px; letter-spacing: -0.01em;">Planeje sua trajetória rumo à profissão que você quer</h1>
+<p class="tr-notice" role="status" style="margin: 0;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v5h1"></path></svg>Módulo em desenvolvimento: ainda não disponível neste protótipo. Abaixo, o que está projetado.</p>
+</div>
+
+<div class="tr-trail-wrap" style="padding-top: 8px;">
+<svg class="tr-trail-line" viewBox="0 0 100 72" preserveAspectRatio="none" aria-hidden="true"><path d="M2.0 22 C 14.5 22, 14.5 50, 27.0 50 C 39.5 50, 39.5 22, 52.0 22 C 64.5 22, 64.5 50, 77.0 50 C 87.0 50, 96 30, 100 30" vector-effect="non-scaling-stroke"></path></svg>
+<ol class="tr-trail" style="--steps: 4;">
+<li class="tr-step tr-step--here"><span class="tr-pin"><span>01</span></span><h3>Envie o histórico do SIGAA</h3><p>O PDF é lido localmente. Nome, matrícula, notas e demais dados pessoais são descartados antes de qualquer processamento.</p></li>
+<li class="tr-step"><span class="tr-pin"><span>02</span></span><h3>Escolha até duas profissões-alvo</h3><p>As mesmas seis profissões que a coordenação analisa, ligadas aos itinerários formativos do curso.</p></li>
+<li class="tr-step"><span class="tr-pin"><span>03</span></span><h3>Receba optativas e eletivas elegíveis</h3><p>Respeitando pré-requisitos, as regras dos grupos de componentes da sua estrutura curricular (2013.2 ou 2025.1) e a carga horária que falta.</p></li>
+<li class="tr-step tr-step--goal"><span class="tr-pin"><span>04</span></span><h3>Veja por que cada sugestão</h3><p>Trecho da ementa, competência e profissão. A ordem é calculada sem IA generativa; o modelo de linguagem só redige a explicação.</p></li>
+</ol>
+</div>
+
+<section class="tr-panel tr-topo" aria-labelledby="t-prev" style="display: flex; flex-direction: column; gap: 20px; opacity: 1;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center;">
+<h2 id="t-prev" style="margin: 0; font-size: 24px; line-height: 30px;">Como a recomendação vai aparecer</h2>
+<span style="font-size: 12px; font-weight: 700; padding: 2px 12px; border-radius: 999px; background: var(--lime); color: var(--on-lime);">ESBOÇO · SEM DADOS REAIS</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px;">
+<div style="padding: 20px; border-radius: 16px; background: var(--panel-raised);"><span style="font-size: 14px; color: var(--on-panel-muted);">Carga horária optativa pendente</span><b style="display: block; font-size: 32px; line-height: 40px;">[___ h]</b></div>
+<div style="padding: 20px; border-radius: 16px; background: var(--panel-raised);"><span style="font-size: 14px; color: var(--on-panel-muted);">Estrutura curricular</span><b style="display: block; font-size: 32px; line-height: 40px;">[2025.1]</b></div>
+<div style="padding: 20px; border-radius: 16px; background: var(--panel-raised);"><span style="font-size: 14px; color: var(--on-panel-muted);">Profissões-alvo</span><b style="display: block; font-size: 20px; line-height: 40px;">[até duas]</b></div>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; gap: 8px;">
+<li style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 16px 20px; border-radius: 16px; background: var(--panel-raised);"><span class="tr-code" style="background: var(--lime); color: var(--on-lime); padding: 0 6px; border-radius: 6px;">[SMD____]</span><b>[Componente optativo]</b><span style="color: var(--on-panel-muted); font-size: 14px;">[itinerário] · [competência coberta] · [carga horária]</span><span style="margin-left: auto; font-size: 14px; font-weight: 700;">Por que isto?</span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 16px 20px; border-radius: 16px; background: var(--panel-raised);"><span class="tr-code" style="background: var(--lime); color: var(--on-lime); padding: 0 6px; border-radius: 6px;">[SMD____]</span><b>[Componente eletivo]</b><span style="color: var(--on-panel-muted); font-size: 14px;">[grupo de componentes] · [competência coberta]</span><span style="margin-left: auto; font-size: 14px; font-weight: 700;">Por que isto?</span></li>
+</ol>
+</section>
+
+<p class="tr-muted" style="margin: 0;">A recomendação apoia, mas não substitui, a orientação do Grupo de Professores Tutores e da coordenação.</p>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1300}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

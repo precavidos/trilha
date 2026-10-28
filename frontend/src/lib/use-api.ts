@@ -8,6 +8,7 @@ type Estado<T> = { caminho: string; dados?: T; erro?: string };
 /** GET no backend a partir do navegador; refaz a leitura quando o caminho muda. */
 export function useApi<T>(caminho: string) {
   const [estado, setEstado] = useState<Estado<T>>({ caminho });
+  const [tentativa, setTentativa] = useState(0);
 
   useEffect(() => {
     let ativo = true;
@@ -18,13 +19,18 @@ export function useApi<T>(caminho: string) {
     return () => {
       ativo = false;
     };
-  }, [caminho]);
+  }, [caminho, tentativa]);
 
   // Resultado de um caminho anterior ainda em tela conta como carregando.
   const atual = estado.caminho === caminho;
+  const recarregar = () => {
+    setEstado({ caminho });
+    setTentativa((t) => t + 1);
+  };
   return {
     dados: atual ? estado.dados : undefined,
     erro: atual ? estado.erro : undefined,
+    recarregar,
     carregando: !atual || (estado.dados === undefined && estado.erro === undefined),
   };
 }

@@ -1,99 +1,115 @@
+import { TrilhaDePassos } from "@/components/trilha/TrilhaDePassos";
+import { Card } from "@/components/ui/Card";
+import { Painel } from "@/components/ui/Painel";
 import { Configuracao } from "./configuracao";
 
 export const metadata = { title: "Sobre a IA · Trilha" };
 
+const PASSOS = [
+  {
+    titulo: "Extração do PPC",
+    texto: "Um programa lê o PDF e separa ementas e bibliografias. A equipe revisa o resultado.",
+    tag: "sem IA",
+  },
+  {
+    titulo: "Vocabulário de competências",
+    texto: "Exigências de cada profissão-alvo vêm da ESCO; as de IA, da Extensão IA da equipe.",
+    tag: "curadoria humana",
+  },
+  {
+    titulo: "Similaridade semântica",
+    texto:
+      "Um modelo de embeddings, executado localmente, compara cada competência com todas as ementas.",
+    tag: "IA local, não generativa",
+  },
+  {
+    titulo: "Situação por limiares",
+    texto: "Coberta, parcial ou lacuna por limiares fixos: o mesmo PPC sempre dá o mesmo resultado.",
+    tag: "sem IA",
+  },
+  {
+    titulo: "Justificativa, sob demanda",
+    texto:
+      "No “Por que isto?”, um modelo de linguagem recebe só as evidências e redige o texto. Não altera a situação.",
+    tag: "IA generativa",
+    tagGenerativa: true,
+  },
+];
+
+const H2 = "m-0 text-2xl leading-[30px] font-bold";
+
 export default function SobreIa() {
   return (
-    <article className="max-w-3xl space-y-10">
-      <header className="space-y-3">
-        <h1 className="text-3xl font-bold">Sobre a IA neste sistema</h1>
-        <p className="text-lg text-muted">
+    <div className="flex flex-col gap-12">
+      <header className="flex max-w-[760px] flex-col gap-2">
+        <h1 className="font-display m-0 text-[32px] leading-9 font-extrabold tracking-[-0.01em] md:text-[40px] md:leading-11">
+          Sobre a IA neste sistema
+        </h1>
+        <p className="m-0 text-lg leading-7 text-ink-muted">
           O que o Trilha faz com inteligência artificial, com quais dados, e onde ele pode errar.
         </p>
       </header>
 
-      <section aria-labelledby="como" className="space-y-3">
-        <h2 id="como" className="text-2xl font-bold">Como as conclusões são produzidas</h2>
-        <ol className="list-decimal space-y-3 pl-6">
-          <li>
-            <strong>Extração do PPC.</strong> Um programa lê o PDF do PPC e separa ementas e
-            bibliografias de cada componente curricular. A equipe revisa o resultado.
-          </li>
-          <li>
-            <strong>Vocabulário de competências.</strong> As exigências de cada profissão-alvo vêm da
-            taxonomia europeia ESCO. As competências de IA, que a ESCO não cobre, foram propostas
-            pela equipe (Extensão IA).
-          </li>
-          <li>
-            <strong>Similaridade semântica, sem IA generativa.</strong> Um modelo de embeddings
-            multilíngue, executado localmente, compara o texto de cada competência com todas as
-            ementas. A situação (coberta, parcial ou lacuna) é calculada por limiares fixos: o mesmo
-            PPC sempre produz o mesmo resultado.
-          </li>
-          <li>
-            <strong>Justificativa com IA generativa, sob demanda.</strong> No botão &ldquo;Por que
-            isto?&rdquo;, um modelo de linguagem recebe só a competência e as ementas recuperadas
-            (técnica conhecida como RAG) e redige uma explicação que deve citá-las pelo código. Ele
-            não altera a situação calculada.
-          </li>
-          <li>
-            <strong>Idade da bibliografia.</strong> Cálculo simples sobre os anos de publicação das
-            referências; nenhum modelo de IA é usado.
-          </li>
-        </ol>
+      <section aria-labelledby="como" className="flex flex-col gap-4">
+        <h2 id="como" className={H2}>
+          Como as conclusões são produzidas
+        </h2>
+        <TrilhaDePassos passos={PASSOS} />
       </section>
 
-      <section aria-labelledby="dados" className="space-y-3">
-        <h2 id="dados" className="text-2xl font-bold">Dados tratados e privacidade</h2>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            Só documentos institucionais públicos são enviados ao modelo de linguagem: ementas do PPC
-            e descrições de competências. Nenhum dado pessoal sai do computador onde o Trilha roda.
-          </li>
-          <li>
-            O módulo discente, em desenvolvimento, lê o histórico do SIGAA localmente e descarta
-            nome, matrícula, notas e demais dados pessoais antes de qualquer processamento.
-          </li>
-          <li>O sistema não exige login e não guarda dados de quem o utiliza.</li>
-        </ul>
-      </section>
+      <div className="grid gap-4 md:grid-cols-2">
+        <Configuracao />
+        <Painel as="section" aria-labelledby="dados" className="flex flex-col gap-4">
+          <h2 id="dados" className={H2}>
+            Dados tratados e privacidade
+          </h2>
+          <ul className="m-0 grid list-disc gap-2.5 pl-5">
+            <li>
+              Só documentos públicos vão ao modelo de linguagem: ementas do PPC e descrições de
+              competências.
+            </li>
+            <li>
+              O módulo discente lerá o histórico do SIGAA localmente e descartará nome, matrícula e
+              notas antes de qualquer processamento.
+            </li>
+            <li>Sem login, e nada de quem usa o sistema é guardado.</li>
+          </ul>
+        </Painel>
+      </div>
 
-      <Configuracao />
-
-      <section aria-labelledby="limites" className="space-y-3">
-        <h2 id="limites" className="text-2xl font-bold">Limitações conhecidas</h2>
-        <ul className="list-disc space-y-2 pl-6">
+      <Card as="section" aria-labelledby="limites" className="flex flex-col gap-4 p-8">
+        <h2 id="limites" className={H2}>
+          Limitações conhecidas
+        </h2>
+        <ul className="m-0 grid list-disc gap-2.5 pl-5">
           <li>
-            A similaridade semântica pode associar uma competência a uma ementa por proximidade de
-            vocabulário, não de conteúdo. Por isso toda situação mostra as evidências, e a precisão
-            foi medida com rótulos humanos (ver memorial).
+            A similaridade pode aproximar uma competência de uma ementa por vocabulário, não por
+            conteúdo. Por isso toda situação mostra as evidências, e a precisão foi medida com
+            rótulos humanos.
+          </li>
+          <li>23 dos 80 componentes não têm ementa no PPC e não podem cobrir nenhuma competência.</li>
+          <li>
+            Os rótulos da ESCO em português seguem o padrão europeu (“utilizador”, “conceção”) e
+            foram mantidos como na fonte.
           </li>
           <li>
-            O PPC analisado não traz ementa para parte dos componentes; esses componentes não podem
-            cobrir nenhuma competência.
+            A demanda de mercado vem das competências que a ESCO associa a cada ocupação; a coleta
+            de vagas brasileiras fica como trabalho futuro.
           </li>
           <li>
-            Os rótulos da ESCO em português estão no padrão europeu (&ldquo;utilizador&rdquo;,
-            &ldquo;conceção&rdquo;) e foram mantidos como na fonte.
-          </li>
-          <li>
-            A demanda de mercado vem da ESCO, uma referência institucional; a coleta de vagas
-            brasileiras fica como trabalho futuro.
-          </li>
-          <li>
-            O Trilha é uma ferramenta de apoio à decisão. Não substitui o NDE, o Grupo de Professores
-            Tutores nem a coordenação do curso.
+            Validação com rótulos humanos (<code>docs/validacao/resultado.md</code>): em 41
+            julgamentos, a concordância entre os dois avaliadores da equipe foi de 0,76 (kappa de
+            Cohen). Quando o sistema diz <em>coberta</em>, acerta 79% das vezes; quando diz{" "}
+            <em>lacuna</em>, 57%. <em>Parcial</em> é a situação menos confiável: em 9 de 13 casos,
+            os avaliadores disseram que a ementa não trata do tema.
           </li>
         </ul>
-      </section>
+      </Card>
 
-      <section aria-labelledby="desenvolvimento" className="space-y-3">
-        <h2 id="desenvolvimento" className="text-2xl font-bold">IA no desenvolvimento do Trilha</h2>
-        <p>
-          O código foi escrito com apoio de IA generativa (Claude Code). As decisões de projeto, a
-          revisão dos dados e a validação são da equipe, e estão registradas no repositório.
-        </p>
-      </section>
-    </article>
+      <p className="m-0 text-sm text-ink-muted">
+        O código foi escrito com apoio de IA generativa (Claude Code). Decisões de projeto, revisão
+        dos dados e validação são da equipe.
+      </p>
+    </div>
   );
 }

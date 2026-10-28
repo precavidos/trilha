@@ -28,6 +28,7 @@ class TrilhaBackendApplicationTests {
 		mvc.perform(get("/api/resumo"))
 			.andExpect(status().isOk())
 			.andExpect(jsonPath("$.profissoes.length()", is(6)))
+			.andExpect(jsonPath("$.competencias", is(311)))
 			.andExpect(jsonPath("$.componentesComEmenta", greaterThan(50)));
 	}
 

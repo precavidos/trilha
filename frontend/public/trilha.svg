@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Trilha">
+  <rect width="64" height="64" rx="18" fill="#0f3d2e"></rect>
+  <g fill="none" stroke="#c3ec7d" stroke-opacity=".3" stroke-width="1.5">
+    <path d="M-2 18c9-5 15 3 24-1s13-9 22-6 14 6 22 3"></path>
+    <path d="M-2 33c7 0 10-6 17-5s9 7 17 6 12-8 20-6 9 3 14 2"></path>
+    <path d="M-2 48c8-3 13 2 20 1s10 4 18 3"></path>
+  </g>
+  <path d="M15 51c9 1 13-4 9-9s1-10 9-9 13-4 11-9 3-7 5-7" fill="none" stroke="#c3ec7d" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <circle cx="15" cy="51" r="5.5" fill="#f4f0e1"></circle>
+  <circle cx="49.5" cy="16.5" r="5.5" fill="#0f3d2e" stroke="#f4f0e1" stroke-width="3.5"></circle>
+</svg>

@@ -47,8 +47,8 @@ public class AnaliseService {
 	}
 
 	public record Resumo(Analise.Metadados metadados, int componentes, int componentesComEmenta,
-			int componentesComBibliografia, Integer medianaGeralDaBibliografia, double fracaoReferenciasComMaisDe10Anos,
-			Contagem lenteIa, List<ProfissaoResumo> profissoes) {
+			int componentesComBibliografia, int competencias, Integer medianaGeralDaBibliografia,
+			double fracaoReferenciasComMaisDe10Anos, Contagem lenteIa, List<ProfissaoResumo> profissoes) {
 	}
 
 	public Analise.Metadados metadados() {
@@ -63,6 +63,7 @@ public class AnaliseService {
 		double antigas = bib.stream().mapToDouble(b -> b.fracaoComMaisDe10Anos() * b.comAno()).sum();
 		return new Resumo(analise.metadados(), analise.componentes().size(),
 				(int) analise.componentes().stream().filter(c -> c.ementa() != null).count(), bib.size(),
+				analise.competencias().size(),
 				medianas.isEmpty() ? null : medianas.get((medianas.size() - 1) / 2),
 				comAno == 0 ? 0 : Math.round(antigas / comAno * 1000) / 1000.0,
 				contar(lenteIa()),
