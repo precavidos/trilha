@@ -6,9 +6,10 @@ const CORES: Record<Status, string> = {
   LACUNA: "text-lacuna bg-lacuna-bg",
   PARCIAL: "text-parcial bg-parcial-bg",
   COBERTA: "text-coberta bg-coberta-bg",
+  NAO_DOCUMENTADA: "text-ink-muted bg-surface-sunken",
 };
 
-/** Ponto: vazio = lacuna, meio cheio = parcial, cheio = coberta. */
+/** Ponto: vazio = lacuna, meio cheio = parcial, cheio = coberta, tracejado = não documentada. */
 export function PontoSituacao({
   status,
   tamanho = "normal",
@@ -24,6 +25,7 @@ export function PontoSituacao({
         tamanho === "grande" ? "size-[18px] border-[3px]" : "size-3 border-2",
         status === "COBERTA" && "bg-current",
         status === "PARCIAL" && "bg-[linear-gradient(90deg,currentColor_50%,transparent_50%)]",
+        status === "NAO_DOCUMENTADA" && "border-dashed",
       )}
     />
   );

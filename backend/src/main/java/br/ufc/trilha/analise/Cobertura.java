@@ -2,16 +2,30 @@ package br.ufc.trilha.analise;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/** Classifica a cobertura de uma competência pelo PPC a partir da similaridade e do escore relativo. */
+/**
+ * Classifica a cobertura de uma competência pelo PPC a partir da similaridade e do escore relativo. Tecnologias
+ * nomeadas são a exceção: a situação vem de o nome aparecer ou não no PPC e nos programas de disciplina.
+ */
 @ConfigurationProperties("trilha.limiares")
 public record Cobertura(double cobertaSimilaridade, double cobertaEscore, double parcialSimilaridade,
 		double parcialEscore) {
 
+	/**
+	 * {@code NAO_DOCUMENTADA}: tecnologia nomeada que o PPC e os programas não citam. Não é lacuna: o professor
+	 * escolhe linguagens e ferramentas a cada semestre, e a ementa raramente as registra.
+	 */
 	public enum Status {
-		COBERTA, PARCIAL, LACUNA
+		COBERTA, PARCIAL, NAO_DOCUMENTADA, LACUNA
 	}
 
 	public Status classificar(Analise.Competencia c) {
+		if (c.citacao() != null) {
+			return switch (c.citacao().nivel()) {
+				case "forte" -> Status.COBERTA;
+				case "fraca" -> Status.PARCIAL;
+				default -> Status.NAO_DOCUMENTADA;
+			};
+		}
 		if (c.proximos().isEmpty()) {
 			return Status.LACUNA;
 		}

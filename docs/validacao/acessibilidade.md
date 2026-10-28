@@ -2,6 +2,26 @@
 
 Anexo do memorial. Cobre as 5 telas do front novo (`/`, `/coordenacao`, `/coordenacao/bibliografia`, `/sobre-ia` e `/discente`), nos temas claro e escuro, em 1440 px e em 375 px.
 
+## Rodada de 28/10/2026 (tela nova do discente e situação "não documentada")
+
+Mesmo método abaixo (axe-core 4.10.2, regras WCAG 2.0 A/AA, 2.1 AA e 2.2 AA), no tema claro, que é o único aplicado pelo app desde a primeira rodada. Dados: análise com os programas de disciplina (69 componentes com ementa) e o histórico de exemplo fictício.
+
+| Rota e estado | 1440 px | 375 px |
+|---|---|---|
+| `/` | 0 | 0 |
+| `/coordenacao` | 0 | 0 |
+| `/coordenacao` com "Por que isto?" aberto (similaridade; em 375 px, lente de IA) | 0 | 0 |
+| `/coordenacao`, filtro "Não documentadas", "Por que isto?" aberto | 0 | não rodado |
+| `/coordenacao/bibliografia` | 0 | 0 |
+| `/sobre-ia` | 0 | 0 |
+| `/discente` inicial | 0 | 0 |
+| `/discente` com o histórico de exemplo lido | 0 | 0 |
+| `/discente` com sugestões (UX/UI e web), duas disciplinas no rascunho e "Por que isto?" aberto | 0 | 0 |
+
+As regras de boas práticas (`heading-order`, `page-has-heading-one`, `landmark-one-main`, `region`) deram 0 em 1440 px em todas as rotas.
+
+Rolagem horizontal em 375 px: nenhuma, depois de duas correções desta rodada. O botão "Experimentar com um histórico de exemplo" passava 7 px da tela, e o caminho `docs/validacao/revalidacao/resultado.md` na página "Sobre a IA" não quebrava linha (a página chegava a 447 px). Em `/coordenacao`, para cada uma das 7 profissões e da lente, os 4 primeiros "Por que isto?" foram abertos e fechados: a largura ficou em 375 px em todos os casos.
+
 ## Método
 
 - **Data:** 27/10/2026.

@@ -7,8 +7,9 @@ export const metadata = { title: "Sobre a IA · Trilha" };
 
 const PASSOS = [
   {
-    titulo: "Extração do PPC",
-    texto: "Um programa lê o PDF e separa ementas e bibliografias. A equipe revisa o resultado.",
+    titulo: "Extração do PPC e dos programas",
+    texto:
+      "Um programa lê o PPC e os programas de disciplina e separa ementas, objetivos e bibliografias. A equipe revisa o resultado.",
     tag: "sem IA",
   },
   {
@@ -24,7 +25,8 @@ const PASSOS = [
   },
   {
     titulo: "Situação por limiares",
-    texto: "Coberta, parcial ou lacuna por limiares fixos: o mesmo PPC sempre dá o mesmo resultado.",
+    texto:
+      "Coberta, parcial ou lacuna por limiares fixos; linguagens, frameworks e programas com nome, por onde o nome aparece. O mesmo PPC sempre dá o mesmo resultado.",
     tag: "sem IA",
   },
   {
@@ -69,8 +71,8 @@ export default function SobreIa() {
               competências.
             </li>
             <li>
-              O módulo discente lerá o histórico do SIGAA localmente e descartará nome, matrícula e
-              notas antes de qualquer processamento.
+              O módulo discente lê o histórico do SIGAA em memória e descarta nome, matrícula, notas
+              e nomes de docentes na leitura; nada é gravado.
             </li>
             <li>Sem login, e nada de quem usa o sistema é guardado.</li>
           </ul>
@@ -87,7 +89,16 @@ export default function SobreIa() {
             conteúdo. Por isso toda situação mostra as evidências, e a precisão foi medida com
             rótulos humanos.
           </li>
-          <li>23 dos 80 componentes não têm ementa no PPC e não podem cobrir nenhuma competência.</li>
+          <li>
+            23 dos 80 componentes não têm ementa no PPC. Em 12 deles, a ementa vem do programa da
+            disciplina (formulário da PROGRAD); os outros 11 não podem cobrir nenhuma competência.
+          </li>
+          <li>
+            Para linguagens, frameworks e programas com nome (C#, Python, WordPress…), a
+            similaridade engana. Nesses casos vale onde o nome aparece no PPC e nos programas.
+            Quando não aparece, a situação é “não documentada”, não lacuna: o professor escolhe as
+            ferramentas a cada semestre, e a ementa raramente as registra.
+          </li>
           <li>
             Os rótulos da ESCO em português seguem o padrão europeu (“utilizador”, “conceção”) e
             foram mantidos como na fonte.
@@ -97,11 +108,18 @@ export default function SobreIa() {
             de vagas brasileiras fica como trabalho futuro.
           </li>
           <li>
-            Validação com rótulos humanos (<code>docs/validacao/resultado.md</code>): em 41
-            julgamentos, a concordância entre os dois avaliadores da equipe foi de 0,76 (kappa de
-            Cohen). Quando o sistema diz <em>coberta</em>, acerta 79% das vezes; quando diz{" "}
-            <em>lacuna</em>, 57%. <em>Parcial</em> é a situação menos confiável: em 9 de 13 casos,
-            os avaliadores disseram que a ementa não trata do tema.
+            Validação com rótulos humanos (<code className="[overflow-wrap:anywhere]">docs/validacao/revalidacao/resultado.md</code>): 60
+            julgamentos de dois avaliadores da equipe (kappa de Cohen de 0,76 na primeira rodada e
+            0,85 na segunda). Quando o sistema diz <em>coberta</em>, acerta 89% das vezes; quando
+            diz <em>lacuna</em>, 50%. <em>Parcial</em> é a situação menos confiável: em 13 de 23
+            casos, os avaliadores disseram que o componente não trata do tema. Das tecnologias{" "}
+            <em>não documentadas</em>, 8 de 9 foram julgadas como não tratadas.
+          </li>
+          <li>
+            Ementas muito curtas atraem competências genéricas. A de Concepção de Cenários e
+            Personagens (“Concept art. Design de personagens. Criação de cenários. Projetos
+            práticos.”) é o único registro da disciplina e errou em 4 de 7 pares avaliados. É um
+            limite da documentação, não só do método.
           </li>
         </ul>
       </Card>

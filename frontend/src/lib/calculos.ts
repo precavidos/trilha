@@ -1,6 +1,6 @@
 import type { Contagem, IdadeBibliografia } from "./api";
 
-export type Segmento = "lacuna" | "parcial" | "coberta" | "vazio";
+export type Segmento = "lacuna" | "parcial" | "coberta" | "naoDocumentada" | "vazio";
 
 /** Início do eixo cronológico da bibliografia. */
 export const EIXO_INICIO = 1960;
@@ -10,21 +10,27 @@ const SIMILARIDADE_AMPLITUDE = 0.12;
 
 const limitar = (x: number) => Math.min(100, Math.max(0, x));
 
+/** Total de competências de uma contagem, em todas as situações. */
+export const totalDe = (c: Contagem) => c.lacuna + c.parcial + c.coberta + c.naoDocumentada;
+
 /**
  * Divide uma barra de `n` segmentos proporcionalmente à contagem,
- * na ordem lacunas → parciais → cobertas.
+ * na ordem lacunas → parciais → cobertas → não documentadas.
  */
 export function segmentos(c: Contagem, n: number): Segmento[] {
-  const total = c.lacuna + c.parcial + c.coberta;
+  const total = totalDe(c);
   if (total === 0) return Array.from({ length: n }, () => "vazio");
 
   const lacunas = Math.round((c.lacuna / total) * n);
   const parciais = Math.min(Math.round((c.parcial / total) * n), n - lacunas);
+  const naoDocumentadas = Math.min(Math.round((c.naoDocumentada / total) * n), n - lacunas - parciais);
+  const cobertas = n - lacunas - parciais - naoDocumentadas;
 
   return Array.from({ length: n }, (_, i) => {
     if (i < lacunas) return "lacuna";
     if (i < lacunas + parciais) return "parcial";
-    return "coberta";
+    if (i < lacunas + parciais + cobertas) return "coberta";
+    return "naoDocumentada";
   });
 }
 

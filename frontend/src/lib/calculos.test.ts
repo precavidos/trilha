@@ -24,7 +24,7 @@ function bib(over: Partial<IdadeBibliografia> = {}): IdadeBibliografia {
 }
 
 test("segmentos divide a barra em lacunas, parciais e cobertas", () => {
-  const s = segmentos({ lacuna: 50, parcial: 32, coberta: 20 }, 20);
+  const s = segmentos({ lacuna: 50, parcial: 32, coberta: 20, naoDocumentada: 0 }, 20);
   assert.equal(s.length, 20);
   assert.deepEqual(
     [s.filter((x) => x === "lacuna").length, s.filter((x) => x === "parcial").length, s.filter((x) => x === "coberta").length],
@@ -34,12 +34,17 @@ test("segmentos divide a barra em lacunas, parciais e cobertas", () => {
   assert.equal(s[19], "coberta");
 });
 
+test("segmentos põe as não documentadas no fim, depois das cobertas", () => {
+  const s = segmentos({ lacuna: 5, parcial: 5, coberta: 5, naoDocumentada: 5 }, 8);
+  assert.deepEqual(s, ["lacuna", "lacuna", "parcial", "parcial", "coberta", "coberta", "naoDocumentada", "naoDocumentada"]);
+});
+
 test("segmentos com contagem zerada fica todo vazio", () => {
-  assert.deepEqual(segmentos({ lacuna: 0, parcial: 0, coberta: 0 }, 4), ["vazio", "vazio", "vazio", "vazio"]);
+  assert.deepEqual(segmentos({ lacuna: 0, parcial: 0, coberta: 0, naoDocumentada: 0 }, 4), ["vazio", "vazio", "vazio", "vazio"]);
 });
 
 test("segmentos nunca passa de n quando o arredondamento soma demais", () => {
-  assert.equal(segmentos({ lacuna: 1, parcial: 1, coberta: 0 }, 3).length, 3);
+  assert.equal(segmentos({ lacuna: 1, parcial: 1, coberta: 0, naoDocumentada: 0 }, 3).length, 3);
 });
 
 test("contarBibliografiasAntigas conta metade ou mais acima de 10 anos e ignora sem ano", () => {

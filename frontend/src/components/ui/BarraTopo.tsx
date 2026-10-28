@@ -6,7 +6,7 @@ import { cx } from "@/lib/cx";
 
 const PERFIS = [
   { href: "/coordenacao", rotulo: "Coordenação", emBreve: false },
-  { href: "/discente", rotulo: "Discente", emBreve: true },
+  { href: "/discente", rotulo: "Discente", emBreve: false },
   { href: "/sobre-ia", rotulo: "Sobre a IA", emBreve: false },
 ];
 

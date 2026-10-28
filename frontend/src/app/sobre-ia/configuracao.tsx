@@ -63,6 +63,15 @@ export function Configuracao() {
               <span className="text-sm">abaixo disso</span>
             </div>
           </div>
+          <p className="m-0 text-sm leading-5">
+            Linguagens, frameworks e programas com nome seguem outra regra: coberta se o nome aparece
+            na ementa, nos objetivos ou no conteúdo; parcial se aparece só na bibliografia básica; e{" "}
+            <span className="inline-flex items-center gap-1 font-bold">
+              <PontoSituacao status="NAO_DOCUMENTADA" />
+              não documentada
+            </span>{" "}
+            se não aparece, porque pode ser ensinada sem estar registrada.
+          </p>
         </>
       )}
     </Card>

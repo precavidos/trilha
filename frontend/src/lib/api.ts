@@ -4,9 +4,10 @@ export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080
 /** Id da lente transversal de IA, tratada como uma "profissão" a mais na coordenação. */
 export const LENTE_IA = "lente-ia";
 
-export type Status = "COBERTA" | "PARCIAL" | "LACUNA";
+/** NAO_DOCUMENTADA: tecnologia nomeada que o PPC e os programas não citam (pode ser ensinada sem registro). */
+export type Status = "COBERTA" | "PARCIAL" | "LACUNA" | "NAO_DOCUMENTADA";
 
-export type Contagem = { coberta: number; parcial: number; lacuna: number };
+export type Contagem = { coberta: number; parcial: number; lacuna: number; naoDocumentada: number };
 
 export type Metadados = {
   documento: string;
@@ -56,6 +57,10 @@ export type Evidencia = {
   nome: string;
   similaridade: number;
   ementa: string;
+  /** PPC | programa (o PPC não traz a ementa; veio do formulário da disciplina). */
+  fonteEmenta: "PPC" | "programa" | null;
+  /** Tecnologias nomeadas: onde o nome aparece ("objetivos do programa: Python"); null na similaridade. */
+  citadaEm: string | null;
 };
 
 /** Uma competência exigida, já classificada pelo backend (ADR 0002: sem LLM na classificação). */
@@ -70,6 +75,8 @@ export type Item = {
   status: Status;
   similaridade: number;
   escore: number;
+  /** similaridade | citacao (tecnologias nomeadas: a situação vem de o nome aparecer no PPC). */
+  criterio: "similaridade" | "citacao";
   evidencias: Evidencia[];
 };
 
@@ -149,7 +156,16 @@ export type ItemRecomendado = {
   grupo: { grupo: string; cumpridos: number; minimo: number } | null;
   contaExtensao: boolean;
   preRequisitos: string[];
+  /** Todas as competências que o componente contempla, com a posição de cada uma (começa em 0). */
+  evidencias: CompetenciaContemplada[];
+  /** Quantas competências contempla por profissão-alvo (chave: rótulo), no total e as ainda não cobertas. */
+  contagem: { porProfissao: Record<string, number>; total: number; naoCobertas: number };
+  /** Ressalva sobre a ementa, quando há. */
+  notaEmenta: string | null;
 };
+
+/** Competência que nenhuma sugestão alcança. */
+export type CompetenciaFora = { rotulo: string; profissao: string };
 
 export type Recomendacao = {
   estrutura: string;
@@ -161,6 +177,8 @@ export type Recomendacao = {
   componentesSugeridos: number;
   avisos: string[];
   itens: ItemRecomendado[];
+  /** O que as sugestões não alcançam: lacunas essenciais e tecnologias sem registro no PPC. */
+  foraDasSugestoes: { lacunasEssenciais: CompetenciaFora[]; naoDocumentadas: CompetenciaFora[] };
 };
 
 async function erroDaResposta(resposta: Response): Promise<Error> {
@@ -188,6 +206,13 @@ export async function recomendar(trajetoria: Trajetoria, profissoes: string[]): 
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ trajetoria, profissoes }),
   });
+  if (!resposta.ok) throw await erroDaResposta(resposta);
+  return resposta.json();
+}
+
+/** Histórico fictício para experimentar o fluxo sem enviar o próprio PDF. */
+export async function historicoDeExemplo(): Promise<Trajetoria> {
+  const resposta = await fetch(`${API_URL}/api/discente/historico-exemplo`);
   if (!resposta.ok) throw await erroDaResposta(resposta);
   return resposta.json();
 }

@@ -9,15 +9,26 @@ import { larguraDaSimilaridade } from "@/lib/calculos";
 import { formatarDecimal, formatarSimilaridade, RELACOES, SITUACOES, TIPOS } from "@/lib/formato";
 
 const PALAVRA: Record<Status, string> = {
+  NAO_DOCUMENTADA: "não documentada",
   LACUNA: "uma lacuna",
   PARCIAL: "parcial",
   COBERTA: "coberta",
 };
 
 const REGRA: Record<Status, string> = {
+  NAO_DOCUMENTADA: "não se aplica: só tecnologias nomeadas ficam não documentadas",
   LACUNA: "abaixo dos dois limiares de Parcial",
   PARCIAL: "atinge um limiar de Parcial, não o de Coberta",
   COBERTA: "atinge um limiar de Coberta",
+};
+
+/** Tecnologias nomeadas (linguagens, frameworks, programas): a situação vem de onde o nome aparece. */
+const REGRA_CITACAO: Record<Status, string> = {
+  NAO_DOCUMENTADA:
+    "o nome não aparece no PPC nem nos programas de disciplina; pode ser ensinada sem estar registrada",
+  LACUNA: "o nome não aparece no PPC nem nos programas de disciplina",
+  PARCIAL: "o nome aparece só na bibliografia básica",
+  COBERTA: "o nome aparece na ementa, nos objetivos ou no conteúdo",
 };
 
 const TITULO_SECAO =
@@ -52,42 +63,81 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
           {item.descricao && <p className="text-on-panel-muted m-0 mt-2">{item.descricao}</p>}
         </div>
 
-        <div>
-          <h4 className={TITULO_SECAO}>Como a situação foi calculada · sem IA generativa</h4>
-          <ol className="m-0 mt-3 grid list-none grid-cols-1 gap-3 p-0 md:grid-cols-3">
-            <li className="bg-panel-raised rounded-md p-4">
-              <b className="block text-[28px] leading-8">
-                {formatarSimilaridade(item.similaridade)}
-              </b>
-              <span className="text-on-panel-muted text-sm leading-5">
-                maior similaridade com uma ementa{limiarSim}
-              </span>
-            </li>
-            <li className="bg-panel-raised rounded-md p-4">
-              <b className="block text-[28px] leading-8">{formatarDecimal(item.escore)}</b>
-              <span className="text-on-panel-muted text-sm leading-5">
-                escore: quanto essa ementa se destaca das demais{limiarEscore}
-              </span>
-            </li>
-            <li className="bg-panel-raised rounded-md p-4">
-              <b className="text-lime flex items-center gap-2 text-[28px] leading-8">
-                <PontoSituacao status={item.status} tamanho="grande" />
-                <span className="text-on-panel">{SITUACOES[item.status].rotulo}</span>
-              </b>
-              <span className="text-on-panel-muted text-sm leading-5">{REGRA[item.status]}</span>
-            </li>
-          </ol>
-        </div>
+        {item.criterio === "citacao" ? (
+          <div>
+            <h4 className={TITULO_SECAO}>
+              Como a situação foi calculada · tecnologia nomeada, sem IA generativa
+            </h4>
+            <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+              <p className="bg-panel-raised m-0 rounded-md p-4 text-sm leading-[22px]">
+                Para linguagens, frameworks e programas, a similaridade engana: a descrição da ESCO
+                é quase a mesma para todas as linguagens e se parece com qualquer disciplina de
+                programação. Por isso a situação vem de onde o nome aparece no PPC e nos programas
+                de disciplina: na ementa, nos objetivos ou no conteúdo (coberta), só na bibliografia
+                básica (parcial). Quando o nome não aparece, ela fica não documentada, e não lacuna:
+                o professor escolhe linguagens e ferramentas a cada semestre, e a ementa raramente
+                as registra.
+              </p>
+              <p className="bg-panel-raised m-0 rounded-md p-4">
+                <b className="text-lime flex items-center gap-2 text-[28px] leading-8">
+                  <PontoSituacao status={item.status} tamanho="grande" />
+                  <span className="text-on-panel">{SITUACOES[item.status].rotulo}</span>
+                </b>
+                <span className="text-on-panel-muted text-sm leading-5">
+                  {REGRA_CITACAO[item.status]}
+                </span>
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <h4 className={TITULO_SECAO}>Como a situação foi calculada · sem IA generativa</h4>
+            <ol className="m-0 mt-3 grid list-none grid-cols-1 gap-3 p-0 md:grid-cols-3">
+              <li className="bg-panel-raised rounded-md p-4">
+                <b className="block text-[28px] leading-8">
+                  {formatarSimilaridade(item.similaridade)}
+                </b>
+                <span className="text-on-panel-muted text-sm leading-5">
+                  maior similaridade com uma ementa{limiarSim}
+                </span>
+              </li>
+              <li className="bg-panel-raised rounded-md p-4">
+                <b className="block text-[28px] leading-8">{formatarDecimal(item.escore)}</b>
+                <span className="text-on-panel-muted text-sm leading-5">
+                  escore: quanto essa ementa se destaca das demais{limiarEscore}
+                </span>
+              </li>
+              <li className="bg-panel-raised rounded-md p-4">
+                <b className="text-lime flex items-center gap-2 text-[28px] leading-8">
+                  <PontoSituacao status={item.status} tamanho="grande" />
+                  <span className="text-on-panel">{SITUACOES[item.status].rotulo}</span>
+                </b>
+                <span className="text-on-panel-muted text-sm leading-5">{REGRA[item.status]}</span>
+              </li>
+            </ol>
+          </div>
+        )}
 
         <div>
-          <h4 className={TITULO_SECAO}>Evidências · ementas mais próximas</h4>
+          <h4 className={TITULO_SECAO}>
+            {item.evidencias.some((ev) => ev.citadaEm)
+              ? "Evidências · onde o nome aparece"
+              : "Evidências · ementas mais próximas"}
+          </h4>
           <ol className="m-0 mt-3 grid list-none grid-cols-[minmax(0,1fr)] gap-2 p-0">
             {item.evidencias.map((ev, i) => (
               <li key={ev.codigo}>
                 <details open={i === 0} className="bg-panel-raised rounded-md px-4 py-3">
                   <summary className="flex cursor-pointer list-none items-center gap-3">
                     <span className="bg-lime text-on-lime rounded-[6px] px-1.5">{ev.codigo}</span>
-                    <span className="min-w-0">{ev.nome}</span>
+                    <span className="min-w-0">
+                      {ev.nome}
+                      {ev.citadaEm && (
+                        <span className="text-on-panel-muted block text-sm leading-5">
+                          {ev.citadaEm}
+                        </span>
+                      )}
+                    </span>
                     <span className="text-on-panel-muted ml-auto text-sm whitespace-nowrap">
                       {formatarSimilaridade(ev.similaridade)}
                     </span>
@@ -101,6 +151,11 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
                       />
                     </span>
                   </summary>
+                  {ev.fonteEmenta === "programa" && (
+                    <p className="text-on-panel-muted m-0 mt-3 text-sm leading-5">
+                      O PPC não traz a ementa deste componente; ela vem do programa da disciplina.
+                    </p>
+                  )}
                   <blockquote className="text-on-panel m-0 mt-3 text-sm leading-[22px]">
                     {ev.ementa || "Componente sem ementa no PPC."}
                   </blockquote>

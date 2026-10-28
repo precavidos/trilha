@@ -33,6 +33,31 @@ Ao terminar, apague a pendência resolvida da lista. A lista vazia significa see
 - O PPC atribui o código SMD0144 a dois componentes (Fotografia Digital e Semiótica Aplicada).
 - Bibliografias datadas: por exemplo, Autoração Multimídia I traz apenas livros de Photoshop CS4 e Flash CS4 (2006–2009); o Flash foi descontinuado em 2020.
 
+## `programas-smd.json`
+
+Campos de conteúdo dos formulários de criação/regulamentação de disciplina da PROGRAD (ementa, objetivos, competências, conteúdo detalhado e bibliografias), um por disciplina. Os PDFs ficam em `data/private/fontes/programas/`, fora do git. Nomes de quem assinou, carimbos e atas não são extraídos; da assinatura, só a data. Gerado por:
+
+```bash
+cd backend
+./mvnw -q compile exec:java -Dexec.mainClass=br.ufc.trilha.ppc.ExportarProgramas -Dexec.args="../data/private/fontes/programas ../data/seed/programas-smd.json"
+```
+
+Quando há versões por turno, vale a do Diurno (o PPC analisado é o do Diurno). `pendencias` registra as outras versões e os rascunhos ignorados. A análise usa o programa de um componente do PPC quando o código é o mesmo ou quando é de um componente equivalente da matriz 2025.1 com praticamente a mesma ementa (ADR 0011).
+
+**Revisão de 28/10/2026.** A equipe conferiu as 12 ementas usadas para completar o PPC (SMD0027, 0035, 0050, 0057, 0070, 0071, 0080, 0084, 0091, 0120, 0126, 0128): correspondem às disciplinas como são dadas hoje, embora vários formulários sejam antigos (2018) ou sem data. Algumas são curtas e sem objetivos (SMD0057, SMD0091); são o único registro disponível, o que é em si um achado: a documentação das disciplinas pelos docentes é incompleta. A divergência entre a SMD0144 do PPC e o programa da antiga SMD0086 (Fotografia Digital) é reformulação da disciplina, não erro: a análise usa só a ementa do PPC.
+
+## `tecnologias-nomeadas.json`
+
+Competências que nomeiam uma linguagem, framework ou programa, com os termos que contam como citação (ADR 0011). `termos` casam sem distinção de maiúsculas; `termosExatos` exigem a grafia exata. Ao revisar, prefira deixar de fora um termo ambíguo a aceitar falsos positivos.
+
+## `historico-exemplo.json`
+
+Trajetória fictícia de um discente do Diurno 2025.1, montada à mão: 31 componentes aprovados e 4 matriculados, todos da estrutura `smd-diurno-2025-1.json`. Não deriva de nenhum histórico real. Serve para conhecer o sistema sem enviar um histórico e, nos testes, para fixar a ordem das sugestões.
+
+## `ementas-com-ressalva.json`
+
+Componentes cuja ementa a validação mostrou ser fraca, com a nota exibida ao discente junto da sugestão (`codigo`, `nota`, `fonte`). Um componente só entra aqui quando a validação registrar o erro.
+
 ## Licença
 
-O texto das ementas e bibliografias é reproduzido do PPC, documento institucional público da UFC. A estrutura, as correções e os demais dados derivados da equipe são CC BY 4.0.
+O texto das ementas e bibliografias é reproduzido do PPC, documento institucional público da UFC; o de `programas-smd.json`, dos formulários de disciplina da PROGRAD/UFC. A estrutura, as correções e os demais dados derivados da equipe são CC BY 4.0.

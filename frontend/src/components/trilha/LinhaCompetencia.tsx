@@ -34,7 +34,8 @@ export function LinhaCompetencia({ item, aberta, aoAlternar, profissao, limiares
             </span>
           )}
           <span className="text-ink-muted block text-sm leading-5 font-normal">
-            {TIPOS[item.tipo] ?? item.tipo} · {ia ? "Extensão IA" : "ESCO"} · {RELACOES[item.relacao ?? ""] ?? "—"}
+            {TIPOS[item.tipo] ?? item.tipo} · {ia ? "Extensão IA" : "ESCO"} ·{" "}
+            {RELACOES[item.relacao ?? ""] ?? "—"}
           </span>
         </span>
         <ChipSituacao status={item.status} />
@@ -46,7 +47,11 @@ export function LinhaCompetencia({ item, aberta, aoAlternar, profissao, limiares
               </span>
               {proxima.nome}
               <span className="text-ink-muted block text-sm leading-5 font-normal">
-                mais próxima · similaridade {formatarSimilaridade(proxima.similaridade)}
+                {proxima.citadaEm
+                  ? `cita o nome · ${proxima.citadaEm}`
+                  : item.criterio === "citacao"
+                    ? "nome não citado no PPC nem nos programas"
+                    : `mais próxima · similaridade ${formatarSimilaridade(proxima.similaridade)}`}
               </span>
             </>
           ) : (

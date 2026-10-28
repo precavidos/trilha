@@ -5,3 +5,5 @@ O histórico do SIGAA é lido por um parser determinístico (PDFBox + regras sob
 Rejeitamos enviar o PDF ou seu texto ao LLM para extração: seria mais flexível, mas violaria a anonimização exigida e criaria risco de LGPD sem ganho real, já que o layout do SIGAA é estável.
 
 Históricos reais (dos integrantes da equipe, com consentimento) são usados apenas localmente para testar o parser e nunca entram no repositório; o repositório contém apenas históricos sintéticos.
+
+O histórico de exemplo servido pelo sistema (`data/seed/historico-exemplo.json`) é fictício, montado à mão, e serve para avaliar o sistema sem expor um histórico.

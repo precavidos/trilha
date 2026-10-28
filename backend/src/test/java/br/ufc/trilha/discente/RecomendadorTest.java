@@ -2,11 +2,15 @@ package br.ufc.trilha.discente;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import org.junit.jupiter.api.Test;
+
+import br.ufc.trilha.analise.AnaliseService;
+import br.ufc.trilha.analise.Cobertura;
 
 class RecomendadorTest {
 
@@ -46,6 +50,68 @@ class RecomendadorTest {
 		assertThat(Recomendador.nomeLegivel("INTERAÇÃO HUMANO-COMPUTADOR II")).isEqualTo("Interação Humano-Computador II");
 		assertThat(Recomendador.nomeLegivel("CONCEPÇÃO DE CENÁRIOS E DE PERSONAGENS"))
 			.isEqualTo("Concepção de Cenários e de Personagens");
+	}
+
+	private static AnaliseService.Item item(String id, String rotulo, String relacao, Cobertura.Status status) {
+		return new AnaliseService.Item(id, rotulo, "competencia", "", "ppc", relacao, status, 0.0, 0.0, "similaridade",
+				List.of());
+	}
+
+	@Test
+	void foraTrazLacunasEssenciaisLongeDasSugestoes() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("UX/UI", List.of(item("a", "A", "essencial", Cobertura.Status.LACUNA),
+				item("b", "B", "essencial", Cobertura.Status.LACUNA), item("c", "C", "opcional", Cobertura.Status.LACUNA),
+				item("d", "D", "essencial", Cobertura.Status.COBERTA)));
+		var fora = Recomendador.fora(mapa, Set.of("b"));
+		assertThat(fora.lacunasEssenciais()).containsExactly(new Recomendador.CompetenciaFora("A", "UX/UI"));
+	}
+
+	@Test
+	void foraSemSugestoesTrazTodasAsLacunasEssenciais() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("UX/UI", List.of(item("a", "A", "essencial", Cobertura.Status.LACUNA),
+				item("b", "B", "essencial", Cobertura.Status.LACUNA), item("c", "C", "opcional", Cobertura.Status.LACUNA)));
+		var fora = Recomendador.fora(mapa, Set.of());
+		assertThat(fora.lacunasEssenciais()).extracting(Recomendador.CompetenciaFora::rotulo).containsExactly("A", "B");
+	}
+
+	@Test
+	void foraOrdenaLacunasPorProfissaoERotulo() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("Web", List.of(item("z", "Z", "essencial", Cobertura.Status.LACUNA),
+				item("y", "Y", "essencial", Cobertura.Status.LACUNA)));
+		mapa.put("UX/UI", List.of(item("a", "A", "essencial", Cobertura.Status.LACUNA)));
+		var fora = Recomendador.fora(mapa, Set.of());
+		assertThat(fora.lacunasEssenciais()).extracting(Recomendador.CompetenciaFora::rotulo).containsExactly("Y", "Z", "A");
+	}
+
+	@Test
+	void foraTrazNaoDocumentadasSemRepetir() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("UX/UI", List.of(item("t2", "Figma", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t1", "Angular", "opcional", Cobertura.Status.NAO_DOCUMENTADA)));
+		mapa.put("Web", List.of(item("t2", "Figma", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t3", "Docker", "essencial", Cobertura.Status.NAO_DOCUMENTADA)));
+		var fora = Recomendador.fora(mapa, Set.of());
+		assertThat(fora.naoDocumentadas()).containsExactly(new Recomendador.CompetenciaFora("Angular", "UX/UI"),
+				new Recomendador.CompetenciaFora("Docker", "Web"), new Recomendador.CompetenciaFora("Figma", "UX/UI"));
+	}
+
+	@Test
+	void foraOrdenaAlfabeticamenteSemOrdemDeBytes() {
+		var mapa = new LinkedHashMap<String, List<AnaliseService.Item>>();
+		mapa.put("Web", List.of(item("t1", "ASP.NET", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t2", "Adobe", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("t3", "Ágil", "essencial", Cobertura.Status.NAO_DOCUMENTADA),
+				item("l1", "Ética", "essencial", Cobertura.Status.LACUNA),
+				item("l2", "Zoom", "essencial", Cobertura.Status.LACUNA),
+				item("l3", "Acessibilidade", "essencial", Cobertura.Status.LACUNA)));
+		var fora = Recomendador.fora(mapa, Set.of());
+		assertThat(fora.naoDocumentadas()).extracting(Recomendador.CompetenciaFora::rotulo)
+			.containsExactly("Adobe", "Ágil", "ASP.NET");
+		assertThat(fora.lacunasEssenciais()).extracting(Recomendador.CompetenciaFora::rotulo)
+			.containsExactly("Acessibilidade", "Ética", "Zoom");
 	}
 
 }
