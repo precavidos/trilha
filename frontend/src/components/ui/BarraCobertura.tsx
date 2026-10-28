@@ -8,12 +8,14 @@ const COR: Record<Segmento, string> = {
   lacuna: "bg-lacuna",
   parcial: "bg-parcial-mark",
   coberta: "bg-coberta",
+  naoDocumentada: "bg-line-strong",
   vazio: "bg-surface-sunken",
 };
 
-const QUADRADO = "inline-flex items-center gap-1 before:size-2.5 before:rounded-[2px] before:content-['']";
+const QUADRADO =
+  "inline-flex items-center gap-1 before:size-2.5 before:rounded-[2px] before:content-['']";
 
-/** Barra segmentada lacunas → parciais → cobertas; os números vão na legenda. */
+/** Barra segmentada lacunas → parciais → cobertas → não documentadas; os números vão na legenda. */
 export function BarraCobertura({ contagem, segmentos, fina, legenda }: Props) {
   return (
     <div>
@@ -36,6 +38,11 @@ export function BarraCobertura({ contagem, segmentos, fina, legenda }: Props) {
           <li className={cx(QUADRADO, "before:bg-coberta")}>
             <b className="font-bold">{contagem.coberta}</b>&nbsp;cobertas
           </li>
+          {contagem.naoDocumentada > 0 && (
+            <li className={cx(QUADRADO, "before:bg-line-strong")}>
+              <b className="font-bold">{contagem.naoDocumentada}</b>&nbsp;não documentadas
+            </li>
+          )}
         </ul>
       )}
     </div>

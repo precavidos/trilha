@@ -27,6 +27,7 @@ export const SITUACOES: Record<Status, { rotulo: string }> = {
   LACUNA: { rotulo: "Lacuna" },
   PARCIAL: { rotulo: "Parcial" },
   COBERTA: { rotulo: "Coberta" },
+  NAO_DOCUMENTADA: { rotulo: "Não documentada" },
 };
 
 export const RELACOES: Record<string, string> = {

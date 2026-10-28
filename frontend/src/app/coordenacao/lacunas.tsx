@@ -10,7 +10,7 @@ import { Kpi } from "@/components/ui/Kpi";
 import { CardProfissao } from "@/components/trilha/CardProfissao";
 import { LinhaCompetencia } from "@/components/trilha/LinhaCompetencia";
 import { LENTE_IA, type Contagem, type IdadeBibliografia, type Item, type Resumo, type Sobre, type Status } from "@/lib/api";
-import { contarBibliografiasAntigas } from "@/lib/calculos";
+import { contarBibliografiasAntigas, totalDe } from "@/lib/calculos";
 import { dataBR } from "@/lib/formato";
 import { useApi } from "@/lib/use-api";
 
@@ -74,7 +74,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
   const carregandoLista = lista.carregando || !lista.dados;
   const filtrados = (lista.dados ?? []).filter((i) => filtro === "TODAS" || i.status === filtro);
   const visiveis = filtrados.slice(0, limite);
-  const totalLente = r.lenteIa.lacuna + r.lenteIa.parcial + r.lenteIa.coberta;
+  const totalLente = totalDe(r.lenteIa);
   const opcoes = [
     ...r.profissoes.map((p) => ({
       id: p.id,
@@ -218,7 +218,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
               {
                 valor: "TODAS",
                 rotulo: "Todas",
-                contagem: contagem.lacuna + contagem.parcial + contagem.coberta,
+                contagem: totalDe(contagem),
               },
               { valor: "LACUNA", rotulo: "Lacunas", contagem: contagem.lacuna, status: "LACUNA" },
               {
@@ -233,6 +233,16 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
                 contagem: contagem.coberta,
                 status: "COBERTA",
               },
+              ...(contagem.naoDocumentada > 0
+                ? [
+                    {
+                      valor: "NAO_DOCUMENTADA" as const,
+                      rotulo: "Não documentadas",
+                      contagem: contagem.naoDocumentada,
+                      status: "NAO_DOCUMENTADA" as const,
+                    },
+                  ]
+                : []),
             ]}
           />
 

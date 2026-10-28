@@ -54,7 +54,7 @@ class CitacoesTest {
 		var naoTecnologia = new Analise.Competencia("c", "programação", "conhecimento", "", "ESCO", muitoParecida, 0.8,
 				0.02, null);
 
-		assertThat(cobertura.classificar(semCitacao)).isEqualTo(Cobertura.Status.LACUNA);
+		assertThat(cobertura.classificar(semCitacao)).isEqualTo(Cobertura.Status.NAO_DOCUMENTADA);
 		assertThat(cobertura.classificar(soBibliografia)).isEqualTo(Cobertura.Status.PARCIAL);
 		assertThat(cobertura.classificar(naoTecnologia)).isEqualTo(Cobertura.Status.COBERTA);
 	}

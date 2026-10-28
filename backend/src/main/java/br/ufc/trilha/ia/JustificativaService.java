@@ -28,7 +28,7 @@ public class JustificativaService {
 	static final String INSTRUCOES = """
 			Você apoia a coordenação de um curso universitário na revisão do Projeto Pedagógico de Curso (PPC).
 			Recebe uma competência profissional, a classificação de cobertura calculada pelo sistema
-			(COBERTA, PARCIAL ou LACUNA) e as ementas mais próximas encontradas no PPC.
+			(COBERTA, PARCIAL, LACUNA ou NAO_DOCUMENTADA) e as ementas mais próximas encontradas no PPC.
 			Escreva em português do Brasil, em no máximo 120 palavras:
 			1. Por que a classificação faz sentido (ou onde ela pode estar errada), citando cada ementa pelo código entre colchetes, ex.: [SMD0108].
 			2. Uma sugestão concreta para o NDE (ex.: atualizar a ementa X, incluir o tópico Y).
@@ -95,8 +95,9 @@ public class JustificativaService {
 		sb.append("Classificação calculada: ").append(item.status()).append('\n');
 		if ("citacao".equals(item.criterio())) {
 			sb.append("Critério: tecnologia nomeada. A classificação vem de o nome aparecer na ementa, nos objetivos ou "
-					+ "no conteúdo (coberta), só na bibliografia básica (parcial) ou em nenhum lugar (lacuna) do PPC e "
-					+ "dos programas de disciplina; a similaridade não conta.\n");
+					+ "no conteúdo (coberta), só na bibliografia básica (parcial) ou em nenhum lugar do PPC e dos "
+					+ "programas de disciplina (não documentada: pode ser ensinada sem estar registrada, porque o "
+					+ "professor escolhe as ferramentas a cada semestre); a similaridade não conta.\n");
 		}
 		sb.append(item.evidencias().stream().anyMatch(ev -> ev.citadaEm() != null) ? "Onde o nome aparece:\n"
 				: "Ementas mais próximas no PPC:\n");

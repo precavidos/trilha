@@ -1,6 +1,7 @@
 import { LENTE_IA, type Contagem } from "@/lib/api";
 import { cx } from "@/lib/cx";
 import { BarraCobertura } from "@/components/ui/BarraCobertura";
+import { totalDe } from "@/lib/calculos";
 import { IconeProfissao } from "./IconeProfissao";
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 
 /** Card de escolha da profissão-alvo. */
 export function CardProfissao({ id, rotulo, meta, contagem, selecionado, aoEscolher }: Props) {
-  const total = contagem.lacuna + contagem.parcial + contagem.coberta;
+  const total = totalDe(contagem);
   const ia = id === LENTE_IA;
   return (
     <button
@@ -49,6 +50,7 @@ export function CardProfissao({ id, rotulo, meta, contagem, selecionado, aoEscol
       <BarraCobertura fina segmentos={20} contagem={contagem} />
       <span className="text-ink-muted text-sm leading-5">
         {contagem.parcial} parciais · {contagem.coberta} cobertas
+        {contagem.naoDocumentada > 0 && ` · ${contagem.naoDocumentada} não documentadas`}
       </span>
     </button>
   );

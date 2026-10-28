@@ -41,7 +41,7 @@ public class Recomendador {
 	 * julgadas como não contempladas), por isso conta pouco.
 	 */
 	static final Map<Cobertura.Status, Double> PESO_STATUS = Map.of(Cobertura.Status.COBERTA, 1.0,
-			Cobertura.Status.PARCIAL, 0.3, Cobertura.Status.LACUNA, 0.0);
+			Cobertura.Status.PARCIAL, 0.3, Cobertura.Status.LACUNA, 0.0, Cobertura.Status.NAO_DOCUMENTADA, 0.0);
 	/** Quantas competências, no máximo, somam pontos para um componente. */
 	static final int MAX_COMPETENCIAS = 5;
 	static final double BONUS_NUCLEO = 2.0;
@@ -145,7 +145,7 @@ public class Recomendador {
 			List<CompetenciaContemplada> todas = new ArrayList<>();
 			for (var cp : analise.competenciasDoComponente(noPpc)) {
 				String[] relProf = exigidas.get(cp.competencia());
-				if (relProf == null || cp.status() == Cobertura.Status.LACUNA) {
+				if (relProf == null || PESO_STATUS.get(cp.status()) == 0.0) {
 					continue; // competência fora das profissões, ou que nenhuma ementa contempla de fato
 				}
 				double peso = PESO_RELACAO.get(relProf[0]) * PESO_POSICAO[cp.posicao()] * PESO_STATUS.get(cp.status());

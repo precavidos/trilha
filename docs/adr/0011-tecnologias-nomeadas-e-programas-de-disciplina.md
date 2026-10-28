@@ -8,7 +8,9 @@ As descrições da ESCO para linguagens, frameworks e programas repetem um texto
 
 - **coberta**: na ementa, nos objetivos, nas competências ou no conteúdo de um componente;
 - **parcial**: só na bibliografia básica (livro indicado não é conteúdo ensinado);
-- **lacuna**: em nenhum desses lugares. A bibliografia complementar não conta.
+- **não documentada**: em nenhum desses lugares. A bibliografia complementar não conta.
+
+"Não documentada" é uma situação à parte, fora da contagem de lacunas: professores escolhem linguagens e ferramentas a cada semestre e alteram o conteúdo ao dar a disciplina, sem que a ementa registre. Chamar isso de lacuna afirmaria algo que os documentos não sustentam; o que eles mostram é que o PPC não formaliza a tecnologia.
 
 O nome precisa aparecer como palavra inteira ("Java" não casa com "JavaScript"); termos ambíguos ("R", "Puppet") ficam de fora de propósito, e o erro aceito é o de não reconhecer uma citação, nunca o de inventar uma.
 
@@ -19,6 +21,6 @@ Rejeitamos: subir os limiares (pioraria as competências que hoje acertam); pedi
 ## Consequences
 
 - A tela mostra, para cada tecnologia, onde o nome aparece; a justificativa por LLM recebe o critério.
-- O resultado mede o que os documentos dizem, não o que se ensina em sala: uma disciplina que usa Python sem citá-lo aparece como lacuna.
+- O resultado mede o que os documentos dizem, não o que se ensina em sala: uma disciplina que usa JavaScript sem citá-lo deixa JavaScript como não documentada. Uma fonte do que é dado em sala (planos de ensino do SIGAA, respostas dos professores), com semestre e origem, pode entrar depois como evidência própria.
 - As 12 ementas novas mudam a distribuição das similaridades e, com ela, o escore relativo de outras competências; os limiares, calibrados com 57 ementas, devem ser revistos na revalidação.
 - A validação de `docs/validacao/` foi medida antes desta decisão e precisa ser refeita.

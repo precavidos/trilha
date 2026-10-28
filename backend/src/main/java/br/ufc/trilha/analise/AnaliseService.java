@@ -45,7 +45,7 @@ public class AnaliseService {
 			Cobertura.Status status, double similaridade, double escore, String criterio, List<Evidencia> evidencias) {
 	}
 
-	public record Contagem(int coberta, int parcial, int lacuna) {
+	public record Contagem(int coberta, int parcial, int lacuna, int naoDocumentada) {
 	}
 
 	public record ProfissaoResumo(String id, String rotulo, String tituloEsco, String uriEsco,
@@ -199,7 +199,8 @@ public class AnaliseService {
 		itens.forEach(i -> n.merge(i.status(), 1L, Long::sum));
 		return new Contagem(n.getOrDefault(Cobertura.Status.COBERTA, 0L).intValue(),
 				n.getOrDefault(Cobertura.Status.PARCIAL, 0L).intValue(),
-				n.getOrDefault(Cobertura.Status.LACUNA, 0L).intValue());
+				n.getOrDefault(Cobertura.Status.LACUNA, 0L).intValue(),
+				n.getOrDefault(Cobertura.Status.NAO_DOCUMENTADA, 0L).intValue());
 	}
 
 }

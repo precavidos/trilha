@@ -95,8 +95,9 @@ export default function SobreIa() {
           </li>
           <li>
             Para linguagens, frameworks e programas com nome (C#, Python, WordPress…), a
-            similaridade engana. Nesses casos vale onde o nome aparece no PPC e nos programas: o
-            resultado mede o que os documentos dizem, não o que se ensina em sala.
+            similaridade engana. Nesses casos vale onde o nome aparece no PPC e nos programas.
+            Quando não aparece, a situação é “não documentada”, não lacuna: o professor escolhe as
+            ferramentas a cada semestre, e a ementa raramente as registra.
           </li>
           <li>
             Os rótulos da ESCO em português seguem o padrão europeu (“utilizador”, “conceção”) e

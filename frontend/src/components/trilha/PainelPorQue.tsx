@@ -9,12 +9,14 @@ import { larguraDaSimilaridade } from "@/lib/calculos";
 import { formatarDecimal, formatarSimilaridade, RELACOES, SITUACOES, TIPOS } from "@/lib/formato";
 
 const PALAVRA: Record<Status, string> = {
+  NAO_DOCUMENTADA: "não documentada",
   LACUNA: "uma lacuna",
   PARCIAL: "parcial",
   COBERTA: "coberta",
 };
 
 const REGRA: Record<Status, string> = {
+  NAO_DOCUMENTADA: "não se aplica: só tecnologias nomeadas ficam não documentadas",
   LACUNA: "abaixo dos dois limiares de Parcial",
   PARCIAL: "atinge um limiar de Parcial, não o de Coberta",
   COBERTA: "atinge um limiar de Coberta",
@@ -22,6 +24,8 @@ const REGRA: Record<Status, string> = {
 
 /** Tecnologias nomeadas (linguagens, frameworks, programas): a situação vem de onde o nome aparece. */
 const REGRA_CITACAO: Record<Status, string> = {
+  NAO_DOCUMENTADA:
+    "o nome não aparece no PPC nem nos programas de disciplina; pode ser ensinada sem estar registrada",
   LACUNA: "o nome não aparece no PPC nem nos programas de disciplina",
   PARCIAL: "o nome aparece só na bibliografia básica",
   COBERTA: "o nome aparece na ementa, nos objetivos ou no conteúdo",
@@ -70,7 +74,9 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
                 é quase a mesma para todas as linguagens e se parece com qualquer disciplina de
                 programação. Por isso a situação vem de onde o nome aparece no PPC e nos programas
                 de disciplina: na ementa, nos objetivos ou no conteúdo (coberta), só na bibliografia
-                básica (parcial) ou em nenhum lugar (lacuna).
+                básica (parcial). Quando o nome não aparece, ela fica não documentada, e não lacuna:
+                o professor escolhe linguagens e ferramentas a cada semestre, e a ementa raramente
+                as registra.
               </p>
               <p className="bg-panel-raised m-0 rounded-md p-4">
                 <b className="text-lime flex items-center gap-2 text-[28px] leading-8">

@@ -4,9 +4,10 @@ export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080
 /** Id da lente transversal de IA, tratada como uma "profissão" a mais na coordenação. */
 export const LENTE_IA = "lente-ia";
 
-export type Status = "COBERTA" | "PARCIAL" | "LACUNA";
+/** NAO_DOCUMENTADA: tecnologia nomeada que o PPC e os programas não citam (pode ser ensinada sem registro). */
+export type Status = "COBERTA" | "PARCIAL" | "LACUNA" | "NAO_DOCUMENTADA";
 
-export type Contagem = { coberta: number; parcial: number; lacuna: number };
+export type Contagem = { coberta: number; parcial: number; lacuna: number; naoDocumentada: number };
 
 export type Metadados = {
   documento: string;
