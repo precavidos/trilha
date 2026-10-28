@@ -128,3 +128,17 @@ summary::-webkit-details-marker {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Impressão: só o resumo para o tutor, em preto sobre branco */
+@media print {
+  /* Some do fluxo tudo o que não contém o resumo nem está dentro dele: sem folhas em branco. */
+  body *:not(:has(#resumo-tutor)):not(#resumo-tutor):not(#resumo-tutor *) {
+    display: none !important;
+  }
+  #resumo-tutor {
+    position: static;
+    width: 100%;
+    background: #fff;
+    color: #000;
+  }
+}

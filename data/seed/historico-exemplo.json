@@ -1,0 +1,264 @@
+{
+  "estrutura": "2025.1",
+  "turno": "diurno",
+  "componentes": [
+    {
+      "codigo": "SMD0088",
+      "periodo": "2023.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0089",
+      "periodo": "2023.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0091",
+      "periodo": "2023.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0094",
+      "periodo": "2023.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0095",
+      "periodo": "2023.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0132",
+      "periodo": "2023.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0136",
+      "periodo": "2023.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0137",
+      "periodo": "2023.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0138",
+      "periodo": "2023.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0150",
+      "periodo": "2023.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0015",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0097",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0108",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0109",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0139",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0140",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0102",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0030",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0098",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0033",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0144",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0099",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0110",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0143",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0017",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0045",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0016",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0039",
+      "periodo": "2024.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0113",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0114",
+      "periodo": "2024.2",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0117",
+      "periodo": "2025.1",
+      "situacao": "aprovado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0025",
+      "periodo": "2025.2",
+      "situacao": "matriculado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0111",
+      "periodo": "2025.2",
+      "situacao": "matriculado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "SMD0141",
+      "periodo": "2025.2",
+      "situacao": "matriculado",
+      "ch": 64,
+      "marcador": null
+    },
+    {
+      "codigo": "EXT0076",
+      "periodo": "2025.2",
+      "situacao": "matriculado",
+      "ch": 64,
+      "marcador": null
+    }
+  ],
+  "cargas": {
+    "optativa": {
+      "exigido": 384,
+      "integralizado": 128,
+      "pendente": 256
+    },
+    "extensao": {
+      "exigido": 320,
+      "integralizado": 192,
+      "pendente": 128
+    }
+  },
+  "obrigatoriosPendentes": []
+}

@@ -3,28 +3,37 @@ import { cx } from "@/lib/cx";
 
 export type Passo = { titulo: string; texto: string; tag?: string; tagGenerativa?: boolean };
 
-/** Linha ondulada que liga os pinos: sobe e desce a cada passo e termina no alto à direita. */
-function caminho(n: number) {
+/** Trecho da linha ondulada do primeiro pino até o pino k (base 0): sobe e desce a cada passo. */
+function caminhoAte(n: number, k: number) {
   const passo = 100 / n,
     xs = Array.from({ length: n }, (_, i) => 2 + i * passo);
   let d = `M${xs[0]} 22`;
-  for (let i = 1; i < n; i++) {
+  for (let i = 1; i <= k; i++) {
     const y0 = i % 2 ? 22 : 50,
       y1 = i % 2 ? 50 : 22,
       meio = (xs[i - 1] + xs[i]) / 2;
     d += ` C ${meio} ${y0}, ${meio} ${y1}, ${xs[i]} ${y1}`;
   }
-  return d + ` C ${xs[n - 1] + 10} ${n % 2 ? 22 : 50}, 96 30, 100 30`;
+  return d;
+}
+
+/** Linha completa: liga todos os pinos e termina no alto à direita. */
+function caminho(n: number) {
+  const xs0 = 2 + ((n - 1) * 100) / n;
+  return caminhoAte(n, n - 1) + ` C ${xs0 + 10} ${n % 2 ? 22 : 50}, 96 30, 100 30`;
 }
 
 /** Passos como marcos de uma trilha: o primeiro em lima, o último como destino. */
 export function TrilhaDePassos({
   passos,
   nivelDoTitulo: Titulo = "h3",
+  atual,
 }: {
   passos: Passo[];
   /** Nível dos títulos dos passos: h2 quando não há um h2 antes da trilha. */
   nivelDoTitulo?: "h2" | "h3";
+  /** Índice (base 0) do passo em que a pessoa está: marca os anteriores como feitos e os seguintes como a seguir. */
+  atual?: number;
 }) {
   const n = passos.length;
   return (
@@ -44,6 +53,16 @@ export function TrilhaDePassos({
           strokeLinecap="round"
           vectorEffect="non-scaling-stroke"
         />
+        {atual !== undefined && atual > 0 && (
+          <path
+            d={caminhoAte(n, Math.min(atual, n - 1))}
+            fill="none"
+            className="stroke-green"
+            strokeWidth="3"
+            strokeLinecap="round"
+            vectorEffect="non-scaling-stroke"
+          />
+        )}
       </svg>
       <ol
         style={{ "--passos": `repeat(${n}, minmax(0,1fr))` } as CSSProperties}
@@ -52,20 +71,24 @@ export function TrilhaDePassos({
         {passos.map((p, i) => {
           const primeiro = i === 0;
           const ultimo = i === n - 1;
+          const feito = atual !== undefined && i < atual;
+          const aqui = atual !== undefined && i === atual;
+          const etiqueta = atual === undefined ? p.tag : feito ? "feito" : aqui ? "você está aqui" : "a seguir";
           return (
-            <li key={p.titulo} className="relative flex flex-col gap-2 md:even:pt-7">
+            <li key={p.titulo} aria-current={aqui ? "step" : undefined} className="relative flex flex-col gap-2 md:even:pt-7">
               <span
                 className={cx(
                   "absolute top-0 -left-15 grid size-11 flex-none -rotate-45 place-items-center rounded-[50%_50%_50%_8px] md:static",
-                  primeiro && "bg-lime shadow-[0_0_0_4px_var(--canvas)]",
-                  ultimo && "bg-cream shadow-[0_0_0_4px_var(--canvas),inset_0_0_0_3px_var(--panel)]",
-                  !primeiro && !ultimo && "bg-panel shadow-[0_0_0_4px_var(--canvas)]",
+                  feito && "bg-green shadow-[0_0_0_4px_var(--canvas)]",
+                  !feito && primeiro && "bg-lime shadow-[0_0_0_4px_var(--canvas)]",
+                  !feito && ultimo && "bg-cream shadow-[0_0_0_4px_var(--canvas),inset_0_0_0_3px_var(--panel)]",
+                  !feito && !primeiro && !ultimo && "bg-panel shadow-[0_0_0_4px_var(--canvas)]",
                 )}
               >
                 <span
                   className={cx(
                     "font-display rotate-45 text-[15px] leading-none font-extrabold",
-                    primeiro || ultimo ? "text-on-lime" : "text-cream",
+                    feito || primeiro || ultimo ? "text-on-lime" : "text-cream",
                   )}
                 >
                   {String(i + 1).padStart(2, "0")}
@@ -73,14 +96,22 @@ export function TrilhaDePassos({
               </span>
               <Titulo className="m-0 text-lg leading-6 font-bold">{p.titulo}</Titulo>
               <p className="m-0 text-sm leading-5 text-ink-muted">{p.texto}</p>
-              {p.tag && (
+              {etiqueta && (
                 <span
                   className={cx(
                     "self-start rounded-full px-2 text-xs leading-5 font-bold",
-                    p.tagGenerativa ? "bg-lime text-on-lime" : "bg-surface-sunken text-ink",
+                    atual === undefined
+                      ? p.tagGenerativa
+                        ? "bg-lime text-on-lime"
+                        : "bg-surface-sunken text-ink"
+                      : feito
+                        ? "bg-coberta-bg text-coberta"
+                        : aqui
+                          ? "bg-lime text-on-lime"
+                          : "bg-sky text-ink",
                   )}
                 >
-                  {p.tag}
+                  {etiqueta}
                 </span>
               )}
             </li>
