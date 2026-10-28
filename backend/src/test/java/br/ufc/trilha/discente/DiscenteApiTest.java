@@ -41,12 +41,19 @@ class DiscenteApiTest {
 
 	/** Discente sintético que concluiu os obrigatórios dos três primeiros semestres da estrutura. */
 	private String pedido(String estrutura, String turno, List<String> profissoes) throws Exception {
+		return pedido(estrutura, turno, profissoes, List.of());
+	}
+
+	/** Como {@link #pedido(String, String, List)}, com componentes aprovados a mais (ex.: um pré-requisito). */
+	private String pedido(String estrutura, String turno, List<String> profissoes, List<String> aprovadosExtras)
+			throws Exception {
 		var arquivo = "../data/seed/estruturas/smd-" + turno + "-" + estrutura.replace('.', '-').toLowerCase() + ".json";
 		var e = json.readValue(Path.of(arquivo).toFile(), EstruturaCurricular.class);
 		var cursados = e.componentes().stream()
 			.filter(c -> "obrigatorio".equals(c.natureza()) && c.semestre() != null && c.semestre() <= 3)
 			.map(c -> new Trajetoria.Cursado(c.codigo(), estrutura, "aprovado", c.ch(), null))
-			.toList();
+			.collect(java.util.stream.Collectors.toCollection(java.util.ArrayList::new));
+		aprovadosExtras.forEach(k -> cursados.add(new Trajetoria.Cursado(k, estrutura, "aprovado", 64, null)));
 		var t = new Trajetoria(estrutura, turno, cursados, Map.of("optativa", new Trajetoria.Carga(1216, 0, 1216),
 				"extensao", new Trajetoria.Carga(288, 64, 224)), List.of());
 		return json.writeValueAsString(Map.of("trajetoria", t, "profissoes", profissoes));
@@ -160,6 +167,28 @@ class DiscenteApiTest {
 				simAnterior = sim;
 			}
 		}
+	}
+
+	@Test
+	void notaDaEmentaCurtaChegaAoItem() throws Exception {
+		// 2013.2 diurno: a SMD0057 exige a SMD0098, que o pedido sintético (obrigatórios até o 3º semestre) não cobre.
+		var corpo = pedido("2013.2", "diurno", List.of("animacao"), List.of("SMD0098"));
+		var resposta = json.readTree(mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON)
+				.content(corpo))
+			.andExpect(status().isOk())
+			.andReturn().getResponse().getContentAsString());
+		boolean achou = false;
+		for (var item : resposta.get("itens")) {
+			boolean nota = item.hasNonNull("notaEmenta");
+			if ("SMD0057".equals(item.get("codigo").asString())) {
+				achou = true;
+				org.junit.jupiter.api.Assertions.assertTrue(item.get("notaEmenta").asString().contains("4 de 7"));
+			}
+			else {
+				org.junit.jupiter.api.Assertions.assertFalse(nota, "só a SMD0057 tem ressalva: " + item.get("codigo"));
+			}
+		}
+		org.junit.jupiter.api.Assertions.assertTrue(achou, "a SMD0057 deveria estar entre as sugestões");
 	}
 
 	@Test

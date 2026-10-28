@@ -54,6 +54,10 @@ Competências que nomeiam uma linguagem, framework ou programa, com os termos qu
 
 Trajetória fictícia de um discente do Diurno 2025.1, montada à mão: 31 componentes aprovados e 4 matriculados, todos da estrutura `smd-diurno-2025-1.json`. Não deriva de nenhum histórico real. Serve para conhecer o sistema sem enviar um histórico e, nos testes, para fixar a ordem das sugestões.
 
+## `ementas-com-ressalva.json`
+
+Componentes cuja ementa a validação mostrou ser fraca, com a nota exibida ao discente junto da sugestão (`codigo`, `nota`, `fonte`). Um componente só entra aqui quando a validação registrar o erro.
+
 ## Licença
 
 O texto das ementas e bibliografias é reproduzido do PPC, documento institucional público da UFC; o de `programas-smd.json`, dos formulários de disciplina da PROGRAD/UFC. A estrutura, as correções e os demais dados derivados da equipe são CC BY 4.0.

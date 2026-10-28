@@ -69,7 +69,7 @@ public class Recomendador {
 	public record Item(String codigo, String nome, Integer ch, double pontuacao, String codigoNoPpc, String ementa,
 			List<CompetenciaContemplada> competencias, List<PapelNoItinerario> itinerarios, ContaParaGrupo grupo,
 			boolean contaExtensao, List<String> preRequisitos, List<CompetenciaContemplada> evidencias,
-			ContagemDeEvidencias contagem) {
+			ContagemDeEvidencias contagem, String notaEmenta) {
 	}
 
 	/**
@@ -79,6 +79,10 @@ public class Recomendador {
 	public record ContagemDeEvidencias(Map<String, Integer> porProfissao, int total, int naoCobertas) {
 	}
 
+	/** Ementa que a validação mostrou ser fraca; a nota vai ao discente junto da sugestão. */
+	public record EmentaComRessalva(String codigo, String nota, String fonte) {
+	}
+
 	public record Recomendacao(String estrutura, String turno, List<String> profissoes, int aprovados, int emCurso,
 			Integer chOptativaPendente, int componentesSugeridos, List<String> avisos, List<Item> itens) {
 	}
@@ -86,9 +90,12 @@ public class Recomendador {
 	private final AnaliseService analise;
 	private final Map<String, EstruturaCurricular> estruturas = new LinkedHashMap<>();
 	private final List<Itinerario> itinerarios;
+	/** Código no PPC → nota de ressalva da ementa. */
+	private final Map<String, String> notasDeEmenta = new LinkedHashMap<>();
 
 	public Recomendador(AnaliseService analise, JsonMapper json, @Value("${trilha.dados.estruturas}") String pasta,
-			@Value("${trilha.dados.itinerarios}") String arquivoItinerarios) throws IOException {
+			@Value("${trilha.dados.itinerarios}") String arquivoItinerarios,
+			@Value("${trilha.dados.ementas-com-ressalva}") String arquivoRessalvas) throws IOException {
 		this.analise = analise;
 		try (Stream<Path> arquivos = Files.list(Path.of(pasta))) {
 			for (Path p : arquivos.filter(f -> f.toString().endsWith(".json")).sorted().toList()) {
@@ -97,6 +104,9 @@ public class Recomendador {
 			}
 		}
 		this.itinerarios = json.readValue(Path.of(arquivoItinerarios).toFile(), Itinerarios.class).itinerarios();
+		for (var r : json.readValue(Path.of(arquivoRessalvas).toFile(), EmentaComRessalva[].class)) {
+			notasDeEmenta.put(r.codigo(), r.nota());
+		}
 	}
 
 	public List<String> estruturasSuportadas() {
@@ -208,7 +218,7 @@ public class Recomendador {
 			List<String> pre = c.preRequisitos().stream().map(alt -> String.join(" e ", alt)).toList();
 			itens.add(new Item(c.codigo(), nomeLegivel(c.nome()), c.ch(), Math.round(pontos * 100) / 100.0,
 					noPpc.equals(c.codigo()) ? null : noPpc, ementa, competencias, papeis, grupo,
-					contaExtensao, pre, evidencias, contar(evidencias, profissoes)));
+					contaExtensao, pre, evidencias, contar(evidencias, profissoes), notasDeEmenta.get(noPpc)));
 		}
 		itens.sort(Comparator.comparingDouble(Item::pontuacao).reversed().thenComparing(Item::codigo));
 
