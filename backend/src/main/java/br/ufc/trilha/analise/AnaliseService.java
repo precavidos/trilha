@@ -108,8 +108,22 @@ public class AnaliseService {
 			return new Evidencia(px.codigo(), comp.nome(), px.similaridade(), comp.ementa());
 		}).toList();
 		double sim = c.proximos().isEmpty() ? 0 : c.proximos().getFirst().similaridade();
-		return new Item(c.id(), c.rotulo(), c.tipo(), c.descricao(), c.fonte(), relacao, cobertura.classificar(c), sim,
-				Math.round(Cobertura.escore(c) * 100) / 100.0, evidencias);
+		return new Item(c.id(), paraExibicao(c.rotulo()), c.tipo(), c.descricao(), c.fonte(), relacao,
+				cobertura.classificar(c), sim, Math.round(Cobertura.escore(c) * 100) / 100.0, evidencias);
+	}
+
+	/**
+	 * A ESCO grafa as competências em minúsculas ("design de interação de software"), e a Extensão IA,
+	 * com inicial maiúscula. Na exibição, todas ganham inicial maiúscula; o resto do rótulo fica como na
+	 * fonte, preservando nomes próprios ("WordPress", "C#"). O snapshot da ESCO não é alterado.
+	 */
+	static String paraExibicao(String rotulo) {
+		if (rotulo == null || rotulo.isEmpty() || !Character.isLowerCase(rotulo.codePointAt(0))) {
+			return rotulo;
+		}
+		int primeiro = rotulo.codePointAt(0);
+		return new String(Character.toChars(Character.toUpperCase(primeiro)))
+				+ rotulo.substring(Character.charCount(primeiro));
 	}
 
 	private static List<Item> ordenar(List<Item> itens) {

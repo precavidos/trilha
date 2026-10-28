@@ -34,3 +34,9 @@ export const RELACOES: Record<string, string> = {
   opcional: "Opcional",
   "transversal-ia": "Transversal (IA)",
 };
+
+/** Tipo da competência como vem da análise ("habilidade" | "conhecimento"), com inicial maiúscula. */
+export const TIPOS: Record<string, string> = {
+  habilidade: "Habilidade",
+  conhecimento: "Conhecimento",
+};

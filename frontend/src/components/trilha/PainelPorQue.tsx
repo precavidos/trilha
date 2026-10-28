@@ -6,7 +6,7 @@ import { PontoSituacao } from "@/components/ui/ChipSituacao";
 import { Painel } from "@/components/ui/Painel";
 import { justificar, type Item, type Justificativa, type Limiares, type Status } from "@/lib/api";
 import { larguraDaSimilaridade } from "@/lib/calculos";
-import { formatarDecimal, formatarSimilaridade, RELACOES, SITUACOES } from "@/lib/formato";
+import { formatarDecimal, formatarSimilaridade, RELACOES, SITUACOES, TIPOS } from "@/lib/formato";
 
 const PALAVRA: Record<Status, string> = {
   LACUNA: "uma lacuna",
@@ -47,7 +47,7 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
             Por que “{item.rotulo}” é {PALAVRA[item.status]}?
           </h3>
           <p className="text-on-panel-muted m-0 mt-2">
-            {item.tipo} · {origem} · {exigencia}
+            {TIPOS[item.tipo] ?? item.tipo} · {origem} · {exigencia}
           </p>
           {item.descricao && <p className="text-on-panel-muted m-0 mt-2">{item.descricao}</p>}
         </div>
