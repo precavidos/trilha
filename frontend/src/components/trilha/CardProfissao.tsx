@@ -1,4 +1,4 @@
-import type { Contagem } from "@/lib/api";
+import { LENTE_IA, type Contagem } from "@/lib/api";
 import { cx } from "@/lib/cx";
 import { BarraCobertura } from "@/components/ui/BarraCobertura";
 import { IconeProfissao } from "./IconeProfissao";
@@ -15,7 +15,7 @@ type Props = {
 /** Card de escolha da profissão-alvo. */
 export function CardProfissao({ id, rotulo, meta, contagem, selecionado, aoEscolher }: Props) {
   const total = contagem.lacuna + contagem.parcial + contagem.coberta;
-  const ia = id === "lente-ia";
+  const ia = id === LENTE_IA;
   return (
     <button
       type="button"

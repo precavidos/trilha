@@ -23,13 +23,10 @@ export const dataBR = (iso: string) => {
 
 export const formatarPorcento = (n: number) => porcento.format(n);
 
-export const SITUACOES: Record<
-  Status,
-  { rotulo: string; plural: string; icone: string; classe: string }
-> = {
-  LACUNA: { rotulo: "Lacuna", plural: "Lacunas", icone: "○", classe: "text-lacuna bg-lacuna-bg" },
-  PARCIAL: { rotulo: "Parcial", plural: "Parciais", icone: "◐", classe: "text-parcial bg-parcial-bg" },
-  COBERTA: { rotulo: "Coberta", plural: "Cobertas", icone: "●", classe: "text-coberta bg-coberta-bg" },
+export const SITUACOES: Record<Status, { rotulo: string }> = {
+  LACUNA: { rotulo: "Lacuna" },
+  PARCIAL: { rotulo: "Parcial" },
+  COBERTA: { rotulo: "Coberta" },
 };
 
 export const RELACOES: Record<string, string> = {

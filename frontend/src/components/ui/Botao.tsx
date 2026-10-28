@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes, ComponentProps, ReactNode } from "react";
 import { cx } from "@/lib/cx";
 
 type Props = {
@@ -30,7 +30,7 @@ export function Botao({ variante, icone, href, className, children, ...resto }: 
   );
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} {...(resto as Omit<ComponentProps<typeof Link>, "href">)}>
         {conteudo}
       </Link>
     );

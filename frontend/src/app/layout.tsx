@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Atkinson_Hyperlegible, Figtree } from "next/font/google";
 import { Aviso } from "@/components/ui/Aviso";
 import { BarraTopo } from "@/components/ui/BarraTopo";
+import { RolagemSuave } from "@/components/RolagemSuave";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 
 // Fonte projetada para legibilidade por pessoas com baixa visão.
@@ -28,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${atkinson.variable} ${figtree.variable} h-full antialiased`}>
       <body className="min-h-full bg-canvas text-ink font-sans">
+        <RolagemSuave />
         <a
           href="#conteudo"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus:rounded-full focus:bg-lime focus:px-6 focus:py-3 focus:font-bold focus:text-on-lime"

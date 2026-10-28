@@ -1,5 +1,5 @@
 import type { IdadeBibliografia } from "@/lib/api";
-import { EIXO_INICIO, posicaoNoEixo } from "@/lib/calculos";
+import { bibliografiaAntiga, EIXO_INICIO, posicaoNoEixo } from "@/lib/calculos";
 import { cx } from "@/lib/cx";
 import { formatarPorcento } from "@/lib/formato";
 
@@ -11,7 +11,7 @@ export function LinhaBibliografia({ linha: l, anoDeReferencia }: Props) {
   const pos = (ano: number) => posicaoNoEixo(ano, EIXO_INICIO, anoDeReferencia);
   const datada =
     mediana !== null && maisAntiga !== null && maisRecente !== null;
-  const ruim = l.fracaoComMaisDe10Anos >= 0.5;
+  const ruim = bibliografiaAntiga(l);
 
   return (
     <li className="border-line grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-t px-2 py-3 first:border-t-0 md:grid-cols-[minmax(0,1.4fr)_minmax(0,2fr)_auto]">

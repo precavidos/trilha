@@ -28,9 +28,14 @@ export function segmentos(c: Contagem, n: number): Segmento[] {
   });
 }
 
-/** Componentes em que metade ou mais das referências datadas têm mais de 10 anos. */
+/** Metade ou mais das referências datadas do componente têm mais de 10 anos. */
+export function bibliografiaAntiga(l: IdadeBibliografia): boolean {
+  return l.comAno > 0 && l.fracaoComMaisDe10Anos >= 0.5;
+}
+
+/** Componentes com bibliografia antiga (ver `bibliografiaAntiga`). */
 export function contarBibliografiasAntigas(linhas: IdadeBibliografia[]): number {
-  return linhas.filter((l) => l.comAno > 0 && l.fracaoComMaisDe10Anos >= 0.5).length;
+  return linhas.filter(bibliografiaAntiga).length;
 }
 
 /** Ano mais antigo e mais recente entre as referências datadas de todos os componentes. */

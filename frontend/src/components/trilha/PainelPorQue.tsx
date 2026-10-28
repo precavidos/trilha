@@ -27,7 +27,10 @@ type Props = { item: Item; profissao: string; limiares: Limiares | undefined };
 
 /** "Por que isto?": como a situação foi calculada, as evidências e a justificativa opcional da IA. */
 export function PainelPorQue({ item, profissao, limiares }: Props) {
-  const relacao = RELACOES[item.relacao ?? ""]?.toLowerCase() ?? "—";
+  const exigencia =
+    item.relacao === "transversal-ia"
+      ? "transversal a todas as profissões-alvo"
+      : `exigência ${RELACOES[item.relacao ?? ""]?.toLowerCase() ?? "—"} para ${profissao}`;
   const origem = item.fonte === "ESCO" ? "ESCO" : "Extensão IA";
   const limiarSim = limiares
     ? ` (Coberta ≥ ${formatarSimilaridade(limiares.cobertaSimilaridade)} · Parcial ≥ ${formatarSimilaridade(limiares.parcialSimilaridade)})`
@@ -44,7 +47,7 @@ export function PainelPorQue({ item, profissao, limiares }: Props) {
             Por que “{item.rotulo}” é {PALAVRA[item.status]}?
           </h3>
           <p className="text-on-panel-muted m-0 mt-2">
-            {item.tipo} · {origem} · exigência {relacao} para {profissao}
+            {item.tipo} · {origem} · {exigencia}
           </p>
           {item.descricao && <p className="text-on-panel-muted m-0 mt-2">{item.descricao}</p>}
         </div>

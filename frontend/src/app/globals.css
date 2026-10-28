@@ -32,31 +32,35 @@
   --sombra-card: 0 1px 2px rgba(16,41,31,0.06), 0 8px 24px rgba(16,41,31,0.06);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --canvas: #0a1c15;
-    --surface: #11281f;
-    --surface-sunken: #0d221a;
-    --ink: #ecf5ee;
-    --ink-muted: #a8bdb2;
-    --line: #24392f;
-    --line-strong: #7f968b;
-    --panel: #17402f;
-    --panel-raised: #1f5039;
-    --on-panel: #ecf5ee;
-    --on-panel-muted: #b7d2c3;
-    --lime-soft: #24402f;
-    --green: #3cc985;
-    --sky: #1d3d40;
-    --coberta: #8fdcb3;
-    --coberta-bg: #163a2c;
-    --parcial: #f1d36b;
-    --parcial-bg: #3a3110;
-    --lacuna: #ff9c78;
-    --lacuna-bg: #3d1d12;
-    --focus: #fdba74;
-    --sombra-card: none;
-  }
+/* Como no protótipo, a paleta escura só vale com data-theme="dark"; sem isso, o tema é sempre o claro. */
+:root {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #0a1c15;
+  --surface: #11281f;
+  --surface-sunken: #0d221a;
+  --ink: #ecf5ee;
+  --ink-muted: #a8bdb2;
+  --line: #24392f;
+  --line-strong: #7f968b;
+  --panel: #17402f;
+  --panel-raised: #1f5039;
+  --on-panel: #ecf5ee;
+  --on-panel-muted: #b7d2c3;
+  --lime-soft: #24402f;
+  --green: #3cc985;
+  --sky: #1d3d40;
+  --coberta: #8fdcb3;
+  --coberta-bg: #163a2c;
+  --parcial: #f1d36b;
+  --parcial-bg: #3a3110;
+  --lacuna: #ff9c78;
+  --lacuna-bg: #3d1d12;
+  --focus: #fdba74;
+  --sombra-card: none;
 }
 
 @theme inline {

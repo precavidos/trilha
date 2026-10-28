@@ -1,6 +1,9 @@
 // Cliente da API do backend. O endereço é embutido no build via NEXT_PUBLIC_API_URL.
 export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
 
+/** Id da lente transversal de IA, tratada como uma "profissão" a mais na coordenação. */
+export const LENTE_IA = "lente-ia";
+
 export type Status = "COBERTA" | "PARCIAL" | "LACUNA";
 
 export type Contagem = { coberta: number; parcial: number; lacuna: number };

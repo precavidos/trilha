@@ -22,8 +22,9 @@ Trocar a interface atual, simples demais para a demonstração e as screenshots 
 | Decisão | Escolha | Motivo |
 |---|---|---|
 | Como trazer o design | **Traduzir o design system para Tailwind v4, valor por valor** (abordagem B) | Escolha da equipe: um único sistema de estilo, idiomático. A regra é traduzir o `bundle.css` do protótipo, sem redesenhar |
-| Tema | Segue `prefers-color-scheme`, sem botão | Mantém o comportamento atual; os tokens já trazem as duas paletas |
+| Tema | Sempre claro, como no protótipo; a paleta escura fica nos tokens e só vale com `data-theme="dark"`, que nenhuma tela aplica | Alterado em 27/10 a pedido da equipe: seguir o tema do sistema deixava o fundo verde-escuro, diferente do protótipo |
 | Fontes | Figtree (600, 800) e Atkinson Hyperlegible (400, 700) via `next/font` | Sem dependência do Google Fonts em tempo de execução |
+| Rolagem | Suavizada com a biblioteca Lenis (1.3.26, MIT), desligada quando o sistema pede menos movimento | Pedido da equipe em 27/10 |
 | Paginação das competências | Mantém "Mostrar mais 25" | O protótipo lista tudo, mas 100+ linhas com painel cansam a navegação por teclado |
 | Justificativa | Chamada real a `POST /api/justificativas` | O texto do protótipo é de exemplo |
 | Backend | Só o campo aditivo `competencias` em `/api/resumo` | O KPI de competências comparadas precisa do total (311), que a API não informa |
@@ -35,7 +36,7 @@ Trocar a interface atual, simples demais para a demonstração e as screenshots 
 
 Em `frontend/src/app/globals.css`, a paleta atual (`background`, `accent`, `border`, `muted`…) é substituída pelos tokens do protótipo:
 
-- **Cores** (`:root` claro; `@media (prefers-color-scheme: dark)` escuro): `canvas`, `surface`, `surface-sunken`, `ink`, `ink-muted`, `line`, `line-strong`, `panel`, `panel-raised`, `on-panel`, `on-panel-muted`, `lime`, `on-lime`, `lime-soft`, `green`, `sky`, `cream`, `coberta`, `coberta-bg`, `parcial`, `parcial-bg`, `parcial-mark`, `lacuna`, `lacuna-bg`, `focus`, `focus-on-panel`. Os valores são os de `ds/trilha/tokens.css` do protótipo.
+- **Cores** (`:root` claro; `[data-theme="dark"]` escuro, como no protótipo): `canvas`, `surface`, `surface-sunken`, `ink`, `ink-muted`, `line`, `line-strong`, `panel`, `panel-raised`, `on-panel`, `on-panel-muted`, `lime`, `on-lime`, `lime-soft`, `green`, `sky`, `cream`, `coberta`, `coberta-bg`, `parcial`, `parcial-bg`, `parcial-mark`, `lacuna`, `lacuna-bg`, `focus`, `focus-on-panel`. Os valores são os de `ds/trilha/tokens.css` do protótipo.
 - `@theme inline` expõe as cores como `--color-*`, gerando utilidades como `bg-panel`, `text-ink-muted` e `border-line-strong`.
 - **Raios:** `--radius-sm: 8px`, `--radius-md: 16px`, `--radius-lg: 28px`; o formato de pílula usa `rounded-full`.
 - **Sombra:** `--shadow-card`, igual a `none` no tema escuro.

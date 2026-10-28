@@ -9,12 +9,11 @@ import { FiltroPilulas } from "@/components/ui/FiltroPilulas";
 import { Kpi } from "@/components/ui/Kpi";
 import { CardProfissao } from "@/components/trilha/CardProfissao";
 import { LinhaCompetencia } from "@/components/trilha/LinhaCompetencia";
-import type { Contagem, IdadeBibliografia, Item, Resumo, Sobre, Status } from "@/lib/api";
+import { LENTE_IA, type Contagem, type IdadeBibliografia, type Item, type Resumo, type Sobre, type Status } from "@/lib/api";
 import { contarBibliografiasAntigas } from "@/lib/calculos";
 import { dataBR } from "@/lib/formato";
 import { useApi } from "@/lib/use-api";
 
-export const LENTE_IA = "lente-ia";
 const PAGINA = 25;
 const TEXTO_LENTE =
   "Competências de IA curadas pela equipe (Extensão IA), transversais a todas as profissões-alvo.";

@@ -22,17 +22,17 @@ export function Configuracao() {
       {!dados && !erro && <p aria-busy="true">Consultando o servidor…</p>}
       {dados && (
         <>
-          <dl className="m-0 grid grid-cols-[max-content_1fr] gap-x-5 gap-y-2.5">
+          <dl className="m-0 grid min-w-0 grid-cols-[max-content_minmax(0,1fr)] gap-x-5 gap-y-2.5">
             <dt className="font-bold">Documento</dt>
-            <dd className="m-0">{dados.metadados.documento}</dd>
+            <dd className="m-0 [overflow-wrap:anywhere]">{dados.metadados.documento}</dd>
             <dt className="font-bold">Vocabulário</dt>
-            <dd className="m-0">{dados.metadados.vocabulario}</dd>
+            <dd className="m-0 [overflow-wrap:anywhere]">{dados.metadados.vocabulario}</dd>
             <dt className="font-bold">Embeddings</dt>
-            <dd className="m-0">{dados.metadados.modeloDeEmbeddings}, executado localmente</dd>
+            <dd className="m-0 [overflow-wrap:anywhere]">{dados.metadados.modeloDeEmbeddings}, executado localmente</dd>
             <dt className="font-bold">Linguagem</dt>
-            <dd className="m-0">{dados.modeloDeLinguagem}, só nas justificativas</dd>
+            <dd className="m-0 [overflow-wrap:anywhere]">{dados.modeloDeLinguagem}, só nas justificativas</dd>
             <dt className="font-bold">Análise gerada</dt>
-            <dd className="m-0">{dataBR(dados.metadados.geradoEm)}</dd>
+            <dd className="m-0 [overflow-wrap:anywhere]">{dataBR(dados.metadados.geradoEm)}</dd>
           </dl>
           <div className="grid gap-2 sm:grid-cols-3">
             <div className={`${BLOCO} bg-coberta-bg text-coberta`}>
@@ -41,7 +41,7 @@ export function Configuracao() {
                 Coberta
               </b>
               <span className="text-sm">
-                sim. ≥ {formatarSimilaridade(dados.limiares.cobertaSimilaridade)} ou escore ≥{" "}
+                similaridade ≥ {formatarSimilaridade(dados.limiares.cobertaSimilaridade)} ou escore ≥{" "}
                 {formatarDecimal(dados.limiares.cobertaEscore)}
               </span>
             </div>
@@ -51,7 +51,7 @@ export function Configuracao() {
                 Parcial
               </b>
               <span className="text-sm">
-                sim. ≥ {formatarSimilaridade(dados.limiares.parcialSimilaridade)} ou escore ≥{" "}
+                similaridade ≥ {formatarSimilaridade(dados.limiares.parcialSimilaridade)} ou escore ≥{" "}
                 {formatarDecimal(dados.limiares.parcialEscore)}
               </span>
             </div>

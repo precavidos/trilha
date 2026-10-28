@@ -8,7 +8,7 @@ Anexo do memorial. Cobre as 5 telas do front novo (`/`, `/coordenacao`, `/coorde
 - **Ferramenta:** axe-core 4.10.2, injetado na página pelo navegador do app.
 - **Regras:** `wcag2a`, `wcag2aa`, `wcag21aa` e `wcag22aa` (WCAG 2.0 A/AA, 2.1 AA e 2.2 AA).
 - **Chamada:** `await axe.run(document, { runOnly: ["wcag2a","wcag2aa","wcag21aa","wcag22aa"] })`.
-- **Temas:** emulação de `prefers-color-scheme` (claro e escuro). Não há botão de alternar.
+- **Temas:** emulação de `prefers-color-scheme` (claro e escuro). Não há botão de alternar. Depois desta auditoria, o app passou a usar sempre o tema claro, como o protótipo: a paleta escura continua nos tokens, mas só vale com `data-theme="dark"`, que nenhuma tela aplica. As colunas "Escuro" registram a auditoria dessa paleta.
 - **Dados:** backend local com a análise real (311 competências, 57 componentes com ementa).
 - **Estados auditados além da página aberta:** em `/coordenacao`, um "Por que isto?" aberto (1440 px, nos dois temas) e, em 375 px, a lente transversal de IA com o painel aberto na linha "Avaliação ética e de vieses em sistemas e conteúdos de IA".
 - **Regras de boas práticas também rodadas** (fora das tags WCAG): `heading-order`, `page-has-heading-one`, `landmark-one-main` e `region`, em 1440 px.

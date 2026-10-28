@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { LENTE_IA } from "@/lib/api";
 
 const ICONES: Record<string, ReactNode> = {
   "ux-ui": (
@@ -35,7 +36,7 @@ const ICONES: Record<string, ReactNode> = {
       <path d="m16 10 6-3v10l-6-3" />
     </>
   ),
-  "lente-ia": <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z" />,
+  [LENTE_IA]: <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z" />,
 };
 
 /** Ícone da profissão-alvo; um id desconhecido não renderiza nada. */
