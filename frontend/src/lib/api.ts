@@ -156,7 +156,16 @@ export type ItemRecomendado = {
   grupo: { grupo: string; cumpridos: number; minimo: number } | null;
   contaExtensao: boolean;
   preRequisitos: string[];
+  /** Todas as competências que o componente contempla, com a posição de cada uma (começa em 0). */
+  evidencias: CompetenciaContemplada[];
+  /** Quantas competências contempla por profissão-alvo (chave: rótulo), no total e as ainda não cobertas. */
+  contagem: { porProfissao: Record<string, number>; total: number; naoCobertas: number };
+  /** Ressalva sobre a ementa, quando há. */
+  notaEmenta: string | null;
 };
+
+/** Competência que nenhuma sugestão alcança. */
+export type CompetenciaFora = { rotulo: string; profissao: string };
 
 export type Recomendacao = {
   estrutura: string;
@@ -168,6 +177,8 @@ export type Recomendacao = {
   componentesSugeridos: number;
   avisos: string[];
   itens: ItemRecomendado[];
+  /** O que as sugestões não alcançam: lacunas essenciais e tecnologias sem registro no PPC. */
+  foraDasSugestoes: { lacunasEssenciais: CompetenciaFora[]; naoDocumentadas: CompetenciaFora[] };
 };
 
 async function erroDaResposta(resposta: Response): Promise<Error> {
@@ -195,6 +206,13 @@ export async function recomendar(trajetoria: Trajetoria, profissoes: string[]): 
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ trajetoria, profissoes }),
   });
+  if (!resposta.ok) throw await erroDaResposta(resposta);
+  return resposta.json();
+}
+
+/** Histórico fictício para experimentar o fluxo sem enviar o próprio PDF. */
+export async function historicoDeExemplo(): Promise<Trajetoria> {
+  const resposta = await fetch(`${API_URL}/api/discente/historico-exemplo`);
   if (!resposta.ok) throw await erroDaResposta(resposta);
   return resposta.json();
 }
