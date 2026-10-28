@@ -108,12 +108,18 @@ export default function SobreIa() {
             de vagas brasileiras fica como trabalho futuro.
           </li>
           <li>
-            Validação com rótulos humanos (<code>docs/validacao/resultado.md</code>): em 41
-            julgamentos, a concordância entre os dois avaliadores da equipe foi de 0,76 (kappa de
-            Cohen). Quando o sistema diz <em>coberta</em>, acerta 79% das vezes; quando diz{" "}
-            <em>lacuna</em>, 57%. <em>Parcial</em> é a situação menos confiável: em 9 de 13 casos,
-            os avaliadores disseram que a ementa não trata do tema. Esses números foram medidos
-            antes da regra das tecnologias nomeadas e dos programas de disciplina.
+            Validação com rótulos humanos (<code>docs/validacao/revalidacao/resultado.md</code>): 60
+            julgamentos de dois avaliadores da equipe (kappa de Cohen de 0,76 na primeira rodada e
+            0,85 na segunda). Quando o sistema diz <em>coberta</em>, acerta 89% das vezes; quando
+            diz <em>lacuna</em>, 50%. <em>Parcial</em> é a situação menos confiável: em 13 de 23
+            casos, os avaliadores disseram que o componente não trata do tema. Das tecnologias{" "}
+            <em>não documentadas</em>, 8 de 9 foram julgadas como não tratadas.
+          </li>
+          <li>
+            Ementas muito curtas atraem competências genéricas. A de Concepção de Cenários e
+            Personagens (“Concept art. Design de personagens. Criação de cenários. Projetos
+            práticos.”) é o único registro da disciplina e errou em 4 de 7 pares avaliados. É um
+            limite da documentação, não só do método.
           </li>
         </ul>
       </Card>
