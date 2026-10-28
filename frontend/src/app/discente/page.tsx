@@ -12,13 +12,12 @@ const PASSOS = [
   },
   {
     titulo: "Escolha até duas profissões-alvo",
-    texto:
-      "As mesmas seis profissões que a coordenação analisa, ligadas aos itinerários formativos do curso.",
+    texto: "As mesmas seis profissões que a coordenação analisa, ligadas aos itinerários formativos do curso.",
   },
   {
     titulo: "Receba optativas e eletivas elegíveis",
     texto:
-      "Respeitando pré-requisitos, equivalências e as regras dos grupos de componentes da sua estrutura curricular (2010.1, 2013.2 ou 2025.1).",
+      "Respeitando pré-requisitos, equivalências e as regras dos grupos de componentes da sua estrutura curricular (Diurno 2010.1, 2013.2 ou 2025.1; Noturno 2013.2).",
   },
   {
     titulo: "Veja por que cada sugestão",
@@ -35,8 +34,8 @@ export default function Discente() {
           Planeje sua trajetória rumo à profissão que você quer
         </h1>
         <Aviso tom="info">
-          Protótipo para o curso de Sistemas e Mídias Digitais (Diurno). A recomendação apoia, mas não substitui, a
-          orientação do Grupo de Professores Tutores e da coordenação.
+          Protótipo para o curso de Sistemas e Mídias Digitais (Diurno e Noturno). A recomendação apoia, mas não
+          substitui, a orientação do Grupo de Professores Tutores e da coordenação.
         </Aviso>
       </div>
 

@@ -1,6 +1,7 @@
 {
   "fonte": "SIGAA/UFC — estrutura curricular 2013.2 do curso de Sistemas e Mídias Digitais (Diurno)",
   "codigo": "2013.2",
+  "turno": "diurno",
   "chTotalMinima": 2880,
   "chObrigatoria": 1664,
   "chOptativaMinima": 1216,

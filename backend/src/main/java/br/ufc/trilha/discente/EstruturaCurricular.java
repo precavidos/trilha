@@ -3,7 +3,7 @@ package br.ufc.trilha.discente;
 import java.util.List;
 
 /** Estrutura curricular do SIGAA convertida por data/scripts/estruturas_sigaa.py (ADR 0009). */
-public record EstruturaCurricular(String fonte, String codigo, Integer chTotalMinima, Integer chObrigatoria,
+public record EstruturaCurricular(String fonte, String codigo, String turno, Integer chTotalMinima, Integer chObrigatoria,
 		Integer chOptativaMinima, Integer chOptativosLivresMaxima, Integer chAtividadesComplementares,
 		Integer chExtensao, Integer chTcc, List<Grupo> grupos, List<Componente> componentes) {
 

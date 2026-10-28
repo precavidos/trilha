@@ -3,8 +3,12 @@
 Uso (só biblioteca padrão):
     python -I data/scripts/estruturas_sigaa.py
 
-Lê data/private/fontes/sigaa-estrutura-smd-diurno-<versão>.html (fora do git; exportar no SIGAA com
-Ctrl+S → "Página da Web, somente HTML") e escreve data/seed/estruturas/smd-diurno-<versão>.json.
+Lê data/private/fontes/sigaa-estrutura-smd-<turno>-<versão>.html (fora do git; exportar no SIGAA com
+Ctrl+S → "Página da Web, somente HTML") e escreve data/seed/estruturas/smd-<turno>-<versão>.json.
+Sem argumentos, converte todas as estruturas conhecidas; com argumentos, só as indicadas ("noturno:2013.2").
+
+No SIGAA, o Noturno é uma matriz à parte (sufixo "N"; o Diurno é "MT") com o mesmo código de versão e
+pré-requisitos e equivalências próprios, por isso cada turno tem o seu arquivo.
 
 Pré-requisitos e equivalências viram forma normal disjuntiva: uma lista de alternativas, cada uma com
 os códigos exigidos em conjunto. "( A E B ) OU ( C )" → [["A", "B"], ["C"]].
@@ -68,8 +72,8 @@ def numero(padrao: str, texto: str):
     return int(m.group(1)) if m else None
 
 
-def converter(versao: str) -> dict:
-    fonte = FONTES / f"sigaa-estrutura-smd-diurno-{versao.replace('.', '-')}.html"
+def converter(turno: str, versao: str) -> dict:
+    fonte = FONTES / f"sigaa-estrutura-smd-{turno}-{versao.replace('.', '-')}.html"
     bruto = fonte.read_bytes().decode("utf-8")
     texto = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", bruto)))
     p = Linhas()
@@ -124,8 +128,9 @@ def converter(versao: str) -> dict:
             unicos.append(c)
 
     return {
-        "fonte": f"SIGAA/UFC — estrutura curricular {versao} do curso de Sistemas e Mídias Digitais (Diurno)",
+        "fonte": f"SIGAA/UFC — estrutura curricular {versao} do curso de Sistemas e Mídias Digitais ({turno.title()})",
         "codigo": versao,
+        "turno": turno,
         "chTotalMinima": numero(r"Total M[ií]nima (\d+)", texto),
         "chObrigatoria": numero(r"Carga Hor[áa]ria Obrigat[óo]ria: (\d+)h", texto),
         "chOptativaMinima": numero(r"Carga Hor[áa]ria Optativa Minima: (\d+)", texto),
@@ -138,15 +143,18 @@ def converter(versao: str) -> dict:
     }
 
 
+ESTRUTURAS = [("diurno", "2025.1"), ("diurno", "2013.2"), ("diurno", "2010.1"), ("noturno", "2013.2")]
+
+
 def main() -> None:
     SAIDA.mkdir(parents=True, exist_ok=True)
-    versoes = sys.argv[1:] or ["2025.1", "2013.2", "2010.1"]
-    for v in versoes:
-        e = converter(v)
-        destino = SAIDA / f"smd-diurno-{v.replace('.', '-')}.json"
+    pedidas = [tuple(a.split(":", 1)) if ":" in a else ("diurno", a) for a in sys.argv[1:]] or ESTRUTURAS
+    for turno, v in pedidas:
+        e = converter(turno, v)
+        destino = SAIDA / f"smd-{turno}-{v.replace('.', '-')}.json"
         destino.write_text(json.dumps(e, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         obr = sum(1 for c in e["componentes"] if c["natureza"] == "obrigatorio")
-        print(f"{v}: {len(e['componentes'])} componentes ({obr} obrigatórios), {len(e['grupos'])} grupos → {destino.relative_to(RAIZ)}", file=sys.stderr)
+        print(f"{turno} {v}: {len(e['componentes'])} componentes ({obr} obrigatórios), {len(e['grupos'])} grupos → {destino.relative_to(RAIZ)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

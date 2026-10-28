@@ -1,6 +1,7 @@
 {
   "fonte": "SIGAA/UFC — estrutura curricular 2025.1 do curso de Sistemas e Mídias Digitais (Diurno)",
   "codigo": "2025.1",
+  "turno": "diurno",
   "chTotalMinima": 2880,
   "chObrigatoria": 1424,
   "chOptativaMinima": 1216,

@@ -19,6 +19,12 @@ import { useApi } from "@/lib/use-api";
 
 const MAX_PROFISSOES = 2;
 
+const TURNOS = { diurno: "Diurno", noturno: "Noturno" } as const;
+
+function nomeDaEstrutura(estrutura: string, turno: keyof typeof TURNOS | null) {
+  return turno ? `${TURNOS[turno]} ${estrutura}` : estrutura;
+}
+
 /** Envio do histórico → escolha das profissões-alvo → recomendação com evidências. */
 export function FluxoDiscente() {
   const [trajetoria, setTrajetoria] = useState<Trajetoria | null>(null);
@@ -100,7 +106,11 @@ function ResumoDaTrajetoria({ trajetoria }: { trajetoria: Trajetoria }) {
         O que lemos do seu histórico
       </h2>
       <dl className="m-0 grid gap-3 sm:grid-cols-4">
-        <Dado rotulo="Estrutura curricular" valor={trajetoria.estrutura} />
+        <Dado
+          rotulo="Estrutura curricular"
+          valor={trajetoria.estrutura}
+          detalhe={trajetoria.turno ? TURNOS[trajetoria.turno] : "turno não informado"}
+        />
         <Dado rotulo="Componentes aprovados" valor={String(aprovados)} />
         <Dado rotulo="Em curso" valor={String(emCurso)} />
         <Dado rotulo="Carga optativa pendente" valor={optativa ? `${optativa.pendente} h` : "não informada"} />
@@ -112,11 +122,14 @@ function ResumoDaTrajetoria({ trajetoria }: { trajetoria: Trajetoria }) {
   );
 }
 
-function Dado({ rotulo, valor }: { rotulo: string; valor: string }) {
+function Dado({ rotulo, valor, detalhe }: { rotulo: string; valor: string; detalhe?: string }) {
   return (
     <div className="bg-panel-raised rounded-md p-4">
       <dt className="text-on-panel-muted text-sm">{rotulo}</dt>
-      <dd className="m-0 text-[28px] leading-9 font-bold">{valor}</dd>
+      <dd className="m-0 text-[28px] leading-9 font-bold">
+        {valor}
+        {detalhe && <span className="text-on-panel-muted block text-sm leading-5 font-normal">{detalhe}</span>}
+      </dd>
     </div>
   );
 }
@@ -203,8 +216,8 @@ function ListaDeRecomendacoes({ recomendacao: r }: { recomendacao: Recomendacao 
           {r.chOptativaPendente != null
             ? `Faltam ${r.chOptativaPendente} h de carga optativa (cerca de ${r.componentesSugeridos} componente${r.componentesSugeridos === 1 ? "" : "s"} de 64 h). `
             : ""}
-          Só aparecem componentes da sua estrutura ({r.estrutura}) que você ainda não cursou e cujos pré-requisitos já
-          cumpriu. A ordem é calculada sem IA generativa.
+          Só aparecem componentes da sua estrutura ({nomeDaEstrutura(r.estrutura, r.turno)}) que você ainda não cursou e
+          cujos pré-requisitos já cumpriu. A ordem é calculada sem IA generativa.
         </p>
       </div>
       {r.avisos.map((a) => (

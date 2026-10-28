@@ -25,7 +25,9 @@ import tools.jackson.databind.json.JsonMapper;
  * Recomenda componentes optativos para uma {@link Trajetoria} (ADRs 0002 e 0009). Tudo é determinístico:
  * elegibilidade por pré-requisitos e equivalências da estrutura curricular do discente; ordem pelas
  * competências das profissões-alvo que cada ementa contempla, pelos itinerários formativos do PPC e pelas
- * regras de grupo e de extensão ainda pendentes.
+ * regras de grupo e de extensão ainda pendentes. Diurno e Noturno têm estruturas próprias no SIGAA (mesmo código
+ * de versão, pré-requisitos e equivalências diferentes) e o mesmo PPC, então a análise e os itinerários valem
+ * para os dois.
  */
 @Service
 public class Recomendador {
@@ -69,7 +71,7 @@ public class Recomendador {
 			boolean contaExtensao, List<String> preRequisitos) {
 	}
 
-	public record Recomendacao(String estrutura, List<String> profissoes, int aprovados, int emCurso,
+	public record Recomendacao(String estrutura, String turno, List<String> profissoes, int aprovados, int emCurso,
 			Integer chOptativaPendente, int componentesSugeridos, List<String> avisos, List<Item> itens) {
 	}
 
@@ -83,7 +85,7 @@ public class Recomendador {
 		try (Stream<Path> arquivos = Files.list(Path.of(pasta))) {
 			for (Path p : arquivos.filter(f -> f.toString().endsWith(".json")).sorted().toList()) {
 				EstruturaCurricular e = json.readValue(p.toFile(), EstruturaCurricular.class);
-				estruturas.put(e.codigo(), e);
+				estruturas.put(chave(e.codigo(), e.turno()), e);
 			}
 		}
 		this.itinerarios = json.readValue(Path.of(arquivoItinerarios).toFile(), Itinerarios.class).itinerarios();
@@ -94,9 +96,10 @@ public class Recomendador {
 	}
 
 	public Recomendacao recomendar(Trajetoria t, List<String> profissoesIds) {
-		EstruturaCurricular e = estruturas.get(t.estrutura());
+		String turno = t.turno() == null ? "diurno" : t.turno();
+		EstruturaCurricular e = estruturas.get(chave(t.estrutura(), turno));
 		if (e == null) {
-			throw new NoSuchElementException("estrutura curricular não suportada: " + t.estrutura()
+			throw new NoSuchElementException("estrutura curricular não suportada: " + chave(t.estrutura(), turno)
 					+ " (suportadas: " + String.join(", ", estruturas.keySet()) + ")");
 		}
 		if (profissoesIds.isEmpty() || profissoesIds.size() > 2) {
@@ -199,14 +202,22 @@ public class Recomendador {
 		int sugeridos = chOptativaPendente == null ? 4 : (int) Math.ceil(chOptativaPendente / (double) CH_PADRAO);
 		int limite = Math.max(5, Math.min(12, sugeridos + 3));
 		List<String> avisos = new ArrayList<>();
+		if (t.turno() == null) {
+			avisos.add("O histórico não informa o turno; usamos a estrutura do Diurno. Se você é do Noturno, os pré-requisitos podem ser outros.");
+		}
 		if (chOptativaPendente != null && chOptativaPendente == 0) {
 			avisos.add("Pelo histórico, você já cumpriu a carga horária optativa; as sugestões abaixo são para aprofundamento.");
 		}
 		if (!emCurso.isEmpty()) {
 			avisos.add("Componentes em curso foram considerados como cumpridos para checar pré-requisitos.");
 		}
-		return new Recomendacao(e.codigo(), profissoes.stream().map(Analise.Profissao::rotulo).toList(), aprovados.size(),
+		return new Recomendacao(e.codigo(), e.turno(), profissoes.stream().map(Analise.Profissao::rotulo).toList(), aprovados.size(),
 				emCurso.size(), chOptativaPendente, sugeridos, avisos, itens.stream().limit(limite).toList());
+	}
+
+	/** "2013.2 noturno": o código de versão se repete entre os turnos. */
+	static String chave(String codigo, String turno) {
+		return codigo + " " + turno;
 	}
 
 	/** Cumprido diretamente ou por alguma equivalência registrada na estrutura curricular. */

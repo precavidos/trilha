@@ -117,6 +117,8 @@ export async function justificar(competencia: string): Promise<Justificativa> {
 /** O que o Trilha guarda do histórico (ADR 0003): nada de nome, matrícula, notas ou docentes. */
 export type Trajetoria = {
   estrutura: string;
+  /** Diurno e Noturno têm estruturas próprias no SIGAA com o mesmo código de versão. */
+  turno: "diurno" | "noturno" | null;
   componentes: { codigo: string; periodo: string | null; situacao: string; ch: number | null; marcador: string | null }[];
   cargas: Record<string, { exigido: number; integralizado: number; pendente: number }>;
   obrigatoriosPendentes: string[];
@@ -151,6 +153,7 @@ export type ItemRecomendado = {
 
 export type Recomendacao = {
   estrutura: string;
+  turno: "diurno" | "noturno";
   profissoes: string[];
   aprovados: number;
   emCurso: number;
