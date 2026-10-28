@@ -7,7 +7,9 @@ import type { ItemRecomendado, Recomendacao, Trajetoria } from "@/lib/api";
 import { alternarNoRascunho, extensaoPendente, passoAtual, type Filtro } from "@/lib/discente";
 import { EnvioDoHistorico, type Origem } from "./envio";
 import { OndeVoceEsta } from "./onde-voce-esta";
+import { ForaDasSugestoes } from "./fora-das-sugestoes";
 import { EscolhaDeProfissoes } from "./profissoes";
+import { ResumoParaImpressao } from "./resumo-impressao";
 import { Sugestoes } from "./sugestoes";
 
 const PASSOS = [
@@ -92,6 +94,10 @@ export function FluxoDiscente() {
           chPendente={recomendacao.chOptativaPendente}
           aoImprimir={() => window.print()}
         />
+      )}
+      {recomendacao && <ForaDasSugestoes fora={recomendacao.foraDasSugestoes} />}
+      {recomendacao && trajetoria && (
+        <ResumoParaImpressao recomendacao={recomendacao} rascunho={rascunho} trajetoria={trajetoria} />
       )}
     </div>
   );
