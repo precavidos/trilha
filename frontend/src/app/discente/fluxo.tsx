@@ -64,9 +64,10 @@ function EnvioDoHistorico({ aoLer }: { aoLer(t: Trajetoria | null): void }) {
         1. Envie seu histórico do SIGAA
       </h2>
       <p className="text-ink-muted m-0">
-        No SIGAA, em <em>Ensino → Emitir Histórico</em>, baixe o PDF e selecione-o abaixo. O arquivo é lido em memória e
-        não é gravado: o Trilha usa só a estrutura curricular, os códigos dos componentes, as situações e as cargas
-        horárias. Nome, matrícula, notas, frequência e nomes de docentes são descartados na leitura.
+        No SIGAA, em <em>Ensino → Documentos e Declarações → Histórico Escolar</em>, baixe o PDF e selecione-o abaixo. O
+        arquivo é lido em memória e não é gravado: o Trilha usa só a estrutura curricular, os códigos dos componentes,
+        as situações e as cargas horárias. Nome, matrícula, notas, frequência e nomes de docentes são descartados na
+        leitura.
       </p>
       <div className="flex flex-wrap items-center gap-3">
         <label htmlFor={idCampo} className="font-bold">
