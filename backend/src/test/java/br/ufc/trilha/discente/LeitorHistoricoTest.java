@@ -83,6 +83,15 @@ class LeitorHistoricoTest {
 	}
 
 	@Test
+	void aceitaCodigoDeCurriculoComLetra() {
+		List<LinhaPdf> l = new ArrayList<>(comTurno("Turno: NOTURNO"));
+		l.replaceAll(x -> x.texto().startsWith("Currículo:") ? new LinhaPdf(1, 100, "Currículo: 2016.1A") : x);
+		Trajetoria t = LeitorHistorico.ler(l);
+		assertThat(t.estrutura()).isEqualTo("2016.1A");
+		assertThat(t.turno()).isEqualTo("noturno");
+	}
+
+	@Test
 	void extraiEstruturaComponentesECargas() {
 		Trajetoria t = LeitorHistorico.ler(HISTORICO);
 

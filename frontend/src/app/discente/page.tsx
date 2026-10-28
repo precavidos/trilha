@@ -17,7 +17,7 @@ const PASSOS = [
   {
     titulo: "Receba optativas e eletivas elegíveis",
     texto:
-      "Respeitando pré-requisitos, equivalências e as regras dos grupos de componentes da sua estrutura curricular (Diurno 2010.1, 2013.2 ou 2025.1; Noturno 2013.2).",
+      "Respeitando pré-requisitos, equivalências e as regras dos grupos de componentes da sua estrutura curricular (Diurno 2010.1, 2013.2 ou 2025.1; Noturno 2013.2, 2016.1, 2016.1A ou 2025.1).",
   },
   {
     titulo: "Veja por que cada sugestão",

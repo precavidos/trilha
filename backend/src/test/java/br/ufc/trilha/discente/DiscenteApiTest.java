@@ -41,7 +41,7 @@ class DiscenteApiTest {
 
 	/** Discente sintético que concluiu os obrigatórios dos três primeiros semestres da estrutura. */
 	private String pedido(String estrutura, String turno, List<String> profissoes) throws Exception {
-		var arquivo = "../data/seed/estruturas/smd-" + turno + "-" + estrutura.replace('.', '-') + ".json";
+		var arquivo = "../data/seed/estruturas/smd-" + turno + "-" + estrutura.replace('.', '-').toLowerCase() + ".json";
 		var e = json.readValue(Path.of(arquivo).toFile(), EstruturaCurricular.class);
 		var cursados = e.componentes().stream()
 			.filter(c -> "obrigatorio".equals(c.natureza()) && c.semestre() != null && c.semestre() <= 3)
@@ -62,6 +62,9 @@ class DiscenteApiTest {
 			.andExpect(status().isOk())
 			.andExpect(jsonPath("$", hasItem("2013.2 diurno")))
 			.andExpect(jsonPath("$", hasItem("2013.2 noturno")))
+			.andExpect(jsonPath("$", hasItem("2016.1 noturno")))
+			.andExpect(jsonPath("$", hasItem("2016.1A noturno")))
+			.andExpect(jsonPath("$", hasItem("2025.1 noturno")))
 			.andExpect(jsonPath("$", hasItem("2025.1 diurno")));
 	}
 
@@ -95,6 +98,18 @@ class DiscenteApiTest {
 			.andExpect(status().isOk())
 			.andExpect(jsonPath("$.turno", is("diurno")))
 			.andExpect(jsonPath("$.itens[*].codigo", not(hasItem("SMD0128"))));
+	}
+
+	/** A matriz Noturno em vigor desde 2018.2 tem letra no código. */
+	@Test
+	void recomendaNaMatrizNoturno2016_1A() throws Exception {
+		mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON)
+				.content(pedido("2016.1A", "noturno", List.of("jogos"))))
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("$.estrutura", is("2016.1A")))
+			.andExpect(jsonPath("$.turno", is("noturno")))
+			.andExpect(jsonPath("$.itens.length()", greaterThan(4)))
+			.andExpect(jsonPath("$.itens[*].codigo", hasItem("SMD0053")));
 	}
 
 	@Test

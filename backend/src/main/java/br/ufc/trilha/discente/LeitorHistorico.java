@@ -19,7 +19,8 @@ import br.ufc.trilha.ppc.LinhaPdf;
  */
 public final class LeitorHistorico {
 
-	private static final Pattern CURRICULO = Pattern.compile("Curr[ií]culo:\\s*(\\d{4}\\.\\d)");
+	/** O código pode ter sufixo de letra: a matriz Noturno em vigor desde 2018.2 é a "2016.1A". */
+	private static final Pattern CURRICULO = Pattern.compile("Curr[ií]culo:\\s*(\\d{4}\\.\\d[A-Z]?)\\b");
 	private static final Pattern TURNO = Pattern.compile("Turno:\\s*(.*)");
 	private static final Pattern PERIODO = Pattern.compile("\\d{4}\\.\\d");
 	/**
