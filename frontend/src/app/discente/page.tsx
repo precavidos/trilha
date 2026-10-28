@@ -1,4 +1,3 @@
-import { Aviso } from "@/components/ui/Aviso";
 import { FluxoDiscente } from "./fluxo";
 
 export const metadata = { title: "Discente · Trilha" };
@@ -20,10 +19,6 @@ export default function Discente() {
       </div>
 
       <FluxoDiscente />
-
-      <Aviso tom="info">
-        A recomendação apoia, mas não substitui, a orientação do Grupo de Professores Tutores e da coordenação.
-      </Aviso>
     </div>
   );
 }

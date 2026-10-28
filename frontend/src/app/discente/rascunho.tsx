@@ -61,7 +61,7 @@ export function Rascunho({
           {contamExtensao} {contamExtensao === 1 ? "delas conta" : "delas contam"} carga de extensão.
         </p>
       )}
-      <Botao variante="painel" disabled={vazio} onClick={aoImprimir} className="justify-center whitespace-normal">
+      <Botao variante="painel" disabled={vazio} onClick={aoImprimir} className="justify-center whitespace-normal!">
         Baixar resumo para o tutor (PDF)
       </Botao>
       <p className="text-ink-muted m-0 text-[13px] leading-[18px]">

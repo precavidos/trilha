@@ -151,7 +151,7 @@ function ItemSugerido({
           )}
         >
           {noRascunho ? "No rascunho" : "Adicionar ao rascunho"}
-          <span className="sr-only"> — {item.nome}</span>
+          <span className="sr-only"> ({item.nome})</span>
         </button>
       </div>
       <ul className="m-0 flex list-none flex-wrap gap-2 p-0 text-sm leading-5">
@@ -199,7 +199,7 @@ function ItemSugerido({
       )}
       <details open={primeiro} className="group min-[760px]:col-start-2">
         <summary className="border-line-strong group-open:bg-panel group-open:border-panel group-open:text-on-panel inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full border-2 px-4 text-sm leading-5 font-bold">
-          Por que isto?<span className="sr-only"> — {item.nome}</span>
+          Por que isto?<span className="sr-only"> ({item.nome})</span>
         </summary>
         <div className="mt-3 grid gap-4">
           {item.evidencias.length > 0 ? (
@@ -237,7 +237,7 @@ function ItemSugerido({
                   className="border-line-strong text-ink hover:bg-surface-sunken min-h-11 cursor-pointer justify-self-start rounded-full border-2 bg-transparent px-5 text-sm font-bold"
                 >
                   {todas ? "Ver menos" : `Ver todas (${item.evidencias.length})`}
-                  <span className="sr-only"> — {item.nome}</span>
+                  <span className="sr-only"> ({item.nome})</span>
                 </button>
               )}
             </>
