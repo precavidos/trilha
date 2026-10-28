@@ -98,6 +98,70 @@ class DiscenteApiTest {
 		org.junit.jupiter.api.Assertions.assertEquals(ORDEM_DO_PR_14, obtido);
 	}
 
+	private tools.jackson.databind.JsonNode recomendacaoDoExemplo(List<String> profissoes) throws Exception {
+		var t = json.readValue(HISTORICO_EXEMPLO.toFile(), Trajetoria.class);
+		var corpo = json.writeValueAsString(Map.of("trajetoria", t, "profissoes", profissoes));
+		var resposta = mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON).content(corpo))
+			.andExpect(status().isOk())
+			.andReturn().getResponse().getContentAsString();
+		return json.readTree(resposta);
+	}
+
+	@Test
+	void evidenciasIncluemLacunasEContagemBate() throws Exception {
+		var itens = recomendacaoDoExemplo(List.of("ux-ui", "web")).get("itens");
+		boolean temLacuna = false;
+		for (var item : itens) {
+			var evidencias = item.get("evidencias");
+			var contagem = item.get("contagem");
+			int soma = 0;
+			for (var n : contagem.get("porProfissao").values()) {
+				soma += n.asInt();
+			}
+			int naoCobertas = 0;
+			for (var ev : evidencias) {
+				String situacao = ev.get("situacaoNoPpc").asString();
+				temLacuna |= "LACUNA".equals(situacao);
+				if (!"COBERTA".equals(situacao)) {
+					naoCobertas++;
+				}
+			}
+			org.junit.jupiter.api.Assertions.assertEquals(evidencias.size(), contagem.get("total").asInt());
+			org.junit.jupiter.api.Assertions.assertEquals(contagem.get("total").asInt(), soma);
+			org.junit.jupiter.api.Assertions.assertEquals(naoCobertas, contagem.get("naoCobertas").asInt());
+		}
+		org.junit.jupiter.api.Assertions.assertTrue(temLacuna, "algum item deveria trazer uma evidência em LACUNA");
+	}
+
+	@Test
+	void competenciaDasDuasProfissoesApareceUmaVez() throws Exception {
+		for (var item : recomendacaoDoExemplo(List.of("ux-ui", "web")).get("itens")) {
+			var vistas = new java.util.HashSet<String>();
+			for (var ev : item.get("evidencias")) {
+				org.junit.jupiter.api.Assertions.assertTrue(vistas.add(ev.get("competencia").asString()),
+						"competência repetida em " + item.get("codigo").asString());
+			}
+		}
+	}
+
+	@Test
+	void evidenciasOrdenadasPorPosicao() throws Exception {
+		for (var item : recomendacaoDoExemplo(List.of("ux-ui", "web")).get("itens")) {
+			int posAnterior = -1;
+			double simAnterior = Double.MAX_VALUE;
+			for (var ev : item.get("evidencias")) {
+				int pos = ev.get("posicao").asInt();
+				double sim = ev.get("similaridade").asDouble();
+				org.junit.jupiter.api.Assertions.assertTrue(pos >= posAnterior);
+				if (pos == posAnterior) {
+					org.junit.jupiter.api.Assertions.assertTrue(sim <= simAnterior);
+				}
+				posAnterior = pos;
+				simAnterior = sim;
+			}
+		}
+	}
+
 	@Test
 	void listaEstruturasSuportadas() throws Exception {
 		mvc.perform(get("/api/discente/estruturas"))

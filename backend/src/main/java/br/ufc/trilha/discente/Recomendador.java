@@ -68,7 +68,15 @@ public class Recomendador {
 
 	public record Item(String codigo, String nome, Integer ch, double pontuacao, String codigoNoPpc, String ementa,
 			List<CompetenciaContemplada> competencias, List<PapelNoItinerario> itinerarios, ContaParaGrupo grupo,
-			boolean contaExtensao, List<String> preRequisitos) {
+			boolean contaExtensao, List<String> preRequisitos, List<CompetenciaContemplada> evidencias,
+			ContagemDeEvidencias contagem) {
+	}
+
+	/**
+	 * Quantas competências próximas do componente cada profissão escolhida exige. A chave é o rótulo da profissão;
+	 * {@code naoCobertas} soma as que o PPC trata como parcial, lacuna ou não documentada.
+	 */
+	public record ContagemDeEvidencias(Map<String, Integer> porProfissao, int total, int naoCobertas) {
 	}
 
 	public record Recomendacao(String estrutura, String turno, List<String> profissoes, int aprovados, int emCurso,
@@ -142,16 +150,21 @@ public class Recomendador {
 				continue;
 			}
 			String noPpc = codigoNoPpc(c);
-			List<CompetenciaContemplada> todas = new ArrayList<>();
+			// Toda competência próxima das profissões explica a sugestão (evidencias); só as que alguma ementa
+			// contempla de fato (coberta ou parcial) pontuam.
+			List<CompetenciaContemplada> evidencias = new ArrayList<>();
 			for (var cp : analise.competenciasDoComponente(noPpc)) {
 				String[] relProf = exigidas.get(cp.competencia());
-				if (relProf == null || PESO_STATUS.get(cp.status()) == 0.0) {
-					continue; // competência fora das profissões, ou que nenhuma ementa contempla de fato
+				if (relProf == null) {
+					continue; // competência fora das profissões escolhidas
 				}
 				double peso = PESO_RELACAO.get(relProf[0]) * PESO_POSICAO[cp.posicao()] * PESO_STATUS.get(cp.status());
-				todas.add(new CompetenciaContemplada(cp.competencia(), cp.rotulo(), cp.fonte(), relProf[0], relProf[1],
+				evidencias.add(new CompetenciaContemplada(cp.competencia(), cp.rotulo(), cp.fonte(), relProf[0], relProf[1],
 						cp.status().name(), cp.similaridade(), cp.posicao(), Math.round(peso * 100) / 100.0));
 			}
+			evidencias.sort(Comparator.comparingInt(CompetenciaContemplada::posicao)
+				.thenComparing(Comparator.comparingDouble(CompetenciaContemplada::similaridade).reversed()));
+			List<CompetenciaContemplada> todas = evidencias.stream().filter(ev -> ev.peso() > 0.0).toList();
 			// Só as mais fortes contam: evita que um componente suba por volume de casamentos fracos.
 			List<CompetenciaContemplada> competencias = todas.stream()
 				.sorted(Comparator.comparingDouble(CompetenciaContemplada::peso).reversed())
@@ -195,7 +208,7 @@ public class Recomendador {
 			List<String> pre = c.preRequisitos().stream().map(alt -> String.join(" e ", alt)).toList();
 			itens.add(new Item(c.codigo(), nomeLegivel(c.nome()), c.ch(), Math.round(pontos * 100) / 100.0,
 					noPpc.equals(c.codigo()) ? null : noPpc, ementa, competencias, papeis, grupo,
-					contaExtensao, pre));
+					contaExtensao, pre, evidencias, contar(evidencias, profissoes)));
 		}
 		itens.sort(Comparator.comparingDouble(Item::pontuacao).reversed().thenComparing(Item::codigo));
 
@@ -213,6 +226,20 @@ public class Recomendador {
 		}
 		return new Recomendacao(e.codigo(), e.turno(), profissoes.stream().map(Analise.Profissao::rotulo).toList(), aprovados.size(),
 				emCurso.size(), chOptativaPendente, sugeridos, avisos, itens.stream().limit(limite).toList());
+	}
+
+	/** Conta as evidências por profissão (na ordem da escolha, com zeros) e as que o PPC não cobre por inteiro. */
+	static ContagemDeEvidencias contar(List<CompetenciaContemplada> evidencias, List<Analise.Profissao> profissoes) {
+		Map<String, Integer> porProfissao = new LinkedHashMap<>();
+		profissoes.forEach(p -> porProfissao.put(p.rotulo(), 0));
+		int naoCobertas = 0;
+		for (var ev : evidencias) {
+			porProfissao.merge(ev.profissao(), 1, Integer::sum);
+			if (!Cobertura.Status.COBERTA.name().equals(ev.situacaoNoPpc())) {
+				naoCobertas++;
+			}
+		}
+		return new ContagemDeEvidencias(porProfissao, evidencias.size(), naoCobertas);
 	}
 
 	/** "2013.2 noturno": o código de versão se repete entre os turnos. */
