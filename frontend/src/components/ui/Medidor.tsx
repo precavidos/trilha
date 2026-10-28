@@ -14,9 +14,14 @@ export function Medidor({
   return (
     <div
       aria-hidden="true"
-      className={cx("h-2 w-full overflow-hidden rounded-full", tom === "painel" ? "bg-panel-raised" : "bg-surface-sunken")}
+      className={cx(
+        "w-full overflow-hidden",
+        tom === "painel"
+          ? "bg-panel h-3 rounded-md shadow-[inset_0_0_0_1.5px_var(--on-panel-muted)]"
+          : "bg-surface-sunken h-2 rounded-full",
+      )}
     >
-      <div className="h-full rounded-full bg-green" style={{ width: `${pct}%` }} />
+      <div className={cx("h-full", tom === "painel" ? "bg-lime" : "bg-green rounded-full")} style={{ width: `${pct}%` }} />
     </div>
   );
 }
