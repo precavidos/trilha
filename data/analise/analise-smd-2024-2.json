@@ -2193,8 +2193,8 @@
         "codigo" : "SMD0108",
         "similaridade" : 0.8755
       } ],
-      "media" : 0.8468,
-      "desvio" : 0.0178,
+      "media" : 0.8479,
+      "desvio" : 0.0185,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2222,8 +2222,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.8687
       } ],
-      "media" : 0.8401,
-      "desvio" : 0.0166,
+      "media" : 0.8414,
+      "desvio" : 0.0161,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/013441c1-1f13-47e9-80c4-9a53e8e1bc05" : {
@@ -2248,7 +2248,7 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8607
       } ],
-      "media" : 0.8367,
+      "media" : 0.8379,
       "desvio" : 0.0163,
       "citacao" : {
         "nivel" : "nenhuma",
@@ -2277,8 +2277,8 @@
         "codigo" : "SMD0094",
         "similaridade" : 0.8674
       } ],
-      "media" : 0.8433,
-      "desvio" : 0.0151,
+      "media" : 0.8439,
+      "desvio" : 0.0145,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/02c7caf4-4e8b-4745-8917-dbbd3af17c28" : {
@@ -2303,8 +2303,8 @@
         "codigo" : "SMD0098",
         "similaridade" : 0.8692
       } ],
-      "media" : 0.8476,
-      "desvio" : 0.0141,
+      "media" : 0.8479,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/034c29fa-c3ba-45ea-b8f3-bf8e3705e386" : {
@@ -2329,8 +2329,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8735
       } ],
-      "media" : 0.8431,
-      "desvio" : 0.0178,
+      "media" : 0.8444,
+      "desvio" : 0.0185,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2358,8 +2358,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8759
       } ],
-      "media" : 0.8444,
-      "desvio" : 0.0178,
+      "media" : 0.8453,
+      "desvio" : 0.0185,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2387,8 +2387,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8751
       } ],
-      "media" : 0.8542,
-      "desvio" : 0.0169,
+      "media" : 0.8547,
+      "desvio" : 0.0176,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/0620ecd1-e4b1-4dfa-972b-38a93e5ebd9d" : {
@@ -2413,8 +2413,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8716
       } ],
-      "media" : 0.8463,
-      "desvio" : 0.0163,
+      "media" : 0.8458,
+      "desvio" : 0.0158,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/062320e5-79d1-45e8-8b7e-5deeb53279a2" : {
@@ -2439,8 +2439,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8661
       } ],
-      "media" : 0.8439,
-      "desvio" : 0.0149,
+      "media" : 0.8446,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/071233c4-ad2b-4f50-b79f-768d2231163e" : {
@@ -2465,8 +2465,8 @@
         "codigo" : "SMD0050",
         "similaridade" : 0.8391
       } ],
-      "media" : 0.812,
-      "desvio" : 0.018,
+      "media" : 0.8125,
+      "desvio" : 0.0173,
       "citacao" : {
         "nivel" : "forte",
         "componentes" : [ {
@@ -2500,8 +2500,8 @@
         "codigo" : "SMD0136",
         "similaridade" : 0.859
       } ],
-      "media" : 0.8374,
-      "desvio" : 0.0155,
+      "media" : 0.8386,
+      "desvio" : 0.0163,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/08e2ff26-88ff-47b5-9d37-d19ace01b075" : {
@@ -2526,8 +2526,8 @@
         "codigo" : "SMD0021",
         "similaridade" : 0.862
       } ],
-      "media" : 0.8398,
-      "desvio" : 0.0148,
+      "media" : 0.8408,
+      "desvio" : 0.0151,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4" : {
@@ -2552,8 +2552,8 @@
         "codigo" : "SMD0021",
         "similaridade" : 0.8609
       } ],
-      "media" : 0.8425,
-      "desvio" : 0.0132,
+      "media" : 0.8443,
+      "desvio" : 0.013,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26" : {
@@ -2578,8 +2578,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8695
       } ],
-      "media" : 0.8506,
-      "desvio" : 0.0132,
+      "media" : 0.8511,
+      "desvio" : 0.0135,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -2613,8 +2613,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8721
       } ],
-      "media" : 0.8431,
-      "desvio" : 0.0184,
+      "media" : 0.8445,
+      "desvio" : 0.0185,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -2648,8 +2648,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8634
       } ],
-      "media" : 0.8363,
-      "desvio" : 0.0175,
+      "media" : 0.8375,
+      "desvio" : 0.018,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2677,8 +2677,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8591
       } ],
-      "media" : 0.8319,
-      "desvio" : 0.0133,
+      "media" : 0.8333,
+      "desvio" : 0.0137,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2706,8 +2706,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8505
       } ],
-      "media" : 0.8238,
-      "desvio" : 0.0176,
+      "media" : 0.8251,
+      "desvio" : 0.018,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2735,8 +2735,8 @@
         "codigo" : "SMD0021",
         "similaridade" : 0.8643
       } ],
-      "media" : 0.8398,
-      "desvio" : 0.0177,
+      "media" : 0.8401,
+      "desvio" : 0.0183,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1019423b-3368-4f83-b24f-19e5fa23e816" : {
@@ -2761,8 +2761,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8763
       } ],
-      "media" : 0.849,
-      "desvio" : 0.0158,
+      "media" : 0.8512,
+      "desvio" : 0.0151,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1110c92f-3059-445a-9436-0f4200d365f5" : {
@@ -2787,8 +2787,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8518
       } ],
-      "media" : 0.8279,
-      "desvio" : 0.0137,
+      "media" : 0.8286,
+      "desvio" : 0.0138,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2816,8 +2816,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8661
       } ],
-      "media" : 0.841,
-      "desvio" : 0.0158,
+      "media" : 0.8422,
+      "desvio" : 0.0166,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413" : {
@@ -2842,8 +2842,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8775
       } ],
-      "media" : 0.8492,
-      "desvio" : 0.0178,
+      "media" : 0.8497,
+      "desvio" : 0.0185,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -2872,7 +2872,7 @@
         "similaridade" : 0.8625
       } ],
       "media" : 0.8419,
-      "desvio" : 0.0141,
+      "desvio" : 0.0143,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -2918,8 +2918,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8582
       } ],
-      "media" : 0.834,
-      "desvio" : 0.0167,
+      "media" : 0.8342,
+      "desvio" : 0.017,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/172020d1-e151-445b-8173-e2a5fb16fe51" : {
@@ -2944,8 +2944,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8692
       } ],
-      "media" : 0.8455,
-      "desvio" : 0.0157,
+      "media" : 0.8466,
+      "desvio" : 0.0158,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1774bd31-8893-44cf-9498-7e3d95508419" : {
@@ -2970,7 +2970,7 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8413
       } ],
-      "media" : 0.8219,
+      "media" : 0.8223,
       "desvio" : 0.0134,
       "citacao" : null
     },
@@ -2996,8 +2996,8 @@
         "codigo" : "SMD0097",
         "similaridade" : 0.8749
       } ],
-      "media" : 0.8488,
-      "desvio" : 0.0166,
+      "media" : 0.8475,
+      "desvio" : 0.0162,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/194c05ed-253c-485a-8bf0-0c8de1aaafda" : {
@@ -3022,8 +3022,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8538
       } ],
-      "media" : 0.8378,
-      "desvio" : 0.0126,
+      "media" : 0.8391,
+      "desvio" : 0.0123,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389" : {
@@ -3048,8 +3048,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8734
       } ],
-      "media" : 0.8433,
-      "desvio" : 0.0185,
+      "media" : 0.8447,
+      "desvio" : 0.019,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -3107,8 +3107,8 @@
         "codigo" : "SMD0126",
         "similaridade" : 0.8822
       } ],
-      "media" : 0.8554,
-      "desvio" : 0.0162,
+      "media" : 0.8548,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1d0c2220-6855-4689-aeea-16c9c615b284" : {
@@ -3133,8 +3133,8 @@
         "codigo" : "SMD0147",
         "similaridade" : 0.8641
       } ],
-      "media" : 0.8376,
-      "desvio" : 0.0158,
+      "media" : 0.8389,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1d1b0108-3d56-45e2-bf0a-dca06a8ee5e3" : {
@@ -3159,8 +3159,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8538
       } ],
-      "media" : 0.8295,
-      "desvio" : 0.0172,
+      "media" : 0.8315,
+      "desvio" : 0.0175,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1d6ad7ed-a600-4bd4-8ae0-7bfc6625f480" : {
@@ -3185,8 +3185,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8612
       } ],
-      "media" : 0.8358,
-      "desvio" : 0.016,
+      "media" : 0.8357,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/1faf62ee-28fd-432b-972b-fab2cbe81773" : {
@@ -3211,8 +3211,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8732
       } ],
-      "media" : 0.8522,
-      "desvio" : 0.0152,
+      "media" : 0.8518,
+      "desvio" : 0.0153,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2058f70f-af29-460d-b319-9048c6db0d18" : {
@@ -3237,7 +3237,7 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8627
       } ],
-      "media" : 0.8383,
+      "media" : 0.8397,
       "desvio" : 0.015,
       "citacao" : null
     },
@@ -3263,8 +3263,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8842
       } ],
-      "media" : 0.8515,
-      "desvio" : 0.0199,
+      "media" : 0.8528,
+      "desvio" : 0.0203,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/234aeb8d-56c3-4531-9193-1c5e6a8d16cb" : {
@@ -3289,8 +3289,8 @@
         "codigo" : "SMD0142",
         "similaridade" : 0.8767
       } ],
-      "media" : 0.8517,
-      "desvio" : 0.0167,
+      "media" : 0.852,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/24229e89-9e1d-4c1a-ae23-c64777b152ce" : {
@@ -3315,8 +3315,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.862
       } ],
-      "media" : 0.8418,
-      "desvio" : 0.0147,
+      "media" : 0.8438,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2522a6ce-3202-4ac8-9f5b-b9cb5a3a83a1" : {
@@ -3341,8 +3341,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8681
       } ],
-      "media" : 0.8449,
-      "desvio" : 0.0155,
+      "media" : 0.8464,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/258d3de5-60fd-4336-aa7e-7700b64f5ed5" : {
@@ -3367,8 +3367,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.871
       } ],
-      "media" : 0.8417,
-      "desvio" : 0.0165,
+      "media" : 0.8399,
+      "desvio" : 0.0155,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/25b291b5-8245-4d9d-b391-86a8a31d7109" : {
@@ -3393,8 +3393,8 @@
         "codigo" : "SMD0050",
         "similaridade" : 0.8683
       } ],
-      "media" : 0.8439,
-      "desvio" : 0.016,
+      "media" : 0.8449,
+      "desvio" : 0.0155,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/25f0ea33-b4a2-4f31-b7b4-7d20e827b180" : {
@@ -3419,8 +3419,8 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8625
       } ],
-      "media" : 0.8408,
-      "desvio" : 0.0152,
+      "media" : 0.8423,
+      "desvio" : 0.0153,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/25f4c955-e429-44a6-98a7-7d8cb3b6b690" : {
@@ -3445,8 +3445,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8495
       } ],
-      "media" : 0.8306,
-      "desvio" : 0.0155,
+      "media" : 0.8317,
+      "desvio" : 0.0163,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2618f336-8e71-4666-83b5-f368edb0906d" : {
@@ -3471,7 +3471,7 @@
         "codigo" : "SMD0108",
         "similaridade" : 0.8555
       } ],
-      "media" : 0.8325,
+      "media" : 0.8339,
       "desvio" : 0.0147,
       "citacao" : null
     },
@@ -3497,8 +3497,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8526
       } ],
-      "media" : 0.8282,
-      "desvio" : 0.0148,
+      "media" : 0.8299,
+      "desvio" : 0.0143,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -3526,8 +3526,8 @@
         "codigo" : "SMD0016",
         "similaridade" : 0.8646
       } ],
-      "media" : 0.8331,
-      "desvio" : 0.0183,
+      "media" : 0.8335,
+      "desvio" : 0.0186,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/27b913f0-3c52-448b-ad27-fc6ef08fb326" : {
@@ -3553,7 +3553,7 @@
         "similaridade" : 0.8642
       } ],
       "media" : 0.8434,
-      "desvio" : 0.0153,
+      "desvio" : 0.0151,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -3581,8 +3581,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8409
       } ],
-      "media" : 0.8201,
-      "desvio" : 0.0143,
+      "media" : 0.8211,
+      "desvio" : 0.0146,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/29154735-107a-4daa-a050-537f7707f34e" : {
@@ -3607,8 +3607,8 @@
         "codigo" : "SMD0147",
         "similaridade" : 0.8572
       } ],
-      "media" : 0.8366,
-      "desvio" : 0.0138,
+      "media" : 0.8376,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f" : {
@@ -3633,8 +3633,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8745
       } ],
-      "media" : 0.8507,
-      "desvio" : 0.0178,
+      "media" : 0.8515,
+      "desvio" : 0.0174,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2afb2b59-c9a3-4cf3-b1dd-1a2fad51e583" : {
@@ -3659,8 +3659,8 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.8635
       } ],
-      "media" : 0.84,
-      "desvio" : 0.0147,
+      "media" : 0.8405,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17" : {
@@ -3685,8 +3685,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8722
       } ],
-      "media" : 0.8512,
-      "desvio" : 0.0147,
+      "media" : 0.8531,
+      "desvio" : 0.0138,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2bde42ae-e776-41c1-9ded-b07b30bfe985" : {
@@ -3711,8 +3711,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.876
       } ],
-      "media" : 0.8463,
-      "desvio" : 0.0175,
+      "media" : 0.8475,
+      "desvio" : 0.0182,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -3740,8 +3740,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8689
       } ],
-      "media" : 0.8481,
-      "desvio" : 0.0143,
+      "media" : 0.8488,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2c4e11ef-da18-4e19-816b-e6bc19e12424" : {
@@ -3766,8 +3766,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8635
       } ],
-      "media" : 0.8413,
-      "desvio" : 0.0156,
+      "media" : 0.8418,
+      "desvio" : 0.016,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2d6d4784-0992-48e7-b100-22d7229b3f0a" : {
@@ -3792,8 +3792,8 @@
         "codigo" : "SMD0119",
         "similaridade" : 0.8759
       } ],
-      "media" : 0.8483,
-      "desvio" : 0.0174,
+      "media" : 0.8478,
+      "desvio" : 0.018,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2daec0e6-f0c1-43e8-8178-aedba99130ec" : {
@@ -3818,8 +3818,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8728
       } ],
-      "media" : 0.8478,
-      "desvio" : 0.0146,
+      "media" : 0.8486,
+      "desvio" : 0.0139,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/2f216b61-b755-46a3-8c9f-289690358a26" : {
@@ -3844,8 +3844,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8411
       } ],
-      "media" : 0.8223,
-      "desvio" : 0.0124,
+      "media" : 0.8236,
+      "desvio" : 0.0126,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/300d432b-f457-4cd3-9cb1-1858c7d14954" : {
@@ -3870,8 +3870,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.876
       } ],
-      "media" : 0.8464,
-      "desvio" : 0.0182,
+      "media" : 0.8479,
+      "desvio" : 0.0188,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -3899,8 +3899,8 @@
         "codigo" : "SMD0139",
         "similaridade" : 0.8616
       } ],
-      "media" : 0.8398,
-      "desvio" : 0.0161,
+      "media" : 0.8406,
+      "desvio" : 0.0156,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3375cf3c-7090-4394-8896-58b1fb1dc540" : {
@@ -3925,8 +3925,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8694
       } ],
-      "media" : 0.8447,
-      "desvio" : 0.0151,
+      "media" : 0.8455,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/339ac029-066a-4985-9f9d-b3d7c8fea0bb" : {
@@ -3951,8 +3951,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8353
       } ],
-      "media" : 0.8126,
-      "desvio" : 0.0145,
+      "media" : 0.8132,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/33d49d4f-31ec-473f-9b8a-b555aa5116bb" : {
@@ -3977,8 +3977,8 @@
         "codigo" : "SMD0050",
         "similaridade" : 0.8715
       } ],
-      "media" : 0.8452,
-      "desvio" : 0.0148,
+      "media" : 0.8464,
+      "desvio" : 0.0146,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/348b74cd-49ce-4844-8bdf-ec188b497213" : {
@@ -4003,8 +4003,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8764
       } ],
-      "media" : 0.8487,
-      "desvio" : 0.0166,
+      "media" : 0.848,
+      "desvio" : 0.0168,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/38509fa4-7c06-4a4b-9622-f521f03c37b8" : {
@@ -4029,8 +4029,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8583
       } ],
-      "media" : 0.8339,
-      "desvio" : 0.0157,
+      "media" : 0.8337,
+      "desvio" : 0.0162,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb" : {
@@ -4055,8 +4055,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8661
       } ],
-      "media" : 0.841,
-      "desvio" : 0.0169,
+      "media" : 0.8418,
+      "desvio" : 0.0164,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/39aa5c41-960d-420a-a0bb-1ad9686d6369" : {
@@ -4081,8 +4081,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8462
       } ],
-      "media" : 0.8298,
-      "desvio" : 0.0121,
+      "media" : 0.8304,
+      "desvio" : 0.0123,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43" : {
@@ -4107,8 +4107,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8456
       } ],
-      "media" : 0.8277,
-      "desvio" : 0.0143,
+      "media" : 0.8274,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba" : {
@@ -4133,8 +4133,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8681
       } ],
-      "media" : 0.843,
-      "desvio" : 0.0177,
+      "media" : 0.8438,
+      "desvio" : 0.0186,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3cc1ee94-ab2c-4f35-8171-3cf4b5b664e4" : {
@@ -4159,8 +4159,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8636
       } ],
-      "media" : 0.8433,
-      "desvio" : 0.0135,
+      "media" : 0.8439,
+      "desvio" : 0.014,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7" : {
@@ -4185,8 +4185,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8832
       } ],
-      "media" : 0.853,
-      "desvio" : 0.0185,
+      "media" : 0.854,
+      "desvio" : 0.0193,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4214,8 +4214,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8498
       } ],
-      "media" : 0.8319,
-      "desvio" : 0.0127,
+      "media" : 0.8328,
+      "desvio" : 0.013,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/3e7516dc-0f7c-4686-8b2f-fade4e5d21be" : {
@@ -4240,8 +4240,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8602
       } ],
-      "media" : 0.8361,
-      "desvio" : 0.0155,
+      "media" : 0.8364,
+      "desvio" : 0.015,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/401eb8d8-6daa-4f8b-90ad-60afc71eb4f8" : {
@@ -4266,8 +4266,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8559
       } ],
-      "media" : 0.8282,
-      "desvio" : 0.0172,
+      "media" : 0.8295,
+      "desvio" : 0.0177,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4296,7 +4296,7 @@
         "similaridade" : 0.8662
       } ],
       "media" : 0.8459,
-      "desvio" : 0.0141,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/42cb7669-c371-4903-9c0b-13db67b2e4bb" : {
@@ -4321,8 +4321,8 @@
         "codigo" : "SMD0109",
         "similaridade" : 0.8545
       } ],
-      "media" : 0.8364,
-      "desvio" : 0.0143,
+      "media" : 0.8377,
+      "desvio" : 0.0145,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/42ed3bfb-1a01-4c8b-9758-fc6438865734" : {
@@ -4347,8 +4347,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8783
       } ],
-      "media" : 0.8504,
-      "desvio" : 0.0167,
+      "media" : 0.8521,
+      "desvio" : 0.0171,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4376,8 +4376,8 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.8642
       } ],
-      "media" : 0.8381,
-      "desvio" : 0.0164,
+      "media" : 0.8379,
+      "desvio" : 0.0169,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/4350c38d-0fe9-4ca7-bab9-40ed7f72b04f" : {
@@ -4402,8 +4402,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8706
       } ],
-      "media" : 0.8424,
-      "desvio" : 0.018,
+      "media" : 0.8439,
+      "desvio" : 0.0186,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4431,8 +4431,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8637
       } ],
-      "media" : 0.8392,
-      "desvio" : 0.0152,
+      "media" : 0.8402,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/441da17f-5560-43d3-920e-2865931c96d2" : {
@@ -4457,8 +4457,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8502
       } ],
-      "media" : 0.8327,
-      "desvio" : 0.0134,
+      "media" : 0.8336,
+      "desvio" : 0.0133,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/449d119b-2d66-43a9-9230-7d27f16afbb6" : {
@@ -4483,8 +4483,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8649
       } ],
-      "media" : 0.8365,
-      "desvio" : 0.0179,
+      "media" : 0.8385,
+      "desvio" : 0.0172,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4512,8 +4512,8 @@
         "codigo" : "SMD0146",
         "similaridade" : 0.8687
       } ],
-      "media" : 0.843,
-      "desvio" : 0.0166,
+      "media" : 0.8443,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/4754d9fe-dc3a-4f8f-8ea6-5dbcea3a21ca" : {
@@ -4538,8 +4538,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8708
       } ],
-      "media" : 0.8479,
-      "desvio" : 0.017,
+      "media" : 0.8475,
+      "desvio" : 0.0165,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3" : {
@@ -4564,8 +4564,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8796
       } ],
-      "media" : 0.8504,
-      "desvio" : 0.0177,
+      "media" : 0.8516,
+      "desvio" : 0.0187,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4593,8 +4593,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8713
       } ],
-      "media" : 0.8452,
-      "desvio" : 0.0151,
+      "media" : 0.8465,
+      "desvio" : 0.0148,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/493b20c2-c435-449a-896e-0af057c41fef" : {
@@ -4619,8 +4619,8 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.8625
       } ],
-      "media" : 0.8402,
-      "desvio" : 0.0164,
+      "media" : 0.8413,
+      "desvio" : 0.0168,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/4959d8c3-40dd-404d-9b29-ec7501bf5c39" : {
@@ -4645,8 +4645,8 @@
         "codigo" : "SMD0110",
         "similaridade" : 0.8712
       } ],
-      "media" : 0.8468,
-      "desvio" : 0.0149,
+      "media" : 0.8467,
+      "desvio" : 0.015,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/4a466c62-db7d-4905-9a41-f23214810acb" : {
@@ -4671,8 +4671,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8649
       } ],
-      "media" : 0.8406,
-      "desvio" : 0.0154,
+      "media" : 0.8405,
+      "desvio" : 0.0153,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4700,8 +4700,8 @@
         "codigo" : "SMD0094",
         "similaridade" : 0.857
       } ],
-      "media" : 0.8352,
-      "desvio" : 0.0148,
+      "media" : 0.8355,
+      "desvio" : 0.0156,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a" : {
@@ -4726,8 +4726,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8754
       } ],
-      "media" : 0.847,
-      "desvio" : 0.0191,
+      "media" : 0.8481,
+      "desvio" : 0.0197,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -4761,8 +4761,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8521
       } ],
-      "media" : 0.8337,
-      "desvio" : 0.0125,
+      "media" : 0.834,
+      "desvio" : 0.0127,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/50373f03-3e81-4d2e-99c6-d0f2ff42b138" : {
@@ -4787,8 +4787,8 @@
         "codigo" : "SMD0126",
         "similaridade" : 0.8584
       } ],
-      "media" : 0.8367,
-      "desvio" : 0.0167,
+      "media" : 0.8358,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/50f24d82-78e7-45aa-8687-4851c317a7ce" : {
@@ -4813,8 +4813,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8483
       } ],
-      "media" : 0.8287,
-      "desvio" : 0.0131,
+      "media" : 0.8301,
+      "desvio" : 0.0133,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/51586df8-1c46-4b47-8583-773cb63bf00b" : {
@@ -4839,8 +4839,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8522
       } ],
-      "media" : 0.8269,
-      "desvio" : 0.0165,
+      "media" : 0.8277,
+      "desvio" : 0.0171,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4894,8 +4894,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8752
       } ],
-      "media" : 0.8484,
-      "desvio" : 0.0176,
+      "media" : 0.8496,
+      "desvio" : 0.0183,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -4923,8 +4923,8 @@
         "codigo" : "SMD0137",
         "similaridade" : 0.859
       } ],
-      "media" : 0.8326,
-      "desvio" : 0.0165,
+      "media" : 0.834,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4" : {
@@ -4949,8 +4949,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8559
       } ],
-      "media" : 0.8339,
-      "desvio" : 0.0152,
+      "media" : 0.8343,
+      "desvio" : 0.0153,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5650081a-877d-4d59-b7df-05c00572485a" : {
@@ -4975,8 +4975,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.843
       } ],
-      "media" : 0.8232,
-      "desvio" : 0.0148,
+      "media" : 0.8242,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/56a10e3e-c9e7-4d39-b6f1-6013398fcb3a" : {
@@ -5001,8 +5001,8 @@
         "codigo" : "SMD0141",
         "similaridade" : 0.8674
       } ],
-      "media" : 0.8471,
-      "desvio" : 0.0152,
+      "media" : 0.8482,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/56a7f561-1d55-43c9-9cd7-36a0a9bc6c50" : {
@@ -5027,8 +5027,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8743
       } ],
-      "media" : 0.8461,
-      "desvio" : 0.0181,
+      "media" : 0.8475,
+      "desvio" : 0.0186,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5056,8 +5056,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8608
       } ],
-      "media" : 0.836,
-      "desvio" : 0.0174,
+      "media" : 0.8377,
+      "desvio" : 0.0178,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5085,8 +5085,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8741
       } ],
-      "media" : 0.8439,
-      "desvio" : 0.0196,
+      "media" : 0.8438,
+      "desvio" : 0.0204,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c" : {
@@ -5111,8 +5111,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.878
       } ],
-      "media" : 0.8461,
-      "desvio" : 0.0184,
+      "media" : 0.8479,
+      "desvio" : 0.0181,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5c66ce3a-658d-43b1-9d8d-0f39be6c0f2e" : {
@@ -5137,8 +5137,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8639
       } ],
-      "media" : 0.8428,
-      "desvio" : 0.0155,
+      "media" : 0.8443,
+      "desvio" : 0.0156,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5166,8 +5166,8 @@
         "codigo" : "SMD0027",
         "similaridade" : 0.877
       } ],
-      "media" : 0.8517,
-      "desvio" : 0.015,
+      "media" : 0.852,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5e0d6552-7efb-4207-b805-68fed752d778" : {
@@ -5192,8 +5192,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8632
       } ],
-      "media" : 0.8396,
-      "desvio" : 0.0152,
+      "media" : 0.839,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5f5e9350-1d13-4391-b9e1-07f6b2047fc5" : {
@@ -5218,8 +5218,8 @@
         "codigo" : "SMD0132",
         "similaridade" : 0.863
       } ],
-      "media" : 0.8434,
-      "desvio" : 0.0145,
+      "media" : 0.8439,
+      "desvio" : 0.0156,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a" : {
@@ -5244,8 +5244,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8818
       } ],
-      "media" : 0.8609,
-      "desvio" : 0.0158,
+      "media" : 0.8601,
+      "desvio" : 0.016,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e" : {
@@ -5270,8 +5270,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.856
       } ],
-      "media" : 0.8314,
-      "desvio" : 0.0172,
+      "media" : 0.8325,
+      "desvio" : 0.0175,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/608eb32b-276c-42a6-9be9-2d7bc33e9b3b" : {
@@ -5296,8 +5296,8 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8465
       } ],
-      "media" : 0.821,
-      "desvio" : 0.0157,
+      "media" : 0.8228,
+      "desvio" : 0.016,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/6417a4cc-6f61-4459-a114-761a7fa0279d" : {
@@ -5322,8 +5322,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.854
       } ],
-      "media" : 0.8301,
-      "desvio" : 0.0152,
+      "media" : 0.8317,
+      "desvio" : 0.0153,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5351,8 +5351,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8577
       } ],
-      "media" : 0.8389,
-      "desvio" : 0.0136,
+      "media" : 0.8402,
+      "desvio" : 0.0134,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d" : {
@@ -5377,8 +5377,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8693
       } ],
-      "media" : 0.8464,
-      "desvio" : 0.0143,
+      "media" : 0.8476,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28" : {
@@ -5403,8 +5403,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8674
       } ],
-      "media" : 0.844,
-      "desvio" : 0.0147,
+      "media" : 0.8451,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/69f0167e-75d9-46cf-847f-72a592880ebb" : {
@@ -5429,8 +5429,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.843
       } ],
-      "media" : 0.8234,
-      "desvio" : 0.014,
+      "media" : 0.8248,
+      "desvio" : 0.0142,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5458,8 +5458,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.8698
       } ],
-      "media" : 0.8425,
-      "desvio" : 0.0147,
+      "media" : 0.8434,
+      "desvio" : 0.014,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/6b21150f-e704-4758-b102-63fd3412543c" : {
@@ -5484,8 +5484,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8593
       } ],
-      "media" : 0.8375,
-      "desvio" : 0.0164,
+      "media" : 0.8368,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/6b6a9252-2ed7-4862-a02f-1578f4a532ea" : {
@@ -5510,8 +5510,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8599
       } ],
-      "media" : 0.8333,
-      "desvio" : 0.0175,
+      "media" : 0.8351,
+      "desvio" : 0.0176,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5539,8 +5539,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8594
       } ],
-      "media" : 0.8385,
-      "desvio" : 0.0143,
+      "media" : 0.8398,
+      "desvio" : 0.0133,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5568,8 +5568,8 @@
         "codigo" : "SMD0128",
         "similaridade" : 0.8514
       } ],
-      "media" : 0.8262,
-      "desvio" : 0.0153,
+      "media" : 0.8263,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/6f8a40d6-f9ce-43ec-a72f-d4213a53f3ed" : {
@@ -5594,8 +5594,8 @@
         "codigo" : "SMD0137",
         "similaridade" : 0.8505
       } ],
-      "media" : 0.827,
-      "desvio" : 0.0145,
+      "media" : 0.8289,
+      "desvio" : 0.0144,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5623,8 +5623,8 @@
         "codigo" : "SMD0083",
         "similaridade" : 0.8682
       } ],
-      "media" : 0.8447,
-      "desvio" : 0.0158,
+      "media" : 0.8458,
+      "desvio" : 0.0161,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/71746a0b-e58d-4dc4-ad03-bd84082eae21" : {
@@ -5649,7 +5649,7 @@
         "codigo" : "SMD0108",
         "similaridade" : 0.865
       } ],
-      "media" : 0.8401,
+      "media" : 0.842,
       "desvio" : 0.0154,
       "citacao" : null
     },
@@ -5675,7 +5675,7 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8657
       } ],
-      "media" : 0.8399,
+      "media" : 0.8409,
       "desvio" : 0.0159,
       "citacao" : null
     },
@@ -5701,8 +5701,8 @@
         "codigo" : "SMD0113",
         "similaridade" : 0.8526
       } ],
-      "media" : 0.8367,
-      "desvio" : 0.0125,
+      "media" : 0.8369,
+      "desvio" : 0.0129,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -5730,8 +5730,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8435
       } ],
-      "media" : 0.8253,
-      "desvio" : 0.0126,
+      "media" : 0.8265,
+      "desvio" : 0.0129,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7364cc39-b9c0-449f-9416-57723e2fd9c4" : {
@@ -5756,8 +5756,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8678
       } ],
-      "media" : 0.8463,
-      "desvio" : 0.0143,
+      "media" : 0.8474,
+      "desvio" : 0.0146,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7378b8c3-3b62-46de-9d67-1c9528954615" : {
@@ -5782,8 +5782,8 @@
         "codigo" : "SMD0148",
         "similaridade" : 0.8643
       } ],
-      "media" : 0.8454,
-      "desvio" : 0.0137,
+      "media" : 0.8463,
+      "desvio" : 0.0141,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410" : {
@@ -5808,8 +5808,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8581
       } ],
-      "media" : 0.8386,
-      "desvio" : 0.0133,
+      "media" : 0.8394,
+      "desvio" : 0.0132,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/75f839c2-fd9a-4ad3-8921-6e734608568d" : {
@@ -5834,7 +5834,7 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8682
       } ],
-      "media" : 0.844,
+      "media" : 0.8452,
       "desvio" : 0.016,
       "citacao" : null
     },
@@ -5860,8 +5860,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8473
       } ],
-      "media" : 0.8229,
-      "desvio" : 0.0173,
+      "media" : 0.8243,
+      "desvio" : 0.0172,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4" : {
@@ -5886,8 +5886,8 @@
         "codigo" : "SMD0141",
         "similaridade" : 0.8763
       } ],
-      "media" : 0.8466,
-      "desvio" : 0.0181,
+      "media" : 0.8475,
+      "desvio" : 0.0189,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/79e64cc4-75f2-4b92-b579-fb127ca17091" : {
@@ -5912,8 +5912,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.854
       } ],
-      "media" : 0.8333,
-      "desvio" : 0.0127,
+      "media" : 0.8343,
+      "desvio" : 0.0131,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7a17d7ce-01a2-4746-bbcc-22ffe22fa16e" : {
@@ -5938,7 +5938,7 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8755
       } ],
-      "media" : 0.8493,
+      "media" : 0.851,
       "desvio" : 0.0163,
       "citacao" : null
     },
@@ -5964,8 +5964,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8513
       } ],
-      "media" : 0.825,
-      "desvio" : 0.0176,
+      "media" : 0.8256,
+      "desvio" : 0.0177,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7cc80984-8c8a-4e03-8fda-b76b4198d1f0" : {
@@ -5990,8 +5990,8 @@
         "codigo" : "SMD0113",
         "similaridade" : 0.8706
       } ],
-      "media" : 0.8481,
-      "desvio" : 0.015,
+      "media" : 0.8489,
+      "desvio" : 0.0148,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7d092d81-d1e2-4c34-b3cb-c1c9f2e68b7d" : {
@@ -6016,8 +6016,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8633
       } ],
-      "media" : 0.8409,
-      "desvio" : 0.0164,
+      "media" : 0.842,
+      "desvio" : 0.0168,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed" : {
@@ -6042,8 +6042,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8752
       } ],
-      "media" : 0.8483,
-      "desvio" : 0.0172,
+      "media" : 0.8489,
+      "desvio" : 0.0178,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7d5ff73e-7bea-436d-974f-3a51ce24a138" : {
@@ -6068,8 +6068,8 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.878
       } ],
-      "media" : 0.8495,
-      "desvio" : 0.0175,
+      "media" : 0.8498,
+      "desvio" : 0.0178,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7e30aa6e-d65e-4e00-a76b-001444a7d07e" : {
@@ -6094,8 +6094,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8554
       } ],
-      "media" : 0.8346,
-      "desvio" : 0.0142,
+      "media" : 0.8361,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7e5147d1-60b1-4a68-804b-1f5cb0396b91" : {
@@ -6120,8 +6120,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8722
       } ],
-      "media" : 0.8505,
-      "desvio" : 0.0145,
+      "media" : 0.851,
+      "desvio" : 0.0139,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7edd11f2-6b4a-4a76-8b82-b5c57f3d8f07" : {
@@ -6146,7 +6146,7 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.87
       } ],
-      "media" : 0.8452,
+      "media" : 0.8451,
       "desvio" : 0.0159,
       "citacao" : null
     },
@@ -6172,8 +6172,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8885
       } ],
-      "media" : 0.8558,
-      "desvio" : 0.0197,
+      "media" : 0.8551,
+      "desvio" : 0.0201,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/7fc4c18a-68f3-425a-aadf-f83633be47a1" : {
@@ -6198,8 +6198,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8696
       } ],
-      "media" : 0.8483,
-      "desvio" : 0.0145,
+      "media" : 0.8488,
+      "desvio" : 0.0151,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/80e961f6-1482-4a28-9810-941b8aea1e86" : {
@@ -6224,8 +6224,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8421
       } ],
-      "media" : 0.8164,
-      "desvio" : 0.0162,
+      "media" : 0.8157,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/81633a44-f1db-4a01-a940-804c6905e330" : {
@@ -6250,8 +6250,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8668
       } ],
-      "media" : 0.8472,
-      "desvio" : 0.0137,
+      "media" : 0.8481,
+      "desvio" : 0.0138,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8327754d-3990-4056-b07e-4faa49cfcd26" : {
@@ -6276,8 +6276,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.876
       } ],
-      "media" : 0.8553,
-      "desvio" : 0.0132,
+      "media" : 0.856,
+      "desvio" : 0.0137,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8360f128-ef04-41f6-8fd0-203f41dc05dc" : {
@@ -6302,8 +6302,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8598
       } ],
-      "media" : 0.8399,
-      "desvio" : 0.0143,
+      "media" : 0.8396,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433" : {
@@ -6328,8 +6328,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8708
       } ],
-      "media" : 0.8453,
-      "desvio" : 0.0164,
+      "media" : 0.845,
+      "desvio" : 0.0162,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8369ede5-4200-4a44-be2e-bc60ef959259" : {
@@ -6354,8 +6354,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8581
       } ],
-      "media" : 0.8351,
-      "desvio" : 0.0154,
+      "media" : 0.8359,
+      "desvio" : 0.0155,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -6383,8 +6383,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8692
       } ],
-      "media" : 0.8451,
-      "desvio" : 0.0141,
+      "media" : 0.8454,
+      "desvio" : 0.0148,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/85038d57-1fdd-40de-b908-2c005545a8c3" : {
@@ -6409,8 +6409,8 @@
         "codigo" : "SMD0088",
         "similaridade" : 0.8595
       } ],
-      "media" : 0.8382,
-      "desvio" : 0.0133,
+      "media" : 0.8381,
+      "desvio" : 0.0129,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -6438,7 +6438,7 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8643
       } ],
-      "media" : 0.8432,
+      "media" : 0.8438,
       "desvio" : 0.0144,
       "citacao" : null
     },
@@ -6464,8 +6464,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8792
       } ],
-      "media" : 0.852,
-      "desvio" : 0.0178,
+      "media" : 0.8534,
+      "desvio" : 0.0183,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -6493,7 +6493,7 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8661
       } ],
-      "media" : 0.846,
+      "media" : 0.8476,
       "desvio" : 0.015,
       "citacao" : null
     },
@@ -6519,8 +6519,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.857
       } ],
-      "media" : 0.8346,
-      "desvio" : 0.0142,
+      "media" : 0.8351,
+      "desvio" : 0.0141,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -6548,8 +6548,8 @@
         "codigo" : "SMD0110",
         "similaridade" : 0.857
       } ],
-      "media" : 0.8361,
-      "desvio" : 0.0148,
+      "media" : 0.8373,
+      "desvio" : 0.0147,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -6577,8 +6577,8 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8554
       } ],
-      "media" : 0.8334,
-      "desvio" : 0.0142,
+      "media" : 0.8336,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8a5d67b6-4abf-4fae-bedf-78c8882d7d47" : {
@@ -6603,8 +6603,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8541
       } ],
-      "media" : 0.8348,
-      "desvio" : 0.0114,
+      "media" : 0.836,
+      "desvio" : 0.0115,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8afe68ff-b261-4fa8-ab25-bb30b0e5c292" : {
@@ -6629,8 +6629,8 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.872
       } ],
-      "media" : 0.8497,
-      "desvio" : 0.0143,
+      "media" : 0.8492,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df" : {
@@ -6655,8 +6655,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8742
       } ],
-      "media" : 0.8469,
-      "desvio" : 0.0158,
+      "media" : 0.8482,
+      "desvio" : 0.0156,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8c4c49d4-9708-433f-8ca7-bf2c5211ee49" : {
@@ -6681,8 +6681,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8719
       } ],
-      "media" : 0.8523,
-      "desvio" : 0.017,
+      "media" : 0.852,
+      "desvio" : 0.0166,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e" : {
@@ -6707,8 +6707,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8637
       } ],
-      "media" : 0.8435,
-      "desvio" : 0.0153,
+      "media" : 0.845,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/8ff015a0-98ea-4d80-a23e-1f68110a919e" : {
@@ -6733,8 +6733,8 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8616
       } ],
-      "media" : 0.8402,
-      "desvio" : 0.014,
+      "media" : 0.8406,
+      "desvio" : 0.0139,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3" : {
@@ -6760,7 +6760,7 @@
         "similaridade" : 0.849
       } ],
       "media" : 0.8302,
-      "desvio" : 0.0136,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7" : {
@@ -6785,8 +6785,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8489
       } ],
-      "media" : 0.8286,
-      "desvio" : 0.0143,
+      "media" : 0.8294,
+      "desvio" : 0.0145,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/9136cbf1-7916-4f1c-bc9a-0318ee1d6016" : {
@@ -6811,8 +6811,8 @@
         "codigo" : "SMD0054",
         "similaridade" : 0.8678
       } ],
-      "media" : 0.8407,
-      "desvio" : 0.0211,
+      "media" : 0.8425,
+      "desvio" : 0.0219,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/91ba97f5-7518-4638-b2d2-308996db3cf8" : {
@@ -6837,8 +6837,8 @@
         "codigo" : "SMD0084",
         "similaridade" : 0.876
       } ],
-      "media" : 0.8525,
-      "desvio" : 0.0161,
+      "media" : 0.8529,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/925463a7-d51f-4d5b-9f79-4d28cf30acde" : {
@@ -6863,8 +6863,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8691
       } ],
-      "media" : 0.8409,
-      "desvio" : 0.0171,
+      "media" : 0.8427,
+      "desvio" : 0.0172,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71" : {
@@ -6889,8 +6889,8 @@
         "codigo" : "SMD0050",
         "similaridade" : 0.8467
       } ],
-      "media" : 0.8237,
-      "desvio" : 0.0157,
+      "media" : 0.8255,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/942edf03-a450-4261-b65c-9b447fdddc51" : {
@@ -6915,8 +6915,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8613
       } ],
-      "media" : 0.843,
-      "desvio" : 0.0135,
+      "media" : 0.8439,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/96eb286a-58b7-45ff-a916-5578d0b79b8c" : {
@@ -6941,8 +6941,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8659
       } ],
-      "media" : 0.8414,
-      "desvio" : 0.0161,
+      "media" : 0.8422,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/97db841c-31bf-4aa0-85b9-0ddd0a77b7a5" : {
@@ -6967,8 +6967,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8625
       } ],
-      "media" : 0.8419,
-      "desvio" : 0.0155,
+      "media" : 0.8426,
+      "desvio" : 0.0164,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb" : {
@@ -6993,8 +6993,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8574
       } ],
-      "media" : 0.8329,
-      "desvio" : 0.0161,
+      "media" : 0.8347,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/993b1e23-f2de-4bd8-b33f-f86dde1c8e9d" : {
@@ -7019,8 +7019,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8809
       } ],
-      "media" : 0.8498,
-      "desvio" : 0.0165,
+      "media" : 0.8508,
+      "desvio" : 0.0169,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7048,8 +7048,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8556
       } ],
-      "media" : 0.8256,
-      "desvio" : 0.0176,
+      "media" : 0.8273,
+      "desvio" : 0.0177,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7077,8 +7077,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8675
       } ],
-      "media" : 0.8408,
-      "desvio" : 0.0173,
+      "media" : 0.8425,
+      "desvio" : 0.0172,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067" : {
@@ -7103,8 +7103,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8683
       } ],
-      "media" : 0.8461,
-      "desvio" : 0.0138,
+      "media" : 0.8477,
+      "desvio" : 0.0141,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7132,8 +7132,8 @@
         "codigo" : "SMD0088",
         "similaridade" : 0.8647
       } ],
-      "media" : 0.8396,
-      "desvio" : 0.0173,
+      "media" : 0.8388,
+      "desvio" : 0.0179,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/9ce670ec-318c-4a91-9179-03437db728dc" : {
@@ -7158,8 +7158,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8761
       } ],
-      "media" : 0.8476,
-      "desvio" : 0.0181,
+      "media" : 0.8499,
+      "desvio" : 0.0178,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f" : {
@@ -7184,8 +7184,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8554
       } ],
-      "media" : 0.8324,
-      "desvio" : 0.0157,
+      "media" : 0.8336,
+      "desvio" : 0.016,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/9effa3d7-c0c4-4583-ad94-b496ba5e5f2c" : {
@@ -7210,8 +7210,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.862
       } ],
-      "media" : 0.8399,
-      "desvio" : 0.0141,
+      "media" : 0.8416,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a056851d-4a8b-4007-b0f6-8224ca1ec1c2" : {
@@ -7236,8 +7236,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8656
       } ],
-      "media" : 0.8383,
-      "desvio" : 0.0176,
+      "media" : 0.8398,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a1388163-462a-4b76-8649-67470ea858a1" : {
@@ -7262,8 +7262,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8648
       } ],
-      "media" : 0.8442,
-      "desvio" : 0.0163,
+      "media" : 0.8458,
+      "desvio" : 0.0158,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a1670c61-bc6a-4c40-9d98-88fb272f945a" : {
@@ -7288,8 +7288,8 @@
         "codigo" : "SMD0097",
         "similaridade" : 0.8569
       } ],
-      "media" : 0.8381,
-      "desvio" : 0.014,
+      "media" : 0.8394,
+      "desvio" : 0.0141,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a254408b-b8f0-4b56-8d88-777bfab7f517" : {
@@ -7314,8 +7314,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8576
       } ],
-      "media" : 0.8361,
-      "desvio" : 0.0146,
+      "media" : 0.8371,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a35b9b1c-ebfe-41ac-96be-2a7b2ea04670" : {
@@ -7340,8 +7340,8 @@
         "codigo" : "SMD0033",
         "similaridade" : 0.8597
       } ],
-      "media" : 0.8407,
-      "desvio" : 0.0144,
+      "media" : 0.8412,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0" : {
@@ -7366,8 +7366,8 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8758
       } ],
-      "media" : 0.8453,
-      "desvio" : 0.0185,
+      "media" : 0.8469,
+      "desvio" : 0.0188,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7395,8 +7395,8 @@
         "codigo" : "SMD0050",
         "similaridade" : 0.8412
       } ],
-      "media" : 0.8202,
-      "desvio" : 0.0163,
+      "media" : 0.8223,
+      "desvio" : 0.0156,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7424,8 +7424,8 @@
         "codigo" : "SMD0094",
         "similaridade" : 0.8774
       } ],
-      "media" : 0.8519,
-      "desvio" : 0.0155,
+      "media" : 0.8528,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a599d221-3c0f-479b-a032-2d744435df67" : {
@@ -7450,8 +7450,8 @@
         "codigo" : "SMD0149",
         "similaridade" : 0.8711
       } ],
-      "media" : 0.8445,
-      "desvio" : 0.0173,
+      "media" : 0.8449,
+      "desvio" : 0.018,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a5d03670-794a-4f2d-8bb4-3087c7b5aa06" : {
@@ -7476,8 +7476,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8453
       } ],
-      "media" : 0.823,
-      "desvio" : 0.0147,
+      "media" : 0.8225,
+      "desvio" : 0.015,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516" : {
@@ -7502,7 +7502,7 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8754
       } ],
-      "media" : 0.8481,
+      "media" : 0.8477,
       "desvio" : 0.0155,
       "citacao" : null
     },
@@ -7528,8 +7528,8 @@
         "codigo" : "SMD0084",
         "similaridade" : 0.861
       } ],
-      "media" : 0.8391,
-      "desvio" : 0.0148,
+      "media" : 0.8385,
+      "desvio" : 0.0151,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a7723f06-53c3-4228-9fd0-1952ea1d7391" : {
@@ -7554,8 +7554,8 @@
         "codigo" : "SMD0108",
         "similaridade" : 0.8521
       } ],
-      "media" : 0.8266,
-      "desvio" : 0.0162,
+      "media" : 0.8271,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a8797f21-1af0-4c5e-98ca-bf1442929363" : {
@@ -7580,8 +7580,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8589
       } ],
-      "media" : 0.8404,
-      "desvio" : 0.0146,
+      "media" : 0.8409,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a88da605-095f-4a4f-be1c-d1444df8228a" : {
@@ -7606,8 +7606,8 @@
         "codigo" : "SMD0110",
         "similaridade" : 0.8636
       } ],
-      "media" : 0.837,
-      "desvio" : 0.0183,
+      "media" : 0.8384,
+      "desvio" : 0.0187,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/a9bf8565-8a09-4118-9922-932d65a79d69" : {
@@ -7632,8 +7632,8 @@
         "codigo" : "SMD0140",
         "similaridade" : 0.856
       } ],
-      "media" : 0.838,
-      "desvio" : 0.0132,
+      "media" : 0.8393,
+      "desvio" : 0.0136,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/aa0d8201-5a8e-417f-81f4-c04601139582" : {
@@ -7658,8 +7658,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.86
       } ],
-      "media" : 0.8423,
-      "desvio" : 0.0127,
+      "media" : 0.8416,
+      "desvio" : 0.0129,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/abdc7ac8-151f-40c6-bc1a-1e9b4b073290" : {
@@ -7684,8 +7684,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8478
       } ],
-      "media" : 0.8282,
-      "desvio" : 0.0142,
+      "media" : 0.828,
+      "desvio" : 0.0139,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/af7ae54f-4649-4c16-87c7-59ba41d4d57f" : {
@@ -7710,8 +7710,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8597
       } ],
-      "media" : 0.837,
-      "desvio" : 0.0149,
+      "media" : 0.839,
+      "desvio" : 0.0147,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7739,8 +7739,8 @@
         "codigo" : "SMD0021",
         "similaridade" : 0.8674
       } ],
-      "media" : 0.838,
-      "desvio" : 0.0185,
+      "media" : 0.84,
+      "desvio" : 0.0188,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/afda6ca0-7aa8-41ef-ba5e-8dc607839daf" : {
@@ -7765,8 +7765,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.867
       } ],
-      "media" : 0.8362,
-      "desvio" : 0.0193,
+      "media" : 0.835,
+      "desvio" : 0.0186,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17" : {
@@ -7791,8 +7791,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8688
       } ],
-      "media" : 0.8432,
-      "desvio" : 0.0165,
+      "media" : 0.8441,
+      "desvio" : 0.0173,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b0ac313d-de44-4344-ada6-76d2177b6d92" : {
@@ -7817,8 +7817,8 @@
         "codigo" : "SMD0098",
         "similaridade" : 0.8625
       } ],
-      "media" : 0.8414,
-      "desvio" : 0.0133,
+      "media" : 0.8409,
+      "desvio" : 0.0131,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7846,8 +7846,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8481
       } ],
-      "media" : 0.8243,
-      "desvio" : 0.0158,
+      "media" : 0.8259,
+      "desvio" : 0.0154,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -7875,8 +7875,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8657
       } ],
-      "media" : 0.8431,
-      "desvio" : 0.0144,
+      "media" : 0.8425,
+      "desvio" : 0.0145,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b31ccede-907f-49de-8047-4d851bd4add3" : {
@@ -7901,8 +7901,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8565
       } ],
-      "media" : 0.8361,
-      "desvio" : 0.0161,
+      "media" : 0.8362,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b4dc6e4f-dc7d-445f-8ce2-d7b9d225e282" : {
@@ -7927,8 +7927,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8686
       } ],
-      "media" : 0.8412,
-      "desvio" : 0.0156,
+      "media" : 0.8428,
+      "desvio" : 0.0159,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -7962,8 +7962,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8516
       } ],
-      "media" : 0.8346,
-      "desvio" : 0.0121,
+      "media" : 0.8361,
+      "desvio" : 0.012,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f" : {
@@ -7988,8 +7988,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.87
       } ],
-      "media" : 0.8421,
-      "desvio" : 0.0179,
+      "media" : 0.8433,
+      "desvio" : 0.0182,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -8029,8 +8029,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8484
       } ],
-      "media" : 0.8328,
-      "desvio" : 0.0132,
+      "media" : 0.8338,
+      "desvio" : 0.0131,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b8b5d6aa-6c28-4e06-a98b-8a8a4c245a8c" : {
@@ -8055,8 +8055,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8556
       } ],
-      "media" : 0.8358,
-      "desvio" : 0.0126,
+      "media" : 0.8362,
+      "desvio" : 0.0132,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/b90316c1-67e9-4338-b4dd-c950831ce33e" : {
@@ -8081,8 +8081,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8511
       } ],
-      "media" : 0.8321,
-      "desvio" : 0.0133,
+      "media" : 0.8326,
+      "desvio" : 0.0138,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/bb2b4485-2bad-402f-8517-44bf7d9afff4" : {
@@ -8107,8 +8107,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.8606
       } ],
-      "media" : 0.8342,
-      "desvio" : 0.0166,
+      "media" : 0.8354,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/bb99af26-71ff-4dca-bde7-1eb1f6194426" : {
@@ -8133,8 +8133,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8712
       } ],
-      "media" : 0.8436,
-      "desvio" : 0.0166,
+      "media" : 0.8447,
+      "desvio" : 0.0169,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8162,8 +8162,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8632
       } ],
-      "media" : 0.8373,
-      "desvio" : 0.0151,
+      "media" : 0.8365,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/be64bb4c-84ac-4c83-8cc7-fc8593e15136" : {
@@ -8188,8 +8188,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8673
       } ],
-      "media" : 0.8381,
-      "desvio" : 0.0176,
+      "media" : 0.8392,
+      "desvio" : 0.0179,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/be80acfc-b6f2-4411-9b8d-b19d9cd2556a" : {
@@ -8214,8 +8214,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8758
       } ],
-      "media" : 0.8467,
-      "desvio" : 0.0174,
+      "media" : 0.8477,
+      "desvio" : 0.0177,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8243,7 +8243,7 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.867
       } ],
-      "media" : 0.8456,
+      "media" : 0.847,
       "desvio" : 0.0163,
       "citacao" : null
     },
@@ -8269,8 +8269,8 @@
         "codigo" : "SMD0025",
         "similaridade" : 0.8788
       } ],
-      "media" : 0.8561,
-      "desvio" : 0.0166,
+      "media" : 0.8569,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c1f29568-f2bb-49d2-b6c2-28748bd1629b" : {
@@ -8295,8 +8295,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8539
       } ],
-      "media" : 0.8376,
-      "desvio" : 0.0139,
+      "media" : 0.839,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c2218533-3e2a-4f50-b4fd-afde71dcf442" : {
@@ -8321,8 +8321,8 @@
         "codigo" : "SMD0027",
         "similaridade" : 0.8623
       } ],
-      "media" : 0.8425,
-      "desvio" : 0.013,
+      "media" : 0.8436,
+      "desvio" : 0.0133,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794" : {
@@ -8347,7 +8347,7 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8503
       } ],
-      "media" : 0.8287,
+      "media" : 0.8295,
       "desvio" : 0.0137,
       "citacao" : null
     },
@@ -8373,8 +8373,8 @@
         "codigo" : "SMD0025",
         "similaridade" : 0.8598
       } ],
-      "media" : 0.8379,
-      "desvio" : 0.0145,
+      "media" : 0.8393,
+      "desvio" : 0.0148,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c3a03c5a-c260-4c26-9b9a-873abb396f4d" : {
@@ -8399,8 +8399,8 @@
         "codigo" : "SMD0045",
         "similaridade" : 0.8695
       } ],
-      "media" : 0.844,
-      "desvio" : 0.0171,
+      "media" : 0.8454,
+      "desvio" : 0.0173,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8428,8 +8428,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8648
       } ],
-      "media" : 0.8385,
-      "desvio" : 0.0156,
+      "media" : 0.8383,
+      "desvio" : 0.0158,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c46c0931-d414-4fef-9289-35a1987c942b" : {
@@ -8454,8 +8454,8 @@
         "codigo" : "SMD0110",
         "similaridade" : 0.8521
       } ],
-      "media" : 0.8308,
-      "desvio" : 0.0128,
+      "media" : 0.8314,
+      "desvio" : 0.013,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c4b1f326-224a-420a-b8b3-814a8f13b6cb" : {
@@ -8480,8 +8480,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8608
       } ],
-      "media" : 0.8373,
-      "desvio" : 0.0152,
+      "media" : 0.838,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c4b626c1-e71c-44ec-9f88-042766f37fcc" : {
@@ -8506,8 +8506,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.8707
       } ],
-      "media" : 0.8491,
-      "desvio" : 0.0146,
+      "media" : 0.8507,
+      "desvio" : 0.0143,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c55caed2-de9e-4a25-819e-a0b0e83fba1b" : {
@@ -8532,8 +8532,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8628
       } ],
-      "media" : 0.8415,
-      "desvio" : 0.0142,
+      "media" : 0.8422,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c5e8abde-d2ba-4e8e-a65e-720b71180666" : {
@@ -8558,8 +8558,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8592
       } ],
-      "media" : 0.8373,
-      "desvio" : 0.0132,
+      "media" : 0.8381,
+      "desvio" : 0.0135,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c6c23b4b-c9c9-42c8-86d2-3646631bdbd4" : {
@@ -8584,8 +8584,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8657
       } ],
-      "media" : 0.8465,
-      "desvio" : 0.012,
+      "media" : 0.847,
+      "desvio" : 0.0118,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/c7451027-8249-405a-bb1b-342ff0f3fb3b" : {
@@ -8610,8 +8610,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8554
       } ],
-      "media" : 0.829,
-      "desvio" : 0.0156,
+      "media" : 0.8312,
+      "desvio" : 0.0155,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8639,8 +8639,8 @@
         "codigo" : "SMD0136",
         "similaridade" : 0.8647
       } ],
-      "media" : 0.846,
-      "desvio" : 0.0136,
+      "media" : 0.8462,
+      "desvio" : 0.0138,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ca17f0df-59e4-4ed2-9360-fc5325bc7151" : {
@@ -8665,8 +8665,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8683
       } ],
-      "media" : 0.844,
-      "desvio" : 0.0151,
+      "media" : 0.8446,
+      "desvio" : 0.016,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ca71c597-51c2-4ead-a7b0-b108bce89caf" : {
@@ -8691,8 +8691,8 @@
         "codigo" : "SMD0132",
         "similaridade" : 0.8628
       } ],
-      "media" : 0.8323,
-      "desvio" : 0.019,
+      "media" : 0.8325,
+      "desvio" : 0.0192,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/cae4c053-05d1-413d-8499-f37793aad56e" : {
@@ -8717,8 +8717,8 @@
         "codigo" : "SMD0135",
         "similaridade" : 0.859
       } ],
-      "media" : 0.837,
-      "desvio" : 0.0149,
+      "media" : 0.8384,
+      "desvio" : 0.015,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d" : {
@@ -8743,8 +8743,8 @@
         "codigo" : "SMD0143",
         "similaridade" : 0.8725
       } ],
-      "media" : 0.8431,
-      "desvio" : 0.0181,
+      "media" : 0.8442,
+      "desvio" : 0.0186,
       "citacao" : {
         "nivel" : "forte",
         "componentes" : [ {
@@ -8778,8 +8778,8 @@
         "codigo" : "SMD0142",
         "similaridade" : 0.8527
       } ],
-      "media" : 0.8286,
-      "desvio" : 0.0155,
+      "media" : 0.8302,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d2564da5-c21f-4c02-8887-c78a001bb183" : {
@@ -8804,8 +8804,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8642
       } ],
-      "media" : 0.8411,
-      "desvio" : 0.015,
+      "media" : 0.8421,
+      "desvio" : 0.0151,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d2adb565-a865-424d-aeb5-9fbcbf2afe2a" : {
@@ -8830,8 +8830,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8469
       } ],
-      "media" : 0.8276,
-      "desvio" : 0.0151,
+      "media" : 0.829,
+      "desvio" : 0.0154,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8859,8 +8859,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8632
       } ],
-      "media" : 0.837,
-      "desvio" : 0.0171,
+      "media" : 0.8375,
+      "desvio" : 0.0173,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d4789070-2ff7-4bbb-94ca-8bb1739826a9" : {
@@ -8885,8 +8885,8 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8641
       } ],
-      "media" : 0.8447,
-      "desvio" : 0.0156,
+      "media" : 0.8466,
+      "desvio" : 0.0155,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d4ae9564-0b61-4aa0-9df0-d4fdc969fd6f" : {
@@ -8911,8 +8911,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8496
       } ],
-      "media" : 0.8267,
-      "desvio" : 0.014,
+      "media" : 0.8277,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18" : {
@@ -8937,8 +8937,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.883
       } ],
-      "media" : 0.8525,
-      "desvio" : 0.0183,
+      "media" : 0.8533,
+      "desvio" : 0.0188,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -8966,8 +8966,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8621
       } ],
-      "media" : 0.8402,
-      "desvio" : 0.015,
+      "media" : 0.8424,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d6c29154-9cc1-48a4-a2de-3d1d0d7f0831" : {
@@ -8992,8 +8992,8 @@
         "codigo" : "SMD0025",
         "similaridade" : 0.8585
       } ],
-      "media" : 0.8409,
-      "desvio" : 0.0133,
+      "media" : 0.8421,
+      "desvio" : 0.0136,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2" : {
@@ -9018,8 +9018,8 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8638
       } ],
-      "media" : 0.8434,
-      "desvio" : 0.0148,
+      "media" : 0.8445,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/da6393d5-a53c-4863-abc7-51f36281d74e" : {
@@ -9044,8 +9044,8 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8621
       } ],
-      "media" : 0.8441,
-      "desvio" : 0.0143,
+      "media" : 0.8463,
+      "desvio" : 0.0138,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/db33c0f3-43ee-4ba3-ba47-9269ac837697" : {
@@ -9070,8 +9070,8 @@
         "codigo" : "SMD0149",
         "similaridade" : 0.8525
       } ],
-      "media" : 0.8341,
-      "desvio" : 0.0131,
+      "media" : 0.8339,
+      "desvio" : 0.0135,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221" : {
@@ -9096,8 +9096,8 @@
         "codigo" : "SMD0122",
         "similaridade" : 0.8605
       } ],
-      "media" : 0.8344,
-      "desvio" : 0.0164,
+      "media" : 0.8363,
+      "desvio" : 0.015,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1" : {
@@ -9122,8 +9122,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8565
       } ],
-      "media" : 0.8334,
-      "desvio" : 0.0165,
+      "media" : 0.8349,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88" : {
@@ -9148,8 +9148,8 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8787
       } ],
-      "media" : 0.8501,
-      "desvio" : 0.018,
+      "media" : 0.8507,
+      "desvio" : 0.0188,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -9177,8 +9177,8 @@
         "codigo" : "SMD0140",
         "similaridade" : 0.8767
       } ],
-      "media" : 0.8516,
-      "desvio" : 0.0168,
+      "media" : 0.8536,
+      "desvio" : 0.0163,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/def007fa-5fed-4a5f-91a2-b0d7e3db1be1" : {
@@ -9203,7 +9203,7 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8715
       } ],
-      "media" : 0.842,
+      "media" : 0.8437,
       "desvio" : 0.0188,
       "citacao" : {
         "nivel" : "nenhuma",
@@ -9232,8 +9232,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8765
       } ],
-      "media" : 0.8573,
-      "desvio" : 0.015,
+      "media" : 0.8581,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e2103a1d-4a84-47a9-b4f7-774787573449" : {
@@ -9258,8 +9258,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8524
       } ],
-      "media" : 0.8345,
-      "desvio" : 0.0131,
+      "media" : 0.8356,
+      "desvio" : 0.0129,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e44a0396-77e2-4d57-8c80-36796238f80c" : {
@@ -9284,8 +9284,8 @@
         "codigo" : "SMD0036",
         "similaridade" : 0.8478
       } ],
-      "media" : 0.8291,
-      "desvio" : 0.014,
+      "media" : 0.8296,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2" : {
@@ -9310,7 +9310,7 @@
         "codigo" : "SMD0039",
         "similaridade" : 0.8722
       } ],
-      "media" : 0.8508,
+      "media" : 0.8521,
       "desvio" : 0.0166,
       "citacao" : null
     },
@@ -9336,8 +9336,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8569
       } ],
-      "media" : 0.8337,
-      "desvio" : 0.0139,
+      "media" : 0.8348,
+      "desvio" : 0.0138,
       "citacao" : {
         "nivel" : "fraca",
         "componentes" : [ {
@@ -9371,8 +9371,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8778
       } ],
-      "media" : 0.8481,
-      "desvio" : 0.0179,
+      "media" : 0.8473,
+      "desvio" : 0.0181,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e74f4f21-8d45-412c-b5c3-652e6167ee32" : {
@@ -9397,8 +9397,8 @@
         "codigo" : "SMD0048",
         "similaridade" : 0.8641
       } ],
-      "media" : 0.8459,
-      "desvio" : 0.014,
+      "media" : 0.8461,
+      "desvio" : 0.0139,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e8171178-9a60-40a6-ad3b-510e10cfebad" : {
@@ -9423,7 +9423,7 @@
         "codigo" : "SMD0129",
         "similaridade" : 0.8617
       } ],
-      "media" : 0.8396,
+      "media" : 0.8397,
       "desvio" : 0.0145,
       "citacao" : null
     },
@@ -9449,8 +9449,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8742
       } ],
-      "media" : 0.8423,
-      "desvio" : 0.0186,
+      "media" : 0.8434,
+      "desvio" : 0.019,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -9478,8 +9478,8 @@
         "codigo" : "SMD0037",
         "similaridade" : 0.8677
       } ],
-      "media" : 0.8473,
-      "desvio" : 0.0136,
+      "media" : 0.8484,
+      "desvio" : 0.0137,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e8dd9cc1-c83d-45ec-a7b0-e3727ab90336" : {
@@ -9504,8 +9504,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8932
       } ],
-      "media" : 0.8626,
-      "desvio" : 0.0184,
+      "media" : 0.8613,
+      "desvio" : 0.0176,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e94712c3-6135-4f2d-a169-8b1b0760a741" : {
@@ -9530,8 +9530,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8619
       } ],
-      "media" : 0.8338,
-      "desvio" : 0.0152,
+      "media" : 0.8348,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/e9575f7f-053a-439e-8074-f93df3334e92" : {
@@ -9556,8 +9556,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8515
       } ],
-      "media" : 0.8242,
-      "desvio" : 0.0143,
+      "media" : 0.8255,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/eb0e5615-1575-4a86-a1a2-7d39595033c5" : {
@@ -9582,8 +9582,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8727
       } ],
-      "media" : 0.8472,
-      "desvio" : 0.0172,
+      "media" : 0.8488,
+      "desvio" : 0.0176,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -9611,8 +9611,8 @@
         "codigo" : "SMD0070",
         "similaridade" : 0.8609
       } ],
-      "media" : 0.8392,
-      "desvio" : 0.0146,
+      "media" : 0.8394,
+      "desvio" : 0.0147,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080" : {
@@ -9637,8 +9637,8 @@
         "codigo" : "SMD0080",
         "similaridade" : 0.8535
       } ],
-      "media" : 0.831,
-      "desvio" : 0.0157,
+      "media" : 0.8306,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ed1d8bd4-cd2a-4c64-b665-56d70651026c" : {
@@ -9663,8 +9663,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8658
       } ],
-      "media" : 0.8416,
-      "desvio" : 0.0153,
+      "media" : 0.8427,
+      "desvio" : 0.0146,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ed8de897-adbe-4f0e-b4d2-534953e64c72" : {
@@ -9689,7 +9689,7 @@
         "codigo" : "SMD0108",
         "similaridade" : 0.8779
       } ],
-      "media" : 0.848,
+      "media" : 0.8489,
       "desvio" : 0.0207,
       "citacao" : null
     },
@@ -9715,8 +9715,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8624
       } ],
-      "media" : 0.8387,
-      "desvio" : 0.0138,
+      "media" : 0.8399,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/eee58e6d-4587-42f0-b9a0-fe055cfe2044" : {
@@ -9741,8 +9741,8 @@
         "codigo" : "SMD0071",
         "similaridade" : 0.8884
       } ],
-      "media" : 0.8593,
-      "desvio" : 0.0201,
+      "media" : 0.8569,
+      "desvio" : 0.0186,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51" : {
@@ -9767,8 +9767,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8659
       } ],
-      "media" : 0.8434,
-      "desvio" : 0.016,
+      "media" : 0.8451,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f058bf62-70d1-4f5e-be2a-8b26fac24a96" : {
@@ -9793,8 +9793,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.885
       } ],
-      "media" : 0.8527,
-      "desvio" : 0.0184,
+      "media" : 0.852,
+      "desvio" : 0.018,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4" : {
@@ -9819,8 +9819,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8681
       } ],
-      "media" : 0.843,
-      "desvio" : 0.0151,
+      "media" : 0.8444,
+      "desvio" : 0.0142,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f0f5bb34-71df-4715-9c9e-03567b76ec8f" : {
@@ -9845,8 +9845,8 @@
         "codigo" : "SMD0110",
         "similaridade" : 0.872
       } ],
-      "media" : 0.8531,
-      "desvio" : 0.0125,
+      "media" : 0.8538,
+      "desvio" : 0.0124,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998" : {
@@ -9871,8 +9871,8 @@
         "codigo" : "SMD0023",
         "similaridade" : 0.8738
       } ],
-      "media" : 0.8481,
-      "desvio" : 0.0171,
+      "media" : 0.8498,
+      "desvio" : 0.0175,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f40da95c-febe-406c-96aa-2d6d9c09a0a3" : {
@@ -9897,8 +9897,8 @@
         "codigo" : "SMD0036",
         "similaridade" : 0.8573
       } ],
-      "media" : 0.839,
-      "desvio" : 0.0142,
+      "media" : 0.8387,
+      "desvio" : 0.0149,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f47a1998-0beb-43be-9f46-380aa4d183da" : {
@@ -9923,8 +9923,8 @@
         "codigo" : "SMD0150",
         "similaridade" : 0.8566
       } ],
-      "media" : 0.8304,
-      "desvio" : 0.0154,
+      "media" : 0.8324,
+      "desvio" : 0.0155,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -9952,8 +9952,8 @@
         "codigo" : "SMD0140",
         "similaridade" : 0.8645
       } ],
-      "media" : 0.8436,
-      "desvio" : 0.0145,
+      "media" : 0.8449,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f5369f2f-e52b-43d8-8d31-79a6c11188d8" : {
@@ -9978,8 +9978,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8806
       } ],
-      "media" : 0.8595,
-      "desvio" : 0.0157,
+      "media" : 0.859,
+      "desvio" : 0.0155,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f5b33464-4df9-4cf3-b468-b0a2d6b3ee85" : {
@@ -10004,8 +10004,8 @@
         "codigo" : "SMD0126",
         "similaridade" : 0.8708
       } ],
-      "media" : 0.8486,
-      "desvio" : 0.018,
+      "media" : 0.8478,
+      "desvio" : 0.0179,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f5dd06b8-5d17-4932-9d03-957d0c4f5051" : {
@@ -10030,8 +10030,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8661
       } ],
-      "media" : 0.8442,
-      "desvio" : 0.0152,
+      "media" : 0.8456,
+      "desvio" : 0.0154,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f7a4fb1d-d951-4c4c-8643-3212c0958f71" : {
@@ -10056,8 +10056,8 @@
         "codigo" : "SMD0114",
         "similaridade" : 0.8608
       } ],
-      "media" : 0.8354,
-      "desvio" : 0.0153,
+      "media" : 0.837,
+      "desvio" : 0.0155,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c" : {
@@ -10082,8 +10082,8 @@
         "codigo" : "SMD0070",
         "similaridade" : 0.8579
       } ],
-      "media" : 0.8287,
-      "desvio" : 0.018,
+      "media" : 0.8297,
+      "desvio" : 0.0171,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/fc4fcb4b-993f-4f2c-b158-c2171ec18ed8" : {
@@ -10108,8 +10108,8 @@
         "codigo" : "SMD0130",
         "similaridade" : 0.8826
       } ],
-      "media" : 0.8545,
-      "desvio" : 0.0161,
+      "media" : 0.8542,
+      "desvio" : 0.0164,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e" : {
@@ -10134,8 +10134,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8813
       } ],
-      "media" : 0.855,
-      "desvio" : 0.0168,
+      "media" : 0.8555,
+      "desvio" : 0.0169,
       "citacao" : null
     },
     "http://data.europa.eu/esco/skill/ffc1e455-ced2-4e67-bdb3-1c50f9683859" : {
@@ -10160,7 +10160,7 @@
         "codigo" : "SMD0015",
         "similaridade" : 0.8611
       } ],
-      "media" : 0.8395,
+      "media" : 0.8397,
       "desvio" : 0.0151,
       "citacao" : {
         "nivel" : "nenhuma",
@@ -10189,8 +10189,8 @@
         "codigo" : "SMD0053",
         "similaridade" : 0.8767
       } ],
-      "media" : 0.8471,
-      "desvio" : 0.0185,
+      "media" : 0.8481,
+      "desvio" : 0.0192,
       "citacao" : {
         "nivel" : "nenhuma",
         "componentes" : [ ]
@@ -10218,8 +10218,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8583
       } ],
-      "media" : 0.8344,
-      "desvio" : 0.0162,
+      "media" : 0.8357,
+      "desvio" : 0.0167,
       "citacao" : null
     },
     "ia-01" : {
@@ -10244,8 +10244,8 @@
         "codigo" : "SMD0117",
         "similaridade" : 0.8641
       } ],
-      "media" : 0.8445,
-      "desvio" : 0.0133,
+      "media" : 0.8449,
+      "desvio" : 0.0127,
       "citacao" : null
     },
     "ia-02" : {
@@ -10270,8 +10270,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8549
       } ],
-      "media" : 0.837,
-      "desvio" : 0.014,
+      "media" : 0.8384,
+      "desvio" : 0.0144,
       "citacao" : null
     },
     "ia-04" : {
@@ -10296,8 +10296,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8649
       } ],
-      "media" : 0.8377,
-      "desvio" : 0.0161,
+      "media" : 0.8389,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "ia-05" : {
@@ -10323,7 +10323,7 @@
         "similaridade" : 0.8674
       } ],
       "media" : 0.8426,
-      "desvio" : 0.0165,
+      "desvio" : 0.0173,
       "citacao" : null
     },
     "ia-06" : {
@@ -10348,8 +10348,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8617
       } ],
-      "media" : 0.836,
-      "desvio" : 0.016,
+      "media" : 0.8371,
+      "desvio" : 0.0157,
       "citacao" : null
     },
     "ia-07" : {
@@ -10374,8 +10374,8 @@
         "codigo" : "SMD0030",
         "similaridade" : 0.8591
       } ],
-      "media" : 0.8364,
-      "desvio" : 0.018,
+      "media" : 0.8363,
+      "desvio" : 0.0187,
       "citacao" : null
     },
     "ia-08" : {
@@ -10400,8 +10400,8 @@
         "codigo" : "SMD0034",
         "similaridade" : 0.8678
       } ],
-      "media" : 0.8438,
-      "desvio" : 0.0169,
+      "media" : 0.8454,
+      "desvio" : 0.0176,
       "citacao" : null
     },
     "ia-09" : {
@@ -10426,8 +10426,8 @@
         "codigo" : "SMD0099",
         "similaridade" : 0.8539
       } ],
-      "media" : 0.8264,
-      "desvio" : 0.0153,
+      "media" : 0.8279,
+      "desvio" : 0.0158,
       "citacao" : null
     },
     "ia-10" : {
@@ -10452,8 +10452,8 @@
         "codigo" : "SMD0057",
         "similaridade" : 0.8624
       } ],
-      "media" : 0.8373,
-      "desvio" : 0.0166,
+      "media" : 0.8385,
+      "desvio" : 0.0168,
       "citacao" : null
     },
     "ia-11" : {
@@ -10478,8 +10478,8 @@
         "codigo" : "SMD0052",
         "similaridade" : 0.8522
       } ],
-      "media" : 0.8287,
-      "desvio" : 0.0152,
+      "media" : 0.8298,
+      "desvio" : 0.0159,
       "citacao" : null
     },
     "ia-12" : {
@@ -10504,8 +10504,8 @@
         "codigo" : "SMD0089",
         "similaridade" : 0.8575
       } ],
-      "media" : 0.8304,
-      "desvio" : 0.015,
+      "media" : 0.8309,
+      "desvio" : 0.0152,
       "citacao" : null
     },
     "ia-13" : {
@@ -10530,8 +10530,8 @@
         "codigo" : "SMD0095",
         "similaridade" : 0.8588
       } ],
-      "media" : 0.8424,
-      "desvio" : 0.0126,
+      "media" : 0.8426,
+      "desvio" : 0.0132,
       "citacao" : null
     },
     "ia-14" : {
@@ -10556,8 +10556,8 @@
         "codigo" : "SMD0016",
         "similaridade" : 0.8423
       } ],
-      "media" : 0.8222,
-      "desvio" : 0.0137,
+      "media" : 0.8239,
+      "desvio" : 0.0135,
       "citacao" : null
     }
   },

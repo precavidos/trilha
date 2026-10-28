@@ -22,5 +22,5 @@ Rejeitamos: subir os limiares (pioraria as competências que hoje acertam); pedi
 
 - A tela mostra, para cada tecnologia, onde o nome aparece; a justificativa por LLM recebe o critério.
 - O resultado mede o que os documentos dizem, não o que se ensina em sala: uma disciplina que usa JavaScript sem citá-lo deixa JavaScript como não documentada. Uma fonte do que é dado em sala (planos de ensino do SIGAA, respostas dos professores), com semestre e origem, pode entrar depois como evidência própria.
-- As 12 ementas novas mudam a distribuição das similaridades e, com ela, o escore relativo de outras competências; os limiares, calibrados com 57 ementas, devem ser revistos na revalidação.
+- A média e o desvio do escore relativo continuam calculados só sobre as ementas do PPC, a população em que os limiares foram calibrados. Com as ementas dos programas na conta, o escore mudava de escala e reclassificava 12 competências sem evidência nova (mesmo componente mais próximo, mesma similaridade). Assim os limiares seguem válidos, e só mudam de situação as competências cuja ementa mais próxima passou a ser uma das novas.
 - A validação de `docs/validacao/` foi medida antes desta decisão e precisa ser refeita.

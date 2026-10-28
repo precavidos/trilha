@@ -146,6 +146,8 @@ public final class GerarAnalise {
 				porComponente.put(c.codigo(), modelo.embed("passage: " + c.nome() + ". " + c.ementa() + complemento).content());
 			}
 		}
+		java.util.Set<String> ementaDoPpc = new java.util.HashSet<>();
+		componentes.stream().filter(c -> "PPC".equals(c.fonteEmenta())).forEach(c -> ementaDoPpc.add(c.codigo()));
 		System.err.printf("%d componentes com ementa embutidos (%d completadas por programa de disciplina); "
 				+ "%d com programa de disciplina como fonte complementar%n", porComponente.size(), completadas, comPrograma);
 
@@ -156,8 +158,12 @@ public final class GerarAnalise {
 				.map(c -> new Analise.Proximo(c.getKey(), CosineSimilarity.between(q, c.getValue())))
 				.sorted(Comparator.comparingDouble(Analise.Proximo::similaridade).reversed())
 				.toList();
-			double media = todos.stream().mapToDouble(Analise.Proximo::similaridade).average().orElse(0);
-			double desvio = Math.sqrt(todos.stream()
+			// Média e desvio do escore só sobre as ementas do PPC, a população em que os limiares foram calibrados:
+			// com as ementas dos programas na conta, o escore mudava de escala e reclassificava competências sem
+			// nenhuma evidência nova (mesmo componente mais próximo, mesma similaridade).
+			List<Analise.Proximo> referencia = todos.stream().filter(p -> ementaDoPpc.contains(p.codigo())).toList();
+			double media = referencia.stream().mapToDouble(Analise.Proximo::similaridade).average().orElse(0);
+			double desvio = Math.sqrt(referencia.stream()
 				.mapToDouble(p -> Math.pow(p.similaridade() - media, 2)).average().orElse(0));
 			List<Analise.Proximo> proximos = todos.stream().limit(PROXIMOS)
 				.map(p -> new Analise.Proximo(p.codigo(), arredondar(p.similaridade())))
