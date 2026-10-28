@@ -44,6 +44,8 @@ cd backend
 
 Quando há versões por turno, vale a do Diurno (o PPC analisado é o do Diurno). `pendencias` registra as outras versões e os rascunhos ignorados. A análise usa o programa de um componente do PPC quando o código é o mesmo ou quando é de um componente equivalente da matriz 2025.1 com praticamente a mesma ementa (ADR 0011).
 
+**Revisão de 28/10/2026.** A equipe conferiu as 12 ementas usadas para completar o PPC (SMD0027, 0035, 0050, 0057, 0070, 0071, 0080, 0084, 0091, 0120, 0126, 0128): correspondem às disciplinas como são dadas hoje, embora vários formulários sejam antigos (2018) ou sem data. Algumas são curtas e sem objetivos (SMD0057, SMD0091); são o único registro disponível, o que é em si um achado: a documentação das disciplinas pelos docentes é incompleta. A divergência entre a SMD0144 do PPC e o programa da antiga SMD0086 (Fotografia Digital) é reformulação da disciplina, não erro: a análise usa só a ementa do PPC.
+
 ## `tecnologias-nomeadas.json`
 
 Competências que nomeiam uma linguagem, framework ou programa, com os termos que contam como citação (ADR 0011). `termos` casam sem distinção de maiúsculas; `termosExatos` exigem a grafia exata. Ao revisar, prefira deixar de fora um termo ambíguo a aceitar falsos positivos.

@@ -1,5 +1,5 @@
 {
-  "_comentario": "Competências do vocabulário que nomeiam uma tecnologia específica (linguagem, framework, programa). Para elas, a situação não vem da similaridade: as descrições da ESCO repetem um texto-padrão ('técnicas e princípios de desenvolvimento de software… em X') que se parece com qualquer disciplina de programação. Conta como coberta se um termo aparece na ementa, nos objetivos, nas competências ou no conteúdo de um componente; como parcial se aparece só na bibliografia básica; e como lacuna se não aparece. 'termos' casam sem distinção de maiúsculas; 'termosExatos' exigem a grafia exata (siglas e nomes ambíguos: 'Java' não casa com 'JavaScript', 'Ruby' não casa com o autor 'RUBY'). Termos ambíguos demais ficam de fora de propósito (ex.: 'R', 'Puppet', 'Pascal' sozinhos).",
+  "_comentario": "Competências do vocabulário que nomeiam uma tecnologia específica (linguagem, framework, programa). Para elas, a situação não vem da similaridade: as descrições da ESCO repetem um texto-padrão ('técnicas e princípios de desenvolvimento de software… em X') que se parece com qualquer disciplina de programação. Conta como coberta se um termo aparece na ementa, nos objetivos, nas competências ou no conteúdo de um componente; como parcial se aparece só na bibliografia básica; e como lacuna se não aparece. 'termos' casam sem distinção de maiúsculas; 'termosExatos' exigem a grafia exata (siglas e nomes ambíguos: 'Java' não casa com 'JavaScript', 'Ruby' não casa com o autor 'RUBY'). Termos ambíguos demais ficam de fora de propósito (ex.: 'R', 'Puppet', 'Pascal' sozinhos). Duas competências descritas por conceito entram na lista porque os documentos as citam por sigla: 'serviço de nomes de domínio' (DNS) e 'utilizar linguagens de marcação' (HTML, XML); pela similaridade, ambas saíam como lacuna.",
   "tecnologias": [
     {
       "competencia": "http://data.europa.eu/esco/skill/eb0e5615-1575-4a86-a1a2-7d39595033c5",
@@ -447,6 +447,14 @@
       ]
     },
     {
+      "competencia": "http://data.europa.eu/esco/skill/071233c4-ad2b-4f50-b79f-768d2231163e",
+      "rotulo": "serviço de nomes de domínio",
+      "termos": [],
+      "termosExatos": [
+        "DNS"
+      ]
+    },
+    {
       "competencia": "http://data.europa.eu/esco/skill/85038d57-1fdd-40de-b908-2c005545a8c3",
       "rotulo": "SketchBook Pro",
       "termos": [
@@ -502,6 +510,17 @@
         "TypeScript"
       ],
       "termosExatos": []
+    },
+    {
+      "competencia": "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26",
+      "rotulo": "utilizar linguagens de marcação",
+      "termos": [],
+      "termosExatos": [
+        "HTML",
+        "HTML5",
+        "XHTML",
+        "XML"
+      ]
     },
     {
       "competencia": "http://data.europa.eu/esco/skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88",

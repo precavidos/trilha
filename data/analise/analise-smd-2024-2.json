@@ -2467,7 +2467,16 @@
       } ],
       "media" : 0.812,
       "desvio" : 0.018,
-      "citacao" : null
+      "citacao" : {
+        "nivel" : "forte",
+        "componentes" : [ {
+          "codigo" : "SMD0037",
+          "onde" : "ementa do PPC",
+          "nivel" : "forte",
+          "termo" : "DNS",
+          "similaridade" : 0.8538
+        } ]
+      }
     },
     "http://data.europa.eu/esco/skill/07469451-ae47-49af-98ea-99f8ef9d283c" : {
       "id" : "http://data.europa.eu/esco/skill/07469451-ae47-49af-98ea-99f8ef9d283c",
@@ -2571,7 +2580,16 @@
       } ],
       "media" : 0.8506,
       "desvio" : 0.0132,
-      "citacao" : null
+      "citacao" : {
+        "nivel" : "fraca",
+        "componentes" : [ {
+          "codigo" : "SMD0097",
+          "onde" : "bibliografia básica do PPC",
+          "nivel" : "fraca",
+          "termo" : "HTML",
+          "similaridade" : 0.8546
+        } ]
+      }
     },
     "http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3" : {
       "id" : "http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3",
