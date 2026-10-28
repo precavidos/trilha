@@ -72,6 +72,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
     setAberta(null);
   };
 
+  const carregandoLista = lista.carregando || !lista.dados;
   const filtrados = (lista.dados ?? []).filter((i) => filtro === "TODAS" || i.status === filtro);
   const visiveis = filtrados.slice(0, limite);
   const totalLente = r.lenteIa.lacuna + r.lenteIa.parcial + r.lenteIa.coberta;
@@ -143,7 +144,7 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
               variante="lima"
               href="/coordenacao/bibliografia"
               valor={bibliografia ? contarBibliografiasAntigas(bibliografia) : "—"}
-              denominador={bibliografia ? bibliografia.length : "—"}
+              denominador={bibliografia?.length}
               rotulo="bibliografias com metade ou mais das referências acima de 10 anos →"
             />
           </li>
@@ -238,10 +239,8 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
 
           {lista.erro ? (
             <ErroDaApi erro={lista.erro} aoTentarDeNovo={lista.recarregar} />
-          ) : lista.carregando || !lista.dados ? (
-            <p aria-busy="true">Carregando competências…</p>
           ) : (
-            <>
+            !carregandoLista && (
               <ul className="m-0 list-none p-0">
                 {visiveis.map((item) => (
                   <LinhaCompetencia
@@ -254,18 +253,25 @@ function Conteudo({ resumo: r, bibliografia, limiares }: ConteudoProps) {
                   />
                 ))}
               </ul>
-              <p className="text-ink-muted m-0 text-sm" aria-live="polite">
-                Mostrando {visiveis.length} de {filtrados.length} competências deste filtro, lacunas
-                primeiro.
-              </p>
-              {visiveis.length < filtrados.length && (
-                <div>
-                  <Botao variante="fantasma" onClick={() => setLimite(limite + PAGINA)}>
-                    Mostrar mais {Math.min(PAGINA, filtrados.length - visiveis.length)}
-                  </Botao>
-                </div>
-              )}
-            </>
+            )
+          )}
+          <p
+            className="text-ink-muted m-0 text-sm"
+            aria-live="polite"
+            aria-busy={carregandoLista || undefined}
+          >
+            {lista.erro
+              ? ""
+              : carregandoLista
+                ? "Carregando competências…"
+                : `Mostrando ${visiveis.length} de ${filtrados.length} competências deste filtro, lacunas primeiro.`}
+          </p>
+          {!lista.erro && !carregandoLista && visiveis.length < filtrados.length && (
+            <div>
+              <Botao variante="fantasma" onClick={() => setLimite(limite + PAGINA)}>
+                Mostrar mais {Math.min(PAGINA, filtrados.length - visiveis.length)}
+              </Botao>
+            </div>
           )}
         </Card>
       </section>

@@ -3,9 +3,9 @@ import { Painel } from "@/components/ui/Painel";
 const ROTA = "M40 250 C 140 262, 118 172, 220 170 S 300 92, 380 110 S 452 70, 470 50";
 
 const PILULAS = [
-  { texto: "Toda conclusão com evidência", cor: "bg-lime" },
-  { texto: "A IA só redige justificativas", cor: "bg-cream" },
-  { texto: "Nenhum dado pessoal enviado", cor: "bg-sky !text-ink" },
+  { texto: "Toda conclusão com evidência", cor: "bg-lime text-on-lime" },
+  { texto: "A IA só redige justificativas", cor: "bg-cream text-on-lime" },
+  { texto: "Nenhum dado pessoal enviado", cor: "bg-sky text-ink" },
 ];
 
 /** Abertura da página inicial: promessa do produto e o caminho do PPC às profissões. */
@@ -33,7 +33,7 @@ export function Hero() {
           {PILULAS.map((p) => (
             <li
               key={p.texto}
-              className={`inline-flex min-h-9 items-center rounded-full px-4 text-sm leading-5 font-bold text-on-lime ${p.cor}`}
+              className={`inline-flex min-h-9 items-center rounded-full px-4 text-sm leading-5 font-bold ${p.cor}`}
             >
               {p.texto}
             </li>

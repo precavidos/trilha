@@ -6,7 +6,7 @@ import { PontoSituacao } from "@/components/ui/ChipSituacao";
 import { Painel } from "@/components/ui/Painel";
 import { justificar, type Item, type Justificativa, type Limiares, type Status } from "@/lib/api";
 import { larguraDaSimilaridade } from "@/lib/calculos";
-import { formatarDecimal, formatarSimilaridade, SITUACOES } from "@/lib/formato";
+import { formatarDecimal, formatarSimilaridade, RELACOES, SITUACOES } from "@/lib/formato";
 
 const PALAVRA: Record<Status, string> = {
   LACUNA: "uma lacuna",
@@ -27,7 +27,7 @@ type Props = { item: Item; profissao: string; limiares: Limiares | undefined };
 
 /** "Por que isto?": como a situação foi calculada, as evidências e a justificativa opcional da IA. */
 export function PainelPorQue({ item, profissao, limiares }: Props) {
-  const relacao = item.relacao ?? "—";
+  const relacao = RELACOES[item.relacao ?? ""]?.toLowerCase() ?? "—";
   const origem = item.fonte === "ESCO" ? "ESCO" : "Extensão IA";
   const limiarSim = limiares
     ? ` (Coberta ≥ ${formatarSimilaridade(limiares.cobertaSimilaridade)} · Parcial ≥ ${formatarSimilaridade(limiares.parcialSimilaridade)})`
