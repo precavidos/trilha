@@ -108,7 +108,7 @@ export default function SobreIa() {
             de vagas brasileiras fica como trabalho futuro.
           </li>
           <li>
-            Validação com rótulos humanos (<code>docs/validacao/revalidacao/resultado.md</code>): 60
+            Validação com rótulos humanos (<code className="[overflow-wrap:anywhere]">docs/validacao/revalidacao/resultado.md</code>): 60
             julgamentos de dois avaliadores da equipe (kappa de Cohen de 0,76 na primeira rodada e
             0,85 na segunda). Quando o sistema diz <em>coberta</em>, acerta 89% das vezes; quando
             diz <em>lacuna</em>, 50%. <em>Parcial</em> é a situação menos confiável: em 13 de 23
