@@ -72,8 +72,13 @@ def numero(padrao: str, texto: str):
     return int(m.group(1)) if m else None
 
 
+def arquivo(versao: str) -> str:
+    """"2016.1A" → "2016-1a"."""
+    return versao.replace(".", "-").lower()
+
+
 def converter(turno: str, versao: str) -> dict:
-    fonte = FONTES / f"sigaa-estrutura-smd-{turno}-{versao.replace('.', '-')}.html"
+    fonte = FONTES / f"sigaa-estrutura-smd-{turno}-{arquivo(versao)}.html"
     bruto = fonte.read_bytes().decode("utf-8")
     texto = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", bruto)))
     p = Linhas()
@@ -143,7 +148,10 @@ def converter(turno: str, versao: str) -> dict:
     }
 
 
-ESTRUTURAS = [("diurno", "2025.1"), ("diurno", "2013.2"), ("diurno", "2010.1"), ("noturno", "2013.2")]
+ESTRUTURAS = [
+    ("diurno", "2025.1"), ("diurno", "2013.2"), ("diurno", "2010.1"),
+    ("noturno", "2025.1"), ("noturno", "2016.1A"), ("noturno", "2016.1"), ("noturno", "2013.2"),
+]
 
 
 def main() -> None:
@@ -151,7 +159,7 @@ def main() -> None:
     pedidas = [tuple(a.split(":", 1)) if ":" in a else ("diurno", a) for a in sys.argv[1:]] or ESTRUTURAS
     for turno, v in pedidas:
         e = converter(turno, v)
-        destino = SAIDA / f"smd-{turno}-{v.replace('.', '-')}.json"
+        destino = SAIDA / f"smd-{turno}-{arquivo(v)}.json"
         destino.write_text(json.dumps(e, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         obr = sum(1 for c in e["componentes"] if c["natureza"] == "obrigatorio")
         print(f"{turno} {v}: {len(e['componentes'])} componentes ({obr} obrigatórios), {len(e['grupos'])} grupos → {destino.relative_to(RAIZ)}", file=sys.stderr)
