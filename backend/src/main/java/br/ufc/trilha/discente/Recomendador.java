@@ -83,8 +83,18 @@ public class Recomendador {
 	public record EmentaComRessalva(String codigo, String nota, String fonte) {
 	}
 
+	public record CompetenciaFora(String rotulo, String profissao) {
+	}
+
+	/**
+	 * O que as profissões escolhidas pedem e as sugestões não resolvem: competências essenciais sem ementa que as
+	 * contemple e tecnologias nomeadas que o PPC não documenta (podem ser ensinadas sem registro na ementa).
+	 */
+	public record ForaDasSugestoes(List<CompetenciaFora> lacunasEssenciais, List<CompetenciaFora> naoDocumentadas) {
+	}
+
 	public record Recomendacao(String estrutura, String turno, List<String> profissoes, int aprovados, int emCurso,
-			Integer chOptativaPendente, int componentesSugeridos, List<String> avisos, List<Item> itens) {
+			Integer chOptativaPendente, int componentesSugeridos, List<String> avisos, List<Item> itens, ForaDasSugestoes foraDasSugestoes) {
 	}
 
 	private final AnaliseService analise;
@@ -234,8 +244,40 @@ public class Recomendador {
 		if (!emCurso.isEmpty()) {
 			avisos.add("Componentes em curso foram considerados como cumpridos para checar pré-requisitos.");
 		}
+		List<Item> sugeridosItens = itens.stream().limit(limite).toList();
+		Set<String> idsNasSugestoes = new HashSet<>();
+		sugeridosItens.forEach(i -> i.evidencias().forEach(ev -> idsNasSugestoes.add(ev.competencia())));
+		Map<String, List<AnaliseService.Item>> lacunasPorProfissao = new LinkedHashMap<>();
+		for (var p : profissoes) {
+			lacunasPorProfissao.put(p.rotulo(), analise.lacunas(p.id()));
+		}
 		return new Recomendacao(e.codigo(), e.turno(), profissoes.stream().map(Analise.Profissao::rotulo).toList(), aprovados.size(),
-				emCurso.size(), chOptativaPendente, sugeridos, avisos, itens.stream().limit(limite).toList());
+				emCurso.size(), chOptativaPendente, sugeridos, avisos, sugeridosItens,
+				fora(lacunasPorProfissao, idsNasSugestoes));
+	}
+
+	/**
+	 * Lacunas essenciais que nenhuma sugestão toca (por profissão, na ordem da escolha, e depois por rótulo) e
+	 * tecnologias não documentadas (sem repetir, na ordem alfabética, com a primeira profissão que a exige).
+	 * A chave do mapa é o rótulo da profissão.
+	 */
+	static ForaDasSugestoes fora(Map<String, List<AnaliseService.Item>> competenciasPorProfissao,
+			Set<String> idsNasSugestoes) {
+		Map<String, CompetenciaFora> lacunas = new LinkedHashMap<>();
+		Map<String, CompetenciaFora> tecnologias = new LinkedHashMap<>();
+		competenciasPorProfissao.forEach((profissao, lista) -> {
+			lista.stream().sorted(Comparator.comparing(AnaliseService.Item::rotulo)).forEach(i -> {
+				if (i.status() == Cobertura.Status.LACUNA && "essencial".equals(i.relacao())
+						&& !idsNasSugestoes.contains(i.id())) {
+					lacunas.putIfAbsent(i.id(), new CompetenciaFora(i.rotulo(), profissao));
+				}
+				else if (i.status() == Cobertura.Status.NAO_DOCUMENTADA) {
+					tecnologias.putIfAbsent(i.id(), new CompetenciaFora(i.rotulo(), profissao));
+				}
+			});
+		});
+		return new ForaDasSugestoes(List.copyOf(lacunas.values()),
+				tecnologias.values().stream().sorted(Comparator.comparing(CompetenciaFora::rotulo)).toList());
 	}
 
 	/** Conta as evidências por profissão (na ordem da escolha, com zeros) e as que o PPC não cobre por inteiro. */

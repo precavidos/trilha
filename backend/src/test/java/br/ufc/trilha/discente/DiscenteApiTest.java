@@ -192,6 +192,17 @@ class DiscenteApiTest {
 	}
 
 	@Test
+	void foraDasSugestoesNaoRepeteEvidencias() throws Exception {
+		var resposta = recomendacaoDoExemplo(List.of("ux-ui", "web"));
+		var rotulosEmEvidencia = new java.util.HashSet<String>();
+		resposta.get("itens").forEach(i -> i.get("evidencias").forEach(ev -> rotulosEmEvidencia.add(ev.get("rotulo").asString())));
+		var fora = resposta.get("foraDasSugestoes");
+		fora.get("lacunasEssenciais").forEach(l ->
+				org.junit.jupiter.api.Assertions.assertFalse(rotulosEmEvidencia.contains(l.get("rotulo").asString()), l.toString()));
+		org.junit.jupiter.api.Assertions.assertTrue(fora.get("naoDocumentadas").size() > 0);
+	}
+
+	@Test
 	void listaEstruturasSuportadas() throws Exception {
 		mvc.perform(get("/api/discente/estruturas"))
 			.andExpect(status().isOk())
