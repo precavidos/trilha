@@ -2,7 +2,7 @@ import { Botao } from "@/components/ui/Botao";
 import { ChipSituacao } from "@/components/ui/ChipSituacao";
 import type { Item, Limiares } from "@/lib/api";
 import { cx } from "@/lib/cx";
-import { formatarSimilaridade, RELACOES } from "@/lib/formato";
+import { formatarSimilaridade, RELACOES, TIPOS } from "@/lib/formato";
 import { PainelPorQue } from "./PainelPorQue";
 
 type Props = {
@@ -34,7 +34,7 @@ export function LinhaCompetencia({ item, aberta, aoAlternar, profissao, limiares
             </span>
           )}
           <span className="text-ink-muted block text-sm leading-5 font-normal">
-            {item.tipo} · {ia ? "Extensão IA" : "ESCO"} · {RELACOES[item.relacao ?? ""] ?? "—"}
+            {TIPOS[item.tipo] ?? item.tipo} · {ia ? "Extensão IA" : "ESCO"} · {RELACOES[item.relacao ?? ""] ?? "—"}
           </span>
         </span>
         <ChipSituacao status={item.status} />
