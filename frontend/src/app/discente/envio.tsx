@@ -102,7 +102,7 @@ export function EnvioDoHistorico({
             <span className="text-ink-muted">ou arraste o arquivo para cá</span>
           </label>
           <div className="flex flex-wrap items-center gap-3">
-            <Botao variante="fantasma" onClick={experimentar} disabled={lendo}>
+            <Botao variante="fantasma" onClick={experimentar} disabled={lendo} className="whitespace-normal!">
               Experimentar com um histórico de exemplo
             </Botao>
             <span className="text-ink-muted text-sm">Para avaliar o sistema sem expor o seu.</span>
@@ -112,7 +112,7 @@ export function EnvioDoHistorico({
 
       <div aria-live="polite">
         {lendo && <p className="m-0">Lendo o histórico…</p>}
-        {estado.fase === "pronto" && <p className="sr-only">Histórico lido. Dados pessoais descartados.</p>}
+        {estado.fase === "pronto" && lido && <p className="sr-only">Histórico lido. Dados pessoais descartados.</p>}
         {estado.fase === "erro" && <Aviso tom="atencao">Não foi possível ler o histórico: {estado.msg}</Aviso>}
       </div>
 
