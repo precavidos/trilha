@@ -1,0 +1,1651 @@
+{
+  "fonte": "SIGAA/UFC — estrutura curricular 2010.1 do curso de Sistemas e Mídias Digitais (Diurno)",
+  "codigo": "2010.1",
+  "chTotalMinima": 3200,
+  "chObrigatoria": 1792,
+  "chOptativaMinima": 1408,
+  "chOptativosLivresMaxima": 128,
+  "chAtividadesComplementares": 320,
+  "chExtensao": null,
+  "chTcc": 128,
+  "grupos": [],
+  "componentes": [
+    {
+      "codigo": "SMD0001",
+      "nome": "FUNDAMENTOS DE PROGRAMAÇÃO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0095"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0002",
+      "nome": "HISTÓRIA DA ARTE E DO DESIGN GRAFICO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0091"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0003",
+      "nome": "EDICAO DE IMAGENS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0088"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0004",
+      "nome": "MEIOS DE REPRESENTAÇÃO GRÁFICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0089"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0005",
+      "nome": "INTRODUÇÃO A MÍDIA DIGITAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0094"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0006",
+      "nome": "SOCIEDADE, CULTURA E TECNOLOGIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 1,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0109"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0007",
+      "nome": "AUTORACAO MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 2,
+      "preRequisitos": [
+        [
+          "SMD0003"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0097"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0008",
+      "nome": "EDUCAÇÃO, COGNICAO E TECNOLOGIAS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 2,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0009",
+      "nome": "COMUNICAÇÃO VISUAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 2,
+      "preRequisitos": [
+        [
+          "SMD0003"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0105"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0010",
+      "nome": "LÓGICA DE PROGRAMAÇÃO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 2,
+      "preRequisitos": [
+        [
+          "SMD0001"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0096"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0011",
+      "nome": "NARRATIVAS MULTIMÍDIA INTERATIVA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 2,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0093"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0012",
+      "nome": "INTERAÇÃO HUMANO-COMPUTADOR",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 3,
+      "preRequisitos": [
+        [
+          "SMD0005"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0108"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0013",
+      "nome": "FUNDAMENTOS DE MATERIAL DIDATICO PARA ED A DISTÂNCIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 3,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0014",
+      "nome": "SEMIÓTICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 3,
+      "preRequisitos": [
+        [
+          "SMD0005"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0090"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0015",
+      "nome": "DESIGN DE INTERFACES GRÁFICAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 3,
+      "preRequisitos": [
+        [
+          "SMD0007",
+          "SMD0009"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0023",
+      "nome": "DESIGN DE JOGOS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 4,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0024",
+      "nome": "DESIGN INSTRUCIONAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 4,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0025",
+      "nome": "ÉTICA E POLÍTICA AUTORAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 4,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "QXD0030"
+        ],
+        [
+          "QXD0054"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0026",
+      "nome": "OFICINA DE PRODUTOS PARA EDUCAÇÃO A DISTÂNCIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 4,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0092"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0060",
+      "nome": "GESTÃO DA PRODUÇÃO EM MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 8,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0100"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0063",
+      "nome": "SEMINÁRIOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "obrigatorio",
+      "semestre": 8,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0103"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0077",
+      "nome": "TRABALHO DE CONCLUSÃO DE CURSO",
+      "ch": 128,
+      "chExtensao": 0,
+      "tipo": "trabalho de conclusão de curso",
+      "natureza": "obrigatorio",
+      "semestre": 8,
+      "preRequisitos": [
+        [
+          "SMD0067"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMDS0001",
+      "nome": "ATIVIDADES COMPLEMENTARES",
+      "ch": 320,
+      "chExtensao": 0,
+      "tipo": "atividades complementares",
+      "natureza": "obrigatorio",
+      "semestre": 8,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0027",
+      "nome": "EDIÇÃO AUDIOVISUAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0028",
+      "nome": "LABORATÓRIO DE PROGRAMAÇÃO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0029",
+      "nome": "AMBIENTES VIRTUAIS DE APRENDIZAGEM",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0030",
+      "nome": "ANÁLISE E PROJETO DE SISTEMAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "CK0165"
+        ],
+        [
+          "CK0192"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0031",
+      "nome": "COMUNICAÇÃO EM NOVAS MÍDIAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0032",
+      "nome": "DESIGN DE SOM",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0033",
+      "nome": "ESTRUTURA DE DADOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "CK0180"
+        ],
+        [
+          "CK0209"
+        ],
+        [
+          "QXD0010"
+        ],
+        [
+          "TI0044"
+        ],
+        [
+          "TI0140"
+        ],
+        [
+          "CRT0009"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0034",
+      "nome": "FERRAMENTAS DE MODELAGEM TRIDIMENSIONAL I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0035",
+      "nome": "MATEMÁTICA E FÍSICA PARA JOGOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0036",
+      "nome": "PRODUÇÃO AUDIOVISUAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "ICA1306"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0037",
+      "nome": "REDES DE COMPUTADORES",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "CK0249"
+        ],
+        [
+          "QXD0021"
+        ],
+        [
+          "TI0145"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0049",
+      "nome": "TÉCNICAS DE ANIMAÇÃO ANALÓGICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0004"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0129"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0050",
+      "nome": "SISTEMAS DISTRIBUÍDOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0037",
+          "SMD0017"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "CK0154"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0051",
+      "nome": "REDAÇÃO PARA MÍDIAS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0011",
+          "SMD0014"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0148"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0052",
+      "nome": "PROGRAMAÇÃO PARA WEB I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0017"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0053",
+      "nome": "PROGRAMAÇÃO PARA JOGOS I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0035"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0054",
+      "nome": "INTELIGÊNCIA COMPUTACIONAL APLICADA A JOGOS I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0017"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0055",
+      "nome": "ENGENHARIA DE SOFTWARE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0030"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "QXD0019"
+        ],
+        [
+          "SMD0143"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0056",
+      "nome": "DIREÇÃO DE ARTE PARA MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0007"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0145"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0057",
+      "nome": "CONCEPÇÃO DE CENÁRIOS E DE PERSONAGENS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0034"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0058",
+      "nome": "BANCO DE DADOS APLICADO À MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0001"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0061",
+      "nome": "PROGRAMAÇÃO PARA JOGOS II",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0053"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0062",
+      "nome": "OFICINA DE DESENVOLVIMENTO DE SISTEMAS MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0052"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0101"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0064",
+      "nome": "OFICINA DE DESENVOLVIMENTO DE JOGOS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0053"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0101"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0065",
+      "nome": "DESENVOLVIMENTO DE APLICACOES DISTRIBUÍDAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0050"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0066",
+      "nome": "AUTORACAO DE MÍDIA DE ARMAZENAMENTO LOCAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0015"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0067",
+      "nome": "METODOLOGIA DE PROJETO MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0026"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0111"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0068",
+      "nome": "OFICINA DE PRODUÇÃO DE MÍDIAS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0036"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "SMD0101"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0069",
+      "nome": "PROGRAMAÇÃO PARA WEB II",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0052",
+          "SMD0058"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0070",
+      "nome": "SISTEMAS EMBARCADOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0030"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0071",
+      "nome": "VIDEOGRAFISMO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0027",
+          "SMD0034"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0072",
+      "nome": "TÉCNICAS DE ANIMACAO DIGITAL I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0049"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0073",
+      "nome": "JOGOS MULTIPLATAFORMA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0053"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0074",
+      "nome": "JOGOS DISTRIBUÍDOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0050"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "HLL0077",
+      "nome": "LÍNGUA BRASILEIRA DE SINAIS - LIBRAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "PD0077"
+        ]
+      ]
+    },
+    {
+      "codigo": "IUV0001",
+      "nome": "TECNODOCÊNCIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "IUV0002",
+      "nome": "TECNODOCÊNCIA EAD",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "IUV0005",
+      "nome": "DIFERENÇA E ENFRENTAMENTO PROFISSIONAL NAS DESIGUALDADES SOCIAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "IUV0007",
+      "nome": "DESIGN EMERGENTE EDUCACIONAL DIGITAL EAD",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "IUV0132",
+      "nome": "INTRODUÇÃO À TUTORIA PARA EDUCAÇÃO ON-LINE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "PRG0002",
+      "nome": "RELAÇOES ETNICO-RACIAIS E AFRICANIDADES",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "PRG0003",
+      "nome": "EDUCAÇÃO AMBIENTAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "PRG0004",
+      "nome": "EDUCAÇÃO EM DIREITOS HUMANOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "RM0964",
+      "nome": "RENDERIZAÇÃO EM TEMPO REAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0080"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0016",
+      "nome": "LINGUAGEM AUDIOVISUAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "ICA2100"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0017",
+      "nome": "PROGRAMAÇÃO ORIENTADA A OBJETOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "CRT0007"
+        ],
+        [
+          "QXD0007"
+        ],
+        [
+          "TI0142"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0018",
+      "nome": "DESENHO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0098"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0019",
+      "nome": "MITOS E ARQUETIPOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0020",
+      "nome": "PROTOTIPAÇAO DE JOGOS TRIDIMENSIONAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0021",
+      "nome": "GESTÃO DE NEGOCIOS EM MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "QXD0029"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0038",
+      "nome": "ÁLGEBRA COMPUTACIONAL PARA PROGRAMAÇÃO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0039",
+      "nome": "CULTURA DE JOGOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0040",
+      "nome": "EXPERIMENTOS EM MULTIMÍDIA I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0041",
+      "nome": "FILOSOFIA DA TECNOLOGIA",
+      "ch": 32,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0042",
+      "nome": "GERÊNCIA DE PROJETOS DE SOFTWARE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0043",
+      "nome": "FUNDAMENTOS DE BANCOS DE DADOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0099"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0044",
+      "nome": "INTRODUÇÃO À COMPUTAÇÃO MÓVEL E UBÍQUA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0045",
+      "nome": "LINGUAGEM DE PROGRAMAÇÃO SCRIPT",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0046",
+      "nome": "MITOLOGIAS UNIVERSAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0149"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0047",
+      "nome": "PROCESSAMENTO DIGITAL DE AUDIO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0048",
+      "nome": "TESTE DE SOFTWARE APLICADO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0059",
+      "nome": "MÍDIAS DIGITAIS E MATEMÁTICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0005"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0075",
+      "nome": "DESENVOLVIMENTO DE MATERIAL DIDÁTICO EXPERIMENTAL E TREINAMENTO DE HABILIDADES",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0013"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0076",
+      "nome": "CIBERCULTURA E EDUCAÇÃO: NOVAS PRÁTICAS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0078",
+      "nome": "DESENVOLVIMENTO DE JOGOS CASUAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0009",
+          "SMD0010"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0079",
+      "nome": "DESENVOLVIMENTO DE MOTORES GRÁFICOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0061"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0080",
+      "nome": "COMPUTAÇÃO GRÁFICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0028"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "CK0245"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0081",
+      "nome": "INTELIGÊNCIA COMPUTACIONAL APLICADA A JOGOS II",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0054"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0082",
+      "nome": "JOGOS PARA CONSOLE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0073"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0083",
+      "nome": "EDUCOMUNICAÇÃO",
+      "ch": 64,
+      "chExtensao": 16,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0084",
+      "nome": "EXPERIMENTOS EM TIPOGRAFIA DIGITAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0009"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0085",
+      "nome": "FRAMEWORKS DE SOFTWARE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0055"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0086",
+      "nome": "FOTOGRAFIA DIGITAL",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "ICA1310"
+        ],
+        [
+          "SMD0144"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0087",
+      "nome": "FILOSOFIA DA TECNOLOGIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0102",
+      "nome": "METODOLOGIA DE PESQUISA CIENTÍFICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "ED0095"
+        ],
+        [
+          "PB0148"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0106",
+      "nome": "MATEMÁTICA APLICADA À MULTIMÍDIA I",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0139"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0107",
+      "nome": "COGNIÇÃO E TECNOLOGIAS DIGITAIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0107"
+        ],
+        [
+          "HF0146"
+        ],
+        [
+          "QXD0126"
+        ],
+        [
+          "SMD0132"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0110",
+      "nome": "COMUNICAÇÃO VISUAL II",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0009"
+        ],
+        [
+          "SMD0105"
+        ]
+      ],
+      "equivalencias": [
+        [
+          "QXD0163"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0112",
+      "nome": "INSTALAÇÕES MULTIMÍDIA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0146"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0113",
+      "nome": "LABORATÓRIO DE CRIATIVIDADE",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "ICA0072"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0114",
+      "nome": "COMPUTAÇÃO FÍSICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0117",
+      "nome": "INTERAÇÃO HUMANO-COMPUTADOR II",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0121",
+      "nome": "ANÁLISE DE DESEMPENHO",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0122",
+      "nome": "PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0124",
+      "nome": "PRODUÇÃO AUDIOVISUAL PARA CRIANÇAS E ADOLESCENTES",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [],
+      "equivalencias": [
+        [
+          "SMD0147"
+        ]
+      ]
+    },
+    {
+      "codigo": "SMD0133",
+      "nome": "LABORATÓRIO DE COMPUTAÇÃO GRÁFICA",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0080"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0134",
+      "nome": "PESQUISA EM JOGOS",
+      "ch": 64,
+      "chExtensao": 0,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0102"
+        ]
+      ],
+      "equivalencias": []
+    },
+    {
+      "codigo": "SMD0135",
+      "nome": "OFICINA DE PODCAST",
+      "ch": 64,
+      "chExtensao": 16,
+      "tipo": "disciplina",
+      "natureza": "optativo",
+      "semestre": null,
+      "preRequisitos": [
+        [
+          "SMD0032"
+        ]
+      ],
+      "equivalencias": []
+    }
+  ]
+}

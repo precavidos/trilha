@@ -55,6 +55,39 @@ public class AnaliseService {
 		return analise.metadados();
 	}
 
+	/** Uma competência para a qual o componente é uma das ementas mais próximas ({@code posicao} 0 = a mais próxima). */
+	public record CompetenciaProxima(String competencia, String rotulo, String fonte, int posicao, double similaridade,
+			Cobertura.Status status) {
+	}
+
+	private Map<String, List<CompetenciaProxima>> porComponente;
+
+	/** Índice inverso das evidências: para cada componente, as competências em que ele aparece entre as mais próximas. */
+	public synchronized List<CompetenciaProxima> competenciasDoComponente(String codigo) {
+		if (porComponente == null) {
+			Map<String, List<CompetenciaProxima>> indice = new java.util.HashMap<>();
+			for (var c : analise.competencias().values()) {
+				var status = cobertura.classificar(c);
+				for (int i = 0; i < Math.min(EVIDENCIAS, c.proximos().size()); i++) {
+					var px = c.proximos().get(i);
+					indice.computeIfAbsent(px.codigo(), k -> new java.util.ArrayList<>())
+						.add(new CompetenciaProxima(c.id(), paraExibicao(c.rotulo()), c.fonte(), i, px.similaridade(), status));
+				}
+			}
+			porComponente = indice;
+		}
+		return porComponente.getOrDefault(codigo, List.of());
+	}
+
+	public java.util.Optional<Analise.Componente> componente(String codigo) {
+		return java.util.Optional.ofNullable(componentePorCodigo.get(codigo));
+	}
+
+	public Analise.Profissao profissao(String id) {
+		return analise.profissoes().stream().filter(p -> p.id().equals(id)).findFirst()
+			.orElseThrow(() -> new NoSuchElementException("profissão-alvo desconhecida: " + id));
+	}
+
 	public Resumo resumo() {
 		var bib = analise.bibliografia();
 		List<Integer> medianas = bib.stream().map(Analise.IdadeBibliografia::mediana)

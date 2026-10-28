@@ -4,6 +4,11 @@ spring:
   # Lê GEMINI_API_KEY etc. do .env na raiz do repositório, se existir.
   config:
     import: optional:file:../.env[.properties]
+  # Histórico do SIGAA (módulo discente): lido em memória e nunca gravado (ADR 0003).
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
 
 management:
   endpoints:
@@ -14,6 +19,8 @@ management:
 trilha:
   dados:
     analise: ${TRILHA_ANALISE:../data/analise/analise-smd-2024-2.json}
+    estruturas: ${TRILHA_ESTRUTURAS:../data/seed/estruturas}
+    itinerarios: ${TRILHA_ITINERARIOS:../data/seed/itinerarios-smd.json}
   # Classificação de cobertura (ADR 0010). "escore" = (similaridade − média) / desvio da competência.
   # Calibrados por inspeção da distribuição; a validação com rótulos humanos mede a precisão.
   limiares:
