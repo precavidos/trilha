@@ -39,24 +39,30 @@ class DiscenteApiTest {
 	@Autowired
 	JsonMapper json;
 
-	/** Discente sintético da matriz 2025.1 que concluiu os três primeiros semestres. */
-	private String pedido2025(List<String> profissoes) throws Exception {
-		var e = json.readValue(Path.of("../data/seed/estruturas/smd-diurno-2025-1.json").toFile(), EstruturaCurricular.class);
+	/** Discente sintético que concluiu os obrigatórios dos três primeiros semestres da estrutura. */
+	private String pedido(String estrutura, String turno, List<String> profissoes) throws Exception {
+		var arquivo = "../data/seed/estruturas/smd-" + turno + "-" + estrutura.replace('.', '-') + ".json";
+		var e = json.readValue(Path.of(arquivo).toFile(), EstruturaCurricular.class);
 		var cursados = e.componentes().stream()
 			.filter(c -> "obrigatorio".equals(c.natureza()) && c.semestre() != null && c.semestre() <= 3)
-			.map(c -> new Trajetoria.Cursado(c.codigo(), "2025.1", "aprovado", c.ch(), null))
+			.map(c -> new Trajetoria.Cursado(c.codigo(), estrutura, "aprovado", c.ch(), null))
 			.toList();
-		var t = new Trajetoria("2025.1", cursados, Map.of("optativa", new Trajetoria.Carga(1216, 0, 1216),
+		var t = new Trajetoria(estrutura, turno, cursados, Map.of("optativa", new Trajetoria.Carga(1216, 0, 1216),
 				"extensao", new Trajetoria.Carga(288, 64, 224)), List.of());
 		return json.writeValueAsString(Map.of("trajetoria", t, "profissoes", profissoes));
+	}
+
+	private String pedido2025(List<String> profissoes) throws Exception {
+		return pedido("2025.1", "diurno", profissoes);
 	}
 
 	@Test
 	void listaEstruturasSuportadas() throws Exception {
 		mvc.perform(get("/api/discente/estruturas"))
 			.andExpect(status().isOk())
-			.andExpect(jsonPath("$", hasItem("2013.2")))
-			.andExpect(jsonPath("$", hasItem("2025.1")));
+			.andExpect(jsonPath("$", hasItem("2013.2 diurno")))
+			.andExpect(jsonPath("$", hasItem("2013.2 noturno")))
+			.andExpect(jsonPath("$", hasItem("2025.1 diurno")));
 	}
 
 	@Test
@@ -71,6 +77,24 @@ class DiscenteApiTest {
 			// nenhum obrigatório e nenhum componente já cursado
 			.andExpect(jsonPath("$.itens[*].codigo", not(hasItem("SMD0015"))))
 			.andExpect(jsonPath("$.itens[*].codigo", not(hasItem("SMD0140"))));
+	}
+
+	/**
+	 * Mesmo código de versão, pré-requisitos diferentes: no Diurno 2013.2, Técnicas de Animação 3D I
+	 * (SMD0128) exige SMD0049; no Noturno 2013.2, não.
+	 */
+	@Test
+	void usaAEstruturaDoTurnoDoDiscente() throws Exception {
+		mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON)
+				.content(pedido("2013.2", "noturno", List.of("animacao"))))
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("$.turno", is("noturno")))
+			.andExpect(jsonPath("$.itens[*].codigo", hasItem("SMD0128")));
+		mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON)
+				.content(pedido("2013.2", "diurno", List.of("animacao"))))
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("$.turno", is("diurno")))
+			.andExpect(jsonPath("$.itens[*].codigo", not(hasItem("SMD0128"))));
 	}
 
 	@Test
@@ -99,6 +123,7 @@ class DiscenteApiTest {
 				.file(new MockMultipartFile("arquivo", "historico.pdf", "application/pdf", Files.readAllBytes(HISTORICO_REAL))))
 			.andExpect(status().isOk())
 			.andExpect(jsonPath("$.estrutura", is("2013.2")))
+			.andExpect(jsonPath("$.turno", is("diurno")))
 			.andExpect(jsonPath("$.componentes.length()", greaterThan(30)))
 			.andExpect(jsonPath("$.componentes[*].ch", everyItem(greaterThan(0))))
 			.andExpect(jsonPath("$.cargas.optativa.exigido", is(1216)));

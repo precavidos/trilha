@@ -20,6 +20,7 @@ import br.ufc.trilha.ppc.LinhaPdf;
 public final class LeitorHistorico {
 
 	private static final Pattern CURRICULO = Pattern.compile("Curr[ií]culo:\\s*(\\d{4}\\.\\d)");
+	private static final Pattern TURNO = Pattern.compile("Turno:\\s*(.*)");
 	private static final Pattern PERIODO = Pattern.compile("\\d{4}\\.\\d");
 	/**
 	 * Situação colada ao código ("APROVADO MÉDIASMD0088", "REPROVADO POR NOTASMD0095"). Os complementos
@@ -55,6 +56,7 @@ public final class LeitorHistorico {
 
 	static Trajetoria ler(List<LinhaPdf> linhas) {
 		String estrutura = null;
+		String turno = null;
 		String periodo = null;
 		List<Trajetoria.Cursado> cursados = new ArrayList<>();
 		Map<String, Trajetoria.Carga> cargas = new LinkedHashMap<>();
@@ -66,6 +68,11 @@ public final class LeitorHistorico {
 			Matcher m;
 			if (estrutura == null && (m = CURRICULO.matcher(t)).find()) {
 				estrutura = m.group(1);
+				continue;
+			}
+			if (turno == null && (m = TURNO.matcher(t)).find()) {
+				String valor = m.group(1).isBlank() && i + 1 < linhas.size() ? linhas.get(i + 1).texto() : m.group(1);
+				turno = turno(valor);
 				continue;
 			}
 			if (PERIODO.matcher(t).matches()) {
@@ -110,7 +117,7 @@ public final class LeitorHistorico {
 		if (cursados.isEmpty()) {
 			throw new HistoricoInvalidoException("não encontrei componentes cursados no histórico");
 		}
-		return new Trajetoria(estrutura, List.copyOf(cursados), cargas, List.copyOf(pendentes));
+		return new Trajetoria(estrutura, turno, List.copyOf(cursados), cargas, List.copyOf(pendentes));
 	}
 
 	/**
@@ -150,6 +157,18 @@ public final class LeitorHistorico {
 			ch = (int) Math.round(Double.parseDouble(n.group(4)));
 		}
 		return new Trajetoria.Cursado(codigo, periodo, situacao(situacaoSigaa), ch, marcador);
+	}
+
+	/** "MATUTINO E VESPERTINO" e afins → diurno; "NOTURNO" → noturno; outro texto → {@code null}. */
+	static String turno(String sigaa) {
+		String s = sigaa.toUpperCase();
+		if (s.contains("NOTURNO")) {
+			return "noturno";
+		}
+		if (s.contains("MATUTINO") || s.contains("VESPERTINO") || s.contains("DIURNO") || s.contains("INTEGRAL")) {
+			return "diurno";
+		}
+		return null;
 	}
 
 	static String situacao(String sigaa) {

@@ -28,6 +28,7 @@ class LeitorHistoricoTest {
 			"Histórico Escolar - Emitido em: 28/10/2026",
 			"Nome: Fulana de Tal",
 			"Currículo: 2013.2",
+			"Turno: MATUTINO E VESPERTINO",
 			"Componentes Curriculares Cursados/Cursando",
 			"2023.1",
 			"2023.1",
@@ -63,11 +64,30 @@ class LeitorHistoricoTest {
 			"Carga Horária Optativa",
 			"1216", "1152", "1152", "64");
 
+	private static List<LinhaPdf> comTurno(String linhaTurno) {
+		List<LinhaPdf> l = new ArrayList<>(HISTORICO);
+		l.removeIf(x -> x.texto().startsWith("Turno:"));
+		if (linhaTurno != null) {
+			l.add(3, new LinhaPdf(1, 100, linhaTurno));
+		}
+		return l;
+	}
+
+	@Test
+	void reconheceOTurno() {
+		assertThat(LeitorHistorico.ler(comTurno("Turno: NOTURNO")).turno()).isEqualTo("noturno");
+		assertThat(LeitorHistorico.ler(comTurno("Turno:")).turno()).isNull();
+		assertThat(LeitorHistorico.ler(comTurno(null)).turno()).isNull();
+		assertThat(LeitorHistorico.turno("MATUTINO E VESPERTINO")).isEqualTo("diurno");
+		assertThat(LeitorHistorico.turno("Noturno")).isEqualTo("noturno");
+	}
+
 	@Test
 	void extraiEstruturaComponentesECargas() {
 		Trajetoria t = LeitorHistorico.ler(HISTORICO);
 
 		assertThat(t.estrutura()).isEqualTo("2013.2");
+		assertThat(t.turno()).isEqualTo("diurno");
 		assertThat(t.componentes()).containsExactly(
 				new Trajetoria.Cursado("SMD0088", "2023.1", "aprovado", 64, null),
 				new Trajetoria.Cursado("SMD0030", "2024.2", "aprovado", 64, "*"),

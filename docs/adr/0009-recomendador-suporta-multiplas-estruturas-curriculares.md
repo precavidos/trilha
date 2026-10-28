@@ -8,3 +8,4 @@ Rejeitamos suportar só a 2025.1 convertendo códigos: as regras de grupo ficari
 
 - Cada estrutura curricular é um dado de entrada (exportado do SIGAA e revisado), não código.
 - A análise de lacunas do PPC continua usando apenas o PPC vigente; múltiplas estruturas afetam só o recomendador.
+- O turno também identifica a estrutura. No SIGAA, o Noturno é uma matriz à parte (sufixo "N"; o Diurno é "MT") com o mesmo código de versão e pré-requisitos e equivalências próprios: a 2013.2 Noturno difere da 2013.2 Diurno em 24 deles. O recomendador escolhe a estrutura por versão e turno, lido do campo "Turno" do histórico. O PPC Noturno (versão de 27/02/2025) tem as mesmas ementas, obrigatórios e itinerários do PPC Diurno 2024.2, distribuídos em 9 semestres, por isso a análise e os itinerários servem aos dois turnos.

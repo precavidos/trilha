@@ -1,6 +1,7 @@
 {
   "fonte": "SIGAA/UFC — estrutura curricular 2010.1 do curso de Sistemas e Mídias Digitais (Diurno)",
   "codigo": "2010.1",
+  "turno": "diurno",
   "chTotalMinima": 3200,
   "chObrigatoria": 1792,
   "chOptativaMinima": 1408,
