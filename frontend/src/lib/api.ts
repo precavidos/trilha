@@ -111,3 +111,80 @@ export async function justificar(competencia: string): Promise<Justificativa> {
   }
   return resposta.json();
 }
+
+/* ---------- módulo discente ---------- */
+
+/** O que o Trilha guarda do histórico (ADR 0003): nada de nome, matrícula, notas ou docentes. */
+export type Trajetoria = {
+  estrutura: string;
+  componentes: { codigo: string; periodo: string | null; situacao: string; ch: number | null; marcador: string | null }[];
+  cargas: Record<string, { exigido: number; integralizado: number; pendente: number }>;
+  obrigatoriosPendentes: string[];
+};
+
+export type CompetenciaContemplada = {
+  competencia: string;
+  rotulo: string;
+  fonte: string;
+  relacao: string;
+  profissao: string;
+  situacaoNoPpc: Status;
+  similaridade: number;
+  posicao: number;
+  peso: number;
+};
+
+export type ItemRecomendado = {
+  codigo: string;
+  nome: string;
+  ch: number | null;
+  pontuacao: number;
+  /** Código equivalente na matriz atual, quando a estrutura do discente é antiga. */
+  codigoNoPpc: string | null;
+  ementa: string | null;
+  competencias: CompetenciaContemplada[];
+  itinerarios: { itinerario: string; papel: string }[];
+  grupo: { grupo: string; cumpridos: number; minimo: number } | null;
+  contaExtensao: boolean;
+  preRequisitos: string[];
+};
+
+export type Recomendacao = {
+  estrutura: string;
+  profissoes: string[];
+  aprovados: number;
+  emCurso: number;
+  chOptativaPendente: number | null;
+  componentesSugeridos: number;
+  avisos: string[];
+  itens: ItemRecomendado[];
+};
+
+async function erroDaResposta(resposta: Response): Promise<Error> {
+  try {
+    const corpo = await resposta.json();
+    if (corpo?.erro) return new Error(corpo.erro);
+  } catch {
+    // corpo não é JSON
+  }
+  return new Error(`erro ${resposta.status}`);
+}
+
+/** Envia o PDF do histórico; o servidor lê em memória, não grava, e devolve só a trajetória. */
+export async function lerHistorico(arquivo: File): Promise<Trajetoria> {
+  const dados = new FormData();
+  dados.append("arquivo", arquivo);
+  const resposta = await fetch(`${API_URL}/api/discente/historico`, { method: "POST", body: dados });
+  if (!resposta.ok) throw await erroDaResposta(resposta);
+  return resposta.json();
+}
+
+export async function recomendar(trajetoria: Trajetoria, profissoes: string[]): Promise<Recomendacao> {
+  const resposta = await fetch(`${API_URL}/api/discente/recomendacao`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ trajetoria, profissoes }),
+  });
+  if (!resposta.ok) throw await erroDaResposta(resposta);
+  return resposta.json();
+}
