@@ -50,6 +50,10 @@ Quando há versões por turno, vale a do Diurno (o PPC analisado é o do Diurno)
 
 Competências que nomeiam uma linguagem, framework ou programa, com os termos que contam como citação (ADR 0011). `termos` casam sem distinção de maiúsculas; `termosExatos` exigem a grafia exata. Ao revisar, prefira deixar de fora um termo ambíguo a aceitar falsos positivos.
 
+## `historico-exemplo.json`
+
+Trajetória fictícia de um discente do Diurno 2025.1, montada à mão: 31 componentes aprovados e 4 matriculados, todos da estrutura `smd-diurno-2025-1.json`. Não deriva de nenhum histórico real. Serve para conhecer o sistema sem enviar um histórico e, nos testes, para fixar a ordem das sugestões.
+
 ## Licença
 
 O texto das ementas e bibliografias é reproduzido do PPC, documento institucional público da UFC; o de `programas-smd.json`, dos formulários de disciplina da PROGRAD/UFC. A estrutura, as correções e os demais dados derivados da equipe são CC BY 4.0.

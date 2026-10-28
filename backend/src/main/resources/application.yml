@@ -21,6 +21,7 @@ trilha:
     analise: ${TRILHA_ANALISE:../data/analise/analise-smd-2024-2.json}
     estruturas: ${TRILHA_ESTRUTURAS:../data/seed/estruturas}
     itinerarios: ${TRILHA_ITINERARIOS:../data/seed/itinerarios-smd.json}
+    historico-exemplo: ${TRILHA_HISTORICO_EXEMPLO:../data/seed/historico-exemplo.json}
   # Classificação de cobertura (ADR 0010). "escore" = (similaridade − média) / desvio da competência.
   # Calibrados por inspeção da distribuição; a validação com rótulos humanos mede a precisão.
   limiares:

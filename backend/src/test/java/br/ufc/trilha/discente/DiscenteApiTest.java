@@ -56,6 +56,48 @@ class DiscenteApiTest {
 		return pedido("2025.1", "diurno", profissoes);
 	}
 
+	private static final Path HISTORICO_EXEMPLO = Path.of("../data/seed/historico-exemplo.json");
+
+	/**
+	 * Ordem [codigo, pontuacao] das sugestões do histórico de exemplo para ux-ui e web, como o recomendador do
+	 * PR #14 a produz. Protege o "só exibição" da spec: a tela nova não pode mudar o que é sugerido.
+	 */
+	private static final List<List<Object>> ORDEM_DO_PR_14 = List.of(List.of("SMD0052", 6.6),
+			List.of("SMD0048", 4.4), List.of("SMD0145", 3.0), List.of("SMD0146", 3.0), List.of("SMD0057", 2.9),
+			List.of("SMD0119", 2.78), List.of("SMD0122", 2.68));
+
+	@Test
+	void historicoDeExemploExisteNaEstrutura() throws Exception {
+		var estrutura = json.readValue(Path.of("../data/seed/estruturas/smd-diurno-2025-1.json").toFile(),
+				EstruturaCurricular.class);
+		var codigos = estrutura.componentes().stream().map(EstruturaCurricular.Componente::codigo).toList();
+		var t = json.readValue(HISTORICO_EXEMPLO.toFile(), Trajetoria.class);
+		org.junit.jupiter.api.Assertions.assertTrue(t.componentes().stream().allMatch(c -> codigos.contains(c.codigo())));
+		org.junit.jupiter.api.Assertions.assertEquals(31, t.componentes().stream().filter(c -> "aprovado".equals(c.situacao())).count());
+		org.junit.jupiter.api.Assertions.assertEquals(4, t.componentes().stream().filter(c -> "matriculado".equals(c.situacao())).count());
+	}
+
+	@Test
+	void serveOHistoricoDeExemplo() throws Exception {
+		mvc.perform(get("/api/discente/historico-exemplo"))
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("$.estrutura", is("2025.1")))
+			.andExpect(jsonPath("$.cargas.extensao.pendente", is(128)));
+	}
+
+	@Test
+	void recomendacaoDoExemploNaoMuda() throws Exception {
+		var t = json.readValue(HISTORICO_EXEMPLO.toFile(), Trajetoria.class);
+		var corpo = json.writeValueAsString(Map.of("trajetoria", t, "profissoes", List.of("ux-ui", "web")));
+		var resposta = mvc.perform(post("/api/discente/recomendacao").contentType(MediaType.APPLICATION_JSON).content(corpo))
+			.andExpect(status().isOk())
+			.andReturn().getResponse().getContentAsString();
+		var itens = json.readTree(resposta).get("itens");
+		var obtido = new java.util.ArrayList<List<Object>>();
+		itens.forEach(i -> obtido.add(List.of(i.get("codigo").asString(), i.get("pontuacao").asDouble())));
+		org.junit.jupiter.api.Assertions.assertEquals(ORDEM_DO_PR_14, obtido);
+	}
+
 	@Test
 	void listaEstruturasSuportadas() throws Exception {
 		mvc.perform(get("/api/discente/estruturas"))

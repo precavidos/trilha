@@ -1,10 +1,12 @@
 package br.ufc.trilha.api;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import br.ufc.trilha.discente.LeitorHistorico;
 import br.ufc.trilha.discente.Recomendador;
 import br.ufc.trilha.discente.Trajetoria;
+import tools.jackson.databind.json.JsonMapper;
 
 /**
  * Módulo discente. O histórico é lido em memória e nunca é gravado; a resposta é só a trajetória
@@ -32,8 +35,18 @@ class DiscenteController {
 
 	private final Recomendador recomendador;
 
-	DiscenteController(Recomendador recomendador) {
+	private final Trajetoria historicoExemplo;
+
+	DiscenteController(Recomendador recomendador, @Value("${trilha.dados.historico-exemplo}") String arquivoExemplo,
+			JsonMapper json) {
 		this.recomendador = recomendador;
+		this.historicoExemplo = json.readValue(Path.of(arquivoExemplo).toFile(), Trajetoria.class);
+	}
+
+	/** Trajetória fictícia, montada à mão (ADR 0003), para conhecer o sistema sem enviar um histórico. */
+	@GetMapping("/historico-exemplo")
+	Trajetoria historicoExemplo() {
+		return historicoExemplo;
 	}
 
 	@GetMapping("/estruturas")
