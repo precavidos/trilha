@@ -1,0 +1,26 @@
+{
+  "_comentario": "Itinerários formativos do PPC do SMD Diurno 2024.2 (seção 3.1, pp. 28–32). 'nucleo' = disciplinas que compõem principalmente o itinerário; 'complementares' = as que 'colaboram' ou 'se alinham' a ele, segundo o próprio PPC. Códigos da matriz 2025.1; nas estruturas antigas, o recomendador chega a eles pelas equivalências do SIGAA. Os nomes no PPC às vezes diferem do catálogo: 'Design de Jogos' = SMD0023, 'Tópicos Especiais em Design de Interfaces Gráficas' = SMD0119, 'Direção de Arte' = SMD0145.",
+  "fonte": "UFC. Projeto Pedagógico do Curso de Sistemas e Mídias Digitais – Diurno, 2024.2, seção 3.1",
+  "itinerarios": [
+    {
+      "nome": "Sistemas Multimídia",
+      "nucleo": ["SMD0017", "SMD0052", "SMD0122", "SMD0048", "SMD0045"],
+      "complementares": ["SMD0114", "SMD0050", "SMD0070"]
+    },
+    {
+      "nome": "Design Digital Interativo",
+      "nucleo": ["SMD0130", "SMD0117", "SMD0119", "SMD0118"],
+      "complementares": ["SMD0114", "SMD0148", "SMD0120", "SMD0145", "SMD0146", "SMD0084", "SMD0113"]
+    },
+    {
+      "nome": "Jogos Digitais",
+      "nucleo": ["SMD0023", "SMD0053", "SMD0054"],
+      "complementares": ["SMD0148", "SMD0057", "SMD0035", "SMD0145", "SMD0039", "SMD0146", "SMD0045"]
+    },
+    {
+      "nome": "Animação e Audiovisual",
+      "nucleo": ["SMD0016", "SMD0144", "SMD0129", "SMD0128", "SMD0113"],
+      "complementares": ["SMD0071", "SMD0147", "SMD0126", "SMD0027", "SMD0036", "SMD0034"]
+    }
+  ]
+}
