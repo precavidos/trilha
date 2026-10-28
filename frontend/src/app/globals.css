@@ -131,16 +131,12 @@ summary::-webkit-details-marker {
 
 /* Impressão: só o resumo para o tutor, em preto sobre branco */
 @media print {
-  body * {
-    visibility: hidden;
-  }
-  #resumo-tutor,
-  #resumo-tutor * {
-    visibility: visible;
+  /* Some do fluxo tudo o que não contém o resumo nem está dentro dele: sem folhas em branco. */
+  body *:not(:has(#resumo-tutor)):not(#resumo-tutor):not(#resumo-tutor *) {
+    display: none !important;
   }
   #resumo-tutor {
-    position: absolute;
-    inset: 0 auto auto 0;
+    position: static;
     width: 100%;
     background: #fff;
     color: #000;

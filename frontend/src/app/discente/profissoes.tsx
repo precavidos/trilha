@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Aviso } from "@/components/ui/Aviso";
 import { Botao } from "@/components/ui/Botao";
 import { IconeProfissao } from "@/components/trilha/IconeProfissao";
@@ -27,7 +27,18 @@ export function EscolhaDeProfissoes({
     fase: "inicial",
   });
 
-  const alternar = (id: string) =>
+  // Número do pedido em voo: trocar a profissão ou desmontar invalida a resposta que ainda não chegou.
+  const pedido = useRef(0);
+  useEffect(
+    () => () => {
+      pedido.current++;
+    },
+    [],
+  );
+
+  const alternar = (id: string) => {
+    pedido.current++;
+    setEstado((e) => (e.fase === "gerando" ? { fase: "inicial" } : e));
     aoMudar(
       escolhidas.includes(id)
         ? escolhidas.filter((x) => x !== id)
@@ -35,15 +46,20 @@ export function EscolhaDeProfissoes({
           ? [...escolhidas, id]
           : escolhidas,
     );
+  };
 
   const gerar = () => {
     setEstado({ fase: "gerando" });
+    const meu = ++pedido.current;
     recomendar(trajetoria, escolhidas).then(
       (r) => {
+        if (meu !== pedido.current) return;
         setEstado({ fase: "inicial" });
         aoRecomendar(r);
       },
-      (e: Error) => setEstado({ fase: "erro", msg: e.message }),
+      (e: Error) => {
+        if (meu === pedido.current) setEstado({ fase: "erro", msg: e.message });
+      },
     );
   };
 

@@ -12,6 +12,11 @@ import { formatarSimilaridade, RELACOES } from "@/lib/formato";
 import { TURNOS } from "./onde-voce-esta";
 import { Rascunho } from "./rascunho";
 
+/** "Essencial" → "essencial", "Transversal (IA)" → "transversal (IA)": só a inicial, para a sigla ficar. */
+function minusculaInicial(t: string) {
+  return t.charAt(0).toLowerCase() + t.slice(1);
+}
+
 export function nomeDaEstrutura(estrutura: string, turno: keyof typeof TURNOS | null) {
   return turno ? `${TURNOS[turno]} ${estrutura}` : estrutura;
 }
@@ -89,14 +94,10 @@ export function Sugestoes({
                 />
               ))}
             </ol>
-            <Rascunho rascunho={rascunho} chPendente={chPendente} aoImprimir={aoImprimir} />
+            <Rascunho rascunho={rascunho} chPendente={chPendente} aoImprimir={aoImprimir} aoRemover={aoAlternar} />
           </div>
         </>
       )}
-      <p className="text-ink-muted m-0 text-sm">
-        A recomendação apoia, mas não substitui, a orientação do Grupo de Professores Tutores e da coordenação. Confira
-        a oferta de turmas no SIGAA antes da matrícula.
-      </p>
     </section>
   );
 }
@@ -219,7 +220,7 @@ function ItemSugerido({
                     <span>
                       <b>{c.rotulo}</b>
                       <small className="text-on-panel-muted block text-[13px]">
-                        {RELACOES[c.relacao] ?? c.relacao} para {c.profissao} · situação no PPC
+                        {minusculaInicial(RELACOES[c.relacao] ?? c.relacao)} para {c.profissao} · situação no PPC
                       </small>
                     </span>
                     <span className="text-on-panel-muted whitespace-nowrap">

@@ -10,7 +10,7 @@ export type Origem = "arquivo" | "exemplo";
 
 const NOME_DO_EXEMPLO = "historico-exemplo.pdf";
 
-type Estado = { fase: "inicial" | "lendo" } | { fase: "erro"; msg: string };
+type Estado = { fase: "inicial" | "lendo" | "pronto" } | { fase: "erro"; msg: string };
 
 const ICONE = {
   viewBox: "0 0 24 24",
@@ -41,8 +41,10 @@ export function EnvioDoHistorico({
     aoComecar();
     leitura.then(
       (t) => {
-        setEstado({ fase: "inicial" });
+        setEstado({ fase: "pronto" });
         aoLer(t, origem, nome);
+        // Os controles de envio somem com a leitura: o foco vai para a mensagem "… lido".
+        requestAnimationFrame(() => document.getElementById("envio-lido")?.focus());
       },
       (e: Error) => setEstado({ fase: "erro", msg: e.message }),
     );
@@ -63,7 +65,7 @@ export function EnvioDoHistorico({
       </div>
 
       {lido ? (
-        <div className="border-coberta bg-coberta-bg text-coberta flex min-h-24 items-center gap-4 rounded-lg border-2 p-5">
+        <div id="envio-lido" tabIndex={-1} className="border-coberta bg-coberta-bg text-coberta flex min-h-24 outline-none focus-visible:outline-(--focus) focus-visible:outline-3 focus-visible:outline-offset-2 items-center gap-4 rounded-lg border-2 p-5">
           <svg {...ICONE} className="size-8 flex-none">
             <path d="m5 12 5 5L20 7" />
           </svg>
@@ -110,6 +112,7 @@ export function EnvioDoHistorico({
 
       <div aria-live="polite">
         {lendo && <p className="m-0">Lendo o histórico…</p>}
+        {estado.fase === "pronto" && <p className="sr-only">Histórico lido. Dados pessoais descartados.</p>}
         {estado.fase === "erro" && <Aviso tom="atencao">Não foi possível ler o histórico: {estado.msg}</Aviso>}
       </div>
 

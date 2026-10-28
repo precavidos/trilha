@@ -56,16 +56,14 @@ export function FluxoDiscente() {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-wrap items-center gap-4">
-        <div className="min-w-0 flex-1">
-          <TrilhaDePassos passos={PASSOS} nivelDoTitulo="h2" atual={passoAtual({ trajetoria, recomendacao, rascunho })} />
-        </div>
-        {trajetoria && (
+      {trajetoria && (
+        <div className="flex justify-end">
           <Botao variante="fantasma" onClick={recomecar}>
             Recomeçar e apagar dados da página
           </Botao>
-        )}
-      </div>
+        </div>
+      )}
+      <TrilhaDePassos passos={PASSOS} nivelDoTitulo="h2" atual={passoAtual({ trajetoria, recomendacao, rascunho })} />
       <EnvioDoHistorico
         lido={trajetoria && origem && nomeDoArquivo ? { origem, nome: nomeDoArquivo } : null}
         aoComecar={() => novaTrajetoria(null, null, null)}
@@ -95,7 +93,7 @@ export function FluxoDiscente() {
           aoImprimir={() => window.print()}
         />
       )}
-      {recomendacao && <ForaDasSugestoes fora={recomendacao.foraDasSugestoes} />}
+      {recomendacao && trajetoria && <ForaDasSugestoes fora={recomendacao.foraDasSugestoes} />}
       {recomendacao && trajetoria && (
         <ResumoParaImpressao recomendacao={recomendacao} rascunho={rascunho} trajetoria={trajetoria} />
       )}

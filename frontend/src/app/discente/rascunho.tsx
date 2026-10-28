@@ -9,10 +9,12 @@ export function Rascunho({
   rascunho,
   chPendente,
   aoImprimir,
+  aoRemover,
 }: {
   rascunho: ItemRecomendado[];
   chPendente: number | null;
   aoImprimir(): void;
+  aoRemover(item: ItemRecomendado): void;
 }) {
   const { horas, contamExtensao } = somarRascunho(rascunho);
   const vazio = rascunho.length === 0;
@@ -39,7 +41,17 @@ export function Rascunho({
           {rascunho.map((i) => (
             <li key={i.codigo} className="flex items-baseline gap-2 text-sm leading-5">
               <span className="bg-lime text-on-lime rounded-md px-1.5 font-mono">{i.codigo}</span>
-              <span>{i.nome}</span>
+              <span className="min-w-0 flex-1">{i.nome}</span>
+              <button
+                type="button"
+                aria-label={`Remover ${i.codigo} do rascunho`}
+                onClick={() => aoRemover(i)}
+                className="text-ink hover:bg-surface-sunken -my-3 -mr-2 grid size-11 flex-none cursor-pointer place-items-center self-center rounded-md border-0 bg-transparent"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" aria-hidden className="size-4">
+                  <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+              </button>
             </li>
           ))}
         </ol>
